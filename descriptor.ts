@@ -2,12 +2,13 @@
 import { Mimosa } from './taxon/Mimosa';
 
 // Characters
-import { Leaf } from './character/Leaf';
-import { Paraphillidia } from './character/Paraphillidia';
-import { Petiole } from './character/Petiole';
-import { Flower } from './character/Flower';
-import { Calyx } from './character/Calyx';
-import { Corolla } from './character/Corolla';
+import { Leaf } from './character/Leaf/Leaf';
+import { Paraphillidia } from './character/Leaf/Paraphillidia';
+import { Petiole } from './character/Leaf/Petiole';
+
+import { Flower } from './character/Flower/Flower';
+import { Calyx } from './character/Flower/Calyx';
+import { Corolla } from './character/Flower/Corolla';
 
 // Describe a species
 const Mimosa_new = new Mimosa();

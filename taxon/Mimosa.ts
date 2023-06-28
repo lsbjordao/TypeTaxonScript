@@ -1,5 +1,5 @@
-import { Leaf } from '../character/Leaf';
-import { Flower } from '../character/Flower';
+import { Leaf } from '../character/Leaf/Leaf';
+import { Flower } from '../character/Flower/Flower';
 
 export class Mimosa {
     /**
