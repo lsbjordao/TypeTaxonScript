@@ -1,4 +1,5 @@
-import { Leaf } from '../characters/Leaf';
+import { Leaf } from '../character/Leaf';
+import { Flower } from '../character/Flower';
 
 export class Mimosa {
     /**
@@ -12,10 +13,16 @@ export class Mimosa {
     leaf: Leaf | null;
 
     /**
+     * Bipinnate leaf
+     */
+    flower: Flower | null;
+
+    /**
      * Describe a species of Mimosa
      */
     constructor() {
         this.habit = null;
         this.leaf = null;
+        this.flower = null;
     }
 }

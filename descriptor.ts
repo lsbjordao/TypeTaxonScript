@@ -1,10 +1,13 @@
 // Taxa
-import { Mimosa } from './taxa/Mimosa';
+import { Mimosa } from './taxon/Mimosa';
 
 // Characters
-import { Leaf } from './characters/Leaf';
-import { Paraphillidia } from './characters/Paraphillidia';
-import { Petiole } from './characters/Petiole';
+import { Leaf } from './character/Leaf';
+import { Paraphillidia } from './character/Paraphillidia';
+import { Petiole } from './character/Petiole';
+import { Flower } from './character/Flower';
+import { Calyx } from './character/Calyx';
+import { Corolla } from './character/Corolla';
 
 // Describe a species
 const Mimosa_new = new Mimosa();
@@ -19,6 +22,13 @@ Mimosa_new.leaf.paraphillidia = new Paraphillidia();
 Mimosa_new.leaf.paraphillidia.present = false;
 Mimosa_new.leaf.paraphillidia.setLength(null);
 
+Mimosa_new.flower = new Flower();
+Mimosa_new.flower.calyx = new Calyx();
+Mimosa_new.flower.calyx.numSepals = 4;
+Mimosa_new.flower.calyx.length = 1;
+Mimosa_new.flower.corolla = new Corolla();
+Mimosa_new.flower.corolla.numPepals = 4;
+Mimosa_new.flower.corolla.length = 3;
 
 // Print
 console.log(Mimosa_new);

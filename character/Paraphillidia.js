@@ -1,26 +1,26 @@
 "use strict";
 exports.__esModule = true;
-exports.Petiole = void 0;
-var Petiole = /** @class */ (function () {
+exports.Paraphillidia = void 0;
+var Paraphillidia = /** @class */ (function () {
     /**
-     * Creates an instance of Petiole.
+     * Creates an instance of Paraphillidia.
      */
-    function Petiole() {
+    function Paraphillidia() {
         this.present = null;
         this.length = null;
     }
     /**
      * Sets the length value, considering the value of `present`.
      *
-     * @param value - The length value.
+     * @param value - The length value in milimeters (mm).
      * @throws Error if `present` is `false` and `value` is not `null`.
      */
-    Petiole.prototype.setLength = function (value) {
+    Paraphillidia.prototype.setLength = function (value) {
         if (this.present === false && value !== null) {
             throw new Error("Cannot set length when present is false");
         }
         this.length = value;
     };
-    return Petiole;
+    return Paraphillidia;
 }());
-exports.Petiole = Petiole;
+exports.Paraphillidia = Paraphillidia;

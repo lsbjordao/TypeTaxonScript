@@ -8,6 +8,7 @@ var Mimosa = /** @class */ (function () {
     function Mimosa() {
         this.habit = null;
         this.leaf = null;
+        this.flower = null;
     }
     return Mimosa;
 }());
