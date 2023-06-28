@@ -1,13 +1,14 @@
 import { Paraphillidia } from "./Paraphillidia";
+import { Petiole } from "./Petiole";
 
 export class Leaf {
     /**
-     * Petiole can be present or sessile.
+     * Petiole is the stalk that attaches the leaf blade to the stem.
      */
-    petiole: "present" | "sessile" | null;
+    petiole: Petiole | null;
 
     /**
-     * Paraphillidia.
+     * Paraphillidia is a pair of appendixes at the bottom of a pinna.
      */
     paraphillidia: Paraphillidia | null;
 
