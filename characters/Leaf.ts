@@ -1,19 +1,21 @@
+import { Paraphillidia } from "./Paraphillidia";
+
 export class Leaf {
     /**
-     * Petiole
+     * Petiole can be present or sessile.
      */
     petiole: "present" | "sessile" | null;
 
     /**
-     * Tamanho da Leaf.
+     * Paraphillidia.
      */
-    tamanho: number | null;
+    paraphillidia: Paraphillidia | null;
 
     /**
      * Describe leaf.
      */
     constructor() {
         this.petiole = null;
-        this.tamanho = null;
+        this.paraphillidia = null;
     }
 }

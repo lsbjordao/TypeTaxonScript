@@ -6,12 +6,9 @@ var Mimosa = /** @class */ (function () {
      * Describe a species of Mimosa
      */
     function Mimosa() {
-        this.Habit = null;
-        this.Leaf = null;
+        this.habit = null;
+        this.leaf = null;
     }
-    Mimosa.prototype.toString = function () {
-        return "{ Habit: '".concat(this.Habit, "', Leaf: ").concat(JSON.stringify(this.Leaf), " }");
-    };
     return Mimosa;
 }());
 exports.Mimosa = Mimosa;

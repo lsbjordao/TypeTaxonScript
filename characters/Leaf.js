@@ -7,7 +7,7 @@ var Leaf = /** @class */ (function () {
      */
     function Leaf() {
         this.petiole = null;
-        this.tamanho = null;
+        this.paraphillidia = null;
     }
     return Leaf;
 }());

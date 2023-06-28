@@ -1,10 +1,21 @@
-import { Mimosa } from './Mimosa';
-import { Leaf } from './Leaf';
+/// Taxa
+import { Mimosa } from './taxa/Mimosa';
 
-const MimosaNew = new Mimosa();
-MimosaNew.Habit = 'tree';
-MimosaNew.Leaf = new Leaf();
-MimosaNew.Leaf.petiole = 'present';
-MimosaNew.Leaf.tamanho = 0;
+// Characters
+import { Leaf } from './characters/Leaf';
+import { Paraphillidia } from './characters/Paraphillidia';
 
-console.log(MimosaNew);
+// Describe a species
+const Mimosa_new = new Mimosa();
+
+Mimosa_new.habit = 'tree';
+
+Mimosa_new.leaf = new Leaf();
+Mimosa_new.leaf.petiole = 'present';
+Mimosa_new.leaf.paraphillidia = new Paraphillidia();
+Mimosa_new.leaf.paraphillidia.present = true;
+Mimosa_new.leaf.paraphillidia.setLength(1);
+
+
+// Print
+console.log(Mimosa_new);
