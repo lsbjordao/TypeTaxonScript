@@ -9,9 +9,6 @@ var Leaf = /** @class */ (function () {
         this.petiole = null;
         this.tamanho = null;
     }
-    Leaf.prototype.toString = function () {
-        return "oi";
-    };
     return Leaf;
 }());
 exports.Leaf = Leaf;

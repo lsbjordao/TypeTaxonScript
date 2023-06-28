@@ -9,6 +9,9 @@ var Mimosa = /** @class */ (function () {
         this.Habit = null;
         this.Leaf = null;
     }
+    Mimosa.prototype.toString = function () {
+        return "{ Habit: '".concat(this.Habit, "', Leaf: ").concat(JSON.stringify(this.Leaf), " }");
+    };
     return Mimosa;
 }());
 exports.Mimosa = Mimosa;
