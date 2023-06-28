@@ -1,14 +1,14 @@
 "use strict";
 exports.__esModule = true;
 // Taxa
-var Mimosa_1 = require("./taxa/Mimosa");
+var Mimosa_1 = require("./taxon/Mimosa");
 // Characters
-var Leaf_1 = require("./characters/Leaf");
-var Paraphillidia_1 = require("./characters/Paraphillidia");
-var Petiole_1 = require("./characters/Petiole");
-var Flower_1 = require("./characters/Flower");
-var Calyx_1 = require("./characters/Calyx");
-var Corolla_1 = require("./characters/Corolla");
+var Leaf_1 = require("./character/Leaf");
+var Paraphillidia_1 = require("./character/Paraphillidia");
+var Petiole_1 = require("./character/Petiole");
+var Flower_1 = require("./character/Flower");
+var Calyx_1 = require("./character/Calyx");
+var Corolla_1 = require("./character/Corolla");
 // Describe a species
 var Mimosa_new = new Mimosa_1.Mimosa();
 Mimosa_new.habit = 'subshrub';

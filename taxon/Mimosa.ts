@@ -13,7 +13,7 @@ export class Mimosa {
     leaf: Leaf | null;
 
     /**
-     * Bipinnate leaf
+     * Flower
      */
     flower: Flower | null;
 
