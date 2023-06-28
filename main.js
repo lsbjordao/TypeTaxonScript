@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Mimosa_1 = require("./Mimosa");
+var Leaf_1 = require("./Leaf");
+var MimosaNew = new Mimosa_1.Mimosa();
+MimosaNew.Habit = 'tree';
+MimosaNew.Leaf = new Leaf_1.Leaf();
+console.log(MimosaNew.Leaf);
+MimosaNew.Leaf.petiole = 'present';
+MimosaNew.Leaf.tamanho = 0;
+console.log(MimosaNew);
