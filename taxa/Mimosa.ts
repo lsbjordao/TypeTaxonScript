@@ -4,7 +4,7 @@ export class Mimosa {
     /**
      * Habit
      */
-    habit: 'tree' | 'shrub' | null;
+    habit: 'tree' | 'shrub' | 'subshrub' | null;
 
     /**
      * Bipinnate leaf

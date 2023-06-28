@@ -9,7 +9,7 @@ import { Petiole } from './characters/Petiole';
 // Describe a species
 const Mimosa_new = new Mimosa();
 
-Mimosa_new.habit = 'shrub';
+Mimosa_new.habit = 'subshrub';
 
 Mimosa_new.leaf = new Leaf();
 Mimosa_new.leaf.petiole = new Petiole();
