@@ -1,5 +1,4 @@
 import { Leaf } from '../characters/Leaf';
-import { Paraphillidia } from '../characters/Paraphillidia';
 
 export class Mimosa {
 
