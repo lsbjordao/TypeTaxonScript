@@ -1,7 +1,6 @@
 import { Leaf } from '../characters/Leaf';
 
 export class Mimosa {
-
     /**
      * Habit
      */
