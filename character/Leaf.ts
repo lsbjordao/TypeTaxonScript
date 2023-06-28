@@ -1,5 +1,5 @@
-import { Paraphillidia } from "./Paraphillidia";
-import { Petiole } from "./Petiole";
+import { Paraphillidia } from "./Leaf/Paraphillidia";
+import { Petiole } from "./Leaf/Petiole";
 
 export class Leaf {
     /**

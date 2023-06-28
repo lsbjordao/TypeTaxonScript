@@ -1,5 +1,5 @@
-import { Corolla } from "./Corolla";
-import { Calyx } from "./Calyx";
+import { Corolla } from "./Flower/Corolla";
+import { Calyx } from "./Flower/Calyx";
 
 export class Flower {
     /**

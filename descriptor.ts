@@ -2,11 +2,11 @@
 import { Mimosa } from './taxon/Mimosa';
 
 // Characters
-import { Leaf } from './character/Leaf/Leaf';
+import { Leaf } from './character/Leaf';
 import { Paraphillidia } from './character/Leaf/Paraphillidia';
 import { Petiole } from './character/Leaf/Petiole';
 
-import { Flower } from './character/Flower/Flower';
+import { Flower } from './character/Flower';
 import { Calyx } from './character/Flower/Calyx';
 import { Corolla } from './character/Flower/Corolla';
 
