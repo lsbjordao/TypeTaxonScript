@@ -10,10 +10,16 @@ export class Corolla {
     length: number | null;
 
     /**
+     * Corolla shape.
+     */
+    shape: "campanulate" | "turbinate" | null;
+
+    /**
      * Creates an instance of Corolla.
      */
     constructor() {
         this.numPepals = null;
         this.length = null;
+        this.shape = null;
     }
 }

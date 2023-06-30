@@ -10,10 +10,16 @@ export class Calyx {
     length: number | null;
 
     /**
+     * Calyx shape.
+     */
+    shape: "campanulate" | "pappiform" | null;
+
+    /**
      * Creates an instance of Calyx.
      */
     constructor() {
         this.numSepals = null;
         this.length = null;
+        this.shape = null;
     }
 }

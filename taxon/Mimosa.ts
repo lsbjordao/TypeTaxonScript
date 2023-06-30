@@ -1,5 +1,6 @@
 import { Leaf } from '../character/Leaf';
 import { Flower } from '../character/Flower';
+import { Fruit } from '../character/Fruit';
 
 export class Mimosa {
     /**
@@ -16,6 +17,11 @@ export class Mimosa {
      * Flower
      */
     flower: Flower | null;
+
+    /**
+     * Fruit
+     */
+    fruit: Fruit | null;
 
     /**
      * Describe a species of Mimosa
