@@ -4,6 +4,11 @@
 
 ## Abra a pasta TaxonDescriptor
 
+## Instale o pacote Typescript
+```
+npm install
+```
+
 ## Edite o arquivo descriptor.ts
 
 ## Transpile o arquivo `descriptor.ts`
