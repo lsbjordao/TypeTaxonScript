@@ -11,7 +11,7 @@ npm install
 
 ## Edite o arquivo descriptor.ts
 
-```
+```ts
 // Taxa
 import { Mimosa } from './taxon/Mimosa';
 
