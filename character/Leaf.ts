@@ -9,6 +9,8 @@ export class Leaf {
 
     /**
      * Paraphillidia is a pair of appendixes at the bottom of a pinna.
+     * 
+     * @source [Barneby (1991)](http://www.teste.com/)
      */
     paraphillidia: Paraphillidia | null;
 
