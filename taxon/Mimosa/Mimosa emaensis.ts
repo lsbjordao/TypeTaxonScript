@@ -31,34 +31,27 @@ Mimosa_emaensis.trichomes.setiform = new Setiform();
 Mimosa_emaensis.trichomes.setiform.present = false;
 
 Mimosa_emaensis.leaf = new Leaf();
-
 Mimosa_emaensis.leaf.petiole = new Petiole();
 Mimosa_emaensis.leaf.petiole.present = true;
 Mimosa_emaensis.leaf.petiole.setLength(3);
-
 Mimosa_emaensis.leaf.paraphillidia = new Paraphillidia();
 Mimosa_emaensis.leaf.paraphillidia.present = false;
 Mimosa_emaensis.leaf.paraphillidia.setLength(null);
 
 Mimosa_emaensis.flower = new Flower();
-
 Mimosa_emaensis.flower.calyx = new Calyx();
 Mimosa_emaensis.flower.calyx.numSepals = 4;
 Mimosa_emaensis.flower.calyx.length = 1;
 Mimosa_emaensis.flower.calyx.shape = 'campanulate';
-
 Mimosa_emaensis.flower.corolla = new Corolla();
 Mimosa_emaensis.flower.corolla.numPepals = 4;
 Mimosa_emaensis.flower.corolla.length = 3;
 Mimosa_emaensis.flower.corolla.shape = 'campanulate';
 
-
 Mimosa_emaensis.fruit = new Fruit();
-
 Mimosa_emaensis.fruit.replum = new Replum();
 Mimosa_emaensis.fruit.replum.shape = 'straight';
 Mimosa_emaensis.fruit.replum.prickles = false;
-
 Mimosa_emaensis.fruit.epicarp = new Epicarp();
 Mimosa_emaensis.fruit.epicarp.shape = 'straight';
 Mimosa_emaensis.fruit.epicarp.prickles = false;
