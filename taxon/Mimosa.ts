@@ -2,6 +2,7 @@ import { Trichomes } from '../character/Trichomes';
 import { Leaf } from '../character/Leaf';
 import { Flower } from '../character/Flower';
 import { Fruit } from '../character/Fruit';
+import { Source } from '../character/Source';
 
 export class Mimosa {
     /**
@@ -30,6 +31,11 @@ export class Mimosa {
     fruit: Fruit | null;
 
     /**
+     * Source
+     */
+    source: Source | null;
+
+    /**
      * Describe a species of Mimosa
      */
     constructor() {
@@ -37,5 +43,7 @@ export class Mimosa {
         this.trichomes = null;
         this.leaf = null;
         this.flower = null;
+        this.fruit = null;
+        this.source = null;
     }
 }

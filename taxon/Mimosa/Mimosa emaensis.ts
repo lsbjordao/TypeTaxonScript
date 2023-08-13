@@ -17,9 +17,9 @@ import { Corolla } from '../../character/Flower/Corolla';
 import { Fruit } from '../../character/Fruit';
 import { Replum } from '../../character/Fruit/Replum';
 import { Epicarp } from '../../character/Fruit/Epicarp';
+import { Source } from '../../character/Source';
 
 // Description of Mimosa emaensis
-
 const Mimosa_emaensis = new Mimosa();
 
 Mimosa_emaensis.habit = 'subshrub';
@@ -55,3 +55,10 @@ Mimosa_emaensis.fruit.replum.prickles = false;
 Mimosa_emaensis.fruit.epicarp = new Epicarp();
 Mimosa_emaensis.fruit.epicarp.shape = 'straight';
 Mimosa_emaensis.fruit.epicarp.prickles = false;
+
+// Source
+Mimosa_emaensis.source = new Source();
+Mimosa_emaensis.source.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.';
+Mimosa_emaensis.source.title = '';
+Mimosa_emaensis.source.year = 2021;
+
