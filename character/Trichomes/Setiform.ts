@@ -26,7 +26,7 @@ export class Setiform {
     sources: Source[];
 
     /**
-     * Creates an instance of Filiform trichome.
+     * Creates an instance of Setiform trichome.
      */
     constructor() {
         this.sources = [];

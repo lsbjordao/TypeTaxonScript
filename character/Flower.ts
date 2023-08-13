@@ -18,7 +18,7 @@ export class Flower {
     sources: Source[];
 
     /**
-     * Describe Flower.
+     * Creates an instance of Flower.
      */
     constructor() {
         this.sources = [];

@@ -22,7 +22,7 @@ export class Trichomes {
     sources: Source[];
 
     /**
-     * Describe trichome.
+     * Creates an instance of trichome.
      */
     constructor() {
         this.sources = [];

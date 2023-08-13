@@ -20,7 +20,7 @@ export class Leaf {
     sources: Source[];
 
     /**
-     * Describe leaf.
+     * Creates an instance of leaf.
      */
     constructor() {
         this.sources = [];

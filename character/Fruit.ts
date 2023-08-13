@@ -18,7 +18,7 @@ export class Fruit {
     sources: Source[];
 
     /**
-     * Describe Fruit.
+     * Creates an instance of Fruit.
      */
     constructor() {
         this.sources = [];
