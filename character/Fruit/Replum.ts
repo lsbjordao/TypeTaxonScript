@@ -1,5 +1,3 @@
-import { Source } from "../../character/Source";
-
 export class Replum {
     /**
      * Prickles.
@@ -25,3 +23,5 @@ export class Replum {
         this.sources = [];
     }
 }
+
+import { Source } from "../../character/Source";

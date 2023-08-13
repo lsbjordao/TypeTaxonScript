@@ -1,5 +1,3 @@
-import { Source } from "../Source";
-
 export class Filiform {
     /**
      * Fililform trichomes can be present or absent.
@@ -37,3 +35,5 @@ export class Filiform {
         this.sources = [];
     }
 }
+
+import { Source } from "../../character/Source";

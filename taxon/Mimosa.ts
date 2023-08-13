@@ -1,4 +1,4 @@
-import { Trichome } from '../character/Trichome';
+import { Trichomes } from '../character/Trichomes';
 import { Leaf } from '../character/Leaf';
 import { Flower } from '../character/Flower';
 import { Fruit } from '../character/Fruit';
@@ -13,7 +13,7 @@ export class Mimosa {
     /**
      * Trichomes
      */
-    trichomes: Trichome | null;
+    trichomes: Trichomes | null;
 
     /**
      * Bipinnate leaf

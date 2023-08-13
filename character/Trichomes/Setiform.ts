@@ -1,5 +1,3 @@
-import { Source } from "../Source";
-
 export class Setiform {
     /**
      * Setiform trichomes can be present or absent.
@@ -37,3 +35,5 @@ export class Setiform {
         this.sources = [];
     }
 }
+
+import { Source } from "../Source";

@@ -1,5 +1,3 @@
-import { Source } from "../../character/Source";
-
 export class Petiole {
     /**
      * Petiole can be present or absent.
@@ -44,3 +42,5 @@ export class Petiole {
         this.length = value;
     }
 }
+
+import { Source } from "../../character/Source";

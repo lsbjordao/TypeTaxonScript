@@ -1,5 +1,3 @@
-import { Source } from "../../character/Source";
-
 export class Paraphillidia {
     /**
      * Paraphillidia can be present or absent.
@@ -44,3 +42,5 @@ export class Paraphillidia {
         this.length = value;
     }
 }
+
+import { Source } from "../../character/Source";

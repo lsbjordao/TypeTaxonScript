@@ -1,6 +1,4 @@
-import { Trichome } from '../Trichome';
-
-import { Source } from "../../character/Source";
+import { Trichomes } from '../Trichomes';
 
 export class Epicarp {
     /**
@@ -11,7 +9,7 @@ export class Epicarp {
     /**
      * Shape.
      */
-    trichomes: Trichome | null;
+    trichomes: Trichomes | null;
 
     /**
      * Prickles.
@@ -33,3 +31,5 @@ export class Epicarp {
         this.sources = [];
     }
 }
+
+import { Source } from "../../character/Source";

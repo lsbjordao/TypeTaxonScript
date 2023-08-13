@@ -1,9 +1,7 @@
-import { Filiform } from "./Trichome/Filiform";
-import { Setiform } from "./Trichome/Setiform";
+import { Filiform } from "./Trichomes/Filiform";
+import { Setiform } from "./Trichomes/Setiform";
 
-import { Source } from "./Source";
-
-export class Trichome {
+export class Trichomes {
     /**
      * Filiform trichome.
      * 
@@ -32,3 +30,5 @@ export class Trichome {
         this.sources = [];
     }
 }
+
+import { Source } from "./Source";
