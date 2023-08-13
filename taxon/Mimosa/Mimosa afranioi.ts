@@ -2,6 +2,8 @@
 import { Mimosa } from '../Mimosa';
 
 // Import characters
+import { Prickles } from '../../character/Prickles';
+
 import { Trichomes } from '../../character/Trichomes';
 import { Filiform } from '../../character/Trichomes/Filiform';
 import { Setiform } from '../../character/Trichomes/Setiform';
@@ -31,6 +33,9 @@ Mimosa_afranioi.trichomes.filiform = new Filiform();
 Mimosa_afranioi.trichomes.filiform.present = true;
 Mimosa_afranioi.trichomes.setiform = new Setiform();
 Mimosa_afranioi.trichomes.setiform.present = false;
+
+Mimosa_afranioi.prickles = new Prickles();
+Mimosa_afranioi.prickles.present = true;
 
 Mimosa_afranioi.leaf = new Leaf();
 Mimosa_afranioi.leaf.petiole = new Petiole();

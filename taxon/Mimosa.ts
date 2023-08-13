@@ -1,3 +1,4 @@
+import { Prickles } from '../character/Prickles';
 import { Trichomes } from '../character/Trichomes';
 import { Leaf } from '../character/Leaf';
 import { Flower } from '../character/Flower';
@@ -14,6 +15,13 @@ export class Mimosa {
      * Habit of *Mimosa*
      */
     habit: 'tree' | 'shrub' | 'subshrub' | 'herb';
+
+    /**
+     * Prickles of *Mimosa*.
+     * 
+     * @kind decurved, recurved, straight.
+     */
+    prickles: Prickles;
 
     /**
      * Trichomes of *Mimosa*.
