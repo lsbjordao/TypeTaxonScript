@@ -20,6 +20,7 @@ import { Epicarp } from '../../character/Fruit/Epicarp';
 
 import { Source } from '../../character/Source';
 import { Capitate } from '../../character/Trichomes/Capitate';
+import { Prickles } from '../../character/Prickles';
 
 // Description of Mimosa schomburgkii
 const Mimosa_schomburgkii = new Mimosa();
@@ -27,6 +28,7 @@ Mimosa_schomburgkii.specificEpithet = 'schomburgkii';
 
 Mimosa_schomburgkii.habit = 'tree';
 
+Mimosa_schomburgkii.prickles = new Prickles();
 Mimosa_schomburgkii.prickles.present = false;
 
 Mimosa_schomburgkii.trichomes = new Trichomes();

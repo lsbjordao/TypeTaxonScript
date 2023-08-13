@@ -19,6 +19,7 @@ import { Replum } from '../../character/Fruit/Replum';
 import { Epicarp } from '../../character/Fruit/Epicarp';
 
 import { Source } from '../../character/Source';
+import { Prickles } from '../../character/Prickles';
 
 // Description of Mimosa emaensis
 const Mimosa_emaensis = new Mimosa();
@@ -26,6 +27,7 @@ Mimosa_emaensis.specificEpithet = 'emaensis';
 
 Mimosa_emaensis.habit = 'subshrub';
 
+Mimosa_emaensis.prickles = new Prickles();
 Mimosa_emaensis.prickles.present = false;
 
 Mimosa_emaensis.trichomes = new Trichomes();
