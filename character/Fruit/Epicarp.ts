@@ -2,6 +2,11 @@ import { Trichomes } from '../Trichomes';
 
 export class Epicarp {
     /**
+     * Type.
+     */
+    type: 'monospermic' | 'undivided';
+
+    /**
      * Shape.
      */
     shape: 'straight' | 'undulate';

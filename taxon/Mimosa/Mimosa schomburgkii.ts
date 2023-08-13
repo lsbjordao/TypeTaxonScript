@@ -55,6 +55,7 @@ Mimosa_schomburgkii.fruit.replum = new Replum();
 Mimosa_schomburgkii.fruit.replum.shape = 'straight';
 Mimosa_schomburgkii.fruit.replum.prickles = false;
 Mimosa_schomburgkii.fruit.epicarp = new Epicarp();
+Mimosa_schomburgkii.fruit.epicarp.type = 'monospermic';
 Mimosa_schomburgkii.fruit.epicarp.shape = 'straight';
 Mimosa_schomburgkii.fruit.epicarp.trichomes = new Trichomes();
 Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform = new Filiform();

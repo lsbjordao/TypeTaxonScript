@@ -16,7 +16,9 @@ export class Mimosa {
     habit: 'tree' | 'shrub' | 'subshrub' | 'herb' | null;
 
     /**
-     * Trichomes of *Mimosa*
+     * Trichomes of *Mimosa*.
+     * 
+     * @kind filiform, setiform, stellate, dendritic, capitate-filiform, capitate-setiform.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      * @source [Santos-Silva et al. (2013)](http://www.teste.com/)
@@ -24,7 +26,7 @@ export class Mimosa {
     trichomes: Trichomes | null;
 
     /**
-     * Leaf of *Mimosa*
+     * Leaf of *Mimosa*: bipinnate
      */
     leaf: Leaf | null;
 
