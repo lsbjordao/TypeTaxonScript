@@ -22,7 +22,7 @@ export class Epicarp {
     prickles: true | false;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 
