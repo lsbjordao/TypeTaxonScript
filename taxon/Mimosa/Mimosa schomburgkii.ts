@@ -63,12 +63,14 @@ Mimosa_schomburgkii.fruit.epicarp.prickles = false;
 
 // Sources
 const source1 = new Source();
+source1.type = 'article';
 source1.authorship = 'Author 1';
 source1.year = 2020;
 source1.title = 'Title 1';
 Mimosa_schomburgkii.flower.corolla.sources.push(source1);
 
 const source2 = new Source();
+source2.type = 'book';
 source2.authorship = 'Author 2';
 source2.year = 2021;
 source2.title = 'Title 2';

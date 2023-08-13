@@ -60,6 +60,7 @@ Mimosa_emaensis.fruit.epicarp.prickles = false;
 
 // Sources
 const source1 = new Source();
+source1.type = 'article';
 source1.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.';
 source1.year = 2021;
 source1.title = '';
