@@ -57,3 +57,6 @@ Mimosa_afranioi.fruit.epicarp.trichomes = new Trichomes();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform = new Filiform();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform.present = true;
 Mimosa_afranioi.fruit.epicarp.prickles = false;
+
+// Print
+console.log(Mimosa_afranioi);
