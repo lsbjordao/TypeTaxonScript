@@ -1,6 +1,8 @@
 import { Filiform } from "./Trichomes/Filiform";
 import { Setiform } from "./Trichomes/Setiform";
 
+import { Source } from "../character/Source";
+
 export class Trichomes {
     /**
      * Filiform trichomes.
@@ -17,10 +19,16 @@ export class Trichomes {
     setiform: Setiform | null;
 
     /**
+     * Source
+     */
+    source: Source | null;
+
+    /**
      * Describe trichomes.
      */
     constructor() {
         this.filiform = null;
         this.setiform = null;
+        this.source = null;
     }
 }

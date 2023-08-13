@@ -19,7 +19,6 @@ import { Replum } from '../../character/Fruit/Replum';
 import { Epicarp } from '../../character/Fruit/Epicarp';
 
 // Description of Mimosa afranioi
-
 const Mimosa_afranioi = new Mimosa();
 
 Mimosa_afranioi.habit = 'subshrub';
