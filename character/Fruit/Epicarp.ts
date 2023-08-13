@@ -1,8 +1,15 @@
+import { Trichomes } from '../Trichomes';
+
 export class Epicarp {
     /**
      * Shape.
      */
     shape: 'straight' | 'undulate' | null;
+
+    /**
+     * Shape.
+     */
+    trichomes: Trichomes | null;
 
     /**
      * Prickles.
@@ -14,6 +21,7 @@ export class Epicarp {
      */
     constructor() {
         this.shape = null;
+        this.trichomes = null;
         this.prickles = null;
     }
 }
