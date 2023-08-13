@@ -5,12 +5,12 @@ export class Flower {
     /**
      * Calyx.
      */
-    calyx: Calyx | null;
+    calyx: Calyx;
 
     /**
      * Corolla.
      */
-    corolla: Corolla | null;
+    corolla: Corolla;
 
     /**
      * Source

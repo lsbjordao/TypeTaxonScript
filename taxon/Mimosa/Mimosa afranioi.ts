@@ -51,6 +51,7 @@ Mimosa_afranioi.flower.corolla.length = 3;
 Mimosa_afranioi.flower.corolla.shape = 'campanulate';
 
 Mimosa_afranioi.fruit = new Fruit();
+Mimosa_afranioi.fruit.type = 'craspedium';
 Mimosa_afranioi.fruit.replum = new Replum();
 Mimosa_afranioi.fruit.replum.shape = 'straight';
 Mimosa_afranioi.fruit.replum.prickles = false;

@@ -3,14 +3,19 @@ import { Epicarp } from "./Fruit/Epicarp";
 
 export class Fruit {
     /**
+     * Type.
+     */
+    type: 'craspedium' | 'sacellum';
+
+    /**
      * Replum.
      */
-    replum: Replum | null;
+    replum: Replum;
 
     /**
      * Epicarp.
      */
-    epicarp: Epicarp | null;
+    epicarp: Epicarp;
 
     /**
      * Source

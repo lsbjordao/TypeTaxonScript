@@ -5,7 +5,7 @@ export class Filiform {
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false | null;
+    present: true | false;
 
     /**
      * Filiform trichomes length in milimeters (mm).
@@ -18,7 +18,7 @@ export class Filiform {
     /**
      * Orientation of trichomes.
      */
-    orientation: 'patent' | 'antrorse' | 'retrorse' | null;
+    orientation: 'patent' | 'antrorse' | 'retrorse';
 
     /**
      * Source

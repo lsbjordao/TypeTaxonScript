@@ -4,17 +4,17 @@ export class Epicarp {
     /**
      * Shape.
      */
-    shape: 'straight' | 'undulate' | null;
+    shape: 'straight' | 'undulate';
 
     /**
      * Shape.
      */
-    trichomes: Trichomes | null;
+    trichomes: Trichomes;
 
     /**
      * Prickles.
      */
-    prickles: true | false | null;
+    prickles: true | false;
 
     /**
      * Source

@@ -7,14 +7,14 @@ export class Trichomes {
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
-    filiform: Filiform | null;
+    filiform: Filiform;
 
     /**
      * Setiform trichome.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
-    setiform: Setiform | null;
+    setiform: Setiform;
 
     /**
      * Source

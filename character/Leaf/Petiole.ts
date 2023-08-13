@@ -5,7 +5,7 @@ export class Petiole {
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false | null;
+    present: true | false;
 
     /**
      * Petiole length in milimeters (mm).

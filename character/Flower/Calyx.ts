@@ -2,17 +2,17 @@ export class Calyx {
     /**
      * Number of sepals.
      */
-    numSepals: number | null;
+    numSepals: number;
 
     /**
      * Sepals length in milimeters (mm).
      */
-    length: number | null;
+    length: number;
 
     /**
      * Calyx shape.
      */
-    shape: "campanulate" | "pappiform" | null;
+    shape: "campanulate" | "pappiform";
 
     /**
      * Source

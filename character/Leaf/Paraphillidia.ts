@@ -5,7 +5,7 @@ export class Paraphillidia {
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false | null;
+    present: true | false;
 
     /**
      * Paraphillidia length in milimeters (mm).

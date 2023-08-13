@@ -2,12 +2,12 @@ export class Replum {
     /**
      * Prickles.
      */
-    prickles: true | false | null;
+    prickles: true | false;
     
     /**
      * Shape.
      */
-    shape: 'straight' | 'undulate' | null;
+    shape: 'straight' | 'undulate';
 
     /**
      * Source

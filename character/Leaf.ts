@@ -5,14 +5,14 @@ export class Leaf {
     /**
      * Petiole is the stalk that attaches the leaf blade to the stem.
      */
-    petiole: Petiole | null;
+    petiole: Petiole;
 
     /**
      * Paraphillidia is a pair of appendixes at the bottom of a pinna.
      * 
      * @source [Barneby (1991)](http://www.teste.com/)
      */
-    paraphillidia: Paraphillidia | null;
+    paraphillidia: Paraphillidia;
 
     /**
      * Source

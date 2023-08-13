@@ -2,17 +2,17 @@ export class Corolla {
     /**
      * Number of petals.
      */
-    numPepals: number | null;
+    numPepals: number;
 
     /**
      * Petals length in milimeters (mm).
      */
-    length: number | null;
+    length: number;
 
     /**
      * Corolla shape.
      */
-    shape: "campanulate" | "turbinate" | null;
+    shape: "campanulate" | "turbinate";
 
     /**
      * Source
