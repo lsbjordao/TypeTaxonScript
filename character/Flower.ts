@@ -21,8 +21,6 @@ export class Flower {
      * Describe Flower.
      */
     constructor() {
-        this.calyx = null;
-        this.corolla = null;
         this.sources = [];
     }
 }

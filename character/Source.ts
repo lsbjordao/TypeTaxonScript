@@ -15,11 +15,7 @@ export class Source {
     title: string | null;
 
     /**
-     * Describe Fruit.
+     * Describe Source.
      */
-    constructor() {
-        this.authorship = null;
-        this.year = null;
-        this.title = null;
-    }
+    constructor() { }
 }

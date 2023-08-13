@@ -21,8 +21,6 @@ export class Fruit {
      * Describe Fruit.
      */
     constructor() {
-        this.replum = null;
-        this.epicarp = null;
         this.sources = [];
     }
 }

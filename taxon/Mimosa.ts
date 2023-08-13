@@ -33,17 +33,12 @@ export class Mimosa {
     /**
      * Source
      */
-    source: Source | null;
+    sources: Source[];
 
     /**
      * Describe a species of Mimosa
      */
     constructor() {
-        this.habit = null;
-        this.trichomes = null;
-        this.leaf = null;
-        this.flower = null;
-        this.fruit = null;
-        this.source = null;
+        this.sources = [];
     }
 }

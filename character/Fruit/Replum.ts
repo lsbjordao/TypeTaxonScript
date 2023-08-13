@@ -18,8 +18,6 @@ export class Replum {
      * Creates an instance of Replum.
      */
     constructor() {
-        this.shape = null;
-        this.prickles = null;
         this.sources = [];
     }
 }

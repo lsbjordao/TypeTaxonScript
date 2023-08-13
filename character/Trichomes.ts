@@ -25,8 +25,6 @@ export class Trichomes {
      * Describe trichome.
      */
     constructor() {
-        this.filiform = null;
-        this.setiform = null;
         this.sources = [];
     }
 }

@@ -24,8 +24,6 @@ export class Paraphillidia {
      * Creates an instance of Paraphillidia.
      */
     constructor() {
-        this.present = null;
-        this.length = null;
         this.sources = [];
     }
 

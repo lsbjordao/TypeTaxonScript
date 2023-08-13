@@ -24,8 +24,6 @@ export class Petiole {
      * Creates an instance of Petiole.
      */
     constructor() {
-        this.present = null;
-        this.length = null;
         this.sources = [];
     }
 

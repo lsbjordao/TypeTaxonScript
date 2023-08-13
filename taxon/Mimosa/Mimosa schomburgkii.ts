@@ -73,3 +73,6 @@ source2.authorship = "Author 2";
 source2.year = 2021;
 source2.title = "Title 2";
 Mimosa_afranioi.flower.corolla.sources.push(source2);
+
+// Print
+console.log(Mimosa_afranioi);

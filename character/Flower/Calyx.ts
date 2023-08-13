@@ -25,9 +25,6 @@ export class Calyx {
      * Creates an instance of Calyx.
      */
     constructor() {
-        this.numSepals = null;
-        this.length = null;
-        this.shape = null;
         this.sources = [];
     }
 }

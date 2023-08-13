@@ -25,8 +25,6 @@ export class Leaf {
      * Describe leaf.
      */
     constructor() {
-        this.petiole = null;
-        this.paraphillidia = null;
         this.sources = [];
     }
 }

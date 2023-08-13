@@ -29,9 +29,6 @@ export class Filiform {
      * Creates an instance of Filiform trichome.
      */
     constructor() {
-        this.present = null;
-        this.length = null;
-        this.orientation = null;
         this.sources = [];
     }
 }

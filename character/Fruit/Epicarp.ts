@@ -25,9 +25,6 @@ export class Epicarp {
      * Creates an instance of Epicarp.
      */
     constructor() {
-        this.shape = null;
-        this.trichomes = null;
-        this.prickles = null;
         this.sources = [];
     }
 }
