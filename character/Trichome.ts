@@ -1,18 +1,18 @@
-import { Filiform } from "./Trichomes/Filiform";
-import { Setiform } from "./Trichomes/Setiform";
+import { Filiform } from "./Trichome/Filiform";
+import { Setiform } from "./Trichome/Setiform";
 
-import { Source } from "../character/Source";
+import { Source } from "./Source";
 
-export class Trichomes {
+export class Trichome {
     /**
-     * Filiform trichomes.
+     * Filiform trichome.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     filiform: Filiform | null;
 
     /**
-     * Setiform trichomes.
+     * Setiform trichome.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
@@ -24,7 +24,7 @@ export class Trichomes {
     sources: Source[];
 
     /**
-     * Describe trichomes.
+     * Describe trichome.
      */
     constructor() {
         this.filiform = null;

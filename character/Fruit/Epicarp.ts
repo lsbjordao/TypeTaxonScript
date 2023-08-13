@@ -1,4 +1,4 @@
-import { Trichomes } from '../Trichomes';
+import { Trichome } from '../Trichome';
 
 import { Source } from "../../character/Source";
 
@@ -11,7 +11,7 @@ export class Epicarp {
     /**
      * Shape.
      */
-    trichomes: Trichomes | null;
+    trichomes: Trichome | null;
 
     /**
      * Prickles.

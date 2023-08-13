@@ -1,4 +1,4 @@
-import { Source } from "../../character/Source";
+import { Source } from "../Source";
 
 export class Filiform {
     /**
@@ -28,7 +28,7 @@ export class Filiform {
     sources: Source[];
 
     /**
-     * Creates an instance of Filiform trichomes.
+     * Creates an instance of Filiform trichome.
      */
     constructor() {
         this.present = null;

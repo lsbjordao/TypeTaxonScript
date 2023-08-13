@@ -2,9 +2,9 @@
 import { Mimosa } from '../Mimosa';
 
 // Characters
-import { Trichomes } from '../../character/Trichomes';
-import { Filiform } from '../../character/Trichomes/Filiform';
-import { Setiform } from '../../character/Trichomes/Setiform';
+import { Trichome } from '../../character/Trichome';
+import { Filiform } from '../../character/Trichome/Filiform';
+import { Setiform } from '../../character/Trichome/Setiform';
 
 import { Leaf } from '../../character/Leaf';
 import { Paraphillidia } from '../../character/Leaf/Paraphillidia';
@@ -23,7 +23,7 @@ const Mimosa_afranioi = new Mimosa();
 
 Mimosa_afranioi.habit = 'subshrub';
 
-Mimosa_afranioi.trichomes = new Trichomes();
+Mimosa_afranioi.trichomes = new Trichome();
 Mimosa_afranioi.trichomes.filiform = new Filiform();
 Mimosa_afranioi.trichomes.filiform.present = true;
 Mimosa_afranioi.trichomes.setiform = new Setiform();
@@ -53,7 +53,7 @@ Mimosa_afranioi.fruit.replum.shape = 'straight';
 Mimosa_afranioi.fruit.replum.prickles = false;
 Mimosa_afranioi.fruit.epicarp = new Epicarp();
 Mimosa_afranioi.fruit.epicarp.shape = 'straight';
-Mimosa_afranioi.fruit.epicarp.trichomes = new Trichomes();
+Mimosa_afranioi.fruit.epicarp.trichomes = new Trichome();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform = new Filiform();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform.present = true;
 Mimosa_afranioi.fruit.epicarp.prickles = false;

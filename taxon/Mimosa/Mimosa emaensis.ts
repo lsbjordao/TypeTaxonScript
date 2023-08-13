@@ -2,9 +2,9 @@
 import { Mimosa } from '../Mimosa';
 
 // Characters
-import { Trichomes } from '../../character/Trichomes';
-import { Filiform } from '../../character/Trichomes/Filiform';
-import { Setiform } from '../../character/Trichomes/Setiform';
+import { Trichome } from '../../character/Trichome';
+import { Filiform } from '../../character/Trichome/Filiform';
+import { Setiform } from '../../character/Trichome/Setiform';
 
 import { Leaf } from '../../character/Leaf';
 import { Paraphillidia } from '../../character/Leaf/Paraphillidia';
@@ -24,7 +24,7 @@ const Mimosa_emaensis = new Mimosa();
 
 Mimosa_emaensis.habit = 'subshrub';
 
-Mimosa_emaensis.trichomes = new Trichomes();
+Mimosa_emaensis.trichomes = new Trichome();
 Mimosa_emaensis.trichomes.filiform = new Filiform();
 Mimosa_emaensis.trichomes.filiform.present = false;
 Mimosa_emaensis.trichomes.setiform = new Setiform();
