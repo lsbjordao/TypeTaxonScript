@@ -27,6 +27,8 @@ Mimosa_schomburgkii.specificEpithet = 'schomburgkii';
 
 Mimosa_schomburgkii.habit = 'tree';
 
+Mimosa_schomburgkii.prickles.present = false;
+
 Mimosa_schomburgkii.trichomes = new Trichomes();
 Mimosa_schomburgkii.trichomes.filiform = new Filiform();
 Mimosa_schomburgkii.trichomes.filiform.present = true;
@@ -63,25 +65,23 @@ Mimosa_schomburgkii.flower.corolla.trichomes.stellate.lepidote = true;
 Mimosa_schomburgkii.fruit = new Fruit();
 Mimosa_schomburgkii.fruit.replum = new Replum();
 Mimosa_schomburgkii.fruit.replum.shape = 'straight';
-Mimosa_schomburgkii.fruit.replum.prickles = false;
 Mimosa_schomburgkii.fruit.epicarp = new Epicarp();
 Mimosa_schomburgkii.fruit.epicarp.type = 'monospermic';
 Mimosa_schomburgkii.fruit.epicarp.shape = 'straight';
 Mimosa_schomburgkii.fruit.epicarp.trichomes = new Trichomes();
 Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform = new Filiform();
 Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform.present = true;
-Mimosa_schomburgkii.fruit.epicarp.prickles = false;
 
 // Sources
 const source1 = new Source();
-source1.type = 'article';
+source1.sourceType = 'article';
 source1.authorship = 'Author 1';
 source1.year = 2020;
 source1.title = 'Title 1';
 Mimosa_schomburgkii.flower.corolla.sources.push(source1);
 
 const source2 = new Source();
-source2.type = 'book';
+source2.sourceType = 'book';
 source2.authorship = 'Author 2';
 source2.year = 2021;
 source2.title = 'Title 2';

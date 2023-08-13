@@ -26,6 +26,8 @@ Mimosa_emaensis.specificEpithet = 'emaensis';
 
 Mimosa_emaensis.habit = 'subshrub';
 
+Mimosa_emaensis.prickles.present = false;
+
 Mimosa_emaensis.trichomes = new Trichomes();
 Mimosa_emaensis.trichomes.filiform = new Filiform();
 Mimosa_emaensis.trichomes.filiform.present = false;
@@ -53,10 +55,8 @@ Mimosa_emaensis.flower.corolla.shape = 'campanulate';
 Mimosa_emaensis.fruit = new Fruit();
 Mimosa_emaensis.fruit.replum = new Replum();
 Mimosa_emaensis.fruit.replum.shape = 'straight';
-Mimosa_emaensis.fruit.replum.prickles = false;
 Mimosa_emaensis.fruit.epicarp = new Epicarp();
 Mimosa_emaensis.fruit.epicarp.shape = 'straight';
-Mimosa_emaensis.fruit.epicarp.prickles = false;
 
 // Sources
 const source1 = new Source();

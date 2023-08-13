@@ -59,13 +59,13 @@ Mimosa_afranioi.fruit = new Fruit();
 Mimosa_afranioi.fruit.type = 'craspedium';
 Mimosa_afranioi.fruit.replum = new Replum();
 Mimosa_afranioi.fruit.replum.shape = 'straight';
-Mimosa_afranioi.fruit.replum.prickles = false;
+Mimosa_afranioi.fruit.replum.prickles.present = true;
 Mimosa_afranioi.fruit.epicarp = new Epicarp();
 Mimosa_afranioi.fruit.epicarp.shape = 'straight';
 Mimosa_afranioi.fruit.epicarp.trichomes = new Trichomes();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform = new Filiform();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform.present = true;
-Mimosa_afranioi.fruit.epicarp.prickles = false;
+Mimosa_afranioi.fruit.epicarp.prickles.present = false;
 
 // Export Mimosa afranioi
 export { Mimosa_afranioi };
