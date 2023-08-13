@@ -16,7 +16,7 @@ export class Dendritic {
     length: number | null;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

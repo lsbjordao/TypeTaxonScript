@@ -21,7 +21,7 @@ export class Prickles {
     orientation: 'decurved' | 'recurved' | 'straight';
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

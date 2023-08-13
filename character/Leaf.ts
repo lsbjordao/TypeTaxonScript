@@ -15,7 +15,7 @@ export class Leaf {
     paraphillidia: Paraphillidia;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

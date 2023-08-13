@@ -13,7 +13,7 @@ export class Flower {
     corolla: Corolla;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

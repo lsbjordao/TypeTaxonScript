@@ -22,7 +22,7 @@ export class Corolla {
     trichomes: Trichomes;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

@@ -31,7 +31,7 @@ export class Stellate {
     length: number | null;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

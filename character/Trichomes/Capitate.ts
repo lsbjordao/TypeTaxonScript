@@ -31,7 +31,7 @@ export class Capitate {
     length: number | null;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

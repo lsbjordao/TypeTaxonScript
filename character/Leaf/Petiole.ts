@@ -16,7 +16,7 @@ export class Petiole {
     length: number | null;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

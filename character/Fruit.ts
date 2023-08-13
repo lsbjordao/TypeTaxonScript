@@ -18,7 +18,7 @@ export class Fruit {
     epicarp: Epicarp;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

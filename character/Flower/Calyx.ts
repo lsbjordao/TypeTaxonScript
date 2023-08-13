@@ -15,7 +15,7 @@ export class Calyx {
     shape: "campanulate" | "pappiform";
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

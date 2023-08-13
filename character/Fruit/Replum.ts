@@ -1,16 +1,24 @@
+import { Trichomes } from '../Trichomes';
+import { Prickles } from '../Prickles';
+
 export class Replum {
-    /**
-     * Prickles.
-     */
-    prickles: true | false;
-    
     /**
      * Shape.
      */
     shape: 'straight' | 'undulate';
 
     /**
-     * Source
+     * Prickles.
+     */
+    prickles: Prickles;
+
+    /**
+     * Trichomes.
+     */
+    trichomes: Trichomes;
+
+    /**
+     * Source.
      */
     sources: Source[];
 

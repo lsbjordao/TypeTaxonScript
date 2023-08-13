@@ -16,7 +16,7 @@ export class Paraphillidia {
     length: number | null;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

@@ -33,7 +33,7 @@ export class Trichomes {
     capitate: Capitate;
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

@@ -21,7 +21,7 @@ export class Setiform {
     orientation: 'patent' | 'antrorse' | 'retrorse';
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 

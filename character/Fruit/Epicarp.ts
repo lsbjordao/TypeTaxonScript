@@ -1,4 +1,5 @@
 import { Trichomes } from '../Trichomes';
+import { Prickles } from '../Prickles';
 
 export class Epicarp {
     /**
@@ -12,18 +13,18 @@ export class Epicarp {
     shape: 'straight' | 'undulate';
 
     /**
+     * Prickles.
+    */
+    prickles: Prickles;
+
+    /**
      * Trichomes.
      */
     trichomes: Trichomes;
 
     /**
-     * Prickles.
-     */
-    prickles: true | false;
-
-    /**
-     * Source.
-     */
+      * Source.
+      */
     sources: Source[];
 
     /**

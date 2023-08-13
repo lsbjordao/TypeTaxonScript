@@ -21,7 +21,7 @@ export class Filiform {
     orientation: 'patent' | 'antrorse' | 'retrorse';
 
     /**
-     * Source
+     * Source.
      */
     sources: Source[];
 
