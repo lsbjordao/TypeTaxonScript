@@ -8,7 +8,7 @@ export class Mimosa {
     /**
      * Habit
      */
-    habit: 'tree' | 'shrub' | 'subshrub' | null;
+    habit: 'tree' | 'shrub' | 'subshrub' | 'herb' | null;
 
     /**
      * Trichomes
