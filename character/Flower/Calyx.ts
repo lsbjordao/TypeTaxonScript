@@ -1,5 +1,3 @@
-import { Source } from "../../character/Source";
-
 export class Calyx {
     /**
      * Number of sepals.
@@ -28,3 +26,5 @@ export class Calyx {
         this.sources = [];
     }
 }
+
+import { Source } from "../../character/Source";

@@ -1,8 +1,6 @@
 import { Paraphillidia } from "./Leaf/Paraphillidia";
 import { Petiole } from "./Leaf/Petiole";
 
-import { Source } from "../character/Source";
-
 export class Leaf {
     /**
      * Petiole is the stalk that attaches the leaf blade to the stem.
@@ -28,3 +26,5 @@ export class Leaf {
         this.sources = [];
     }
 }
+
+import { Source } from "../character/Source";

@@ -1,5 +1,3 @@
-import { Source } from "../../character/Source";
-
 export class Corolla {
     /**
      * Number of petals.
@@ -28,3 +26,5 @@ export class Corolla {
         this.sources = [];
     }
 }
+
+import { Source } from "../../character/Source";
