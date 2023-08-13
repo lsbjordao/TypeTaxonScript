@@ -1,7 +1,7 @@
-// Taxa
+// Import genus Mimosa
 import { Mimosa } from '../Mimosa';
 
-// Characters
+// Import characters
 import { Trichomes } from '../../character/Trichomes';
 import { Filiform } from '../../character/Trichomes/Filiform';
 import { Setiform } from '../../character/Trichomes/Setiform';
@@ -66,5 +66,5 @@ source1.year = 2021;
 source1.title = '';
 Mimosa_emaensis.sources.push(source1);
 
-// Export
+// Export Mimosa emaensis
 export { Mimosa_emaensis };

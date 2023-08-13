@@ -1,7 +1,7 @@
-// Taxa
+// Import genus Mimosa
 import { Mimosa } from '../Mimosa';
 
-// Characters
+// Import characters
 import { Trichomes } from '../../character/Trichomes';
 import { Filiform } from '../../character/Trichomes/Filiform';
 import { Setiform } from '../../character/Trichomes/Setiform';
@@ -62,5 +62,5 @@ Mimosa_afranioi.fruit.epicarp.trichomes.filiform = new Filiform();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform.present = true;
 Mimosa_afranioi.fruit.epicarp.prickles = false;
 
-// Export
+// Export Mimosa afranioi
 export { Mimosa_afranioi };

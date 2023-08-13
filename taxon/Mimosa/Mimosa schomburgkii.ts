@@ -1,7 +1,7 @@
-// Taxa
+// Import genus Mimosa
 import { Mimosa } from '../Mimosa';
 
-// Characters
+// Import characters
 import { Trichomes } from '../../character/Trichomes';
 import { Filiform } from '../../character/Trichomes/Filiform';
 import { Setiform } from '../../character/Trichomes/Setiform';
@@ -77,5 +77,5 @@ source2.year = 2021;
 source2.title = 'Title 2';
 Mimosa_schomburgkii.flower.corolla.sources.push(source2);
 
-// Export
+// Export Mimosa schomburgkii
 export { Mimosa_schomburgkii };

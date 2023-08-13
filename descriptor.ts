@@ -1,7 +1,7 @@
-// Taxa
+// Import genus
 import { Mimosa } from './taxon/Mimosa';
 
-// Characters
+// Import characters
 import { Leaf } from './character/Leaf';
 import { Paraphillidia } from './character/Leaf/Paraphillidia';
 import { Petiole } from './character/Leaf/Petiole';
@@ -51,8 +51,6 @@ Mimosa_new.fruit.replum.prickles = false;
 Mimosa_new.fruit.epicarp = new Epicarp();
 Mimosa_new.fruit.epicarp.shape = 'straight';
 Mimosa_new.fruit.epicarp.prickles = false;
-
-
 
 // Print
 console.log(Mimosa_new);
