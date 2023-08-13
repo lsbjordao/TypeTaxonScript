@@ -56,9 +56,12 @@ Mimosa_emaensis.fruit.epicarp = new Epicarp();
 Mimosa_emaensis.fruit.epicarp.shape = 'straight';
 Mimosa_emaensis.fruit.epicarp.prickles = false;
 
-// Source
-Mimosa_emaensis.source = new Source();
-Mimosa_emaensis.source.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.';
-Mimosa_emaensis.source.title = '';
-Mimosa_emaensis.source.year = 2021;
+// Sources
+const source1 = new Source();
+source1.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.';
+source1.year = 2021;
+source1.title = '';
+Mimosa_emaensis.sources.push(source1);
 
+// Print
+console.log(Mimosa_emaensis)
