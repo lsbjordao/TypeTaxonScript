@@ -2,17 +2,17 @@ export class Source {
     /**
      * Authorship. Concatenate authors using this string: ' & '.
      */
-    authorship: string | null;
+    authorship: string;
 
     /**
      * Year.
      */
-    year: number | null;
+    year: number;
 
     /**
      * Title.
      */
-    title: string | null;
+    title: string;
 
     /**
      * Describe Source.
