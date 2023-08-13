@@ -4,7 +4,7 @@ import { Mimosa } from '../Mimosa';
 // Import characters
 import { Trichomes } from '../../character/Trichomes';
 import { Filiform } from '../../character/Trichomes/Filiform';
-import { Setiform } from '../../character/Trichomes/Setiform';
+import { Stellate } from '../../character/Trichomes/Stellate';
 
 import { Leaf } from '../../character/Leaf';
 import { Paraphillidia } from '../../character/Leaf/Paraphillidia';
@@ -19,6 +19,7 @@ import { Replum } from '../../character/Fruit/Replum';
 import { Epicarp } from '../../character/Fruit/Epicarp';
 
 import { Source } from '../../character/Source';
+import { Capitate } from '../../character/Trichomes/Capitate';
 
 // Description of Mimosa schomburgkii
 const Mimosa_schomburgkii = new Mimosa();
@@ -29,8 +30,14 @@ Mimosa_schomburgkii.habit = 'tree';
 Mimosa_schomburgkii.trichomes = new Trichomes();
 Mimosa_schomburgkii.trichomes.filiform = new Filiform();
 Mimosa_schomburgkii.trichomes.filiform.present = true;
-Mimosa_schomburgkii.trichomes.setiform = new Setiform();
-Mimosa_schomburgkii.trichomes.setiform.present = false;
+Mimosa_schomburgkii.trichomes.stellate = new Stellate();
+Mimosa_schomburgkii.trichomes.stellate.present = true;
+Mimosa_schomburgkii.trichomes.stellate.subsessile = true;
+Mimosa_schomburgkii.trichomes.stellate.stalked = true;
+Mimosa_schomburgkii.trichomes.stellate.lepidote = true;
+Mimosa_schomburgkii.trichomes.capitate = new Capitate();
+Mimosa_schomburgkii.trichomes.capitate.present = true;
+Mimosa_schomburgkii.trichomes.capitate.subsessile = true;
 
 Mimosa_schomburgkii.leaf = new Leaf();
 Mimosa_schomburgkii.leaf.petiole = new Petiole();
@@ -49,6 +56,9 @@ Mimosa_schomburgkii.flower.corolla = new Corolla();
 Mimosa_schomburgkii.flower.corolla.numPepals = 3;
 Mimosa_schomburgkii.flower.corolla.length = 3;
 Mimosa_schomburgkii.flower.corolla.shape = 'campanulate';
+Mimosa_schomburgkii.flower.corolla.trichomes = new Trichomes();
+Mimosa_schomburgkii.flower.corolla.trichomes.stellate = new Stellate();
+Mimosa_schomburgkii.flower.corolla.trichomes.stellate.lepidote = true;
 
 Mimosa_schomburgkii.fruit = new Fruit();
 Mimosa_schomburgkii.fruit.replum = new Replum();

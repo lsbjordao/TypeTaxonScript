@@ -1,3 +1,5 @@
+import { Trichomes } from '../Trichomes';
+
 export class Corolla {
     /**
      * Number of petals.
@@ -13,6 +15,11 @@ export class Corolla {
      * Corolla shape.
      */
     shape: "campanulate" | "turbinate";
+
+    /**
+     * Trichomes.
+     */
+    trichomes: Trichomes;
 
     /**
      * Source

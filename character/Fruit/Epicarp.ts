@@ -12,7 +12,7 @@ export class Epicarp {
     shape: 'straight' | 'undulate';
 
     /**
-     * Shape.
+     * Trichomes.
      */
     trichomes: Trichomes;
 
