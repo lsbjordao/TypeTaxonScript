@@ -1,4 +1,7 @@
+// Import genus Mimosa
 import { Mimosa } from '../Mimosa';
+
+// Import species of Mimosa
 import { Mimosa_afranioi } from './Mimosa afranioi';
 import { Mimosa_emaensis } from './Mimosa emaensis';
 import { Mimosa_schomburgkii } from './Mimosa schomburgkii';
@@ -9,6 +12,7 @@ const Mimosa_species: Mimosa[] = [
     Mimosa_schomburgkii
 ]
 
+// Export MimosaDB.json
 import { writeFileSync } from 'fs';
 const jsonData = JSON.stringify(Mimosa_species);
 const filePath = 'MimosaDB.json';
