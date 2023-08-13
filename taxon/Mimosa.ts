@@ -6,6 +6,11 @@ import { Source } from '../character/Source';
 
 export class Mimosa {
     /**
+     * Species of *Mimosa*
+     */
+    specificEpithet: string | null;
+
+    /**
      * Habit of *Mimosa*
      */
     habit: 'tree' | 'shrub' | 'subshrub' | 'herb' | null;

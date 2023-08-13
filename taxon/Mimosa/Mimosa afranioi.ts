@@ -18,8 +18,11 @@ import { Fruit } from '../../character/Fruit';
 import { Replum } from '../../character/Fruit/Replum';
 import { Epicarp } from '../../character/Fruit/Epicarp';
 
+import { Source } from '../../character/Source';
+
 // Description of Mimosa afranioi
 const Mimosa_afranioi = new Mimosa();
+Mimosa_afranioi.specificEpithet = 'afranioi';
 
 Mimosa_afranioi.habit = 'subshrub';
 
@@ -58,5 +61,5 @@ Mimosa_afranioi.fruit.epicarp.trichomes.filiform = new Filiform();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform.present = true;
 Mimosa_afranioi.fruit.epicarp.prickles = false;
 
-// Print
-console.log(Mimosa_afranioi);
+// Export
+export { Mimosa_afranioi };

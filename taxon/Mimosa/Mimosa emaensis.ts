@@ -17,10 +17,12 @@ import { Corolla } from '../../character/Flower/Corolla';
 import { Fruit } from '../../character/Fruit';
 import { Replum } from '../../character/Fruit/Replum';
 import { Epicarp } from '../../character/Fruit/Epicarp';
+
 import { Source } from '../../character/Source';
 
 // Description of Mimosa emaensis
 const Mimosa_emaensis = new Mimosa();
+Mimosa_emaensis.specificEpithet = 'emaensis';
 
 Mimosa_emaensis.habit = 'subshrub';
 
@@ -63,5 +65,5 @@ source1.year = 2021;
 source1.title = '';
 Mimosa_emaensis.sources.push(source1);
 
-// Print
-console.log(Mimosa_emaensis)
+// Export
+export { Mimosa_emaensis };
