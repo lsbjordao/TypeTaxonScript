@@ -1,3 +1,5 @@
+import { Source } from "../../character/Source";
+
 export class Paraphillidia {
     /**
      * Paraphillidia can be present or absent.
@@ -16,11 +18,17 @@ export class Paraphillidia {
     length: number | null;
 
     /**
+     * Source
+     */
+    sources: Source[];
+
+    /**
      * Creates an instance of Paraphillidia.
      */
     constructor() {
         this.present = null;
         this.length = null;
+        this.sources = [];
     }
 
     /**

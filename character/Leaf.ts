@@ -19,7 +19,7 @@ export class Leaf {
     /**
      * Source
      */
-    source: Source | null;
+    sources: Source[];
 
     /**
      * Describe leaf.
@@ -27,6 +27,6 @@ export class Leaf {
     constructor() {
         this.petiole = null;
         this.paraphillidia = null;
-        this.source = null;
+        this.sources = [];
     }
 }

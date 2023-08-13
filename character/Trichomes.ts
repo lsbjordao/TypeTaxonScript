@@ -21,7 +21,7 @@ export class Trichomes {
     /**
      * Source
      */
-    source: Source | null;
+    sources: Source[];
 
     /**
      * Describe trichomes.
@@ -29,6 +29,6 @@ export class Trichomes {
     constructor() {
         this.filiform = null;
         this.setiform = null;
-        this.source = null;
+        this.sources = [];
     }
 }

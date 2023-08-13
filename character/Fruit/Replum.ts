@@ -1,3 +1,5 @@
+import { Source } from "../../character/Source";
+
 export class Replum {
     /**
      * Prickles.
@@ -10,10 +12,16 @@ export class Replum {
     shape: 'straight' | 'undulate' | null;
 
     /**
+     * Source
+     */
+    sources: Source[];
+
+    /**
      * Creates an instance of Replum.
      */
     constructor() {
         this.shape = null;
         this.prickles = null;
+        this.sources = [];
     }
 }

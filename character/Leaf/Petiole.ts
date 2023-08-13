@@ -1,3 +1,5 @@
+import { Source } from "../../character/Source";
+
 export class Petiole {
     /**
      * Petiole can be present or absent.
@@ -16,11 +18,17 @@ export class Petiole {
     length: number | null;
 
     /**
+     * Source
+     */
+    sources: Source[];
+
+    /**
      * Creates an instance of Petiole.
      */
     constructor() {
         this.present = null;
         this.length = null;
+        this.sources = [];
     }
 
     /**

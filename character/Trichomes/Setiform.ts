@@ -1,3 +1,5 @@
+import { Source } from "../../character/Source";
+
 export class Setiform {
     /**
      * Setiform trichomes can be present or absent.
@@ -21,11 +23,17 @@ export class Setiform {
     orientation: 'patent' | 'antrorse' | 'retrorse' | null;
 
     /**
+     * Source
+     */
+    sources: Source[];
+
+    /**
      * Creates an instance of Filiform trichomes.
      */
     constructor() {
         this.present = null;
         this.length = null;
         this.orientation = null;
+        this.sources = [];
     }
 }

@@ -1,3 +1,5 @@
+import { Source } from "../../character/Source";
+
 export class Corolla {
     /**
      * Number of petals.
@@ -15,11 +17,17 @@ export class Corolla {
     shape: "campanulate" | "turbinate" | null;
 
     /**
+     * Source
+     */
+    sources: Source[];
+
+    /**
      * Creates an instance of Corolla.
      */
     constructor() {
         this.numPepals = null;
         this.length = null;
         this.shape = null;
+        this.sources = [];
     }
 }

@@ -17,7 +17,7 @@ export class Fruit {
     /**
      * Source
      */
-    source: Source | null;
+    sources: Source[];
 
     /**
      * Describe Fruit.
@@ -25,6 +25,6 @@ export class Fruit {
     constructor() {
         this.replum = null;
         this.epicarp = null;
-        this.source = null;
+        this.sources = [];
     }
 }
