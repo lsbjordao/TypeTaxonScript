@@ -1,6 +1,7 @@
 import { Trichomes } from '../Trichomes';
+import { Sources } from "../Sources";
 
-export class Corolla {
+export class Corolla extends Sources {
     /**
      * Number of petals.
      */
@@ -22,16 +23,9 @@ export class Corolla {
     trichomes: Trichomes;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Corolla.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "../Source/Source";

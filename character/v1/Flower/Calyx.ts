@@ -1,4 +1,6 @@
-export class Calyx {
+import { Sources } from "../Sources";
+
+export class Calyx extends Sources {
     /**
      * Number of sepals.
      */
@@ -15,16 +17,9 @@ export class Calyx {
     shape: "campanulate" | "pappiform";
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Calyx.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "../Source/Source";

@@ -1,4 +1,6 @@
-export class Prickles {
+import { Sources } from "./Sources";
+
+export class Prickles extends Sources {
     /**
      * Prickles can be present or absent.
      *
@@ -21,16 +23,9 @@ export class Prickles {
     orientation: 'decurved' | 'recurved' | 'straight';
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of prickles.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "./Source/Source";

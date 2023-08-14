@@ -1,4 +1,6 @@
-export class Filiform {
+import { Sources } from "../Sources";
+
+export class Filiform extends Sources {
     /**
      * Filiform trichomes can be present or absent.
      *
@@ -21,16 +23,9 @@ export class Filiform {
     orientation: 'patent' | 'antrorse' | 'retrorse';
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Filiform trichome.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "../Source";

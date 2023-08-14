@@ -1,4 +1,6 @@
-export class Dendritic {
+import { Sources } from "../Sources";
+
+export class Dendritic extends Sources {
     /**
      * Dendritic trichomes can be present or absent.
      *
@@ -16,16 +18,9 @@ export class Dendritic {
     length: number | null;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Dendritic trichome.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "../Source";

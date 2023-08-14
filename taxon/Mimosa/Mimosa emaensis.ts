@@ -53,7 +53,7 @@ source1.sourceType = 'article';
 source1.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.';
 source1.year = 2021;
 source1.title = '';
-Mimosa_emaensis.sources.push(source1);
+Mimosa_emaensis.addSource(source1);
 
 // Export Mimosa emaensis
 export { Mimosa_emaensis };

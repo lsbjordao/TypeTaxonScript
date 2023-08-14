@@ -1,4 +1,6 @@
-export class Petiole {
+import { Sources } from "../Sources";
+
+export class Petiole extends Sources {
     /**
      * Petiole can be present or absent.
      *
@@ -16,15 +18,10 @@ export class Petiole {
     length: number | null;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Petiole.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 
     /**
@@ -40,5 +37,3 @@ export class Petiole {
         this.length = value;
     }
 }
-
-import { Source } from "../Source/Source";

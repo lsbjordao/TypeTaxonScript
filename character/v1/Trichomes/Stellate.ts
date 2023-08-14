@@ -1,4 +1,6 @@
-export class Stellate {
+import { Sources } from "../Sources";
+
+export class Stellate extends Sources {
     /**
      * Stellate trichomes can be present or absent.
      *
@@ -31,16 +33,9 @@ export class Stellate {
     length: number | null;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Stellate trichome.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "../Source";

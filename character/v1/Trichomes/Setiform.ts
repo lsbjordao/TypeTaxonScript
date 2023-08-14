@@ -1,4 +1,6 @@
-export class Setiform {
+import { Sources } from "../Sources";
+
+export class Setiform extends Sources {
     /**
      * Setiform trichomes can be present or absent.
      *
@@ -21,16 +23,9 @@ export class Setiform {
     orientation: 'patent' | 'antrorse' | 'retrorse';
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Setiform trichome.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "../Source";

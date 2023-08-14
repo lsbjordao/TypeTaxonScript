@@ -1,4 +1,6 @@
-export class Capitate {
+import { Sources } from "../Sources";
+
+export class Capitate extends Sources {
     /**
      * Capitate trichomes can be present or absent.
      *
@@ -31,16 +33,9 @@ export class Capitate {
     length: number | null;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Capitate trichome.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "../Source";

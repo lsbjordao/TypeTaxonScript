@@ -1,4 +1,6 @@
-export class Paraphillidia {
+import { Sources } from "../Sources";
+
+export class Paraphillidia extends Sources {
     /**
      * Paraphillidia can be present or absent.
      *
@@ -16,15 +18,10 @@ export class Paraphillidia {
     length: number | null;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Paraphillidia.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 
     /**
@@ -40,5 +37,3 @@ export class Paraphillidia {
         this.length = value;
     }
 }
-
-import { Source } from "../Source/Source";

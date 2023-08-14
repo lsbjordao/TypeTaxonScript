@@ -1,7 +1,8 @@
 import { Trichomes } from '../Trichomes';
 import { Prickles } from '../Prickles';
+import { Sources } from "../Sources";
 
-export class Replum {
+export class Replum extends Sources {
     /**
      * Shape.
      */
@@ -18,16 +19,9 @@ export class Replum {
     trichomes: Trichomes;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Replum.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "../Source/Source";

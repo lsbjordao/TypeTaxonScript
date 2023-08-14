@@ -1,7 +1,8 @@
 import { Trichomes } from '../Trichomes';
 import { Prickles } from '../Prickles';
+import { Sources } from "../Sources";
 
-export class Epicarp {
+export class Epicarp extends Sources {
     /**
      * Type.
      */
@@ -23,16 +24,9 @@ export class Epicarp {
     trichomes: Trichomes;
 
     /**
-      * Source.
-      */
-    sources: Source[];
-
-    /**
      * Creates an instance of Epicarp.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-import { Source } from "../Source/Source";
