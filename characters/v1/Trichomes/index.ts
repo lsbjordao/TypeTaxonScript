@@ -1,6 +1,12 @@
 import { Filiform } from "./Filiform";
 import { Setiform } from "./Setiform";
 import { Stellate } from "./Stellate";
+import { Fasciculate } from "./Fasciculate";
+import { Dendritic } from "./Dendritic";
+import { Porrect } from "./Porrect";
+import { Verruciform } from "./Verruciform";
+import { Lepidote } from "./Lepidote";
+import { Peltate } from "./Peltate";
 import { Capitate } from "./Capitate";
 import { Sources } from "../Sources";
 
@@ -27,6 +33,48 @@ class Trichomes extends Sources {
     stellate: Stellate;
 
     /**
+     * Fasciculate trichome.
+     * 
+     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     */
+    fasciculate: Fasciculate;
+
+    /**
+     * Dendritic trichome.
+     * 
+     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     */
+    dendritic: Dendritic;
+
+    /**
+     * Porrect trichome.
+     * 
+     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     */
+    porrect: Porrect;
+
+    /**
+     * Verruciform trichome.
+     * 
+     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     */
+    verruciform: Verruciform;
+
+    /**
+     * Lepidote trichome.
+     * 
+     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     */
+    lepidote: Lepidote;
+
+    /**
+     * Peltate trichome.
+     * 
+     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     */
+    peltate: Peltate;
+
+    /**
      * Capitate trichome.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
@@ -46,5 +94,11 @@ export {
     Filiform,
     Setiform,
     Stellate,
+    Fasciculate,
+    Dendritic,
+    Porrect,
+    Verruciform,
+    Lepidote,
+    Peltate,
     Capitate
 }

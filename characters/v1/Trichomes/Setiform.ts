@@ -10,6 +10,16 @@ export class Setiform extends Sources {
     present: true | false;
 
     /**
+     * Are Setiform-barbellate trichomes present?
+     */
+    barbellate: true | false;
+
+    /**
+     * Are Setiform-glochidiate trichomes present?
+     */
+    glochidiate: true | false;
+
+    /**
      * Setiform trichomes length in milimeters (mm).
      *
      * @remarks
