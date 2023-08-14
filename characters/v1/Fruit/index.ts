@@ -1,7 +1,8 @@
 import { Replum } from "./Replum";
 import { Epicarp } from "./Epicarp";
+import { Sources } from "../Sources";
 
-class Fruit {
+class Fruit extends Sources {
     /**
      * Type.
      */
@@ -18,20 +19,15 @@ class Fruit {
     epicarp: Epicarp;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Fruit.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
+
 export{
     Fruit,
     Replum,
     Epicarp
 }
-import { Source } from "../Source";

@@ -1,8 +1,8 @@
 import { Paraphillidia } from "./Paraphillidia";
 import { Petiole } from "./Petiole";
-import { Source } from "../Source";
+import { Sources } from "../Sources";
 
-class Leaf {
+class Leaf extends Sources {
     /**
      * Petiole is the stalk that attaches the leaf blade to the stem.
      */
@@ -16,15 +16,10 @@ class Leaf {
     paraphillidia: Paraphillidia;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of leaf.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
 
@@ -33,4 +28,3 @@ export {
     Petiole,
     Paraphillidia
 }
-

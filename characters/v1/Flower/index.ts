@@ -1,7 +1,8 @@
 import { Corolla } from "./Corolla";
 import { Calyx } from "./Calyx";
+import { Sources } from "../Sources";
 
-class Flower {
+class Flower extends Sources {
     /**
      * Calyx.
      */
@@ -13,20 +14,15 @@ class Flower {
     corolla: Corolla;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of Flower.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
+
 export {
     Flower,
     Corolla,
     Calyx
 }
-import { Source } from "../Source";

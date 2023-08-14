@@ -2,9 +2,9 @@ import { Filiform } from "./Filiform";
 import { Setiform } from "./Setiform";
 import { Stellate } from "./Stellate";
 import { Capitate } from "./Capitate";
-import { Source } from "../Source";
+import { Sources } from "../Sources";
 
-class Trichomes {
+class Trichomes extends Sources {
     /**
      * Filiform trichome.
      * 
@@ -34,19 +34,12 @@ class Trichomes {
     capitate: Capitate;
 
     /**
-     * Source.
-     */
-    sources: Source[];
-
-    /**
      * Creates an instance of trichome.
      */
     constructor() {
-        this.sources = [];
+        super();
     }
 }
-
-
 
 export {
     Trichomes,
