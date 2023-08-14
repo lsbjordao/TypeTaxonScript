@@ -45,6 +45,8 @@ export class Mimosa extends Sources {
      */
     fruit: Fruit;
 
+    DescriptionAuthorship: DescriptionAuthorship;
+
     /**
      * Creates an instance of *Mimosa* species.
      */

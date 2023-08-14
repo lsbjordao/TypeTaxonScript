@@ -1,6 +1,5 @@
 interface IDescriptionAuthorship {
     name: string;
-    date: string;
 }
 
 class DescriptionAuthorship {
@@ -17,7 +16,6 @@ class DescriptionAuthorship {
     public addAuthor(data: IDescriptionAuthorship) {
         this.authorship.push(data);
     }
-
 }
 
 export {

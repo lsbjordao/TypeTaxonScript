@@ -4,9 +4,9 @@ import { Mimosa } from '../Mimosa';
 // Import characterss
 import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from '../../characters/v1';
 import { Filiform, Setiform } from '../../characters/v1/Trichomes';
-import { Replum, Epicarp } from '../../characters/v1/Fruit';
-import { Corolla, Calyx } from '../../characters/v1/Flower';
 import { Paraphillidia, Petiole } from '../../characters/v1/Leaf';
+import { Corolla, Calyx } from '../../characters/v1/Flower';
+import { Replum, Epicarp } from '../../characters/v1/Fruit';
 
 // Description of Mimosa emaensis
 const Mimosa_emaensis = new Mimosa();
@@ -46,6 +46,11 @@ Mimosa_emaensis.fruit.replum = new Replum();
 Mimosa_emaensis.fruit.replum.shape = 'straight';
 Mimosa_emaensis.fruit.epicarp = new Epicarp();
 Mimosa_emaensis.fruit.epicarp.shape = 'straight';
+
+// Description authorship
+Mimosa_emaensis.DescriptionAuthorship.addAuthor({
+    name: 'Lucas Sá Barreto Jordão'
+})
 
 // Sources
 const source1 = new Source();

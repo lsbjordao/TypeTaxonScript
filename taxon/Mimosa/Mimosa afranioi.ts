@@ -2,11 +2,11 @@
 import { Mimosa } from '../Mimosa';
 
 // Import characters
-import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from '../../characters/v1';
+import { Trichomes, Prickles, Leaf, Flower, Fruit, Source } from '../../characters/v1';
 import { Filiform, Setiform } from '../../characters/v1/Trichomes';
-import { Replum, Epicarp } from '../../characters/v1/Fruit';
-import { Corolla, Calyx } from '../../characters/v1/Flower';
 import { Paraphillidia, Petiole } from '../../characters/v1/Leaf';
+import { Corolla, Calyx } from '../../characters/v1/Flower';
+import { Replum, Epicarp } from '../../characters/v1/Fruit';
 
 // Description of Mimosa afranioi
 const Mimosa_afranioi = new Mimosa();
@@ -54,6 +54,11 @@ Mimosa_afranioi.fruit.epicarp.trichomes.filiform = new Filiform();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform.present = true;
 Mimosa_afranioi.fruit.epicarp.prickles = new Prickles();
 Mimosa_afranioi.fruit.epicarp.prickles.present = true;
+
+// Description authorship
+Mimosa_afranioi.DescriptionAuthorship.addAuthor({
+    name: 'Lucas Sá Barreto Jordão'
+})
 
 // Export Mimosa afranioi
 export { Mimosa_afranioi };
