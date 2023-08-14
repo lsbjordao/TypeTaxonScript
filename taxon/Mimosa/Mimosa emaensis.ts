@@ -2,24 +2,11 @@
 import { Mimosa } from '../Mimosa';
 
 // Import characters
-import { Trichomes } from '../../character/Trichomes';
-import { Filiform } from '../../character/Trichomes/Filiform';
-import { Setiform } from '../../character/Trichomes/Setiform';
-
-import { Leaf } from '../../character/Leaf';
-import { Paraphillidia } from '../../character/Leaf/Paraphillidia';
-import { Petiole } from '../../character/Leaf/Petiole';
-
-import { Flower } from '../../character/Flower';
-import { Calyx } from '../../character/Flower/Calyx';
-import { Corolla } from '../../character/Flower/Corolla';
-
-import { Fruit } from '../../character/Fruit';
-import { Replum } from '../../character/Fruit/Replum';
-import { Epicarp } from '../../character/Fruit/Epicarp';
-
-import { Source } from '../../character/Source';
-import { Prickles } from '../../character/Prickles';
+import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from '../../character/v1';
+import { Filiform, Setiform } from '../../character/v1/Trichomes';
+import { Replum, Epicarp } from '../../character/v1/Fruit';
+import { Corolla, Calyx } from '../../character/v1/Flower';
+import { Paraphillidia, Petiole } from '../../character/v1/Leaf';
 
 // Description of Mimosa emaensis
 const Mimosa_emaensis = new Mimosa();

@@ -1,6 +1,6 @@
-export class Paraphillidia {
+export class Petiole {
     /**
-     * Paraphillidia can be present or absent.
+     * Petiole can be present or absent.
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
@@ -8,7 +8,7 @@ export class Paraphillidia {
     present: true | false;
 
     /**
-     * Paraphillidia length in milimeters (mm).
+     * Petiole length in milimeters (mm).
      *
      * @remarks
      * It should be `null` when `present` is `false`.
@@ -21,7 +21,7 @@ export class Paraphillidia {
     sources: Source[];
 
     /**
-     * Creates an instance of Paraphillidia.
+     * Creates an instance of Petiole.
      */
     constructor() {
         this.sources = [];
@@ -41,4 +41,4 @@ export class Paraphillidia {
     }
 }
 
-import { Source } from "../../character/Source";
+import { Source } from "../Source/Source";

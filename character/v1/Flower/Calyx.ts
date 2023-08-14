@@ -27,4 +27,4 @@ export class Calyx {
     }
 }
 
-import { Source } from "../../character/Source";
+import { Source } from "../Source/Source";

@@ -1,12 +1,7 @@
 import { Trichomes } from '../Trichomes';
 import { Prickles } from '../Prickles';
 
-export class Epicarp {
-    /**
-     * Type.
-     */
-    type: 'monospermic' | 'undivided';
-
+export class Replum {
     /**
      * Shape.
      */
@@ -14,7 +9,7 @@ export class Epicarp {
 
     /**
      * Prickles.
-    */
+     */
     prickles: Prickles;
 
     /**
@@ -23,16 +18,16 @@ export class Epicarp {
     trichomes: Trichomes;
 
     /**
-      * Source.
-      */
+     * Source.
+     */
     sources: Source[];
 
     /**
-     * Creates an instance of Epicarp.
+     * Creates an instance of Replum.
      */
     constructor() {
         this.sources = [];
     }
 }
 
-import { Source } from "../../character/Source";
+import { Source } from "../Source/Source";

@@ -1,7 +1,7 @@
-import { Corolla } from "./Flower/Corolla";
-import { Calyx } from "./Flower/Calyx";
+import { Corolla } from "./Corolla";
+import { Calyx } from "./Calyx";
 
-export class Flower {
+class Flower {
     /**
      * Calyx.
      */
@@ -24,5 +24,9 @@ export class Flower {
         this.sources = [];
     }
 }
-
-import { Source } from "./Source";
+export {
+    Flower,
+    Corolla,
+    Calyx
+}
+import { Source } from "../Source";

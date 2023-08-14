@@ -1,7 +1,7 @@
-import { Replum } from "./Fruit/Replum";
-import { Epicarp } from "./Fruit/Epicarp";
+import { Replum } from "./Replum";
+import { Epicarp } from "./Epicarp";
 
-export class Fruit {
+class Fruit {
     /**
      * Type.
      */
@@ -29,5 +29,9 @@ export class Fruit {
         this.sources = [];
     }
 }
-
-import { Source } from "./Source";
+export{
+    Fruit,
+    Replum,
+    Epicarp
+}
+import { Source } from "../Source";

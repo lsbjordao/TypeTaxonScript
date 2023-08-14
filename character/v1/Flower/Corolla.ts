@@ -34,4 +34,4 @@ export class Corolla {
     }
 }
 
-import { Source } from "../../character/Source";
+import { Source } from "../Source/Source";

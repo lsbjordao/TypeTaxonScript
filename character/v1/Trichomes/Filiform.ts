@@ -1,6 +1,6 @@
-export class Prickles {
+export class Filiform {
     /**
-     * Prickles can be present or absent.
+     * Filiform trichomes can be present or absent.
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
@@ -8,7 +8,7 @@ export class Prickles {
     present: true | false;
 
     /**
-     * Prickles length in milimeters (mm).
+     * Filiform trichomes length in milimeters (mm).
      *
      * @remarks
      * It should be `null` when `present` is `false`.
@@ -16,9 +16,9 @@ export class Prickles {
     length: number | null;
 
     /**
-     * Orientation of prickles.
+     * Orientation of trichomes.
      */
-    orientation: 'decurved' | 'recurved' | 'straight';
+    orientation: 'patent' | 'antrorse' | 'retrorse';
 
     /**
      * Source.
@@ -26,11 +26,11 @@ export class Prickles {
     sources: Source[];
 
     /**
-     * Creates an instance of prickles.
+     * Creates an instance of Filiform trichome.
      */
     constructor() {
         this.sources = [];
     }
 }
 
-import { Source } from "./Source";
+import { Source } from "../Source";

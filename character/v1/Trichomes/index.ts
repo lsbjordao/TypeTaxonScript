@@ -1,9 +1,10 @@
-import { Filiform } from "./Trichomes/Filiform";
-import { Setiform } from "./Trichomes/Setiform";
-import { Stellate } from "./Trichomes/Stellate";
-import { Capitate } from "./Trichomes/Capitate";
+import { Filiform } from "./Filiform";
+import { Setiform } from "./Setiform";
+import { Stellate } from "./Stellate";
+import { Capitate } from "./Capitate";
+import { Source } from "../Source";
 
-export class Trichomes {
+class Trichomes {
     /**
      * Filiform trichome.
      * 
@@ -45,4 +46,12 @@ export class Trichomes {
     }
 }
 
-import { Source } from "./Source";
+
+
+export {
+    Trichomes,
+    Filiform,
+    Setiform,
+    Stellate,
+    Capitate
+}

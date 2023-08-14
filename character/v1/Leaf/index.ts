@@ -1,7 +1,8 @@
-import { Paraphillidia } from "./Leaf/Paraphillidia";
-import { Petiole } from "./Leaf/Petiole";
+import { Paraphillidia } from "./Paraphillidia";
+import { Petiole } from "./Petiole";
+import { Source } from "../Source";
 
-export class Leaf {
+class Leaf {
     /**
      * Petiole is the stalk that attaches the leaf blade to the stem.
      */
@@ -27,4 +28,9 @@ export class Leaf {
     }
 }
 
-import { Source } from "../character/Source";
+export {
+    Leaf,
+    Petiole,
+    Paraphillidia
+}
+
