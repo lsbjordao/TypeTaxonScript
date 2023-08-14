@@ -1,3 +1,4 @@
+import { Trichomes } from '../Trichomes';
 import { Sources } from "../Sources";
 
 export class Calyx extends Sources {
@@ -15,6 +16,11 @@ export class Calyx extends Sources {
      * Calyx shape.
      */
     shape: "campanulate" | "pappiform";
+
+    /**
+     * Trichomes.
+     */
+    trichomes: Trichomes;
 
     /**
      * Creates an instance of Calyx.

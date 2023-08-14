@@ -1,22 +1,22 @@
-interface IDescriptionAuthorship{
+interface IDescriptionAuthorship {
     name: string;
     date: string;
 }
 
 class DescriptionAuthorship {
 
-     /**
-     * Authorship.
-     */
-     authorship: IDescriptionAuthorship[];
+    /**
+    * Authorship.
+    */
+    authorship: IDescriptionAuthorship[];
 
-     constructor() {
+    constructor() {
         this.authorship = [];
     }
 
-    public addAuthor(data:IDescriptionAuthorship){
+    public addAuthor(data: IDescriptionAuthorship) {
         this.authorship.push(data);
-    } 
+    }
 
 }
 

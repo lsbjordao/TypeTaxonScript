@@ -2,11 +2,11 @@
 import { Mimosa } from '../Mimosa';
 
 // Import characters
-import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from '../../character/v1';
-import { Capitate, Filiform, Stellate } from '../../character/v1/Trichomes';
-import { Replum, Epicarp } from '../../character/v1/Fruit';
-import { Corolla, Calyx } from '../../character/v1/Flower';
-import { Paraphillidia, Petiole } from '../../character/v1/Leaf';
+import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from '../../characters/v1';
+import { Capitate, Filiform, Stellate } from '../../characters/v1/Trichomes';
+import { Replum, Epicarp } from '../../characters/v1/Fruit';
+import { Corolla, Calyx } from '../../characters/v1/Flower';
+import { Paraphillidia, Petiole } from '../../characters/v1/Leaf';
 
 // Description of Mimosa schomburgkii
 const Mimosa_schomburgkii = new Mimosa();

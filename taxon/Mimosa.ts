@@ -1,6 +1,6 @@
-import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from "../character/v1";
-import { Sources } from "../character/v1/Sources";
-import { DescriptionAuthorship } from "../character/v1/descriptionAuthorship";
+import { Flower, Fruit, Leaf, Prickles, Trichomes } from "../characters/v1";
+import { Sources } from "../characters/v1/Sources";
+import { DescriptionAuthorship } from "../characters/v1/descriptionAuthorship";
 
 export class Mimosa extends Sources {
     /**

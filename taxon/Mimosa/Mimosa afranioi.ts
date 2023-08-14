@@ -1,10 +1,12 @@
 // Import genus Mimosa
 import { Mimosa } from '../Mimosa';
-import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from '../../character/v1';
-import { Filiform, Setiform } from '../../character/v1/Trichomes';
-import { Replum, Epicarp } from '../../character/v1/Fruit';
-import { Corolla, Calyx } from '../../character/v1/Flower';
-import { Paraphillidia, Petiole } from '../../character/v1/Leaf';
+
+// Import characters
+import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from '../../characters/v1';
+import { Filiform, Setiform } from '../../characters/v1/Trichomes';
+import { Replum, Epicarp } from '../../characters/v1/Fruit';
+import { Corolla, Calyx } from '../../characters/v1/Flower';
+import { Paraphillidia, Petiole } from '../../characters/v1/Leaf';
 
 // Description of Mimosa afranioi
 const Mimosa_afranioi = new Mimosa();
@@ -52,13 +54,6 @@ Mimosa_afranioi.fruit.epicarp.trichomes.filiform = new Filiform();
 Mimosa_afranioi.fruit.epicarp.trichomes.filiform.present = true;
 Mimosa_afranioi.fruit.epicarp.prickles = new Prickles();
 Mimosa_afranioi.fruit.epicarp.prickles.present = true;
-
-const source1 = new Source();
-source1.sourceType = 'article';
-source1.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.';
-source1.year = 2021;
-source1.title = '';
-Mimosa_afranioi.addSource(source1);
 
 // Export Mimosa afranioi
 export { Mimosa_afranioi };
