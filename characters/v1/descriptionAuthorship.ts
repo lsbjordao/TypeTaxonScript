@@ -3,7 +3,6 @@ interface IDescriptionAuthorship {
 }
 
 class DescriptionAuthorship {
-
     /**
     * Authorship.
     */
