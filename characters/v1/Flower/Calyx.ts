@@ -1,5 +1,6 @@
 import { Trichomes } from '../Trichomes';
 import { Sources } from "../Sources";
+import { _setLength, _setLengthMinMax } from '../generals/length';
 
 export class Calyx extends Sources {
     /**
@@ -53,15 +54,7 @@ export class Calyx extends Sources {
      * @throws Error if `min` is greater than or equal to `max`.
      */
     setLengthMinMax(min: number, max: number): void {
-        if (this.present === false && (min !== null || max !== null)) {
-            throw new Error("Cannot set length when present is false");
-        }
-
-        if (min >= max) {
-            throw new Error("Minimum length must be less than maximum length");
-        }
-
-        this.length = { ...this.length, min, max };
+        _setLengthMinMax(min, max, this);
     }
 
     /**
@@ -71,10 +64,7 @@ export class Calyx extends Sources {
      * @throws Error if `present` is `false` and `value` is not `null`.
      */
     setLength(value: number | null): void {
-        if (this.present === false && value !== null) {
-            throw new Error("Cannot set length when present is false");
-        }
-
-        this.length = { ...this.length, value };
+        _setLength(value, this);
     }
+
 }

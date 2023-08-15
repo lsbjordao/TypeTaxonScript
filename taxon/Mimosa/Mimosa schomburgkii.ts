@@ -44,11 +44,11 @@ Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia.setLength(null);
 Mimosa_schomburgkii.flower = new Flower();
 Mimosa_schomburgkii.flower.calyx = new Calyx();
 Mimosa_schomburgkii.flower.calyx.numSepals = 3;
-Mimosa_schomburgkii.flower.calyx.length = 1;
+Mimosa_schomburgkii.flower.calyx.setLengthMinMax(1, 2);
 Mimosa_schomburgkii.flower.calyx.shape = 'campanulate';
 Mimosa_schomburgkii.flower.corolla = new Corolla();
 Mimosa_schomburgkii.flower.corolla.numPepals = 3;
-Mimosa_schomburgkii.flower.corolla.length = 3;
+Mimosa_schomburgkii.flower.corolla.setLengthMinMax(2, 3);
 Mimosa_schomburgkii.flower.corolla.shape = 'campanulate';
 Mimosa_schomburgkii.flower.corolla.trichomes = new Trichomes();
 Mimosa_schomburgkii.flower.corolla.trichomes.stellate = new Stellate();
@@ -67,7 +67,8 @@ Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform.present = true;
 // Description authorship
 Mimosa_schomburgkii.DescriptionAuthorship = new DescriptionAuthorship();
 Mimosa_schomburgkii.DescriptionAuthorship.addAuthor({
-    name: 'Lucas Sá Barreto Jordão'
+    name: 'Lucas Sá Barreto Jordão',
+    date: 1692107172
 })
 
 // Sources

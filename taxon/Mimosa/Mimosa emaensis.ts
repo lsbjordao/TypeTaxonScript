@@ -38,11 +38,11 @@ Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.setLength(null);
 Mimosa_emaensis.flower = new Flower();
 Mimosa_emaensis.flower.calyx = new Calyx();
 Mimosa_emaensis.flower.calyx.numSepals = 4;
-Mimosa_emaensis.flower.calyx.length = 1;
+Mimosa_emaensis.flower.calyx.setLengthMinMax(1, 2);
 Mimosa_emaensis.flower.calyx.shape = 'campanulate';
 Mimosa_emaensis.flower.corolla = new Corolla();
 Mimosa_emaensis.flower.corolla.numPepals = 4;
-Mimosa_emaensis.flower.corolla.length = 3;
+Mimosa_emaensis.flower.corolla.setLengthMinMax(2, 3);
 Mimosa_emaensis.flower.corolla.shape = 'campanulate';
 
 Mimosa_emaensis.fruit = new Fruit();
@@ -54,7 +54,8 @@ Mimosa_emaensis.fruit.epicarp.shape = 'straight';
 // Description authorship
 Mimosa_emaensis.DescriptionAuthorship = new DescriptionAuthorship();
 Mimosa_emaensis.DescriptionAuthorship.addAuthor({
-    name: 'Lucas Sá Barreto Jordão'
+    name: 'Lucas Sá Barreto Jordão',
+    date: 1692107172
 })
 
 // Sources
