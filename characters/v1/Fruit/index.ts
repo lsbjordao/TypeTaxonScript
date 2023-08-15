@@ -1,28 +1,28 @@
-import { Replum } from "./Replum";
-import { Epicarp } from "./Epicarp";
-import { Sources } from "../Sources";
+import { Replum } from "./Replum"
+import { Epicarp } from "./Epicarp"
+import { Sources } from "../Sources"
 
 class Fruit extends Sources {
     /**
      * Type.
      */
-    type: 'craspedium' | 'sacellum';
+    type: 'craspedium' | 'sacellum'
 
     /**
      * Replum.
      */
-    replum: Replum;
+    replum: Replum
 
     /**
      * Epicarp.
      */
-    epicarp: Epicarp;
+    epicarp: Epicarp
 
     /**
      * Creates an instance of Fruit.
      */
     constructor() {
-        super();
+        super()
     }
 }
 

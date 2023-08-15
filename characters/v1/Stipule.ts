@@ -1,6 +1,6 @@
-import { Trichomes } from './Trichomes';
-import { Prickles } from './Prickles';
-import { Sources } from "./Sources";
+import { Trichomes } from './Trichomes'
+import { Prickles } from './Prickles'
+import { Sources } from "./Sources"
 
 export class Stipule extends Sources {
     /**
@@ -9,7 +9,7 @@ export class Stipule extends Sources {
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false
 
     /**
      * Stipule length in milimeters (mm).
@@ -18,41 +18,41 @@ export class Stipule extends Sources {
      * It should be `null` when `present` is `false`.
      */
     length: {
-        value?: number | null;
-        min?: number | null;
-        max?: number | null;
-    } | null;
+        value?: number | null
+        min?: number | null
+        max?: number | null
+    } | null
 
     /**
      * Shape of Stipule.
      */
-    shape: 'linear-subulate' | 'lanceolate' | 'deltate' | 'ovate';
+    shape: 'linear-subulate' | 'lanceolate' | 'deltate' | 'ovate' | 'spinniform'
 
     /**
      * Nervation of Stipule.
      */
-    nervation: '1-nerved' | 'plurinerved';
+    nervation: '1-nerved' | 'plurinerved'
 
     /**
      * Persistance of Stipule.
      */
-    persistance: 'persistent' | 'caducous';
+    persistance: 'persistent' | 'caducous'
 
     /**
      * Prickles.
     */
-    prickles: Prickles;
+    prickles: Prickles
 
     /**
      * Trichomes.
      */
-    trichomes: Trichomes;
+    trichomes: Trichomes
     
     /**
      * Creates an instance of Stipule.
      */
     constructor() {
-        super();
+        super()
     }
 
     /**
@@ -65,14 +65,14 @@ export class Stipule extends Sources {
      */
     setLengthMinMax(min: number, max: number): void {
         if (this.present === false && (min !== null || max !== null)) {
-            throw new Error("Cannot set length when present is false");
+            throw new Error("Cannot set length when present is false")
         }
 
         if (min >= max) {
-            throw new Error("Minimum length must be less than maximum length");
+            throw new Error("Minimum length must be less than maximum length")
         }
 
-        this.length = { ...this.length, min, max };
+        this.length = { ...this.length, min, max }
     }
 
     /**
@@ -83,9 +83,9 @@ export class Stipule extends Sources {
      */
     setLength(value: number | null): void {
         if (this.present === false && value !== null) {
-            throw new Error("Cannot set length when present is false");
+            throw new Error("Cannot set length when present is false")
         }
 
-        this.length = { ...this.length, value };
+        this.length = { ...this.length, value }
     }
 }

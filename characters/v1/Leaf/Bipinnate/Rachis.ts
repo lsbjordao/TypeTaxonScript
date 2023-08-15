@@ -1,8 +1,8 @@
-import { Trichomes } from '../../Trichomes';
-import { Prickles } from '../../Prickles';
-import { Sources } from "../../Sources";
+import { Trichomes } from '../../Trichomes'
+import { Prickles } from '../../Prickles'
+import { Sources } from "../../Sources"
 
-import { _setLength, _setLengthMinMax } from '../../methods/length';
+import { _setLength, _setLengthMinMax } from '../../methods/length'
 
 export class Rachis extends Sources {
     /**
@@ -11,7 +11,7 @@ export class Rachis extends Sources {
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false
 
     /**
      * Rachis length in milimeters (mm).
@@ -20,26 +20,26 @@ export class Rachis extends Sources {
      * It should be `null` when `present` is `false`.
      */
     length: {
-        value?: number | null;
-        min?: number | null;
-        max?: number | null;
-    } | null;
+        value?: number | null
+        min?: number | null
+        max?: number | null
+    } | null
 
     /**
      * Prickles in rachis.
      */
-    prickles: Prickles;
+    prickles: Prickles
 
     /**
      * Trichomes in rachis.
      */
-    trichomes: Trichomes;
+    trichomes: Trichomes
 
     /**
      * Creates an instance of Rachis.
      */
     constructor() {
-        super();
+        super()
     }
 
     /**
@@ -51,7 +51,7 @@ export class Rachis extends Sources {
      * @throws Error if `min` is greater than or equal to `max`.
      */
     setLengthMinMax(min: number, max: number): void {
-        _setLengthMinMax(min, max, this);
+        _setLengthMinMax(min, max, this)
     }
 
     /**
@@ -61,6 +61,6 @@ export class Rachis extends Sources {
      * @throws Error if `present` is `false` and `value` is not `null`.
      */
     setLength(value: number | null): void {
-        _setLength(value, this);
+        _setLength(value, this)
     }
 }

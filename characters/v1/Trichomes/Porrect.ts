@@ -1,4 +1,4 @@
-import { Sources } from "../Sources";
+import { Sources } from "../Sources"
 
 export class Porrect extends Sources {
     /**
@@ -7,17 +7,17 @@ export class Porrect extends Sources {
      * @remarks
      * If are `absent`, the `length` should be `null`.
      */
-    are: 'present' | 'absent' | 'present or absent';
+    are: 'present' | 'absent' | 'present or absent'
 
     /**
      * Are Porrect-stellate trichomes present?
      */
-    stellate: true | false;
+    stellate: true | false
 
     /**
      * Are Porrect-dendritic trichomes present?
      */
-    dendritic: true | false;
+    dendritic: true | false
 
     /**
      * Porrect trichomes length in milimeters (mm).
@@ -25,12 +25,12 @@ export class Porrect extends Sources {
      * @remarks
      * It should be `null` when `present` is `false`.
      */
-    length: number | null;
+    length: number | null
 
     /**
      * Creates an instance of Porrect trichome.
      */
     constructor() {
-        super();
+        super()
     }
 }

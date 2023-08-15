@@ -1,6 +1,6 @@
-import { Sources } from "./Sources";
+import { Sources } from "./Sources"
 
-import { _setLength, _setLengthMinMax } from './methods/length';
+import { _setLength, _setLengthMinMax } from './methods/length'
 
 export class Prickles extends Sources {
     /**
@@ -9,7 +9,7 @@ export class Prickles extends Sources {
      * @remarks
      * If `absent`, the `length` should be `null`.
      */
-    are: 'present' | 'absent' | 'present or absent';
+    are: 'present' | 'absent' | 'present or absent'
 
     /**
      * Prickles length in milimeters (mm).
@@ -18,31 +18,31 @@ export class Prickles extends Sources {
      * It should be `null` when `present` is `false`.
      */
     length: {
-        value?: number | null;
-        min?: number | null;
-        max?: number | null;
-    } | null;
+        value?: number | null
+        min?: number | null
+        max?: number | null
+    } | null
 
     /**
      * Orientation of prickles.
      */
-    orientation: 'decurved' | 'recurved' | 'straight';
+    orientation: 'decurved' | 'recurved' | 'straight'
 
     /**
      * Prickles frequency.
      */
-    frequency: 'sparsely armed' | 'serially armed';
+    frequency: 'sparsely armed' | 'serially armed'
 
     /**
      * Prickles persistance.
      */
-    persistance: 'persistent' | 'caducous';
+    persistance: 'persistent' | 'caducous'
 
     /**
      * Creates an instance of prickles.
      */
     constructor() {
-        super();
+        super()
     }
 
     /**
@@ -54,7 +54,7 @@ export class Prickles extends Sources {
          * @throws Error if `min` is greater than or equal to `max`.
          */
     setLengthMinMax(min: number, max: number): void {
-        _setLengthMinMax(min, max, this);
+        _setLengthMinMax(min, max, this)
     }
 
     /**
@@ -64,6 +64,6 @@ export class Prickles extends Sources {
      * @throws Error if `present` is `false` and `value` is not `null`.
      */
     setLength(value: number | null): void {
-        _setLength(value, this);
+        _setLength(value, this)
     }
 }

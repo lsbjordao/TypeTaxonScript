@@ -1,4 +1,4 @@
-import { Sources } from "../Sources";
+import { Sources } from "../Sources"
 
 export class Fasciculate extends Sources {
     /**
@@ -7,7 +7,7 @@ export class Fasciculate extends Sources {
      * @remarks
      * If are `absent`, the `length` should be `null`.
      */
-    are: 'present' | 'absent' | 'present or absent';
+    are: 'present' | 'absent' | 'present or absent'
 
     /**
      * Fasciculate trichomes length in milimeters (mm).
@@ -15,12 +15,12 @@ export class Fasciculate extends Sources {
      * @remarks
      * It should be `null` when `present` is `false`.
      */
-    length: number | null;
+    length: number | null
 
     /**
      * Creates an instance of Fasciculate trichome.
      */
     constructor() {
-        super();
+        super()
     }
 }

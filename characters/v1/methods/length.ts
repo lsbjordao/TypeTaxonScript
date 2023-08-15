@@ -6,10 +6,10 @@
  */
 function _setLength(value: number | null, that: any): void {
     if ((that.are === 'absent' || that.is === 'absent') && value !== null) {
-        throw new Error("Cannot set length when structure is absent");
+        throw new Error("Cannot set length when structure is absent")
     }
 
-    that.length = { ...that.length, value };
+    that.length = { ...that.length, value }
 }
 
 /**
@@ -22,14 +22,14 @@ function _setLength(value: number | null, that: any): void {
  */
 function _setLengthMinMax(min: number, max: number, that: any): void {
     if ((that.are === 'absent' || that.is === 'absent') && (min !== null || max !== null)) {
-        throw new Error("Cannot set length when structure is absent");
+        throw new Error("Cannot set length when structure is absent")
     }
 
     if (min >= max) {
-        throw new Error("Minimum length must be less than maximum length");
+        throw new Error("Minimum length must be less than maximum length")
     }
 
-    that.length = { ...that.length, min, max };
+    that.length = { ...that.length, min, max }
 }
 
 export {

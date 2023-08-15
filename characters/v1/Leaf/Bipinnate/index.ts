@@ -1,6 +1,6 @@
-import { Pinnae } from "./Pinnae";
-import { Rachis } from "./Rachis";
-import { Sources } from "../../Sources";
+import { Pinnae } from "./Pinnae"
+import { Rachis } from "./Rachis"
+import { Sources } from "../../Sources"
 
 class Bipinnate extends Sources {
     /**
@@ -8,20 +8,20 @@ class Bipinnate extends Sources {
      * 
      * @source [Barneby (1991)](http://www.teste.com/)
      */
-    pinnae: Pinnae;
+    pinnae: Pinnae
 
     /**
      * leaf rachis of a bipinnate leaf.
      * 
      * @source [Barneby (1991)](http://www.teste.com/)
      */
-    rachis: Rachis;
+    rachis: Rachis
 
     /**
      * Creates an instance of leaf.
      */
     constructor() {
-        super();
+        super()
     }
 }
 

@@ -1,4 +1,4 @@
-import { Sources } from "../Sources";
+import { Sources } from "../Sources"
 
 export class Stellate extends Sources {
     /**
@@ -7,22 +7,22 @@ export class Stellate extends Sources {
      * @remarks
      * If are `absent`, the `length` should be `null`.
      */
-    are: 'present' | 'absent' | 'present or absent';
+    are: 'present' | 'absent' | 'present or absent'
 
     /**
      * Are stellate-subsessile trichomes present?
      */
-    subsessile: true | false;
+    subsessile: true | false
 
     /**
      * Are stellate-stalked trichomes present?
      */
-    stalked: true | false;
+    stalked: true | false
 
     /**
      * Are stellate-lepidote trichomes present?
      */
-    lepidote: true | false;
+    lepidote: true | false
 
     /**
      * Stellate trichomes length in milimeters (mm).
@@ -30,12 +30,12 @@ export class Stellate extends Sources {
      * @remarks
      * It should be `null` when `present` is `false`.
      */
-    length: number | null;
+    length: number | null
 
     /**
      * Creates an instance of Stellate trichome.
      */
     constructor() {
-        super();
+        super()
     }
 }

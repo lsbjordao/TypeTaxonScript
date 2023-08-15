@@ -1,4 +1,4 @@
-import { Sources } from "../Sources";
+import { Sources } from "../Sources"
 
 export class Setiform extends Sources {
     /**
@@ -7,17 +7,17 @@ export class Setiform extends Sources {
      * @remarks
      * If are `absent`, the `length` should be `null`.
      */
-    are: 'present' | 'absent' | 'present or absent';
+    are: 'present' | 'absent' | 'present or absent'
 
     /**
      * Are Setiform-barbellate trichomes present?
      */
-    barbellate: true | false;
+    barbellate: true | false
 
     /**
      * Are Setiform-glochidiate trichomes present?
      */
-    glochidiate: true | false;
+    glochidiate: true | false
 
     /**
      * Setiform trichomes length in milimeters (mm).
@@ -25,17 +25,17 @@ export class Setiform extends Sources {
      * @remarks
      * It should be `null` when `present` is `false`.
      */
-    length: number | null;
+    length: number | null
 
     /**
      * Orientation of trichomes.
      */
-    orientation: 'patent' | 'antrorse' | 'retrorse';
+    orientation: 'patent' | 'antrorse' | 'retrorse'
 
     /**
      * Creates an instance of Setiform trichome.
      */
     constructor() {
-        super();
+        super()
     }
 }

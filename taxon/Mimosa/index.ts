@@ -1,34 +1,34 @@
-import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit } from "../../characters/v1";
-import { Sources } from "../../characters/v1/Sources";
-import { DescriptionAuthorship } from "../../characters/v1/descriptionAuthorship";
+import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit } from "../../characters/v1"
+import { Sources } from "../../characters/v1/Sources"
+import { DescriptionAuthorship } from "../../characters/v1/descriptionAuthorship"
 
 export class Mimosa extends Sources {
     /**
      * Species of *Mimosa*
      */
-    specificEpithet: string;
+    specificEpithet: string
 
     /**
      * Habit of *Mimosa*
      */
-    habit: 'tree' | 'shrub' | 'subshrub' | 'herb';
+    habit: 'tree' | 'shrub' | 'subshrub' | 'herb'
 
     /**
      * Stem of *Mimosa*.
      */
-    stems: Stems;
+    stems: Stems
 
     /**
      * Prickles of *Mimosa*.
      * 
      * @kind decurved, recurved, straight.
      */
-    prickles: Prickles;
+    prickles: Prickles
 
     /**
      * Stipule of *Mimosa*.
      */
-    stipule: Stipule;
+    stipule: Stipule
 
     /**
      * Trichomes of *Mimosa*.
@@ -38,29 +38,29 @@ export class Mimosa extends Sources {
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      * @source [Santos-Silva et al. (2013)](http://www.teste.com/)
      */
-    trichomes: Trichomes;
+    trichomes: Trichomes
 
     /**
      * Leaf of *Mimosa*: bipinnate
      */
-    leaf: Leaf;
+    leaf: Leaf
 
     /**
      * Flower of *Mimosa*
      */
-    flower: Flower;
+    flower: Flower
 
     /**
      * Fruit of *Mimosa*
      */
-    fruit: Fruit;
+    fruit: Fruit
 
-    DescriptionAuthorship: DescriptionAuthorship;
+    DescriptionAuthorship: DescriptionAuthorship
 
     /**
      * Creates an instance of *Mimosa* species.
      */
     constructor() {
-        super();
+        super()
     }
 }

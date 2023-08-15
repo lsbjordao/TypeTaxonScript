@@ -1,4 +1,4 @@
-import { Sources } from "../Sources";
+import { Sources } from "../Sources"
 
 export class Granular extends Sources {
     /**
@@ -7,12 +7,12 @@ export class Granular extends Sources {
      * @remarks
      * If are `absent`, the `length` should be `null`.
      */
-    are: 'present' | 'absent' | 'present or absent';
+    are: 'present' | 'absent' | 'present or absent'
 
     /**
      * Creates an instance of Granular trichome.
      */
     constructor() {
-        super();
+        super()
     }
 }

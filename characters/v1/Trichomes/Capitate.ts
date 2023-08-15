@@ -1,4 +1,4 @@
-import { Sources } from "../Sources";
+import { Sources } from "../Sources"
 
 export class Capitate extends Sources {
     /**
@@ -7,22 +7,22 @@ export class Capitate extends Sources {
      * @remarks
      * If are `absent`, the `length` should be `null`.
      */
-    are: 'present' | 'absent' | 'present or absent';
+    are: 'present' | 'absent' | 'present or absent'
 
     /**
      * Are capitate-subsessile trichomes present?
      */
-    subsessile: true | false;
+    subsessile: true | false
 
     /**
      * Are capitate-filiform trichomes present?
      */
-    filiform: true | false;
+    filiform: true | false
 
     /**
      * Are capitate-setiform trichomes present?
      */
-    setiform: true | false;
+    setiform: true | false
 
     /**
      * Capitate trichomes length in milimeters (mm).
@@ -30,12 +30,12 @@ export class Capitate extends Sources {
      * @remarks
      * It should be `null` when `present` is `false`.
      */
-    length: number | null;
+    length: number | null
 
     /**
      * Creates an instance of Capitate trichome.
      */
     constructor() {
-        super();
+        super()
     }
 }

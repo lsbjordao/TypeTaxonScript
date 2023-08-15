@@ -1,16 +1,16 @@
-import { Source } from "./Source";
+import { Source } from "./Source"
 
 export class Sources {
     /**
     * Source.
     */
-    sources: Source[];
+    sources: Source[]
 
     constructor() {
-        this.sources = [];
+        this.sources = []
     }
 
     public addSource(data: Source) {
-        this.sources.push(data);
+        this.sources.push(data)
     }
 }
