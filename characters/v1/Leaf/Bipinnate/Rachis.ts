@@ -1,3 +1,5 @@
+import { Trichomes } from '../../Trichomes';
+import { Prickles } from '../../Prickles';
 import { Sources } from "../../Sources";
 
 export class Rachis extends Sources {
@@ -16,6 +18,16 @@ export class Rachis extends Sources {
      * It should be `null` when `present` is `false`.
      */
     length: number | null;
+
+    /**
+     * Prickles in rachis.
+    */
+    prickles: Prickles;
+
+    /**
+     * Trichomes in rachis.
+     */
+    trichomes: Trichomes;
 
     /**
      * Creates an instance of Rachis.
