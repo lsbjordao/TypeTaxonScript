@@ -7,6 +7,7 @@ import { Porrect } from "./Porrect";
 import { Verruciform } from "./Verruciform";
 import { Lepidote } from "./Lepidote";
 import { Peltate } from "./Peltate";
+import { Granular } from "./Granular";
 import { Capitate } from "./Capitate";
 import { Sources } from "../Sources";
 
@@ -75,6 +76,13 @@ class Trichomes extends Sources {
     peltate: Peltate;
 
     /**
+     * Granular trichome.
+     * 
+     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     */
+    granular: Granular;
+
+    /**
      * Capitate trichome.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
@@ -100,5 +108,6 @@ export {
     Verruciform,
     Lepidote,
     Peltate,
+    Granular,
     Capitate
 }

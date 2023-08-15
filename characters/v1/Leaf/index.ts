@@ -1,4 +1,4 @@
-import { Paraphillidia } from "./Paraphillidia";
+import { Bipinnate } from "./Bipinnate";
 import { Petiole } from "./Petiole";
 import { Sources } from "../Sources";
 
@@ -9,11 +9,9 @@ class Leaf extends Sources {
     petiole: Petiole;
 
     /**
-     * Paraphillidia is a pair of appendixes at the bottom of a pinna.
-     * 
-     * @source [Barneby (1991)](http://www.teste.com/)
+     * Bipinnate leaf.
      */
-    paraphillidia: Paraphillidia;
+    bipinnate: Bipinnate;
 
     /**
      * Creates an instance of leaf.
@@ -26,5 +24,5 @@ class Leaf extends Sources {
 export {
     Leaf,
     Petiole,
-    Paraphillidia
+    Bipinnate
 }

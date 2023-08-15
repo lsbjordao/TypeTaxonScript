@@ -1,8 +1,8 @@
-import { Sources } from "../Sources";
+import { Sources } from "../../Sources";
 
-export class Paraphillidia extends Sources {
+export class Leaflet extends Sources {
     /**
-     * Paraphillidia can be present or absent.
+     * Leaflet can be present or absent.
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
@@ -10,7 +10,7 @@ export class Paraphillidia extends Sources {
     present: true | false;
 
     /**
-     * Paraphillidia length in milimeters (mm).
+     * Leaflet length in milimeters (mm).
      *
      * @remarks
      * It should be `null` when `present` is `false`.
@@ -18,7 +18,7 @@ export class Paraphillidia extends Sources {
     length: number | null;
 
     /**
-     * Creates an instance of Paraphillidia.
+     * Creates an instance of Leaflet.
      */
     constructor() {
         super();
