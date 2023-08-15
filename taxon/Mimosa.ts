@@ -1,4 +1,4 @@
-import { Stem, Leaf, Trichomes, Prickles, Flower, Fruit } from "../characters/v1";
+import { Stems, Leaf, Trichomes, Prickles, Flower, Fruit } from "../characters/v1";
 import { Sources } from "../characters/v1/Sources";
 import { DescriptionAuthorship } from "../characters/v1/descriptionAuthorship";
 
@@ -16,7 +16,7 @@ export class Mimosa extends Sources {
     /**
      * Stem of *Mimosa*.
      */
-    stem: Stem;
+    stems: Stems;
 
     /**
      * Prickles of *Mimosa*.

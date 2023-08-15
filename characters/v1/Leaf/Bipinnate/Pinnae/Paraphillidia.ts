@@ -1,8 +1,8 @@
-import { Sources } from "../../Sources";
+import { Sources } from "../../../Sources";
 
-export class Rachilla extends Sources {
+export class Paraphillidia extends Sources {
     /**
-     * Rachilla can be present or absent.
+     * Paraphillidia can be present or absent.
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
@@ -10,7 +10,7 @@ export class Rachilla extends Sources {
     present: true | false;
 
     /**
-     * Rachilla length in milimeters (mm).
+     * Paraphillidia length in milimeters (mm).
      *
      * @remarks
      * It should be `null` when `present` is `false`.
@@ -18,7 +18,7 @@ export class Rachilla extends Sources {
     length: number | null;
 
     /**
-     * Creates an instance of Rachilla.
+     * Creates an instance of Paraphillidia.
      */
     constructor() {
         super();

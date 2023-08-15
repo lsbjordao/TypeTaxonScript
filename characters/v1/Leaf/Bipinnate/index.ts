@@ -1,8 +1,5 @@
 import { Pinnae } from "./Pinnae";
 import { Rachis } from "./Rachis";
-import { Rachilla } from "./Rachilla";
-import { Leaflet } from "./Leaflet";
-import { Paraphillidia } from "./Paraphillidia";
 import { Sources } from "../../Sources";
 
 class Bipinnate extends Sources {
@@ -21,27 +18,6 @@ class Bipinnate extends Sources {
     rachis: Rachis;
 
     /**
-     * pinna rachilla of a bipinnate leaf.
-     * 
-     * @source [Barneby (1991)](http://www.teste.com/)
-     */
-    rachilla: Rachilla;
-
-    /**
-     * Leaflets of a pinna.
-     * 
-     * @source [Barneby (1991)](http://www.teste.com/)
-     */
-    leaflet: Leaflet;
-
-    /**
-     * Paraphillidia is a pair of appendixes at the bottom of a pinna.
-     * 
-     * @source [Barneby (1991)](http://www.teste.com/)
-     */
-    paraphillidia: Paraphillidia;
-
-    /**
      * Creates an instance of leaf.
      */
     constructor() {
@@ -52,8 +28,5 @@ class Bipinnate extends Sources {
 export {
     Bipinnate,
     Pinnae,
-    Rachis,
-    Rachilla,
-    Leaflet,
-    Paraphillidia
+    Rachis
 }

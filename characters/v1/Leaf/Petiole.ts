@@ -1,3 +1,5 @@
+import { Trichomes } from '../Trichomes';
+import { Prickles } from '../Prickles';
 import { Sources } from "../Sources";
 
 export class Petiole extends Sources {
@@ -16,6 +18,21 @@ export class Petiole extends Sources {
      * It should be `null` when `present` is `false`.
      */
     length: number | null;
+
+    /**
+     * Prickles in petiole.
+    */
+    prickles: Prickles;
+
+    /**
+     * Trichomes in petiole.
+     */
+    trichomes: Trichomes;
+
+    /**
+     * Persistance of petiole.
+     */
+    persistance: 'persistent' | 'caducous';
 
     /**
      * Creates an instance of Petiole.

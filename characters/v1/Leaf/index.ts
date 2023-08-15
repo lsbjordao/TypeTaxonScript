@@ -4,6 +4,11 @@ import { Sources } from "../Sources";
 
 class Leaf extends Sources {
     /**
+     * Phyllotaxis.
+     */
+    phyllotaxis: 'distichous' | 'spiral';
+
+    /**
      * Petiole is the stalk that attaches the leaf blade to the stem.
      */
     petiole: Petiole;

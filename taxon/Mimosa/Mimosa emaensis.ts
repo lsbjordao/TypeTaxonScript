@@ -2,9 +2,10 @@
 import { Mimosa } from '../Mimosa';
 
 // Import characterss
-import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from '../../characters/v1';
+import { Flower, Fruit, Leaf, Prickles, Source, Trichomes, DescriptionAuthorship } from '../../characters/v1';
 import { Filiform, Setiform } from '../../characters/v1/Trichomes';
-import { Paraphillidia, Petiole } from '../../characters/v1/Leaf';
+import { Petiole } from '../../characters/v1/Leaf';
+import { Bipinnate, Paraphillidia } from '../../characters/v1/Leaf/Bipinnate';
 import { Corolla, Calyx } from '../../characters/v1/Flower';
 import { Replum, Epicarp } from '../../characters/v1/Fruit';
 
@@ -27,9 +28,10 @@ Mimosa_emaensis.leaf = new Leaf();
 Mimosa_emaensis.leaf.petiole = new Petiole();
 Mimosa_emaensis.leaf.petiole.present = true;
 Mimosa_emaensis.leaf.petiole.setLength(3);
-Mimosa_emaensis.leaf.paraphillidia = new Paraphillidia();
-Mimosa_emaensis.leaf.paraphillidia.present = false;
-Mimosa_emaensis.leaf.paraphillidia.setLength(null);
+Mimosa_emaensis.leaf.bipinnate = new Bipinnate();
+Mimosa_emaensis.leaf.bipinnate.paraphillidia = new Paraphillidia();
+Mimosa_emaensis.leaf.bipinnate.paraphillidia.present = false;
+Mimosa_emaensis.leaf.bipinnate.paraphillidia.setLength(null);
 
 Mimosa_emaensis.flower = new Flower();
 Mimosa_emaensis.flower.calyx = new Calyx();
@@ -48,6 +50,7 @@ Mimosa_emaensis.fruit.epicarp = new Epicarp();
 Mimosa_emaensis.fruit.epicarp.shape = 'straight';
 
 // Description authorship
+Mimosa_emaensis.DescriptionAuthorship = new DescriptionAuthorship();
 Mimosa_emaensis.DescriptionAuthorship.addAuthor({
     name: 'Lucas Sá Barreto Jordão'
 })

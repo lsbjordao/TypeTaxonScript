@@ -2,9 +2,10 @@
 import { Mimosa } from '../Mimosa';
 
 // Import characters
-import { Flower, Fruit, Leaf, Prickles, Source, Trichomes } from '../../characters/v1';
+import { Flower, Fruit, Leaf, Prickles, Source, Trichomes, DescriptionAuthorship } from '../../characters/v1';
 import { Capitate, Filiform, Stellate } from '../../characters/v1/Trichomes';
-import { Paraphillidia, Petiole } from '../../characters/v1/Leaf';
+import { Petiole } from '../../characters/v1/Leaf';
+import { Bipinnate, Paraphillidia } from '../../characters/v1/Leaf/Bipinnate';
 import { Corolla, Calyx } from '../../characters/v1/Flower';
 import { Replum, Epicarp } from '../../characters/v1/Fruit';
 
@@ -33,9 +34,10 @@ Mimosa_schomburgkii.leaf = new Leaf();
 Mimosa_schomburgkii.leaf.petiole = new Petiole();
 Mimosa_schomburgkii.leaf.petiole.present = true;
 Mimosa_schomburgkii.leaf.petiole.setLength(3);
-Mimosa_schomburgkii.leaf.paraphillidia = new Paraphillidia();
-Mimosa_schomburgkii.leaf.paraphillidia.present = false;
-Mimosa_schomburgkii.leaf.paraphillidia.setLength(null);
+Mimosa_schomburgkii.leaf.bipinnate = new Bipinnate();
+Mimosa_schomburgkii.leaf.bipinnate.paraphillidia = new Paraphillidia();
+Mimosa_schomburgkii.leaf.bipinnate.paraphillidia.present = false;
+Mimosa_schomburgkii.leaf.bipinnate.paraphillidia.setLength(null);
 
 Mimosa_schomburgkii.flower = new Flower();
 Mimosa_schomburgkii.flower.calyx = new Calyx();
@@ -61,6 +63,7 @@ Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform = new Filiform();
 Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform.present = true;
 
 // Description authorship
+Mimosa_schomburgkii.DescriptionAuthorship = new DescriptionAuthorship();
 Mimosa_schomburgkii.DescriptionAuthorship.addAuthor({
     name: 'Lucas Sá Barreto Jordão'
 })

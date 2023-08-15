@@ -1,8 +1,10 @@
-import { Sources } from "../../Sources";
+import { Trichomes } from '../../../Trichomes';
+import { Prickles } from '../../../Prickles';
+import { Sources } from "../../../Sources";
 
-export class Leaflet extends Sources {
+export class Rachilla extends Sources {
     /**
-     * Leaflet can be present or absent.
+     * Rachilla can be present or absent.
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
@@ -10,7 +12,7 @@ export class Leaflet extends Sources {
     present: true | false;
 
     /**
-     * Leaflet length in milimeters (mm).
+     * Rachilla length in milimeters (mm).
      *
      * @remarks
      * It should be `null` when `present` is `false`.
@@ -18,7 +20,17 @@ export class Leaflet extends Sources {
     length: number | null;
 
     /**
-     * Creates an instance of Leaflet.
+     * Prickles in rachilla.
+    */
+    prickles: Prickles;
+
+    /**
+     * Trichomes in rachilla.
+     */
+    trichomes: Trichomes;
+
+    /**
+     * Creates an instance of Rachilla.
      */
     constructor() {
         super();

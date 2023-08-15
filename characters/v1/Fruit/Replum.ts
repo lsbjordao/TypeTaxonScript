@@ -4,17 +4,17 @@ import { Sources } from "../Sources";
 
 export class Replum extends Sources {
     /**
-     * Shape.
+     * Shape of replum.
      */
     shape: 'straight' | 'undulate';
 
     /**
-     * Prickles.
+     * Prickles in replum.
      */
     prickles: Prickles;
 
     /**
-     * Trichomes.
+     * Trichomes in replum.
      */
     trichomes: Trichomes;
 

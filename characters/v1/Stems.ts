@@ -2,34 +2,34 @@ import { Trichomes } from './Trichomes';
 import { Prickles } from './Prickles';
 import { Sources } from "./Sources";
 
-export class Stem extends Sources {
+export class Stems extends Sources {
     /**
-     * Stem length in meters (m).
+     * Stems length in meters (m).
      */
     length: number;
 
     /**
-     * Shape of Stem.
+     * Shape of stems.
      */
     shape: 'cylindric' | '3-gonal' | '4-gonal' | '5-gonal';
 
     /**
-     * Orientation of Stem.
+     * Orientation of stems.
      */
     orientation: 'erect' | 'ascending' | 'scandent' | 'decumbent' | 'procumbent';
 
     /**
-     * Prickles.
+     * Prickles in stems.
     */
     prickles: Prickles;
 
     /**
-     * Trichomes.
+     * Trichomes in stems.
      */
     trichomes: Trichomes;
     
     /**
-     * Creates an instance of Stem.
+     * Creates an instance of Stems.
      */
     constructor() {
         super();

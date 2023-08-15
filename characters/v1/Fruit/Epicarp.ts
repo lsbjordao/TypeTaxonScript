@@ -4,22 +4,22 @@ import { Sources } from "../Sources";
 
 export class Epicarp extends Sources {
     /**
-     * Type.
+     * Type of epicarp.
      */
     type: 'monospermic' | 'undivided';
 
     /**
-     * Shape.
+     * Shape of epicarp.
      */
     shape: 'straight' | 'undulate';
 
     /**
-     * Prickles.
+     * Prickles in epicarp.
     */
     prickles: Prickles;
 
     /**
-     * Trichomes.
+     * Trichomes in epicarp.
      */
     trichomes: Trichomes;
 
