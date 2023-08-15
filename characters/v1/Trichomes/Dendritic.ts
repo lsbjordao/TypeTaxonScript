@@ -2,12 +2,12 @@ import { Sources } from "../Sources";
 
 export class Dendritic extends Sources {
     /**
-     * Dendritic trichomes can be present or absent.
+     * Are dendritic trichomes present?
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false | [true, false];
 
     /**
      * Dendritic trichomes length in milimeters (mm).

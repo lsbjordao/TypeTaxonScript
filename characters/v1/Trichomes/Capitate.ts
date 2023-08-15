@@ -2,12 +2,12 @@ import { Sources } from "../Sources";
 
 export class Capitate extends Sources {
     /**
-     * Capitate trichomes can be present or absent.
+     * Are capitate trichomes present?
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false | [true, false];
 
     /**
      * Are capitate-subsessile trichomes present?

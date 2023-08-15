@@ -1,6 +1,6 @@
-import { Stems, Leaf, Trichomes, Prickles, Flower, Fruit } from "../characters/v1";
-import { Sources } from "../characters/v1/Sources";
-import { DescriptionAuthorship } from "../characters/v1/descriptionAuthorship";
+import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit } from "../../characters/v1";
+import { Sources } from "../../characters/v1/Sources";
+import { DescriptionAuthorship } from "../../characters/v1/descriptionAuthorship";
 
 export class Mimosa extends Sources {
     /**
@@ -24,6 +24,11 @@ export class Mimosa extends Sources {
      * @kind decurved, recurved, straight.
      */
     prickles: Prickles;
+
+    /**
+     * Stipule of *Mimosa*.
+     */
+    stipule: Stipule;
 
     /**
      * Trichomes of *Mimosa*.

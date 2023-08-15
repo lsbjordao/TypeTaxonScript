@@ -4,8 +4,9 @@ import { Mimosa } from '../Mimosa';
 // Import characterss
 import { Flower, Fruit, Leaf, Prickles, Source, Trichomes, DescriptionAuthorship } from '../../characters/v1';
 import { Filiform, Setiform } from '../../characters/v1/Trichomes';
-import { Petiole } from '../../characters/v1/Leaf';
-import { Bipinnate, Paraphillidia } from '../../characters/v1/Leaf/Bipinnate';
+import { Bipinnate, Petiole } from '../../characters/v1/Leaf';
+import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate';
+import { Rachilla, Paraphillidia, Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae';
 import { Corolla, Calyx } from '../../characters/v1/Flower';
 import { Replum, Epicarp } from '../../characters/v1/Fruit';
 
@@ -29,9 +30,10 @@ Mimosa_emaensis.leaf.petiole = new Petiole();
 Mimosa_emaensis.leaf.petiole.present = true;
 Mimosa_emaensis.leaf.petiole.setLength(3);
 Mimosa_emaensis.leaf.bipinnate = new Bipinnate();
-Mimosa_emaensis.leaf.bipinnate.paraphillidia = new Paraphillidia();
-Mimosa_emaensis.leaf.bipinnate.paraphillidia.present = false;
-Mimosa_emaensis.leaf.bipinnate.paraphillidia.setLength(null);
+Mimosa_emaensis.leaf.bipinnate.pinnae = new Pinnae();
+Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia();
+Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.present = false;
+Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.setLength(null);
 
 Mimosa_emaensis.flower = new Flower();
 Mimosa_emaensis.flower.calyx = new Calyx();

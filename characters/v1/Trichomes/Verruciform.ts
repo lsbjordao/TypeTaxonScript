@@ -2,12 +2,12 @@ import { Sources } from "../Sources";
 
 export class Verruciform extends Sources {
     /**
-     * Verruciform trichomes can be present or absent.
+     * Are verruciform trichomes present?
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false | [true, false];
 
     /**
      * Verruciform trichomes length in milimeters (mm).

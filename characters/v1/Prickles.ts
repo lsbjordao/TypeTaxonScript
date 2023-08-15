@@ -2,12 +2,12 @@ import { Sources } from "./Sources";
 
 export class Prickles extends Sources {
     /**
-     * Prickles can be present (armed structure) or absent (unarmed structure).
+     * Are prickles present (armed structure)?
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false | [true, false];
 
     /**
      * Prickles length in milimeters (mm).
@@ -20,7 +20,7 @@ export class Prickles extends Sources {
     /**
      * Orientation of prickles.
      */
-    orientation: 'decurved' | 'recurved' | 'straight';
+    orientation: 'decurved' | 'recurved' | 'straight' | string[];
 
     /**
      * Prickles frequency.

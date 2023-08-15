@@ -2,12 +2,12 @@ import { Sources } from "../Sources";
 
 export class Fasciculate extends Sources {
     /**
-     * Fasciculate trichomes can be present or absent.
+     * Are fasciculate trichomes present?
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false | [true, false];
 
     /**
      * Fasciculate trichomes length in milimeters (mm).

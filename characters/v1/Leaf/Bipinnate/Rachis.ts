@@ -17,11 +17,15 @@ export class Rachis extends Sources {
      * @remarks
      * It should be `null` when `present` is `false`.
      */
-    length: number | null;
+    length: {
+        value?: number | null;
+        min?: number | null;
+        max?: number | null;
+    } | null;
 
     /**
      * Prickles in rachis.
-    */
+     */
     prickles: Prickles;
 
     /**
@@ -37,7 +41,27 @@ export class Rachis extends Sources {
     }
 
     /**
-     * Sets the length value, considering the value of `present`.
+     * Sets the length values, considering the value of `present`.
+     *
+     * @param min - The minimum length value in milimeters (mm).
+     * @param max - The maximum length value in milimeters (mm).
+     * @throws Error if `present` is `false` and either `min` or `max` is not `null`.
+     * @throws Error if `min` is greater than or equal to `max`.
+     */
+    setLengthMinMax(min: number, max: number): void {
+        if (this.present === false && (min !== null || max !== null)) {
+            throw new Error("Cannot set length when present is false");
+        }
+
+        if (min >= max) {
+            throw new Error("Minimum length must be less than maximum length");
+        }
+
+        this.length = { ...this.length, min, max };
+    }
+
+    /**
+     * Sets a single value for length.
      *
      * @param value - The length value in milimeters (mm).
      * @throws Error if `present` is `false` and `value` is not `null`.
@@ -46,6 +70,7 @@ export class Rachis extends Sources {
         if (this.present === false && value !== null) {
             throw new Error("Cannot set length when present is false");
         }
-        this.length = value;
+
+        this.length = { ...this.length, value };
     }
 }

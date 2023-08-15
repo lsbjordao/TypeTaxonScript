@@ -2,12 +2,12 @@ import { Sources } from "../Sources";
 
 export class Stellate extends Sources {
     /**
-     * Stellate trichomes can be present or absent.
+     * Are stellate trichomes present?
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false | [true, false];
 
     /**
      * Are stellate-subsessile trichomes present?

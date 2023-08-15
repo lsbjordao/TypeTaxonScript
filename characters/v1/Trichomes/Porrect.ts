@@ -2,12 +2,12 @@ import { Sources } from "../Sources";
 
 export class Porrect extends Sources {
     /**
-     * Porrect trichomes can be present or absent.
+     * Are porrect trichomes present?
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false | [true, false];
 
     /**
      * Are Porrect-stellate trichomes present?

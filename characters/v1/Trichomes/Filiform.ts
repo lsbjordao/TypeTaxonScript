@@ -2,12 +2,12 @@ import { Sources } from "../Sources";
 
 export class Filiform extends Sources {
     /**
-     * Filiform trichomes can be present or absent.
+     * Are filiform trichomes present?
      *
      * @remarks
      * If `present` is `false`, the `length` should be `null`.
      */
-    present: true | false;
+    present: true | false | [true, false];
 
     /**
      * Filiform trichomes length in milimeters (mm).
