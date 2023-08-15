@@ -67,5 +67,4 @@ export class Calyx extends Sources {
     setLength(value: number | null): void {
         _setLength(value, this);
     }
-
 }

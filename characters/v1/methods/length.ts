@@ -5,8 +5,8 @@
  * @throws Error if `present` is `false` and `value` is not `null`.
  */
 function _setLength(value: number | null, that: any): void {
-    if (that.present === false && value !== null) {
-        throw new Error("Cannot set length when present is false");
+    if ((that.are === 'absent' || that.is === 'absent') && value !== null) {
+        throw new Error("Cannot set length when structure is absent");
     }
 
     that.length = { ...that.length, value };
@@ -21,8 +21,8 @@ function _setLength(value: number | null, that: any): void {
  * @throws Error if `min` is greater than or equal to `max`.
  */
 function _setLengthMinMax(min: number, max: number, that: any): void {
-    if (that.present === false && (min !== null || max !== null)) {
-        throw new Error("Cannot set length when present is false");
+    if ((that.are === 'absent' || that.is === 'absent') && (min !== null || max !== null)) {
+        throw new Error("Cannot set length when structure is absent");
     }
 
     if (min >= max) {

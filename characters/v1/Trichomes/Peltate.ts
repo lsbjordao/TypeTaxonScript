@@ -2,12 +2,12 @@ import { Sources } from "../Sources";
 
 export class Peltate extends Sources {
     /**
-     * Are peltate trichomes present?
-     *
+     * Are peltate trichomes 'present', 'absent', or 'present or absent'?
+     * 
      * @remarks
-     * If `present` is `false`, the `length` should be `null`.
+     * If are `absent`, the `length` should be `null`.
      */
-    present: true | false | [true, false];
+    are: 'present' | 'absent' | 'present or absent';
 
     /**
      * Peltate trichomes length in milimeters (mm).

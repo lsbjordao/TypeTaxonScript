@@ -17,13 +17,13 @@ Mimosa_emaensis.specificEpithet = 'emaensis';
 Mimosa_emaensis.habit = 'subshrub';
 
 Mimosa_emaensis.prickles = new Prickles();
-Mimosa_emaensis.prickles.present = false;
+Mimosa_emaensis.prickles.are = 'absent';
 
 Mimosa_emaensis.trichomes = new Trichomes();
 Mimosa_emaensis.trichomes.filiform = new Filiform();
-Mimosa_emaensis.trichomes.filiform.present = false;
+Mimosa_emaensis.trichomes.filiform.are = 'absent';
 Mimosa_emaensis.trichomes.setiform = new Setiform();
-Mimosa_emaensis.trichomes.setiform.present = false;
+Mimosa_emaensis.trichomes.setiform.are = 'absent';
 
 Mimosa_emaensis.leaf = new Leaf();
 Mimosa_emaensis.leaf.petiole = new Petiole();

@@ -17,18 +17,18 @@ Mimosa_schomburgkii.specificEpithet = 'schomburgkii';
 Mimosa_schomburgkii.habit = 'tree';
 
 Mimosa_schomburgkii.prickles = new Prickles();
-Mimosa_schomburgkii.prickles.present = false;
+Mimosa_schomburgkii.prickles.are = 'absent';
 
 Mimosa_schomburgkii.trichomes = new Trichomes();
 Mimosa_schomburgkii.trichomes.filiform = new Filiform();
-Mimosa_schomburgkii.trichomes.filiform.present = true;
+Mimosa_schomburgkii.trichomes.filiform.are = 'present';
 Mimosa_schomburgkii.trichomes.stellate = new Stellate();
-Mimosa_schomburgkii.trichomes.stellate.present = true;
+Mimosa_schomburgkii.trichomes.stellate.are = 'present';
 Mimosa_schomburgkii.trichomes.stellate.subsessile = true;
 Mimosa_schomburgkii.trichomes.stellate.stalked = true;
 Mimosa_schomburgkii.trichomes.stellate.lepidote = true;
 Mimosa_schomburgkii.trichomes.capitate = new Capitate();
-Mimosa_schomburgkii.trichomes.capitate.present = true;
+Mimosa_schomburgkii.trichomes.capitate.are = 'present';
 Mimosa_schomburgkii.trichomes.capitate.subsessile = true;
 
 Mimosa_schomburgkii.leaf = new Leaf();
@@ -62,7 +62,7 @@ Mimosa_schomburgkii.fruit.epicarp.type = 'monospermic';
 Mimosa_schomburgkii.fruit.epicarp.shape = 'straight';
 Mimosa_schomburgkii.fruit.epicarp.trichomes = new Trichomes();
 Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform = new Filiform();
-Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform.present = true;
+Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform.are = 'present';
 
 // Description authorship
 Mimosa_schomburgkii.DescriptionAuthorship = new DescriptionAuthorship();
