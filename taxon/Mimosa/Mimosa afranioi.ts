@@ -2,7 +2,7 @@
 import { Mimosa } from '../Mimosa';
 
 // Import characters
-import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit, Source, DescriptionAuthorship } from '../../characters/v1';
+import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit } from '../../characters/v1';
 import { Filiform, Granular } from '../../characters/v1/Trichomes';
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf';
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate';

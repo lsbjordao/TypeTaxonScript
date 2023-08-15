@@ -3,7 +3,7 @@ import { Mimosa } from '../Mimosa';
 
 // Import characters
 import { Stems, Trichomes, Prickles, Leaf, Flower, Fruit } from '../../characters/v1';
-import { Filiform, Granular } from '../../characters/v1/Trichomes';
+import { Filiform, Granular, Setiform } from '../../characters/v1/Trichomes';
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf';
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate';
 import { Rachilla, Paraphillidia, Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae';
@@ -20,31 +20,31 @@ Mimosa_emaensis.specificEpithet = 'emaensis';
 Mimosa_emaensis.habit = 'subshrub';
 
 Mimosa_emaensis.prickles = new Prickles();
-Mimosa_emaensis.prickles.present = false;
+Mimosa_emaensis.prickles.are = 'absent';
 
 Mimosa_emaensis.trichomes = new Trichomes();
 Mimosa_emaensis.trichomes.filiform = new Filiform();
-Mimosa_emaensis.trichomes.filiform.present = false;
+Mimosa_emaensis.trichomes.filiform.are = 'absent';
 Mimosa_emaensis.trichomes.setiform = new Setiform();
-Mimosa_emaensis.trichomes.setiform.present = false;
+Mimosa_emaensis.trichomes.setiform.are = 'absent';
 
 Mimosa_emaensis.leaf = new Leaf();
 Mimosa_emaensis.leaf.petiole = new Petiole();
 Mimosa_emaensis.leaf.petiole.present = true;
 Mimosa_emaensis.leaf.petiole.setLength(3);
 Mimosa_emaensis.leaf.bipinnate = new Bipinnate();
-Mimosa_emaensis.leaf.bipinnate.paraphillidia = new Paraphillidia();
-Mimosa_emaensis.leaf.bipinnate.paraphillidia.present = false;
-Mimosa_emaensis.leaf.bipinnate.paraphillidia.setLength(null);
+Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia();
+Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.present = false;
+Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.setLength(null);
 
 Mimosa_emaensis.flower = new Flower();
 Mimosa_emaensis.flower.calyx = new Calyx();
 Mimosa_emaensis.flower.calyx.numSepals = 4;
-Mimosa_emaensis.flower.calyx.length = 1;
+Mimosa_emaensis.flower.calyx.setLength(1);
 Mimosa_emaensis.flower.calyx.shape = 'campanulate';
 Mimosa_emaensis.flower.corolla = new Corolla();
 Mimosa_emaensis.flower.corolla.numPepals = 4;
-Mimosa_emaensis.flower.corolla.length = 3;
+Mimosa_emaensis.flower.corolla.setLengthMinMax(2, 3)
 Mimosa_emaensis.flower.corolla.shape = 'campanulate';
 
 Mimosa_emaensis.fruit = new Fruit();
@@ -56,7 +56,8 @@ Mimosa_emaensis.fruit.epicarp.shape = 'straight';
 // Description authorship
 Mimosa_emaensis.DescriptionAuthorship = new DescriptionAuthorship();
 Mimosa_emaensis.DescriptionAuthorship.addAuthor({
-    name: 'Lucas Sá Barreto Jordão'
+    name: 'Lucas Sá Barreto Jordão',
+    date: 1692107172
 })
 
 // Sources
