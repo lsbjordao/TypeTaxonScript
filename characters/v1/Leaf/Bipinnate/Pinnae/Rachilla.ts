@@ -2,6 +2,8 @@ import { Trichomes } from '../../../Trichomes';
 import { Prickles } from '../../../Prickles';
 import { Sources } from "../../../Sources";
 
+import { _setLength, _setLengthMinMax } from '../../../methods/length';
+
 export class Rachilla extends Sources {
     /**
      * Rachilla can be present or absent.
@@ -17,7 +19,11 @@ export class Rachilla extends Sources {
      * @remarks
      * It should be `null` when `present` is `false`.
      */
-    length: number | null;
+    length: {
+        value?: number | null;
+        min?: number | null;
+        max?: number | null;
+    } | null;
 
     /**
      * Prickles in rachilla.
@@ -37,15 +43,24 @@ export class Rachilla extends Sources {
     }
 
     /**
-     * Sets the length value, considering the value of `present`.
+     * Sets the length values, considering the value of `present`.
+     *
+     * @param min - The minimum length value in milimeters (mm).
+     * @param max - The maximum length value in milimeters (mm).
+     * @throws Error if `present` is `false` and either `min` or `max` is not `null`.
+     * @throws Error if `min` is greater than or equal to `max`.
+     */
+    setLengthMinMax(min: number, max: number): void {
+        _setLengthMinMax(min, max, this);
+    }
+
+    /**
+     * Sets a single value for length.
      *
      * @param value - The length value in milimeters (mm).
      * @throws Error if `present` is `false` and `value` is not `null`.
      */
     setLength(value: number | null): void {
-        if (this.present === false && value !== null) {
-            throw new Error("Cannot set length when present is false");
-        }
-        this.length = value;
+        _setLength(value, this);
     }
 }
