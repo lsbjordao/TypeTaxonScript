@@ -2,12 +2,12 @@ import { Sources } from "../Sources";
 
 export class Setiform extends Sources {
     /**
-     * Setiform trichomes can be present or absent.
-     *
+     * Are setiform trichomes 'present', 'absent', or 'present or absent'?
+     * 
      * @remarks
-     * If `present` is `false`, the `length` should be `null`.
+     * If are `absent`, the `length` should be `null`.
      */
-    present: true | false;
+    are: 'present' | 'absent' | 'present or absent';
 
     /**
      * Are Setiform-barbellate trichomes present?

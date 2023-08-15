@@ -1,5 +1,6 @@
 interface IDescriptionAuthorship {
     name: string;
+    date: number;
 }
 
 class DescriptionAuthorship {

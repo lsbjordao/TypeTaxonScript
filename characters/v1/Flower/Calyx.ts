@@ -1,16 +1,33 @@
 import { Trichomes } from '../Trichomes';
 import { Sources } from "../Sources";
 
+import { _setLength, _setLengthMinMax } from '../methods/length';
+
 export class Calyx extends Sources {
+    /**
+     * Calyx can be present or absent.
+     *
+     * @remarks
+     * If `present` is `false`, the `length` should be `null`.
+     */
+    present: true | false;
+
     /**
      * Number of sepals.
      */
     numSepals: number;
 
     /**
-     * Sepals length in milimeters (mm).
+     * Calyx length in milimeters (mm).
+     *
+     * @remarks
+     * It should be `null` when `present` is `false`.
      */
-    length: number;
+    length: {
+        value?: number | null;
+        min?: number | null;
+        max?: number | null;
+    } | null;
 
     /**
      * Calyx shape.
@@ -27,5 +44,27 @@ export class Calyx extends Sources {
      */
     constructor() {
         super();
+    }
+
+    /**
+     * Sets the length values, considering the value of `present`.
+     *
+     * @param min - The minimum length value in milimeters (mm).
+     * @param max - The maximum length value in milimeters (mm).
+     * @throws Error if `present` is `false` and either `min` or `max` is not `null`.
+     * @throws Error if `min` is greater than or equal to `max`.
+     */
+    setLengthMinMax(min: number, max: number): void {
+        _setLengthMinMax(min, max, this);
+    }
+
+    /**
+     * Sets a single value for length.
+     *
+     * @param value - The length value in milimeters (mm).
+     * @throws Error if `present` is `false` and `value` is not `null`.
+     */
+    setLength(value: number | null): void {
+        _setLength(value, this);
     }
 }

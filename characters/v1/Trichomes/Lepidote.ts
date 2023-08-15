@@ -2,13 +2,12 @@ import { Sources } from "../Sources";
 
 export class Lepidote extends Sources {
     /**
-     * Lepidote trichomes can be present or absent.
-     *
+     * Are lepidote trichomes 'present', 'absent', or 'present or absent'?
+     * 
      * @remarks
-     * @remarks
-     * If `present` is `false`, the `length` should be `null`.
+     * If are `absent`, the `length` should be `null`.
      */
-    present: true | false;
+    are: 'present' | 'absent' | 'present or absent';
 
     /**
      * Lepidote trichomes length in milimeters (mm).
