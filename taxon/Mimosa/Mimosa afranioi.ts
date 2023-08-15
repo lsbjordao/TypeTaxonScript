@@ -2,7 +2,7 @@
 import { Mimosa } from '../Mimosa';
 
 // Import characters
-import { Stems, Trichomes, Prickles, Leaf, Flower, Fruit, Source, DescriptionAuthorship, Stipule } from '../../characters/v1';
+import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit, Source, DescriptionAuthorship } from '../../characters/v1';
 import { Filiform, Granular } from '../../characters/v1/Trichomes';
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf';
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate';
@@ -77,7 +77,8 @@ Mimosa_afranioi.fruit.epicarp.prickles.present = true;
 // Description authorship
 Mimosa_afranioi.DescriptionAuthorship = new DescriptionAuthorship();
 Mimosa_afranioi.DescriptionAuthorship.addAuthor({
-    name: 'Lucas Sá Barreto Jordão'
+    name: 'Lucas Sá Barreto Jordão',
+    date: 1692107172
 })
 
 // Export Mimosa afranioi
