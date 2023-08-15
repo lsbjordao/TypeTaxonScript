@@ -2,13 +2,16 @@
 import { Mimosa } from '../Mimosa';
 
 // Import characters
-import { Stems, Trichomes, Prickles, Leaf, Flower, Fruit, Source, DescriptionAuthorship } from '../../characters/v1';
+import { Stems, Trichomes, Prickles, Leaf, Flower, Fruit } from '../../characters/v1';
 import { Filiform, Granular } from '../../characters/v1/Trichomes';
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf';
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate';
 import { Rachilla, Paraphillidia, Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae';
 import { Calyx, Corolla } from '../../characters/v1/Flower';
 import { Replum, Epicarp } from '../../characters/v1/Fruit';
+
+// Import anotations classes
+import { Source, DescriptionAuthorship } from '../../characters/v1';
 
 // Description of Mimosa afranioi
 const Mimosa_afranioi = new Mimosa();
