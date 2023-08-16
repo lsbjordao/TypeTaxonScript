@@ -25,7 +25,6 @@ Mimosa_afranioi.stems.orientation = 'procumbent'
 Mimosa_afranioi.stems.prickles = new Prickles()
 Mimosa_afranioi.stems.prickles.are = 'present'
 Mimosa_afranioi.stems.prickles.setLengthMinMax(2, 4)
-
 Mimosa_afranioi.stems.prickles.orientation = 'decurved'
 Mimosa_afranioi.stems.trichomes = new Trichomes()
 Mimosa_afranioi.stems.trichomes.filiform = new Filiform()
