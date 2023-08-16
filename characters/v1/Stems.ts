@@ -1,6 +1,6 @@
 import { Trichomes } from './Trichomes'
 import { Prickles } from './Prickles'
-import { Sources } from "./Sources"
+import { Sources } from './Sources'
 
 export class Stems extends Sources {
     /**
@@ -14,7 +14,7 @@ export class Stems extends Sources {
     shape: 'cylindric' | '3-gonal' | '4-gonal' | '5-gonal'
 
     /**
-     * Orientation of stems.
+     * Orientation of stems (single state).
      */
     orientation: 'erect' | 'ascending' | 'scandent' | 'decumbent' | 'procumbent'
 

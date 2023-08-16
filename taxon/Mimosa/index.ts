@@ -1,4 +1,7 @@
+// Import characters
 import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit } from "../../characters/v1"
+
+// Import annotation classes
 import { Sources } from "../../characters/v1/Sources"
 import { DescriptionAuthorship } from "../../characters/v1/descriptionAuthorship"
 

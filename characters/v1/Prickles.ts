@@ -1,5 +1,7 @@
+// Import annotation classes
 import { Sources } from "./Sources"
 
+// Import methods
 import { _setLength, _setLengthMinMax } from './methods/length'
 
 export class Prickles extends Sources {
