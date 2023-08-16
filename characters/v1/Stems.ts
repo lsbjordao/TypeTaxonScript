@@ -16,8 +16,9 @@ export class Stems extends Sources {
     /**
      * Orientation of stems (single state).
      */
-    orientation: 'erect' | 'ascending' | 'scandent' | 'decumbent' | 'procumbent'
-
+    orientation: 'erect' | 'ascending' | 'scandent' | 'decumbent' | 'procumbent' |
+        ('erect' | 'ascending' | 'scandent' | 'decumbent' | 'procumbent')[]
+        
     /**
      * Prickles in stems.
     */
@@ -27,7 +28,7 @@ export class Stems extends Sources {
      * Trichomes in stems.
      */
     trichomes: Trichomes
-    
+
     /**
      * Creates an instance of Stems.
      */

@@ -28,7 +28,7 @@ export class Prickles extends Sources {
     /**
      * Orientation of prickles.
      */
-    orientation: 'decurved' | 'recurved' | 'straight' | ('decurved' | 'recurved' | 'straight')[];
+    orientation: 'decurved' | 'recurved' | 'straight'
 
     /**
      * Prickles frequency.
