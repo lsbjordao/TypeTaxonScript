@@ -1,6 +1,9 @@
+// Import characters
 import { Rachilla } from "../Pinnae/Rachilla";
-import { Leaflet } from "../Pinnae/Leaflet";
 import { Paraphillidia } from "../Pinnae/Paraphillidia";
+import { Leaflet } from "./Leaflet";
+
+// Import annotation classes
 import { Sources } from "../../../Sources";
 
 class Pinnae extends Sources {

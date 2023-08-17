@@ -13,6 +13,62 @@ function _setLength(value: number | null, that: any): void {
 }
 
 /**
+ * Sets a single value for height.
+ *
+ * @param value - The height value in milimeters (mm).
+ * @throws Error if `present` is `false` and `value` is not `null`.
+ */
+function _setHeight(value: number | null, that: any): void {
+    if ((that.are === 'absent' || that.is === 'absent') && value !== null) {
+        throw new Error("Cannot set height when structure is absent")
+    }
+
+    that.length = { ...that.length, value }
+}
+
+/**
+ * Sets a single value for width.
+ *
+ * @param value - The width value in milimeters (mm).
+ * @throws Error if `present` is `false` and `value` is not `null`.
+ */
+function _setWidth(value: number | null, that: any): void {
+    if ((that.are === 'absent' || that.is === 'absent') && value !== null) {
+        throw new Error("Cannot set width when structure is absent")
+    }
+
+    that.length = { ...that.length, value }
+}
+
+/**
+ * Sets a single value for rarely minimum.
+ *
+ * @param rarelyMin - The rarely minimum value in milimeters (mm).
+ * @throws Error if `present` is `false` and `value` is not `null`.
+ */
+function _setLengthRarelyMin(rarelyMin: number, that: any): void {
+    if ((that.are === 'absent' || that.is === 'absent') && rarelyMin !== null) {
+        throw new Error("Cannot set rarely minimum when structure is absent")
+    }
+
+    that.length = { ...that.length, rarelyMin }
+}
+
+/**
+ * Sets a single value for rarely maximum.
+ *
+ * @param rarelyMax - The rarely maximum value in milimeters (mm).
+ * @throws Error if `present` is `false` and `value` is not `null`.
+ */
+function _setLengthRarelyMax(rarelyMax: number, that: any): void {
+    if ((that.are === 'absent' || that.is === 'absent') && rarelyMax !== null) {
+        throw new Error("Cannot set rarely minimum when structure is absent")
+    }
+
+    that.length = { ...that.length, rarelyMax }
+}
+
+/**
  * Sets the length values, considering the value of `present`.
  *
  * @param min - The minimum length value in milimeters (mm).
@@ -32,7 +88,37 @@ function _setLengthMinMax(min: number, max: number, that: any): void {
     that.length = { ...that.length, min, max }
 }
 
+function _setHeightMinMax(min: number, max: number, that: any): void {
+    if ((that.are === 'absent' || that.is === 'absent') && (min !== null || max !== null)) {
+        throw new Error("Cannot set height when structure is absent")
+    }
+
+    if (min >= max) {
+        throw new Error("Minimum height must be less than maximum height")
+    }
+
+    that.length = { ...that.length, min, max }
+}
+
+function _setWidthMinMax(min: number, max: number, that: any): void {
+    if ((that.are === 'absent' || that.is === 'absent') && (min !== null || max !== null)) {
+        throw new Error("Cannot set width when structure is absent")
+    }
+
+    if (min >= max) {
+        throw new Error("Minimum width must be less than maximum width")
+    }
+
+    that.length = { ...that.length, min, max }
+}
+
 export {
     _setLength,
-    _setLengthMinMax
+    _setLengthMinMax,
+    _setLengthRarelyMin,
+    _setLengthRarelyMax,
+    _setHeight,
+    _setHeightMinMax,
+    _setWidth,
+    _setWidthMinMax,
 }

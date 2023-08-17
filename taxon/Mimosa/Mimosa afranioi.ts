@@ -7,6 +7,7 @@ import { Filiform, Granular } from '../../characters/v1/Trichomes'
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
 import { Rachilla, Paraphillidia, Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
+import { Abaxial, Adaxial, Margin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 import { Calyx, Corolla } from '../../characters/v1/Flower'
 import { Replum, Epicarp } from '../../characters/v1/Fruit'
 
@@ -21,7 +22,7 @@ Mimosa_afranioi.habit = 'subshrub'
 
 Mimosa_afranioi.stems = new Stems()
 Mimosa_afranioi.stems.length = 1
-Mimosa_afranioi.stems.orientation = 'procumbent'
+Mimosa_afranioi.stems.orientation = ['procumbent', 'scandent']
 Mimosa_afranioi.stems.prickles = new Prickles()
 Mimosa_afranioi.stems.prickles.are = 'present'
 Mimosa_afranioi.stems.prickles.setLengthMinMax(2, 4)
@@ -45,7 +46,9 @@ Mimosa_afranioi.leaf.petiole.prickles.are = 'present'
 Mimosa_afranioi.leaf.bipinnate = new Bipinnate()
 Mimosa_afranioi.leaf.bipinnate.rachis = new Rachis()
 Mimosa_afranioi.leaf.bipinnate.rachis.present = true
+Mimosa_afranioi.leaf.bipinnate.rachis.setLengthRarelyMin(6)
 Mimosa_afranioi.leaf.bipinnate.rachis.setLengthMinMax(8, 14)
+Mimosa_afranioi.leaf.bipinnate.rachis.setLengthRarelyMax(16)
 Mimosa_afranioi.leaf.bipinnate.pinnae = new Pinnae()
 Mimosa_afranioi.leaf.bipinnate.pinnae.numberOfPairs = 3
 Mimosa_afranioi.leaf.bipinnate.pinnae.rachilla = new Rachilla()
@@ -54,6 +57,21 @@ Mimosa_afranioi.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
 Mimosa_afranioi.leaf.bipinnate.pinnae.paraphillidia.setLengthMinMax(1, 2)
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet = new Leaflet()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.numberOfPairs = 3
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.setHeightMinMax(1, 2)
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.setWidthMinMax(1, 2)
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform = new Filiform()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.are = 'present'
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular = new Granular()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular.are = 'present'
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes = new Trichomes()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform = new Filiform()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform.are = 'present'
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.margin = new Margin()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform = new Filiform()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform.are = 'present'
 
 Mimosa_afranioi.flower = new Flower()
 Mimosa_afranioi.flower.calyx = new Calyx()
@@ -80,8 +98,8 @@ Mimosa_afranioi.fruit.epicarp.prickles = new Prickles()
 Mimosa_afranioi.fruit.epicarp.prickles.are = 'absent'
 
 // Description authorship
-Mimosa_afranioi.DescriptionAuthorship = new DescriptionAuthorship()
-Mimosa_afranioi.DescriptionAuthorship.addAuthor({
+Mimosa_afranioi.descriptionAuthorship = new DescriptionAuthorship()
+Mimosa_afranioi.descriptionAuthorship.addAuthor({
     name: 'Lucas Sá Barreto Jordão',
     date: 1692107172
 })

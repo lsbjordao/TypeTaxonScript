@@ -54,8 +54,8 @@ Mimosa_emaensis.fruit.epicarp = new Epicarp()
 Mimosa_emaensis.fruit.epicarp.shape = 'straight'
 
 // Description authorship
-Mimosa_emaensis.DescriptionAuthorship = new DescriptionAuthorship()
-Mimosa_emaensis.DescriptionAuthorship.addAuthor({
+Mimosa_emaensis.descriptionAuthorship = new DescriptionAuthorship()
+Mimosa_emaensis.descriptionAuthorship.addAuthor({
     name: 'Lucas Sá Barreto Jordão',
     date: 1692107172
 })
@@ -63,7 +63,7 @@ Mimosa_emaensis.DescriptionAuthorship.addAuthor({
 // Sources
 const source1 = new Source()
 source1.sourceType = 'article'
-source1.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source1.authorship = 'Jordão, L.S.B. & Morim, M.P. & Simon, M.F. & Baumgratz, J.F.A.'
 source1.year = 2021
 source1.title = ''
 Mimosa_emaensis.addSource(source1)

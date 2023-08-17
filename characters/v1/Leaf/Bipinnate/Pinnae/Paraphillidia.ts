@@ -1,6 +1,8 @@
-import { Sources } from "../../../Sources";
-
+// Import methods
 import { _setLength, _setLengthMinMax } from '../../../methods/length';
+
+// Import annotation classes
+import { Sources } from "../../../Sources";
 
 export class Paraphillidia extends Sources {
     /**

@@ -65,8 +65,8 @@ Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform = new Filiform()
 Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform.are = 'present'
 
 // Description authorship
-Mimosa_schomburgkii.DescriptionAuthorship = new DescriptionAuthorship()
-Mimosa_schomburgkii.DescriptionAuthorship.addAuthor({
+Mimosa_schomburgkii.descriptionAuthorship = new DescriptionAuthorship()
+Mimosa_schomburgkii.descriptionAuthorship.addAuthor({
     name: 'Lucas Sá Barreto Jordão',
     date: 1692107172
 })
@@ -77,14 +77,14 @@ source1.sourceType = 'article'
 source1.authorship = 'Author 1'
 source1.year = 2020
 source1.title = 'Title 1'
-Mimosa_schomburgkii.flower.corolla.addSource(source1)
+Mimosa_schomburgkii.stems.trichomes.stellate.addSource(source1)
 
 const source2 = new Source()
 source2.sourceType = 'book'
 source2.authorship = 'Author 2'
 source2.year = 2021
 source2.title = 'Title 2'
-Mimosa_schomburgkii.flower.corolla.addSource(source2)
+Mimosa_schomburgkii.flower.corolla.trichomes.stellate.addSource(source2)
 
 // Export Mimosa schomburgkii
 export { Mimosa_schomburgkii }
