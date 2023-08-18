@@ -1,6 +1,11 @@
-import { Sources } from "../Sources"
+// Import characters
+import { Barbellate } from "./Barbellate";
+import { Glochidiate } from "./Glochidiate";
 
-export class Setiform extends Sources {
+// Import annotation classes
+import { Sources } from "../../Sources"
+
+class Setiform extends Sources {
     /**
      * Are setiform trichomes 'present', 'absent', or 'present or absent'?
      * 
@@ -12,12 +17,12 @@ export class Setiform extends Sources {
     /**
      * Are Setiform-barbellate trichomes present?
      */
-    barbellate: true | false
+    barbellate: Barbellate
 
     /**
      * Are Setiform-glochidiate trichomes present?
      */
-    glochidiate: true | false
+    glochidiate: Glochidiate
 
     /**
      * Setiform trichomes length in milimeters (mm).
@@ -30,7 +35,13 @@ export class Setiform extends Sources {
     /**
      * Orientation of trichomes.
      */
-    orientation: 'patent' | 'antrorse' | 'retrorse'
+    orientation:
+        'patent' |
+        'antrorse' |
+        'retrorse' |
+        'antrorse-appressed' |
+        'retrorse-appressed' |
+        ('patent' | 'antrorse' | 'retrorse' | 'antrorse-appressed' | 'retrorse-appressed')[]
 
     /**
      * Creates an instance of Setiform trichome.
@@ -38,4 +49,10 @@ export class Setiform extends Sources {
     constructor() {
         super()
     }
+}
+
+export {
+    Setiform,
+    Barbellate,
+    Glochidiate
 }

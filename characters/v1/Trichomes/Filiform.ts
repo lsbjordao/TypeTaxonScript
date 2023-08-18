@@ -18,9 +18,20 @@ export class Filiform extends Sources {
     length: number | null
 
     /**
+     * Number of cells
+     */
+    numberOfCells: 'unicelullar' | 'multicelullar' | 'unicelullar and multicelullar' | 'unicelullar or multicelullar'
+
+    /**
      * Orientation of trichomes.
      */
-    orientation: 'patent' | 'antrorse' | 'retrorse'
+    orientation:
+        'patent' |
+        'antrorse' |
+        'retrorse' |
+        'antrorse-appressed' |
+        'retrorse-appressed' |
+        ('patent' | 'antrorse' | 'retrorse' | 'antrorse-appressed' | 'retrorse-appressed')[]
 
     /**
      * Creates an instance of Filiform trichome.

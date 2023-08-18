@@ -13,84 +13,84 @@ import { Sources } from "../Sources";
 
 class Trichomes extends Sources {
     /**
-     * Filiform trichome.
+     * Filiform trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     filiform: Filiform;
 
     /**
-     * Setiform trichome.
+     * Setiform trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     setiform: Setiform;
 
     /**
-     * Stellate trichome.
+     * Stellate trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     stellate: Stellate;
 
     /**
-     * Fasciculate trichome.
+     * Fasciculate trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     fasciculate: Fasciculate;
 
     /**
-     * Dendritic trichome.
+     * Dendritic trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     dendritic: Dendritic;
 
     /**
-     * Porrect trichome.
+     * Porrect trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     porrect: Porrect;
 
     /**
-     * Verruciform trichome.
+     * Verruciform trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     verruciform: Verruciform;
 
     /**
-     * Lepidote trichome.
+     * Lepidote trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     lepidote: Lepidote;
 
     /**
-     * Peltate trichome.
+     * Peltate trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     peltate: Peltate;
 
     /**
-     * Granular trichome.
+     * Granular trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     granular: Granular;
 
     /**
-     * Capitate trichome.
+     * Capitate trichomes.
      * 
      * @source [Jordão et al. (2020)](http://www.teste.com/)
      */
     capitate: Capitate;
 
     /**
-     * Creates an instance of trichome.
+     * Creates an instance of trichomes.
      */
     constructor() {
         super();

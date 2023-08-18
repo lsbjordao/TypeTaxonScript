@@ -1,0 +1,69 @@
+// Import genus Mimosa
+import { Mimosa } from '.'
+
+// Import characters
+import { Trichomes, Leaf, Stems } from '../../characters/v1'
+import { Filiform } from '../../characters/v1/Trichomes'
+import { Bipinnate } from '../../characters/v1/Leaf'
+import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
+import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
+import { Margin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+
+// Import annotation classes
+import { Source, DescriptionAuthorship } from '../../characters/v1'
+
+// Description of Mimosa bimucronata
+const Mimosa_bimucronata = new Mimosa()
+Mimosa_bimucronata.specificEpithet = 'bimucronata'
+
+Mimosa_bimucronata.stems = new Stems()
+Mimosa_bimucronata.stems.trichomes = new Trichomes()
+Mimosa_bimucronata.stems.trichomes.filiform = new Filiform()
+Mimosa_bimucronata.stems.trichomes.filiform.are = 'present'
+Mimosa_bimucronata.stems.trichomes.filiform.orientation = ['patent', 'antrorse']
+
+Mimosa_bimucronata.leaf = new Leaf()
+Mimosa_bimucronata.leaf.bipinnate = new Bipinnate()
+Mimosa_bimucronata.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet = new Leaflet()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin = new Margin()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform = new Filiform()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform.are = 'present'
+Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform.orientation = 'antrorse-appressed'
+
+// Description authorship
+Mimosa_bimucronata.descriptionAuthorship = new DescriptionAuthorship()
+Mimosa_bimucronata.descriptionAuthorship.addAuthor({
+    name: 'Lucas Sá Barreto Jordão',
+    date: 1692107172
+})
+
+// Sources
+/// Trichomes
+const source1 = new Source()
+source1.sourceType = 'article'
+source1.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source1.year = 2020
+source1.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source1.journal = 'Flora'
+source1.number = 272
+source1.pages = 151702
+source1.figure = '1C'
+source1.obtainingMethod = 'opticalMicroscope'
+Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.addSource(source1)
+
+const source2 = new Source()
+source2.sourceType = 'article'
+source2.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source2.year = 2020
+source2.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source2.journal = 'Flora'
+source2.number = 272
+source2.pages = 151702
+source2.figure = '1D'
+source2.obtainingMethod = 'scanningElectronMicroscope'
+Mimosa_bimucronata.stems.trichomes.filiform.addSource(source2)
+
+// Export Mimosa bimucronata
+export { Mimosa_bimucronata }

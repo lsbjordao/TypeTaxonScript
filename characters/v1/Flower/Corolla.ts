@@ -37,7 +37,7 @@ export class Corolla extends Sources {
     shape: "campanulate" | "turbinate"
 
     /**
-     * Trichomes.
+     * Trichomes of corolla.
      */
     trichomes: Trichomes
 

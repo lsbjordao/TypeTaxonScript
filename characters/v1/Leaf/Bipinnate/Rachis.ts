@@ -4,7 +4,7 @@ import { Sources } from "../../Sources"
 
 import { _setLength, _setLengthRarelyMin, _setLengthRarelyMax, _setLengthMinMax } from '../../methods/length'
 
-export class Rachis extends Sources {
+class Rachis extends Sources {
     /**
      * Rachis can be present or absent.
      *
@@ -86,3 +86,5 @@ export class Rachis extends Sources {
         _setLengthRarelyMax(rarelyMax, this)
     }
 }
+
+export { Rachis }

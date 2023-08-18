@@ -2,7 +2,14 @@ export class Source {
     /**
      * Method of obtaining the source.
      */
-    obtainingMethod: 'nakedEyes' | 'stereoscopy' | 'OM' | 'SEM' | 'TEM'
+    obtainingMethod: 
+    'nakedEyes' | 
+    'stereoscope' | 
+    'opticalMicroscope' | 
+    'scanningElectronMicroscope' | 
+    'tranmissionElectronMicroscope' | 
+    'photo' |
+    ('nakedEyes' | 'stereoscope' | 'opticalMicroscope' | 'opticalMicroscopy' | 'tranmissionElectronMicroscope' | 'photo')[]
 
     /**
      * Type of the source.
@@ -25,8 +32,34 @@ export class Source {
     title: string
 
     /**
+     * Journal
+     */
+    journal: string
+
+    /**
+     * Number
+     */
+    number: number
+
+    /**
+     * Volume
+     */
+    volume: number
+
+    /**
+     * Pages
+     * 
+     * @type string | number
+     */
+    pages: string | number
+
+    /**
+     * Figure.
+     */
+    figure: string
+
+    /**
      * Describe Source.
      */
-
     constructor() { }
 }
