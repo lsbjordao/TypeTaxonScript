@@ -45,33 +45,9 @@ source1.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization
 source1.journal = 'Flora'
 source1.number = 272
 source1.pages = 151702
-source1.figure = '6H'
-source1.obtainingMethod = 'scanningElectronMicroscope'
-Mimosa_blanchetii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.addSource(source1)
-
-const source2 = new Source()
-source2.sourceType = 'article'
-source2.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source2.year = 2020
-source2.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
-source2.journal = 'Flora'
-source2.number = 272
-source2.pages = 151702
-source2.figure = '6I'
-source2.obtainingMethod = 'opticalMicroscope'
-Mimosa_blanchetii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.addSource(source2)
-
-const source3 = new Source()
-source3.sourceType = 'article'
-source3.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source3.year = 2020
-source3.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
-source3.journal = 'Flora'
-source3.number = 272
-source3.pages = 151702
-source3.figure = '8F,G,H'
-source3.obtainingMethod = 'opticalMicroscope'
-Mimosa_blanchetii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate.filiform.variantCordistipulae.addSource(source3)
+source1.figure = '8F,G,H'
+source1.obtainingMethod = 'opticalMicroscope'
+Mimosa_blanchetii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate.filiform.variantCordistipulae.addSource(source1)
 
 // Export Mimosa blanchetii
 export { Mimosa_blanchetii }
