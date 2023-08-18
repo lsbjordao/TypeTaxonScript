@@ -96,5 +96,17 @@ source4.figure = '6D'
 source4.obtainingMethod = 'scanningElectronMicroscope'
 Mimosa_furfuracea.stems.trichomes.dendritic.addSource(source4)
 
+const source5 = new Source()
+source5.sourceType = 'article'
+source5.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source5.year = 2020
+source5.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source5.journal = 'Flora'
+source5.number = 272
+source5.pages = 151702
+source5.figure = '6F'
+source5.obtainingMethod = 'scanningElectronMicroscope'
+Mimosa_furfuracea.stems.trichomes.fasciculate.addSource(source5)
+
 // Export Mimosa furfuracea
 export { Mimosa_furfuracea }

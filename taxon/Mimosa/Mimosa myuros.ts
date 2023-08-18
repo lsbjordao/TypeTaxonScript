@@ -2,13 +2,14 @@
 import { Mimosa } from '.'
 
 // Import characters
-import { Stems, Trichomes, Leaf } from '../../characters/v1'
-import { Dendritic, Stellate, Fasciculate } from '../../characters/v1/Trichomes'
+import { Stems, Trichomes, Leaf, Fruit } from '../../characters/v1'
+import { Dendritic, Stellate, Fasciculate, Verruciform } from '../../characters/v1/Trichomes'
 import { Subsessile } from '../../characters/v1/Trichomes/Stellate'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
 import { Abaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { Epicarp } from '../../characters/v1/Fruit'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -33,6 +34,12 @@ Mimosa_myuros.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
 Mimosa_myuros.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_myuros.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate = new Fasciculate()
 Mimosa_myuros.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate.are = 'present'
+
+Mimosa_myuros.fruit = new Fruit()
+Mimosa_myuros.fruit.epicarp = new Epicarp()
+Mimosa_myuros.fruit.epicarp.trichomes = new Trichomes()
+Mimosa_myuros.fruit.epicarp.trichomes.verruciform = new Verruciform()
+Mimosa_myuros.fruit.epicarp.trichomes.verruciform.are = 'present'
 
 // Description authorship
 Mimosa_myuros.descriptionAuthorship = new DescriptionAuthorship()
@@ -78,6 +85,18 @@ source3.pages = 151702
 source3.figure = '5C'
 source3.obtainingMethod = 'opticalMicroscope'
 Mimosa_myuros.stems.trichomes.dendritic.addSource(source3)
+
+const source4 = new Source()
+source4.sourceType = 'article'
+source4.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source4.year = 2020
+source4.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source4.journal = 'Flora'
+source4.number = 272
+source4.pages = 151702
+source4.figure = '7B'
+source4.obtainingMethod = 'scanningElectronMicroscope'
+Mimosa_myuros.fruit.epicarp.trichomes.verruciform.addSource(source4)
 
 // Export Mimosa myuros
 export { Mimosa_myuros }

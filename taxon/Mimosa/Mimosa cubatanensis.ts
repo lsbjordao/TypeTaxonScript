@@ -63,5 +63,17 @@ source2.figure = '1H'
 source2.obtainingMethod = 'scanningElectronMicroscope'
 Mimosa_cubatanensis.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.addSource(source2)
 
+const source3 = new Source()
+source3.sourceType = 'article'
+source3.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source3.year = 2020
+source3.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source3.journal = 'Flora'
+source3.number = 272
+source3.pages = 151702
+source3.figure = '9P'
+source3.obtainingMethod = 'stereoscope'
+Mimosa_cubatanensis.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.addSource(source3)
+
 // Export Mimosa cubatanensis
 export { Mimosa_cubatanensis }

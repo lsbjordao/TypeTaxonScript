@@ -6,7 +6,7 @@ import { Trichomes, Leaf, Stems } from '../../characters/v1'
 import { Filiform } from '../../characters/v1/Trichomes'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
-import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
+import { Leaflet, Rachilla } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
 import { Margin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 
 // Import annotation classes
@@ -25,6 +25,10 @@ Mimosa_bimucronata.stems.trichomes.filiform.orientation = ['patent', 'antrorse']
 Mimosa_bimucronata.leaf = new Leaf()
 Mimosa_bimucronata.leaf.bipinnate = new Bipinnate()
 Mimosa_bimucronata.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla = new Rachilla()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes = new Trichomes()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes.filiform = new Filiform()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes.filiform.are = 'present'
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet = new Leaflet()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin = new Margin()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
@@ -64,6 +68,18 @@ source2.pages = 151702
 source2.figure = '1D'
 source2.obtainingMethod = 'scanningElectronMicroscope'
 Mimosa_bimucronata.stems.trichomes.filiform.addSource(source2)
+
+const source3 = new Source()
+source3.sourceType = 'article'
+source3.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source3.year = 2020
+source3.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source3.journal = 'Flora'
+source3.number = 272
+source3.pages = 151702
+source3.figure = '9O'
+source3.obtainingMethod = 'scanningElectronMicroscope'
+Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes.filiform.addSource(source3)
 
 // Export Mimosa bimucronata
 export { Mimosa_bimucronata }

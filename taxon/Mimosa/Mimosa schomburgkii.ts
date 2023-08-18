@@ -3,7 +3,7 @@ import { Mimosa } from '../Mimosa'
 
 // Import characters
 import { Flower, Fruit, Leaf, Prickles, Source, Trichomes, DescriptionAuthorship } from '../../characters/v1'
-import { Capitate, Filiform, Stellate } from '../../characters/v1/Trichomes'
+import { Capitate, Filiform, Peltate, Stellate } from '../../characters/v1/Trichomes'
 import { Subsessile, Stalked, Lepidote } from '../../characters/v1/Trichomes/Stellate'
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
@@ -48,6 +48,8 @@ Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile = new Subsessile()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile.are = 'present'
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate = new Peltate()
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate.are = 'present'
 
 Mimosa_schomburgkii.flower = new Flower()
 Mimosa_schomburgkii.flower.calyx = new Calyx()
@@ -153,6 +155,31 @@ source6.pages = 151702
 source6.figure = '4I'
 source6.obtainingMethod = 'scanningElectronMicroscope'
 Mimosa_schomburgkii.flower.corolla.trichomes.stellate.lepidote.addSource(source6)
+
+const source7 = new Source()
+source7.sourceType = 'article'
+source7.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source7.year = 2020
+source7.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source7.journal = 'Flora'
+source7.number = 272
+source7.pages = 151702
+source7.figure = '9M'
+source7.obtainingMethod = 'scanningElectronMicroscope'
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate.addSource(source7)
+
+const source8 = new Source()
+source8.sourceType = 'article'
+source8.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source8.year = 2020
+source8.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source8.journal = 'Flora'
+source8.number = 272
+source8.pages = 151702
+source8.figure = '9N'
+source8.obtainingMethod = 'stereoscope'
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate.addSource(source8)
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile.addSource(source8)
 
 // Export Mimosa schomburgkii
 export { Mimosa_schomburgkii }
