@@ -5,6 +5,7 @@ import { Stipule } from './Stipule'
 import { Leaf } from "./Leaf"
 import { Flower } from "./Flower"
 import { Fruit } from "./Fruit"
+import { Gall } from "./Gall"
 import { Source } from './Source'
 import { DescriptionAuthorship } from './descriptionAuthorship'
 export {
@@ -15,6 +16,7 @@ export {
     Leaf, 
     Flower,
     Fruit,
+    Gall,
     Source,
     DescriptionAuthorship
 }

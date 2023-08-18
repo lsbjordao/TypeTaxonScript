@@ -2,6 +2,7 @@
 import { Rachilla } from "../Pinnae/Rachilla";
 import { Paraphillidia } from "../Pinnae/Paraphillidia";
 import { Leaflet } from "./Leaflet";
+import { Gall } from "../../../Gall";
 
 // Import annotation classes
 import { Sources } from "../../../Sources";
@@ -34,6 +35,11 @@ class Pinnae extends Sources {
     paraphillidia: Paraphillidia;
 
     /**
+     * Gall on a pinna.
+     */
+    gall: Gall;
+
+    /**
      * Creates an instance of leaf.
      */
     constructor() {
@@ -45,5 +51,6 @@ export {
     Pinnae,
     Rachilla,
     Leaflet,
-    Paraphillidia
+    Paraphillidia,
+    Gall
 }

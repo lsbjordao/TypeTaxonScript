@@ -2,14 +2,14 @@ export class Source {
     /**
      * Method of obtaining the source.
      */
-    obtainingMethod: 
-    'nakedEyes' | 
-    'stereoscope' | 
-    'opticalMicroscope' | 
-    'scanningElectronMicroscope' | 
-    'tranmissionElectronMicroscope' | 
-    'photo' |
-    ('nakedEyes' | 'stereoscope' | 'opticalMicroscope' | 'opticalMicroscopy' | 'tranmissionElectronMicroscope' | 'photo')[]
+    obtainingMethod:
+        'nakedEyes' |
+        'stereoscope' |
+        'opticalMicroscope' |
+        'scanningElectronMicroscope' |
+        'tranmissionElectronMicroscope' |
+        'photo' |
+        ('nakedEyes' | 'stereoscope' | 'opticalMicroscope' | 'opticalMicroscopy' | 'tranmissionElectronMicroscope' | 'photo')[]
 
     /**
      * Type of the source.
@@ -47,7 +47,7 @@ export class Source {
     volume: number
 
     /**
-     * Pages
+     * Pages.
      * 
      * @type string | number
      */
@@ -57,6 +57,11 @@ export class Source {
      * Figure.
      */
     figure: string
+
+    /**
+     * DOI.
+     */
+    doi: string
 
     /**
      * Describe Source.

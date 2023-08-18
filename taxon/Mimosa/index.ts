@@ -1,5 +1,5 @@
 // Import characters
-import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit } from "../../characters/v1"
+import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit, Gall } from "../../characters/v1"
 
 // Import annotation classes
 import { Sources } from "../../characters/v1/Sources"
@@ -57,6 +57,11 @@ export class Mimosa extends Sources {
      * Fruit of *Mimosa*
      */
     fruit: Fruit
+
+    /**
+     * Fruit of *Mimosa*
+     */
+    gall: Gall
 
     descriptionAuthorship: DescriptionAuthorship
 
