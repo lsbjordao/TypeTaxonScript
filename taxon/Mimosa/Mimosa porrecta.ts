@@ -3,7 +3,7 @@ import { Mimosa } from '.'
 
 // Import characters
 import { Trichomes, Leaf, Stems } from '../../characters/v1'
-import { Porrect } from '../../characters/v1/Trichomes'
+import { Porrect, Granular } from '../../characters/v1/Trichomes'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
@@ -24,6 +24,8 @@ Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect = new Porrect()
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.are = 'present'
+Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular = new Granular()
+Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular.are = 'present'
 
 // Description authorship
 Mimosa_porrecta.descriptionAuthorship = new DescriptionAuthorship()
@@ -45,6 +47,7 @@ source1.pages = 151702
 source1.figure = '6H'
 source1.obtainingMethod = 'scanningElectronMicroscope'
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.addSource(source1)
+Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular.addSource(source1)
 
 const source2 = new Source()
 source2.sourceType = 'article'
@@ -56,6 +59,7 @@ source2.number = 272
 source2.pages = 151702
 source2.figure = '6I'
 source2.obtainingMethod = 'opticalMicroscope'
+Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.addSource(source2)
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.addSource(source2)
 
 // Export Mimosa porrecta

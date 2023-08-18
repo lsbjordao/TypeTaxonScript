@@ -1,6 +1,7 @@
-import { Sources } from '../../Sources'
+import { VariantCordistipulae } from './VariantCordistipulae'
+import { Sources } from '../../../Sources'
 
-export class CapitateFiliform extends Sources {
+class CapitateFiliform extends Sources {
     /**
      * Are capitate-filiform trichomes 'present', 'absent', or 'present or absent'?
      * 
@@ -18,9 +19,22 @@ export class CapitateFiliform extends Sources {
     length: number
 
     /**
+     * Variant Cordistipulae
+     *
+     * @remarks
+     * It should be `null` when `present` is `false`.
+     */
+    variantCordistipulae: VariantCordistipulae
+
+    /**
      * Creates an instance of capitate-filiform trichome.
      */
     constructor() {
         super()
     }
+}
+
+export {
+    CapitateFiliform,
+    VariantCordistipulae
 }

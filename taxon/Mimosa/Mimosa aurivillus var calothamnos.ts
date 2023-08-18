@@ -3,11 +3,12 @@ import { Mimosa } from '.'
 
 // Import characters
 import { Stems, Trichomes, Leaf } from '../../characters/v1'
-import { Dendritic, Fasciculate } from '../../characters/v1/Trichomes'
+import { Dendritic, Fasciculate, Capitate } from '../../characters/v1/Trichomes'
+import { CapitateFiliform } from '../../characters/v1/Trichomes/Capitate'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { Abaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { Abaxial, Margin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 
 
 // Import annotation classes
@@ -30,6 +31,11 @@ Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial = new Ab
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate = new Fasciculate()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate.are = 'present'
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin = new Margin()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes.capitate = new Capitate()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes.capitate.filiform = new CapitateFiliform()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes.capitate.filiform.are = 'present'
 
 
 // Description authorship
@@ -76,6 +82,18 @@ source3.pages = 151702
 source3.figure = '6E'
 source3.obtainingMethod = 'scanningElectronMicroscope'
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate.addSource(source3)
+
+const source4 = new Source()
+source4.sourceType = 'article'
+source4.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source4.year = 2020
+source4.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source4.journal = 'Flora'
+source4.number = 272
+source4.pages = 151702
+source4.figure = '8D'
+source4.obtainingMethod = 'opticalMicroscope'
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes.capitate.filiform.addSource(source4)
 
 // Export Mimosa aurivillus var. calothamnos
 export { Mimosa_aurivillus_var_calothamnos }

@@ -3,7 +3,8 @@ import { Mimosa } from '.'
 
 // Import characters
 import { Trichomes, Stems } from '../../characters/v1'
-import { Setiform } from '../../characters/v1/Trichomes'
+import { Setiform, Capitate } from '../../characters/v1/Trichomes'
+import { CapitateFiliform } from '../../characters/v1/Trichomes/Capitate'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -16,6 +17,8 @@ Mimosa_glazioui.stems = new Stems()
 Mimosa_glazioui.stems.trichomes = new Trichomes()
 Mimosa_glazioui.stems.trichomes.setiform = new Setiform()
 Mimosa_glazioui.stems.trichomes.setiform.are = 'present'
+Mimosa_glazioui.stems.trichomes.capitate = new Capitate()
+Mimosa_glazioui.stems.trichomes.capitate.filiform = new CapitateFiliform()
 
 // Description authorship
 Mimosa_glazioui.descriptionAuthorship = new DescriptionAuthorship()
@@ -37,6 +40,18 @@ source1.pages = 151702
 source1.figure = '2E'
 source1.obtainingMethod = 'scanningElectronMicroscope'
 Mimosa_glazioui.stems.trichomes.setiform.addSource(source1)
+
+const source2 = new Source()
+source2.sourceType = 'article'
+source2.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source2.year = 2020
+source2.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source2.journal = 'Flora'
+source2.number = 272
+source2.pages = 151702
+source2.figure = '8E'
+source2.obtainingMethod = 'opticalMicroscope'
+Mimosa_glazioui.stems.trichomes.setiform.addSource(source2)
 
 // Export Mimosa glazioui
 export { Mimosa_glazioui }
