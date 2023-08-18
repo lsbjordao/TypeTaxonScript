@@ -1,6 +1,6 @@
 import { Sources } from '../../Sources'
 
-export class Stalked extends Sources {
+export class StellateStalked extends Sources {
     /**
      * Are stellate-stalked trichomes 'present', 'absent', or 'present or absent'?
      * 

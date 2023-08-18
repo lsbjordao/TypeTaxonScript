@@ -1,6 +1,6 @@
 import { Sources } from '../../Sources'
 
-export class Subsessile extends Sources {
+export class StellateSubsessile extends Sources {
     /**
      * Are stellate-subsessile trichomes 'present', 'absent', or 'present or absent'?
      * 

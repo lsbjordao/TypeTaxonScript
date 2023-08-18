@@ -65,6 +65,7 @@ Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform = new F
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.are = 'present'
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular = new Granular()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular.are = 'present'
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial = new Adaxial()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes = new Trichomes()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform = new Filiform()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform.are = 'present'

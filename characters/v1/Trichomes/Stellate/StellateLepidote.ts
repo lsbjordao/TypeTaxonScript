@@ -1,6 +1,6 @@
 import { Sources } from '../../Sources'
 
-export class Lepidote extends Sources {
+export class StellateLepidote extends Sources {
     /**
      * Are stellate-lepidote trichomes 'present', 'absent', or 'present or absent'?
      * 

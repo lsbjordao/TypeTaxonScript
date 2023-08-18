@@ -4,7 +4,7 @@ import { Mimosa } from '../Mimosa'
 // Import characters
 import { Stems, Trichomes, Leaf, Flower } from '../../characters/v1'
 import { Dendritic, Stellate, Fasciculate } from '../../characters/v1/Trichomes'
-import { Lepidote } from '../../characters/v1/Trichomes/Stellate'
+import { StellateLepidote } from '../../characters/v1/Trichomes/Stellate'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
@@ -36,7 +36,7 @@ Mimosa_furfuracea.flower = new Flower()
 Mimosa_furfuracea.flower.corolla = new Corolla()
 Mimosa_furfuracea.flower.corolla.trichomes = new Trichomes()
 Mimosa_furfuracea.flower.corolla.trichomes.stellate = new Stellate()
-Mimosa_furfuracea.flower.corolla.trichomes.stellate.lepidote = new Lepidote()
+Mimosa_furfuracea.flower.corolla.trichomes.stellate.lepidote = new StellateLepidote()
 Mimosa_furfuracea.flower.corolla.trichomes.stellate.lepidote.are = 'present'
 
 // Description authorship

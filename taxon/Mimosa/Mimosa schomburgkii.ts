@@ -4,7 +4,7 @@ import { Mimosa } from '../Mimosa'
 // Import characters
 import { Flower, Fruit, Leaf, Prickles, Source, Trichomes, DescriptionAuthorship } from '../../characters/v1'
 import { Capitate, Filiform, Granular, Peltate, Stellate } from '../../characters/v1/Trichomes'
-import { Subsessile, Stalked, Lepidote } from '../../characters/v1/Trichomes/Stellate'
+import { StellateSubsessile, StellateStalked, StellateLepidote } from '../../characters/v1/Trichomes/Stellate'
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
 import { Rachilla, Paraphillidia, Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
@@ -26,12 +26,8 @@ Mimosa_schomburgkii.trichomes.filiform = new Filiform()
 Mimosa_schomburgkii.trichomes.filiform.are = 'present'
 Mimosa_schomburgkii.trichomes.stellate = new Stellate()
 Mimosa_schomburgkii.trichomes.stellate.are = 'present'
-Mimosa_schomburgkii.trichomes.stellate.subsessile = new Subsessile()
+Mimosa_schomburgkii.trichomes.stellate.subsessile = new StellateSubsessile()
 Mimosa_schomburgkii.trichomes.stellate.subsessile.are = 'present'
-Mimosa_schomburgkii.trichomes.stellate.stalked = new Stalked()
-Mimosa_schomburgkii.trichomes.stellate.stalked.are = 'present'
-Mimosa_schomburgkii.trichomes.stellate.lepidote = new Lepidote()
-Mimosa_schomburgkii.trichomes.stellate.lepidote.are = 'present'
 Mimosa_schomburgkii.trichomes.granular = new Granular()
 Mimosa_schomburgkii.trichomes.granular.are = 'present'
 
@@ -47,9 +43,10 @@ Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia.setLength(null)
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet = new Leaflet()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
-Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile = new Subsessile()
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate = new Stellate()
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile = new StellateSubsessile()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile.are = 'present'
-Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.stalked = new Stalked()
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.stalked = new StellateStalked()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.stalked.are = 'present or absent'
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate = new Peltate()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate.are = 'present'
@@ -65,7 +62,7 @@ Mimosa_schomburgkii.flower.corolla.setLengthMinMax(2, 3)
 Mimosa_schomburgkii.flower.corolla.shape = 'campanulate'
 Mimosa_schomburgkii.flower.corolla.trichomes = new Trichomes()
 Mimosa_schomburgkii.flower.corolla.trichomes.stellate = new Stellate()
-Mimosa_schomburgkii.flower.corolla.trichomes.stellate.lepidote = new Lepidote()
+Mimosa_schomburgkii.flower.corolla.trichomes.stellate.lepidote = new StellateLepidote()
 Mimosa_schomburgkii.flower.corolla.trichomes.stellate.lepidote.are = 'present'
 
 Mimosa_schomburgkii.fruit = new Fruit()

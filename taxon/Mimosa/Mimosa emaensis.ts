@@ -33,6 +33,7 @@ Mimosa_emaensis.leaf.petiole = new Petiole()
 Mimosa_emaensis.leaf.petiole.present = true
 Mimosa_emaensis.leaf.petiole.setLength(3)
 Mimosa_emaensis.leaf.bipinnate = new Bipinnate()
+Mimosa_emaensis.leaf.bipinnate.pinnae = new Pinnae()
 Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
 Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.present = false
 Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.setLength(null)

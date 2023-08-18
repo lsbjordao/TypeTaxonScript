@@ -4,7 +4,7 @@ import { Mimosa } from '.'
 // Import characters
 import { Stems, Trichomes, Leaf, Fruit } from '../../characters/v1'
 import { Dendritic, Stellate, Fasciculate, Verruciform } from '../../characters/v1/Trichomes'
-import { Subsessile } from '../../characters/v1/Trichomes/Stellate'
+import { StellateSubsessile } from '../../characters/v1/Trichomes/Stellate'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
@@ -21,7 +21,7 @@ Mimosa_pilulifera_var_pseudincana.specificEpithet = 'pilulifera var. pseudincana
 Mimosa_pilulifera_var_pseudincana.stems = new Stems()
 Mimosa_pilulifera_var_pseudincana.stems.trichomes = new Trichomes()
 Mimosa_pilulifera_var_pseudincana.stems.trichomes.stellate = new Stellate()
-Mimosa_pilulifera_var_pseudincana.stems.trichomes.stellate.subsessile = new Subsessile()
+Mimosa_pilulifera_var_pseudincana.stems.trichomes.stellate.subsessile = new StellateSubsessile()
 Mimosa_pilulifera_var_pseudincana.stems.trichomes.stellate.subsessile.are = 'present'
 Mimosa_pilulifera_var_pseudincana.stems.trichomes.dendritic = new Dendritic()
 Mimosa_pilulifera_var_pseudincana.stems.trichomes.dendritic.are = 'present'

@@ -1,7 +1,7 @@
 // Import characters
-import { Subsessile } from './Subsessile'
-import { Stalked } from './Stalked'
-import { Lepidote } from './Lepidote'
+import { StellateSubsessile } from './StellateSubsessile'
+import { StellateStalked } from './StellateStalked'
+import { StellateLepidote } from './StellateLepidote'
 
 // Import annotations classes
 import { Sources } from '../../Sources'
@@ -16,19 +16,19 @@ class Stellate extends Sources {
     are: 'present' | 'absent' | 'present or absent'
 
     /**
-     * Are stellate-subsessile trichomes present?
+     * Stellate-subsessile trichomes.
      */
-    subsessile: Subsessile
+    subsessile: StellateSubsessile
 
     /**
-     * Are stellate-stalked trichomes present?
+     * Stellate-stalked trichomes.
      */
-    stalked: Stalked
+    stalked: StellateStalked
 
     /**
      * Stellate-lepidote trichomes.
      */
-    lepidote: Lepidote
+    lepidote: StellateLepidote
 
     /**
      * Stellate trichomes length in milimeters (mm).
@@ -48,7 +48,7 @@ class Stellate extends Sources {
 
 export { 
     Stellate,
-    Subsessile,
-    Stalked,
-    Lepidote
+    StellateSubsessile,
+    StellateStalked,
+    StellateLepidote
 }

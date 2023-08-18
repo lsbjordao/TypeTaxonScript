@@ -68,7 +68,7 @@ class Leaflet extends Sources {
     margin: Margin
 
     /**
-     * Trichomes in replum.
+     * Trichomes in leaflet.
      */
     trichomes: Trichomes
 
