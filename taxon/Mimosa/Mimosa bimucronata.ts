@@ -3,8 +3,8 @@ import { Mimosa } from '.'
 
 // Import characters
 import { Trichomes, Leaf, Stems } from '../../characters/v1'
-import { Filiform } from '../../characters/v1/Trichomes'
-import { Bipinnate } from '../../characters/v1/Leaf'
+import { Filiform, Granular } from '../../characters/v1/Trichomes'
+import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet, Rachilla } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
 import { Margin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
@@ -23,6 +23,10 @@ Mimosa_bimucronata.stems.trichomes.filiform.are = 'present'
 Mimosa_bimucronata.stems.trichomes.filiform.orientation = ['patent', 'antrorse']
 
 Mimosa_bimucronata.leaf = new Leaf()
+Mimosa_bimucronata.leaf.petiole = new Petiole()
+Mimosa_bimucronata.leaf.petiole.trichomes = new Trichomes()
+Mimosa_bimucronata.leaf.petiole.trichomes.granular = new Granular()
+Mimosa_bimucronata.leaf.petiole.trichomes.granular.are = 'present'
 Mimosa_bimucronata.leaf.bipinnate = new Bipinnate()
 Mimosa_bimucronata.leaf.bipinnate.pinnae = new Pinnae()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla = new Rachilla()
@@ -80,6 +84,18 @@ source3.pages = 151702
 source3.figure = '9O'
 source3.obtainingMethod = 'scanningElectronMicroscope'
 Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes.filiform.addSource(source3)
+
+const source4 = new Source()
+source4.sourceType = 'article'
+source4.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source4.year = 2020
+source4.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
+source4.journal = 'Flora'
+source4.number = 272
+source4.pages = 151702
+source4.figure = '8B'
+source4.obtainingMethod = 'opticalMicroscope'
+Mimosa_bimucronata.leaf.petiole.trichomes.granular.addSource(source4)
 
 // Export Mimosa bimucronata
 export { Mimosa_bimucronata }

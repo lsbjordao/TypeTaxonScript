@@ -1,6 +1,8 @@
-import { Sources } from "../Sources"
+import { Sources } from "../../Sources"
+import { CapitateFiliform } from "./CapitateFiliform"
+import { CapitateSetiform } from "./CapitateSetiform"
 
-export class Capitate extends Sources {
+class Capitate extends Sources {
     /**
      * Are capitate trichomes 'present', 'absent', or 'present or absent'?
      * 
@@ -10,19 +12,14 @@ export class Capitate extends Sources {
     are: 'present' | 'absent' | 'present or absent'
 
     /**
-     * Are capitate-subsessile trichomes present?
-     */
-    subsessile: true | false
-
-    /**
      * Are capitate-filiform trichomes present?
      */
-    filiform: true | false
+    filiform: CapitateFiliform
 
     /**
      * Are capitate-setiform trichomes present?
      */
-    setiform: true | false
+    setiform: CapitateSetiform
 
     /**
      * Capitate trichomes length in milimeters (mm).
@@ -38,4 +35,10 @@ export class Capitate extends Sources {
     constructor() {
         super()
     }
+}
+
+export {
+    Capitate,
+    CapitateSetiform,
+    CapitateFiliform    
 }

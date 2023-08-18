@@ -3,7 +3,7 @@ import { Mimosa } from '../Mimosa'
 
 // Import characters
 import { Flower, Fruit, Leaf, Prickles, Source, Trichomes, DescriptionAuthorship } from '../../characters/v1'
-import { Capitate, Filiform, Peltate, Stellate } from '../../characters/v1/Trichomes'
+import { Capitate, Filiform, Granular, Peltate, Stellate } from '../../characters/v1/Trichomes'
 import { Subsessile, Stalked, Lepidote } from '../../characters/v1/Trichomes/Stellate'
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
@@ -28,11 +28,12 @@ Mimosa_schomburgkii.trichomes.stellate = new Stellate()
 Mimosa_schomburgkii.trichomes.stellate.are = 'present'
 Mimosa_schomburgkii.trichomes.stellate.subsessile = new Subsessile()
 Mimosa_schomburgkii.trichomes.stellate.subsessile.are = 'present'
-Mimosa_schomburgkii.trichomes.stellate.stalked = new Lepidote()
+Mimosa_schomburgkii.trichomes.stellate.stalked = new Stalked()
+Mimosa_schomburgkii.trichomes.stellate.stalked.are = 'present'
+Mimosa_schomburgkii.trichomes.stellate.lepidote = new Lepidote()
 Mimosa_schomburgkii.trichomes.stellate.lepidote.are = 'present'
-Mimosa_schomburgkii.trichomes.capitate = new Capitate()
-Mimosa_schomburgkii.trichomes.capitate.are = 'present'
-Mimosa_schomburgkii.trichomes.capitate.subsessile = true
+Mimosa_schomburgkii.trichomes.granular = new Granular()
+Mimosa_schomburgkii.trichomes.granular.are = 'present'
 
 Mimosa_schomburgkii.leaf = new Leaf()
 Mimosa_schomburgkii.leaf.petiole = new Petiole()
@@ -48,6 +49,8 @@ Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile = new Subsessile()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile.are = 'present'
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.stalked = new Stalked()
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.stalked.are = 'present or absent'
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate = new Peltate()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate.are = 'present'
 
