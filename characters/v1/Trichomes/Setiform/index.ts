@@ -1,6 +1,6 @@
 // Import characters
 import { Barbellate } from "./Barbellate";
-import { Glochidiate } from "./Glochidiate";
+import { Glochidiate } from "./SetiformGlochidiate";
 
 // Import annotation classes
 import { Sources } from "../../Sources"
