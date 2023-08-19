@@ -5,7 +5,7 @@ import { Sources } from "../Sources"
 // Import methods
 import { _setLength, _setLengthMinMax } from '../methods/length'
 
-class Corolla extends Sources {
+export class Corolla extends Sources {
     /**
      * Calyx can be present or absent.
      *
@@ -69,9 +69,4 @@ class Corolla extends Sources {
     setLength(value: number | null): void {
         _setLength(value, this)
     }
-}
-
-export {
-    Corolla,
-    Trichomes      
 }

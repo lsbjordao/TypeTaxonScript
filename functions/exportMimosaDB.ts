@@ -14,7 +14,7 @@ const Mimosa_species: Mimosa[] = [
     Mimosa_emaensis,
     Mimosa_blanchetii,
     // Mimosa_furfuracea,
-    // Mimosa_schomburgkii
+    Mimosa_schomburgkii
 ]
 
 // Export MimosaDB.json
