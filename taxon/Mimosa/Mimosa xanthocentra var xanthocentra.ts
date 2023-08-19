@@ -4,7 +4,7 @@ import { Mimosa } from '.'
 // Import characters
 import { Trichomes, Stems } from '../../characters/v1'
 import { Setiform } from '../../characters/v1/Trichomes'
-import { Barbellate } from '../../characters/v1/Trichomes/Setiform'
+import { SetiformBarbellate } from '../../characters/v1/Trichomes/Setiform'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -16,7 +16,7 @@ Mimosa_xanthocentra_var_xanthocentra.specificEpithet = 'xanthocentra_var_xanthoc
 Mimosa_xanthocentra_var_xanthocentra.stems = new Stems()
 Mimosa_xanthocentra_var_xanthocentra.stems.trichomes = new Trichomes()
 Mimosa_xanthocentra_var_xanthocentra.stems.trichomes.setiform = new Setiform()
-Mimosa_xanthocentra_var_xanthocentra.stems.trichomes.setiform.barbellate = new Barbellate()
+Mimosa_xanthocentra_var_xanthocentra.stems.trichomes.setiform.barbellate = new SetiformBarbellate()
 Mimosa_xanthocentra_var_xanthocentra.stems.trichomes.setiform.barbellate.are = 'present'
 
 // Description authorship

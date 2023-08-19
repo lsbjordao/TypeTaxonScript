@@ -4,7 +4,7 @@ import { Mimosa } from '.'
 // Import characters
 import { Trichomes, Fruit } from '../../characters/v1'
 import { Setiform } from '../../characters/v1/Trichomes'
-import { Glochidiate } from '../../characters/v1/Trichomes/Setiform'
+import { SetiformGlochidiate } from '../../characters/v1/Trichomes/Setiform'
 import { Epicarp } from '../../characters/v1/Fruit'
 
 // Import annotation classes
@@ -18,7 +18,7 @@ Mimosa_campicola.fruit = new Fruit()
 Mimosa_campicola.fruit.epicarp = new Epicarp()
 Mimosa_campicola.fruit.epicarp.trichomes = new Trichomes()
 Mimosa_campicola.fruit.epicarp.trichomes.setiform = new Setiform()
-Mimosa_campicola.fruit.epicarp.trichomes.setiform.glochidiate = new Glochidiate()
+Mimosa_campicola.fruit.epicarp.trichomes.setiform.glochidiate = new SetiformGlochidiate()
 Mimosa_campicola.fruit.epicarp.trichomes.setiform.glochidiate.are = 'present'
 
 // Description authorship

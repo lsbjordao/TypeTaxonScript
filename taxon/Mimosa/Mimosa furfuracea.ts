@@ -1,5 +1,5 @@
 // Import genus Mimosa
-import { Mimosa } from '../Mimosa'
+import { Mimosa } from '.'
 
 // Import characters
 import { Stems, Trichomes, Leaf, Flower } from '../../characters/v1'
@@ -106,7 +106,7 @@ source5.number = 272
 source5.pages = 151702
 source5.figure = '6F'
 source5.obtainingMethod = 'scanningElectronMicroscope'
-Mimosa_furfuracea.stems.trichomes.fasciculate.addSource(source5)
+Mimosa_furfuracea.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate.addSource(source5)
 
 // Export Mimosa furfuracea
 export { Mimosa_furfuracea }

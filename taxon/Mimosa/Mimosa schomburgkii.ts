@@ -1,5 +1,5 @@
 // Import genus Mimosa
-import { Mimosa } from '../Mimosa'
+import { Mimosa } from '.'
 
 // Import characters
 import { Flower, Fruit, Leaf, Prickles, Source, Trichomes, DescriptionAuthorship } from '../../characters/v1'

@@ -1,6 +1,6 @@
 // Import characters
-import { Barbellate } from "./Barbellate";
-import { Glochidiate } from "./SetiformGlochidiate";
+import { SetiformBarbellate } from "./SetiformBarbellate";
+import { SetiformGlochidiate } from "./SetiformGlochidiate";
 
 // Import annotation classes
 import { Sources } from "../../Sources"
@@ -17,12 +17,12 @@ class Setiform extends Sources {
     /**
      * Are Setiform-barbellate trichomes present?
      */
-    barbellate: Barbellate
+    barbellate: SetiformBarbellate
 
     /**
      * Are Setiform-glochidiate trichomes present?
      */
-    glochidiate: Glochidiate
+    glochidiate: SetiformGlochidiate
 
     /**
      * Setiform trichomes length in milimeters (mm).
@@ -53,6 +53,6 @@ class Setiform extends Sources {
 
 export {
     Setiform,
-    Barbellate,
-    Glochidiate
+    SetiformBarbellate,
+    SetiformGlochidiate
 }

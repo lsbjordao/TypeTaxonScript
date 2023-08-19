@@ -4,7 +4,7 @@ import { Mimosa } from '.'
 // Import characters
 import { Trichomes, Fruit } from '../../characters/v1'
 import { Setiform } from '../../characters/v1/Trichomes'
-import { Barbellate } from '../../characters/v1/Trichomes/Setiform'
+import { SetiformBarbellate } from '../../characters/v1/Trichomes/Setiform'
 import { Epicarp } from '../../characters/v1/Fruit'
 
 // Import annotation classes
@@ -18,7 +18,7 @@ Mimosa_diplotricha_var_diplotricha.fruit = new Fruit()
 Mimosa_diplotricha_var_diplotricha.fruit.epicarp = new Epicarp()
 Mimosa_diplotricha_var_diplotricha.fruit.epicarp.trichomes = new Trichomes()
 Mimosa_diplotricha_var_diplotricha.fruit.epicarp.trichomes.setiform = new Setiform()
-Mimosa_diplotricha_var_diplotricha.fruit.epicarp.trichomes.setiform.barbellate = new Barbellate()
+Mimosa_diplotricha_var_diplotricha.fruit.epicarp.trichomes.setiform.barbellate = new SetiformBarbellate()
 Mimosa_diplotricha_var_diplotricha.fruit.epicarp.trichomes.setiform.barbellate.are = 'present'
 
 // Description authorship

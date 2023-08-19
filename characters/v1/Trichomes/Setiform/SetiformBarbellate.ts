@@ -1,6 +1,6 @@
 import { Sources } from '../../Sources'
 
-export class Barbellate extends Sources {
+export class SetiformBarbellate extends Sources {
     /**
      * Are setiform-barbellate trichomes 'present', 'absent', or 'present or absent'?
      * 

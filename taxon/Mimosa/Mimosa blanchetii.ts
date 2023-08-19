@@ -27,6 +27,7 @@ Mimosa_blanchetii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichome
 Mimosa_blanchetii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate = new Capitate()
 Mimosa_blanchetii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate.filiform = new CapitateFiliform()
 Mimosa_blanchetii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate.filiform.variantCordistipulae = new VariantCordistipulae()
+Mimosa_blanchetii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate.filiform.variantCordistipulae.are = 'present'
 
 // Description authorship
 Mimosa_blanchetii.descriptionAuthorship = new DescriptionAuthorship()

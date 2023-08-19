@@ -1,6 +1,6 @@
 import { Sources } from '../../Sources'
 
-export class Glochidiate extends Sources {
+export class SetiformGlochidiate extends Sources {
     /**
      * Are setiform-glochidiate trichomes 'present', 'absent', or 'present or absent'?
      * 

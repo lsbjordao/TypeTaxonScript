@@ -4,7 +4,7 @@ import { Mimosa } from '.'
 // Import characters
 import { Trichomes, Stems } from '../../characters/v1'
 import { Granular, Setiform } from '../../characters/v1/Trichomes'
-import { Barbellate } from '../../characters/v1/Trichomes/Setiform'
+import { SetiformBarbellate } from '../../characters/v1/Trichomes/Setiform'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -16,7 +16,7 @@ Mimosa_dryandroides_var_dryandroides.specificEpithet = 'dryandroides var. dryand
 Mimosa_dryandroides_var_dryandroides.stems = new Stems()
 Mimosa_dryandroides_var_dryandroides.stems.trichomes = new Trichomes()
 Mimosa_dryandroides_var_dryandroides.stems.trichomes.setiform = new Setiform()
-Mimosa_dryandroides_var_dryandroides.stems.trichomes.setiform.barbellate = new Barbellate()
+Mimosa_dryandroides_var_dryandroides.stems.trichomes.setiform.barbellate = new SetiformBarbellate()
 Mimosa_dryandroides_var_dryandroides.stems.trichomes.setiform.barbellate.are = 'present'
 Mimosa_dryandroides_var_dryandroides.stems.trichomes.granular = new Granular()
 Mimosa_dryandroides_var_dryandroides.stems.trichomes.granular.are = 'present'
