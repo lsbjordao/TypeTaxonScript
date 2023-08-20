@@ -4,7 +4,7 @@ import { Sources } from "../Sources";
 
 import { _setLength, _setLengthMinMax } from '../methods/length';
 
-class Petiole extends Sources {
+export class Petiole extends Sources {
     /**
      * Petiole can be present or absent.
      *
@@ -69,5 +69,3 @@ class Petiole extends Sources {
         _setLength(value, this);
     }
 }
-
-export { Petiole }
