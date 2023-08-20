@@ -3,7 +3,7 @@ import { Mimosa } from '.'
 
 // Import characters
 import { Trichomes, Leaf, Stems } from '../../characters/v1'
-import { Porrect, Granular } from '../../characters/v1/Trichomes'
+import { Porrect, Granular, Filiform } from '../../characters/v1/Trichomes'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
@@ -26,6 +26,8 @@ Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect = new Po
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.are = 'present'
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular = new Granular()
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular.are = 'present'
+Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform = new Filiform()
+Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.are = 'present'
 
 // Description authorship
 Mimosa_porrecta.descriptionAuthorship = new DescriptionAuthorship()
