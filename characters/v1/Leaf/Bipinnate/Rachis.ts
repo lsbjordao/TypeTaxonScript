@@ -2,7 +2,7 @@ import { Trichomes } from '../../Trichomes'
 import { Prickles } from '../../Prickles'
 import { Sources } from "../../Sources"
 
-import { _setLength, _setLengthRarelyMin, _setLengthRarelyMax, _setLengthMinMax } from '../../methods/length'
+import { _setLength, _setLengthRarelyMin, _setLengthRarelyMax, _setLengthMinMax } from '../../methods/sizes'
 
 class Rachis extends Sources {
     /**

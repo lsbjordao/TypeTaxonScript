@@ -5,7 +5,7 @@ import { Adaxial } from './Adaxial'
 import { Margin } from './Margin'
 
 // Import methods
-import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../../../../methods/length'
+import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../../../../methods/sizes'
 
 // Import annotation classes
 import { Sources } from "../../../../Sources";

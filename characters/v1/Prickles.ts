@@ -2,7 +2,7 @@
 import { Sources } from "./Sources"
 
 // Import methods
-import { _setLength, _setLengthMinMax } from './methods/length'
+import { _setLength, _setLengthMinMax } from './methods/sizes'
 
 export class Prickles extends Sources {
     /**

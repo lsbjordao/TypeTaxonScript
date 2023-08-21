@@ -1,7 +1,7 @@
 import { Trichomes } from '../Trichomes'
 import { Sources } from "../Sources"
 
-import { _setLength, _setLengthMinMax } from '../methods/length'
+import { _setLength, _setLengthMinMax } from '../methods/sizes'
 
 export class Calyx extends Sources {
     /**
