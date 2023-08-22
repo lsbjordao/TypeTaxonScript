@@ -2,12 +2,13 @@
 import { Mimosa } from '.'
 
 // Import characters
-import { Trichomes, Leaf, Stems } from '../../characters/v1'
+import { Stems, Trichomes, Prickles, Stipule, Leaf } from '../../characters/v1'
 import { Porrect, Granular, Filiform } from '../../characters/v1/Trichomes'
-import { Bipinnate } from '../../characters/v1/Leaf'
+import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { Abaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { LeafletAbaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { StipuleMargin } from '../../characters/v1/Stipule'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -16,11 +17,36 @@ import { Source, DescriptionAuthorship } from '../../characters/v1'
 const Mimosa_porrecta = new Mimosa()
 Mimosa_porrecta.specificEpithet = 'porrecta'
 
+Mimosa_porrecta.habit = 'shrub'
+
+Mimosa_porrecta.stems = new Stems()
+Mimosa_porrecta.stems.orientation = 'scandent'
+Mimosa_porrecta.stems.shape = 'cylindric'
+Mimosa_porrecta.stems.trichomes = new Trichomes
+Mimosa_porrecta.stems.trichomes.filiform = new Filiform()
+Mimosa_porrecta.stems.trichomes.filiform.are = 'present'
+Mimosa_porrecta.stems.trichomes.porrect = new Porrect()
+Mimosa_porrecta.stems.trichomes.porrect.are = 'present'
+Mimosa_porrecta.stems.trichomes.granular = new Granular()
+Mimosa_porrecta.stems.trichomes.granular.are = 'present'
+Mimosa_porrecta.stems.prickles = new Prickles()
+Mimosa_porrecta.stems.prickles.orientation = 'decurved'
+
+Mimosa_porrecta.stipule = new Stipule()
+Mimosa_porrecta.stipule.setHeightMinMax(2.5, 3.5)
+Mimosa_porrecta.stipule.setWidthMinMax(1, 1.7)
+Mimosa_porrecta.stipule.shape = 'lanceolate'
+Mimosa_porrecta.stipule.persistance = 'persistent'
+Mimosa_porrecta.stipule.margin = new StipuleMargin()
+
 Mimosa_porrecta.leaf = new Leaf()
 Mimosa_porrecta.leaf.bipinnate = new Bipinnate()
 Mimosa_porrecta.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_porrecta.leaf.bipinnate.pinnae.numberOfPairs = 1
+Mimosa_porrecta.leaf.bipinnate.pinnae.prickles = new Prickles()
+Mimosa_porrecta.leaf.bipinnate.pinnae.prickles.orientation = 'decurved'
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
+Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect = new Porrect()
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.are = 'present'
@@ -28,6 +54,9 @@ Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular = new G
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular.are = 'present'
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform = new Filiform()
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.are = 'present'
+Mimosa_porrecta.leaf.petiole = new Petiole()
+Mimosa_porrecta.leaf.petiole.prickles = new Prickles()
+Mimosa_porrecta.leaf.petiole.prickles.orientation = 'decurved'
 
 // Description authorship
 Mimosa_porrecta.descriptionAuthorship = new DescriptionAuthorship()

@@ -9,7 +9,7 @@ import { VariantCordistipulae } from '../../characters/v1/Trichomes/Capitate/Cap
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { Abaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { LeafletAbaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -22,7 +22,7 @@ Mimosa_minarum.leaf = new Leaf()
 Mimosa_minarum.leaf.bipinnate = new Bipinnate()
 Mimosa_minarum.leaf.bipinnate.pinnae = new Pinnae()
 Mimosa_minarum.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_minarum.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
+Mimosa_minarum.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()
 Mimosa_minarum.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_minarum.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate = new Capitate()
 Mimosa_minarum.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate.filiform = new CapitateFiliform()

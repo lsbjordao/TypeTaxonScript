@@ -8,7 +8,7 @@ import { StellateSubsessile } from '../../characters/v1/Trichomes/Stellate'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { Abaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { LeafletAbaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 import { Epicarp } from '../../characters/v1/Fruit'
 
 // Import annotation classes
@@ -30,7 +30,7 @@ Mimosa_myuros.leaf = new Leaf()
 Mimosa_myuros.leaf.bipinnate = new Bipinnate()
 Mimosa_myuros.leaf.bipinnate.pinnae = new Pinnae()
 Mimosa_myuros.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_myuros.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
+Mimosa_myuros.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()
 Mimosa_myuros.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_myuros.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate = new Fasciculate()
 Mimosa_myuros.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate.are = 'present'

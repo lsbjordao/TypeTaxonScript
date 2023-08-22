@@ -1,4 +1,6 @@
 // Import characters
+import { Trichomes } from '../../../Trichomes'
+import { Prickles } from '../../../Prickles'
 import { Rachilla } from "../Pinnae/Rachilla";
 import { Paraphillidia } from "../Pinnae/Paraphillidia";
 import { Leaflet } from "./Leaflet";
@@ -34,6 +36,16 @@ class Pinnae extends Sources {
      */
     paraphillidia: Paraphillidia;
 
+    /**
+     * Prickles in stems.
+    */
+    prickles: Prickles
+
+    /**
+     * Trichomes in stems.
+     */
+    trichomes: Trichomes
+    
     /**
      * Gall on a pinna.
      */

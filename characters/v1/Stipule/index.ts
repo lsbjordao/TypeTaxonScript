@@ -1,20 +1,24 @@
 // Import characters
-import { Trichomes } from '../../../../Trichomes'
-import { LeafletAbaxial } from './LeafletAbaxial'
-import { LeafletAdaxial } from './LeafletAdaxial'
-import { LeafletMargin } from './LeafletMargin'
+import { Trichomes } from '../Trichomes'
+import { Prickles } from '../Prickles'
+import { StipuleAbaxial } from './StipuleAbaxial'
+import { StipuleAdaxial } from './StipuleAdaxial'
+import { StipuleMargin } from './StipuleMargin'
 
 // Import methods
-import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../../../../methods/sizes'
+import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../methods/sizes'
 
 // Import annotation classes
-import { Sources } from "../../../../Sources";
+import { Sources } from "../Sources"
 
-class Leaflet extends Sources {
+class Stipule extends Sources {
     /**
-     * Number of leaflet pair(s).
+     * Stipule can be present or absent.
+     *
+     * @remarks
+     * If `present` is `false`, the `length` should be `null`.
      */
-    numberOfPairs: number;
+    present: true | false
 
     /**
      * Leaflet length in milimeters (mm).
@@ -51,32 +55,86 @@ class Leaflet extends Sources {
         min?: number | null
         max?: number | null
     } | null
-    
-    /**
-     * Abaxial surface of leaflet.
-     */
-    abaxial: LeafletAbaxial
 
     /**
-     * Adaxial surface of leaflet.
+     * Shape of Stipule.
      */
-    adaxial: LeafletAdaxial
+    shape: 'linear-subulate' | 'lanceolate' | 'deltate' | 'ovate' | 'spinniform'
 
     /**
-     * Margin of leaflet.
+     * Nervation of Stipule.
      */
-    margin: LeafletMargin
+    nervation: '1-nerved' | 'plurinerved'
 
     /**
-     * Trichomes in leaflet.
+     * Persistance of Stipule.
+     */
+    persistance: 'persistent' | 'caducous'
+
+    /**
+     * Prickles.
+    */
+    prickles: Prickles
+
+    /**
+     * Trichomes.
      */
     trichomes: Trichomes
 
     /**
-     * Creates an instance of Leaflet.
+     * Abaxial surface of stipule.
+     */
+    abaxial: StipuleAbaxial
+
+    /**
+     * Adaxial surface of stipule.
+     */
+    adaxial: StipuleAdaxial
+
+    /**
+     * Margin of stipule.
+     */
+    margin: StipuleMargin
+    
+    /**
+     * Creates an instance of Stipule.
      */
     constructor() {
-        super();
+        super()
+    }
+
+    /**
+     * Sets the length values, considering the value of `present`.
+     *
+     * @param min - The minimum length value in milimeters (mm).
+     * @param max - The maximum length value in milimeters (mm).
+     * @throws Error if `present` is `false` and either `min` or `max` is not `null`.
+     * @throws Error if `min` is greater than or equal to `max`.
+     */
+    setLengthMinMax(min: number, max: number): void {
+        if (this.present === false && (min !== null || max !== null)) {
+            throw new Error("Cannot set length when present is false")
+        }
+
+        if (min >= max) {
+            throw new Error("Minimum length must be less than maximum length")
+        }
+
+        this.length = { ...this.length, min, max }
+    }
+
+    /**
+     * Sets a single value for length.
+     *
+     * @param value - The length value in milimeters (mm).
+     * @throws Error if `present` is `false` and `value` is not `null`.
+     */
+    setLength(value: number | null): void {
+        if (this.present === false && value !== null) {
+            throw new Error("Cannot set length when present is false")
+        }
+
+        this.length = { ...this.length, value }
     }
 
     /**
@@ -125,8 +183,8 @@ class Leaflet extends Sources {
 }
 
 export {
-    Leaflet,
-    LeafletAbaxial,
-    LeafletAdaxial,
-    LeafletMargin
+    Stipule,
+    StipuleAbaxial,
+    StipuleAdaxial,
+    StipuleMargin
 }

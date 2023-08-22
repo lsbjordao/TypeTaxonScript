@@ -7,7 +7,7 @@ import { Filiform, Granular } from '../../characters/v1/Trichomes'
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
 import { Rachilla, Paraphillidia, Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { Abaxial, Adaxial, Margin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { LeafletAbaxial, LeafletAdaxial, LeafletMargin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 import { Calyx, Corolla } from '../../characters/v1/Flower'
 import { Replum, Epicarp } from '../../characters/v1/Fruit'
 
@@ -59,17 +59,17 @@ Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet = new Leaflet()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.numberOfPairs = 3
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.setHeightMinMax(1, 2)
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.setWidthMinMax(1, 2)
-Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial = new Abaxial()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform = new Filiform()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.are = 'present'
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular = new Granular()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular.are = 'present'
-Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial = new Adaxial()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial = new LeafletAdaxial()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes = new Trichomes()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform = new Filiform()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform.are = 'present'
-Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.margin = new Margin()
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.margin = new LeafletMargin()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform = new Filiform()
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform.are = 'present'
