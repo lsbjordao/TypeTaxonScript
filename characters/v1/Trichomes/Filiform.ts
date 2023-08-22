@@ -2,7 +2,7 @@ import { Sources } from "../Sources"
 
 export class Filiform extends Sources {
     /**
-     * Are capitate trichomes 'present', 'absent', or 'present or absent'?
+     * Are filiform trichomes 'present', 'absent', or 'present or absent'?
      * 
      * @remarks
      * If are `absent`, the `length` should be `null`.
@@ -18,12 +18,12 @@ export class Filiform extends Sources {
     length: number | null
 
     /**
-     * Number of cells
+     * Number of cells of filiform trichomes
      */
     numberOfCells: 'unicelullar' | 'multicelullar' | 'unicelullar and multicelullar' | 'unicelullar or multicelullar'
 
     /**
-     * Orientation of trichomes.
+     * Orientation of filiform trichomes.
      */
     orientation:
         'patent' |
@@ -34,7 +34,12 @@ export class Filiform extends Sources {
         ('patent' | 'antrorse' | 'retrorse' | 'antrorse-appressed' | 'retrorse-appressed')[]
 
     /**
-     * Creates an instance of Filiform trichome.
+     * Density of filiform trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
+     * Creates an instance of filiform trichome.
      */
     constructor() {
         super()

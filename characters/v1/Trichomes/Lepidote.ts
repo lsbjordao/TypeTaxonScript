@@ -18,6 +18,11 @@ export class Lepidote extends Sources {
     length: number | null
 
     /**
+     * Density of lepidote trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Lepidote trichome.
      */
     constructor() {

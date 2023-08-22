@@ -1,8 +1,19 @@
+import { Bracteole } from "./Bracteole";
 import { Corolla } from "./Corolla";
 import { Calyx } from "./Calyx";
 import { Sources } from "../Sources";
 
 class Flower extends Sources {
+    /**
+     * Merism.
+     */
+    merism: '3-merous' | '4-merous' | '5-merous'
+
+    /**
+     * Bracteole.
+     */
+    bracteole: Bracteole;
+
     /**
      * Calyx.
      */
@@ -23,6 +34,7 @@ class Flower extends Sources {
 
 export {
     Flower,
+    Bracteole,
     Corolla,
     Calyx
 }

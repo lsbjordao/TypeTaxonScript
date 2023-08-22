@@ -19,6 +19,11 @@ class CapitateFiliform extends Sources {
     length: number
 
     /**
+     * Density of capitate-filiform trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Variant Cordistipulae
      *
      * @remarks

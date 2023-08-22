@@ -18,6 +18,11 @@ export class VariantCordistipulae extends Sources {
     length: number
 
     /**
+     * Density of filiform variant Cordistipulae trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of capitate-setiform trichome.
      */
     constructor() {

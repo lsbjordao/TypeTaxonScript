@@ -18,7 +18,12 @@ export class SetiformGlochidiate extends Sources {
     length: number
 
     /**
-     * Creates an instance of Setiform-glochidiate trichome.
+     * Density of setiform-glochidiate trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
+     * Creates an instance of setiform-glochidiate trichome.
      */
     constructor() {
         super()

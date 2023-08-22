@@ -18,6 +18,11 @@ export class Fasciculate extends Sources {
     length: number | null
 
     /**
+     * Density of fasciculate trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Fasciculate trichome.
      */
     constructor() {

@@ -38,7 +38,7 @@ Mimosa_schomburgkii.leaf.petiole.setLength(3)
 Mimosa_schomburgkii.leaf.bipinnate = new Bipinnate()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae = new Pinnae()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
-Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia.present = false
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia.are = 'present'
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia.setLength(null)
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet = new Leaflet()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()

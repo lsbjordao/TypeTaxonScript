@@ -39,6 +39,11 @@ class Stellate extends Sources {
     length: number | null
 
     /**
+     * Density of stellate trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Stellate trichome.
      */
     constructor() {

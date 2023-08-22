@@ -18,7 +18,12 @@ export class StellateSubsessile extends Sources {
     length: number
 
     /**
-     * Creates an instance of Stellate-subsessile trichome.
+     * Density of stellate-subsessile trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
+     * Creates an instance of stellate-subsessile trichome.
      */
     constructor() {
         super()

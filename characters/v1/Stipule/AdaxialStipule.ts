@@ -1,14 +1,14 @@
 import { Trichomes } from '../Trichomes'
 import { Sources } from '../Sources'
 
-export class StipuleMargin extends Sources {
+export class AdaxialStipule extends Sources {
     /**
-     * Trichomes on margin of stipule.
+     * Trichomes on adaxial surface of stipule.
      */
     trichomes: Trichomes
 
     /**
-     * Creates an instance of margin of stipule.
+     * Creates an instance of adaxial surface of stipule.
      */
     constructor() {
         super();

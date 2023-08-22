@@ -7,7 +7,7 @@ import { Dendritic, Fasciculate, Verruciform } from '../../characters/v1/Trichom
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { LeafletAbaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AbaxialLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 import { Epicarp } from '../../characters/v1/Fruit'
 
 // Import annotation classes
@@ -26,7 +26,7 @@ Mimosa_scabrella.leaf = new Leaf()
 Mimosa_scabrella.leaf.bipinnate = new Bipinnate()
 Mimosa_scabrella.leaf.bipinnate.pinnae = new Pinnae()
 Mimosa_scabrella.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_scabrella.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()
+Mimosa_scabrella.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 Mimosa_scabrella.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_scabrella.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate = new Fasciculate()
 Mimosa_scabrella.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate.are = 'present'

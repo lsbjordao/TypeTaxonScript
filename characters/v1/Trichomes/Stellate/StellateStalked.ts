@@ -18,6 +18,11 @@ export class StellateStalked extends Sources {
     length: number
 
     /**
+     * Density of stellate-stalked trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Stellate-stalked trichome.
      */
     constructor() {

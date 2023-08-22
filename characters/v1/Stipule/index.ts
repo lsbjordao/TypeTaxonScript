@@ -1,9 +1,9 @@
 // Import characters
 import { Trichomes } from '../Trichomes'
 import { Prickles } from '../Prickles'
-import { StipuleAbaxial } from './StipuleAbaxial'
-import { StipuleAdaxial } from './StipuleAdaxial'
-import { StipuleMargin } from './StipuleMargin'
+import { AbaxialStipule } from './AbaxialStipule'
+import { AdaxialStipule } from './AdaxialStipule'
+import { MarginStipule } from './MarginStipule'
 
 // Import methods
 import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../methods/sizes'
@@ -64,7 +64,11 @@ class Stipule extends Sources {
     /**
      * Nervation of Stipule.
      */
-    nervation: '1-nerved' | 'plurinerved'
+    nervation: 
+    '1-nerved' | 
+    '3-nerved' | 
+    'plurinerved' |
+    ('1-nerved' | '3-nerved' | 'plurinerved')[]
 
     /**
      * Persistance of Stipule.
@@ -84,17 +88,17 @@ class Stipule extends Sources {
     /**
      * Abaxial surface of stipule.
      */
-    abaxial: StipuleAbaxial
+    abaxial: AbaxialStipule
 
     /**
      * Adaxial surface of stipule.
      */
-    adaxial: StipuleAdaxial
+    adaxial: AdaxialStipule
 
     /**
      * Margin of stipule.
      */
-    margin: StipuleMargin
+    margin: MarginStipule
     
     /**
      * Creates an instance of Stipule.
@@ -184,7 +188,7 @@ class Stipule extends Sources {
 
 export {
     Stipule,
-    StipuleAbaxial,
-    StipuleAdaxial,
-    StipuleMargin
+    AbaxialStipule,
+    AdaxialStipule,
+    MarginStipule
 }

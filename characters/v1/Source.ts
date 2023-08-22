@@ -9,7 +9,16 @@ export class Source {
         'scanningElectronMicroscope' |
         'tranmissionElectronMicroscope' |
         'photo' |
-        ('nakedEyes' | 'stereoscope' | 'opticalMicroscope' | 'opticalMicroscopy' | 'tranmissionElectronMicroscope' | 'photo')[]
+        'drawing' |
+        (
+            'nakedEyes' |
+            'stereoscope' |
+            'opticalMicroscope' |
+            'opticalMicroscopy' |
+            'tranmissionElectronMicroscope' |
+            'photo' |
+            'drawing'
+        )[]
 
     /**
      * Type of the source.

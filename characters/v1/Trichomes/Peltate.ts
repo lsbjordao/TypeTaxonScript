@@ -18,6 +18,11 @@ export class Peltate extends Sources {
     length: number | null
 
     /**
+     * Density of peltate trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Peltate trichome.
      */
     constructor() {

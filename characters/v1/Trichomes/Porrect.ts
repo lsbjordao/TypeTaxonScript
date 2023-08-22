@@ -28,6 +28,11 @@ export class Porrect extends Sources {
     length: number | null
 
     /**
+     * Density of porrect trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Porrect trichome.
      */
     constructor() {

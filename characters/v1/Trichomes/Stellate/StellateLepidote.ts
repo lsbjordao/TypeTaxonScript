@@ -18,6 +18,11 @@ export class StellateLepidote extends Sources {
     length: number
 
     /**
+     * Density of stellate-lepidote trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Stellate-lepidote trichome.
      */
     constructor() {

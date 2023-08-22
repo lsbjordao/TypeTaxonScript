@@ -18,6 +18,11 @@ export class Dendritic extends Sources {
     length: number | null
 
     /**
+     * Density of dendritic trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Dendritic trichome.
      */
     constructor() {

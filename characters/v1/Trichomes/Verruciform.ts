@@ -18,6 +18,11 @@ export class Verruciform extends Sources {
     length: number | null
 
     /**
+     * Density of verruciform trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Verruciform trichome.
      */
     constructor() {

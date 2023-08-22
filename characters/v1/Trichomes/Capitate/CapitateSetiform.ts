@@ -18,6 +18,11 @@ export class CapitateSetiform extends Sources {
     length: number
 
     /**
+     * Density of capitate-setiform trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of capitate-setiform trichome.
      */
     constructor() {

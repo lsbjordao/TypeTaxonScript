@@ -18,7 +18,12 @@ export class SetiformBarbellate extends Sources {
     length: number
 
     /**
-     * Creates an instance of Setiform-barbellate trichome.
+     * Density of setiform-barbellate trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
+     * Creates an instance of setiform-barbellate trichomes.
      */
     constructor() {
         super()

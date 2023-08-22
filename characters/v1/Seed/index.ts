@@ -1,33 +1,10 @@
-// Import characters
-import { Trichomes } from '../../../../Trichomes'
-import { AbaxialLeaflet } from './AbaxialLeaflet'
-import { AdaxialLeaflet } from './AdaxialLeaflet'
-import { MarginLeaflet } from './MarginLeaflet'
-
 // Import methods
-import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../../../../methods/sizes'
+import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../methods/sizes'
 
 // Import annotation classes
-import { Sources } from "../../../../Sources"
+import { Sources } from "../Sources"
 
-class Leaflet extends Sources {
-    /**
-     * Number of leaflet pair(s).
-     */
-    numberOfPairs: number
-
-    /**
-     * Leaflet length in milimeters (mm).
-     *
-     * @remarks
-     * It should be `null` when `present` is `false`.
-     */
-    length: {
-        value?: number | null
-        min?: number | null
-        max?: number | null
-    } | null
-
+export class Seed extends Sources {
     /**
      * Leaflet height in milimeters (mm).
      *
@@ -53,59 +30,17 @@ class Leaflet extends Sources {
     } | null
 
     /**
-     * Shape of leaflet.
+     * Shape of seed.
      */
-    shape:
-        'linear' |
-        'lanceolate' |
-        'elliptic' |
-        'oval' |
-        ('linear' | 'lanceolate' | 'elliptic' | 'oval')[]
+    shape: 'ovate' | 'obovate'
+    
+    /**
+     * Pleurogram of seed.
+     */
+    pleurogram: 'apical-basal' | 'median'
 
     /**
-     * Base of leaflet.
-     */
-    base:
-        'obtuse' |
-        'cordate' |
-        'oblique-obtuse' |
-        ('obtuse' | 'cordate' | 'oblique-obtuse')[]
-
-    /**
-     * Apex of leaflet.
-     */
-    apex:
-    'acute' |
-    'rounded' |
-    ('acute' | 'rounded')[]
-
-    /**
-     * Abaxial surface of leaflet.
-     */
-    abaxial: AbaxialLeaflet
-
-    /**
-     * Adaxial surface of leaflet.
-     */
-    adaxial: AdaxialLeaflet
-
-    /**
-     * Margin of leaflet.
-     */
-    margin: MarginLeaflet
-
-    /**
-     * Trichomes in leaflet.
-     */
-    trichomes: Trichomes
-
-    /**
-     * The innermost of proximal pair reduced?
-     */
-    innermostOfProximalPairReduced: 'yes' | 'no'
-
-    /**
-     * Creates an instance of Leaflet.
+     * Creates an instance of seed.
      */
     constructor() {
         super()
@@ -154,11 +89,4 @@ class Leaflet extends Sources {
     setWidth(value: number | null): void {
         _setWidth(value, this)
     }
-}
-
-export {
-    Leaflet,
-    AbaxialLeaflet,
-    AdaxialLeaflet,
-    MarginLeaflet
 }

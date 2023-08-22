@@ -1,5 +1,19 @@
 // Import characters
-import { Stems, Trichomes, Prickles, Stipule, Leaf, Flower, Fruit, Gall } from "../../characters/v1"
+import {
+    Stems,
+    Trichomes,
+    Prickles,
+    Stipule,
+    Leaf,
+    Inflorescence,
+    Flower,
+    Androecium,
+    Pollen,
+    Ginoecium,
+    Fruit,
+    Seed,
+    Gall
+} from "../../characters/v1"
 
 // Import annotation classes
 import { Sources } from "../../characters/v1/Sources"
@@ -49,9 +63,29 @@ export class Mimosa extends Sources {
     leaf: Leaf
 
     /**
+     * Inflorescence of *Mimosa*
+     */
+    inflorescence: Inflorescence
+
+    /**
      * Flower of *Mimosa*
      */
     flower: Flower
+
+    /**
+     * Androecium of *Mimosa*
+     */
+    androecium: Androecium
+
+    /**
+     * Pollen of *Mimosa*
+     */
+    pollen: Pollen
+
+    /**
+     * Ginoecium of *Mimosa*
+     */
+    ginoecium: Ginoecium
 
     /**
      * Fruit of *Mimosa*
@@ -59,7 +93,12 @@ export class Mimosa extends Sources {
     fruit: Fruit
 
     /**
-     * Fruit of *Mimosa*
+     * Seed of *Mimosa*
+     */
+    seed: Seed
+
+    /**
+     * Gall in *Mimosa*
      */
     gall: Gall
 

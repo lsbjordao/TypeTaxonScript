@@ -1,9 +1,9 @@
 import { Trichomes } from '../../../../Trichomes'
 import { Sources } from '../../../../Sources'
 
-export class LeafletAdaxial extends Sources {
+export class MarginLeaflet extends Sources {
     /**
-     * Trichomes on adaxial surface of leaflet.
+     * Trichomes on margin of leaflet.
      */
     trichomes: Trichomes
 

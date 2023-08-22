@@ -10,6 +10,11 @@ export class Granular extends Sources {
     are: 'present' | 'absent' | 'present or absent'
 
     /**
+     * Density of granular trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Granular trichome.
      */
     constructor() {

@@ -30,6 +30,11 @@ class Capitate extends Sources {
     length: number | null
 
     /**
+     * Density of capitate trichomes.
+     */
+    density: 'sparsely' | 'densely'
+
+    /**
      * Creates an instance of Capitate trichome.
      */
     constructor() {
