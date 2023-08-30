@@ -37,8 +37,6 @@ export class Mimosa extends Sources {
 
     /**
      * Prickles of *Mimosa*.
-     * 
-     * @kind decurved, recurved, straight.
      */
     prickles: Prickles
 
@@ -52,8 +50,8 @@ export class Mimosa extends Sources {
      * 
      * @kind filiform, setiform, stellate, dendritic, capitate-filiform, capitate-setiform.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
-     * @source [Santos-Silva et al. (2013)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
+     * @source [Santos-Silva et al. (2013)](https://doi.org/10.11646/phytotaxa.119.1.1)
      */
     trichomes: Trichomes
 

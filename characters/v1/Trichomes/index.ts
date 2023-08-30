@@ -15,77 +15,77 @@ class Trichomes extends Sources {
     /**
      * Filiform trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     filiform: Filiform
 
     /**
      * Setiform trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     setiform: Setiform
 
     /**
      * Stellate trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     stellate: Stellate
 
     /**
      * Fasciculate trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     fasciculate: Fasciculate
 
     /**
      * Dendritic trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     dendritic: Dendritic
 
     /**
      * Porrect trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     porrect: Porrect
 
     /**
      * Verruciform trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     verruciform: Verruciform
 
     /**
      * Lepidote trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     lepidote: Lepidote
 
     /**
      * Peltate trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     peltate: Peltate
 
     /**
      * Granular trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     granular: Granular
 
     /**
      * Capitate trichomes.
      * 
-     * @source [Jordão et al. (2020)](http://www.teste.com/)
+     * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      */
     capitate: Capitate
 
