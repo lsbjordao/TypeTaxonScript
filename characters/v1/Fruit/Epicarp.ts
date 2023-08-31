@@ -9,9 +9,13 @@ export class Epicarp extends Sources {
     type: 'monospermic' | 'undivided'
 
     /**
-     * Shape of epicarp.
+     * Margin of epicarp.
+     * @remarks
+     * The epicarp margin can be: 'straight' or 'undulate':
+     * - **straight**: The epicarp margin is straight and not undulated.
+     * - **undulate**: The epicarp margin is undulated and not straight.
      */
-    shape: 'straight' | 'undulate'
+    margin: 'straight' | 'undulate'
 
     /**
      * Prickles in epicarp.

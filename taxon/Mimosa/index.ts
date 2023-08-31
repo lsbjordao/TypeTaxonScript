@@ -48,7 +48,19 @@ export class Mimosa extends Sources {
     /**
      * Trichomes of *Mimosa*.
      * 
-     * @kind filiform, setiform, stellate, dendritic, capitate-filiform, capitate-setiform.
+     * @remarks
+     * Trichomes in *Mimosa* can be classified in the following types:
+     * - **filiform**
+     * - **setiform**
+     * - **stellate**
+     * - **dendritic**
+     * - **porrect**
+     * - **fasciculate**
+     * - **verruciform**
+     * - **lepidote**
+     * - **granular**
+     * - **capitate-filiform**
+     * - **capitate-setiform**
      * 
      * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)
      * @source [Santos-Silva et al. (2013)](https://doi.org/10.11646/phytotaxa.119.1.1)
