@@ -10,18 +10,18 @@ import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Source, DescriptionAuthorship } from '../../characters/v1'
 
 // Description of Mimosa gemulata
-const Mimosa_gemulata = new Mimosa()
-Mimosa_gemulata.specificEpithet = 'gemulata'
+const Mimosa_gemmulata = new Mimosa()
+Mimosa_gemmulata.specificEpithet = 'gemmulata'
 
-Mimosa_gemulata.leaf = new Leaf()
-Mimosa_gemulata.leaf.bipinnate = new Bipinnate()
-Mimosa_gemulata.leaf.bipinnate.pinnae = new Pinnae()
-Mimosa_gemulata.leaf.bipinnate.pinnae.gall = new Gall()
-Mimosa_gemulata.leaf.bipinnate.pinnae.gall.inducedBy = 'Cecidomyiidae'
+Mimosa_gemmulata.leaf = new Leaf()
+Mimosa_gemmulata.leaf.bipinnate = new Bipinnate()
+Mimosa_gemmulata.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_gemmulata.leaf.bipinnate.pinnae.gall = new Gall()
+Mimosa_gemmulata.leaf.bipinnate.pinnae.gall.inducedBy = 'Cecidomyiidae'
 
 // Description authorship
-Mimosa_gemulata.descriptionAuthorship = new DescriptionAuthorship()
-Mimosa_gemulata.descriptionAuthorship.addAuthor({
+Mimosa_gemmulata.descriptionAuthorship = new DescriptionAuthorship()
+Mimosa_gemmulata.descriptionAuthorship.addAuthor({
     name: 'Juliana Santos-Silva',
     date: 1692107172
 })
@@ -39,7 +39,7 @@ source1.volume = 2
 source1.figure = '2P,Q'
 source1.obtainingMethod = 'photo'
 source1.doi = 'https://doi.org/10.1590/1676-0611-BN-2017-0402'
-Mimosa_gemulata.leaf.bipinnate.pinnae.gall.addSource(source1)
+Mimosa_gemmulata.leaf.bipinnate.pinnae.gall.addSource(source1)
 
 // Export Mimosa gemulata
-export { Mimosa_gemulata }
+export { Mimosa_gemmulata }
