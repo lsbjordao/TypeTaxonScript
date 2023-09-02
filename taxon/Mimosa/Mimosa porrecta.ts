@@ -72,6 +72,7 @@ Mimosa_porrecta.stipule.adaxial.trichomes = new Trichomes()
 Mimosa_porrecta.stipule.adaxial.trichomes.filiform = new Filiform()
 Mimosa_porrecta.stipule.adaxial.trichomes.filiform.are = 'present'
 Mimosa_porrecta.stipule.abaxial = new AbaxialStipule()
+Mimosa_porrecta.stipule.abaxial.trichomes = new Trichomes()
 Mimosa_porrecta.stipule.abaxial.trichomes.setiform = new Setiform()
 Mimosa_porrecta.stipule.abaxial.trichomes.setiform.are = 'present'
 Mimosa_porrecta.stipule.abaxial.trichomes.setiform.orientation = 'antrorse'
