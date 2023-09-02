@@ -7,7 +7,7 @@ import { Filiform, Lepidote } from '../../characters/v1/Trichomes'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { LeafletAbaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AbaxialLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -20,7 +20,7 @@ Mimosa_extensa.leaf = new Leaf()
 Mimosa_extensa.leaf.bipinnate = new Bipinnate()
 Mimosa_extensa.leaf.bipinnate.pinnae = new Pinnae
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()
+Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform = new Filiform()
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.are = 'present'

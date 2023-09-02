@@ -7,7 +7,7 @@ import { Filiform } from '../../characters/v1/Trichomes'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { LeafletMargin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { MarginLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -20,7 +20,7 @@ Mimosa_invisa_var_macrostachya.leaf = new Leaf()
 Mimosa_invisa_var_macrostachya.leaf.bipinnate = new Bipinnate()
 Mimosa_invisa_var_macrostachya.leaf.bipinnate.pinnae = new Pinnae
 Mimosa_invisa_var_macrostachya.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_invisa_var_macrostachya.leaf.bipinnate.pinnae.leaflet.margin = new LeafletMargin()
+Mimosa_invisa_var_macrostachya.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
 Mimosa_invisa_var_macrostachya.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
 Mimosa_invisa_var_macrostachya.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform = new Filiform()
 Mimosa_invisa_var_macrostachya.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform.are = 'present'

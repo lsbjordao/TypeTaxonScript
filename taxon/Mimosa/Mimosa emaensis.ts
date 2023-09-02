@@ -52,7 +52,7 @@ Mimosa_emaensis.fruit = new Fruit()
 Mimosa_emaensis.fruit.replum = new Replum()
 Mimosa_emaensis.fruit.replum.shape = 'straight'
 Mimosa_emaensis.fruit.epicarp = new Epicarp()
-Mimosa_emaensis.fruit.epicarp.shape = 'straight'
+Mimosa_emaensis.fruit.epicarp.margin = 'straight'
 
 // Description authorship
 Mimosa_emaensis.descriptionAuthorship = new DescriptionAuthorship()

@@ -8,7 +8,7 @@ import { StellateLepidote } from '../../characters/v1/Trichomes/Stellate'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { LeafletAbaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AbaxialLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 import { Corolla } from '../../characters/v1/Flower'
 
 // Import annotation classes
@@ -27,7 +27,7 @@ Mimosa_furfuracea.leaf = new Leaf()
 Mimosa_furfuracea.leaf.bipinnate = new Bipinnate()
 Mimosa_furfuracea.leaf.bipinnate.pinnae = new Pinnae()
 Mimosa_furfuracea.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_furfuracea.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()
+Mimosa_furfuracea.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 Mimosa_furfuracea.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_furfuracea.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate = new Fasciculate()
 Mimosa_furfuracea.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate.are = 'present'

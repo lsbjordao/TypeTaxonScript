@@ -10,7 +10,7 @@ import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
 import { Rachilla, Paraphillidia, Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
 import { Corolla, Calyx } from '../../characters/v1/Flower'
 import { Replum, Epicarp } from '../../characters/v1/Fruit'
-import { LeafletAbaxial } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AbaxialLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 
 // Description of Mimosa schomburgkii
 const Mimosa_schomburgkii = new Mimosa()
@@ -41,7 +41,7 @@ Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia.are = 'present'
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia.setLength(null)
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate = new Stellate()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile = new StellateSubsessile()
@@ -70,7 +70,7 @@ Mimosa_schomburgkii.fruit.replum = new Replum()
 Mimosa_schomburgkii.fruit.replum.shape = 'straight'
 Mimosa_schomburgkii.fruit.epicarp = new Epicarp()
 Mimosa_schomburgkii.fruit.epicarp.type = 'monospermic'
-Mimosa_schomburgkii.fruit.epicarp.shape = 'straight'
+Mimosa_schomburgkii.fruit.epicarp.margin = 'straight'
 Mimosa_schomburgkii.fruit.epicarp.trichomes = new Trichomes()
 Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform = new Filiform()
 Mimosa_schomburgkii.fruit.epicarp.trichomes.filiform.are = 'present'

@@ -8,7 +8,7 @@ import { CapitateFiliform } from '../../characters/v1/Trichomes/Capitate'
 import { Bipinnate } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { LeafletAbaxial, LeafletMargin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AbaxialLeaflet, MarginLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 
 
 // Import annotation classes
@@ -27,11 +27,11 @@ Mimosa_aurivillus_var_calothamnos.leaf = new Leaf()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate = new Bipinnate()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae = new Pinnae()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial = new LeafletAbaxial()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate = new Fasciculate()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate.are = 'present'
-Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin = new LeafletMargin()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes.capitate = new Capitate()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes.capitate.filiform = new CapitateFiliform()

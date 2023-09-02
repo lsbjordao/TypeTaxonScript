@@ -7,7 +7,7 @@ import { Filiform, Granular } from '../../characters/v1/Trichomes'
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
 import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet, Rachilla } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { LeafletMargin } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { MarginLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -34,7 +34,7 @@ Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes = new Trichomes()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes.filiform = new Filiform()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes.filiform.are = 'present'
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin = new LeafletMargin()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform = new Filiform()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform.are = 'present'
