@@ -17,6 +17,7 @@ const Mimosa_cubatanensis = new Mimosa()
 Mimosa_cubatanensis.specificEpithet = 'cubatanensis'
 
 Mimosa_cubatanensis.stems = new Stems()
+Mimosa_cubatanensis.stems.trichomes = new Trichomes()
 Mimosa_cubatanensis.stems.trichomes.filiform = new Filiform()
 Mimosa_cubatanensis.stems.trichomes.filiform.are = 'present'
 

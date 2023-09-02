@@ -14,6 +14,8 @@ Mimosa_pudica_var_hispida.specificEpithet = 'pudica var. hispida'
 
 Mimosa_pudica_var_hispida.stems = new Stems()
 Mimosa_pudica_var_hispida.stems.trichomes = new Trichomes()
+Mimosa_pudica_var_hispida.stems.trichomes.filiform = new Filiform()
+Mimosa_pudica_var_hispida.stems.trichomes.filiform.are = 'present'
 Mimosa_pudica_var_hispida.stems.trichomes.setiform = new Setiform()
 Mimosa_pudica_var_hispida.stems.trichomes.setiform.are = 'present'
 
@@ -36,7 +38,7 @@ source1.number = 272
 source1.pages = 151702
 source1.figure = '2F'
 source1.obtainingMethod = 'scanningElectronMicroscope'
-Mimosa_pudica_var_hispida.trichomes.filiform.addSource(source1)
+Mimosa_pudica_var_hispida.stems.trichomes.filiform.addSource(source1)
 
 // Export Mimosa pudica_var_hispida
 export { Mimosa_pudica_var_hispida }
