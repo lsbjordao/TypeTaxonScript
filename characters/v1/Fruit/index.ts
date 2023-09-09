@@ -4,7 +4,7 @@ import { Epicarp } from './Epicarp'
 import { Stipe } from './Stipe'
 
 // Import methods
-import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../methods/sizes'
+import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax, _setNumberOfSeedsMinMax } from '../methods/sizes'
 
 // Import annotation classes
 import { Sources } from "../Sources"
@@ -58,10 +58,12 @@ class Fruit extends Sources {
      * Number of seeds.
      */
     numberOfSeeds: {
-        value?: number,
-        min?: number,
-        max?: number
-    }
+        value?: number | null
+        rarelyMin?: number | null
+        rarelyMax?: number | null
+        min?: number | null
+        max?: number | null
+    } | null
 
     /**
      * Replum.
@@ -78,6 +80,16 @@ class Fruit extends Sources {
      */
     constructor() {
         super()
+    }
+
+    /**
+     * Sets the number of seeds values.
+     *
+     * @param min - The minimum height value in milimeters (mm).
+     * @param max - The maximum height value in milimeters (mm).
+     */
+    setNumberOfSeedsMinMax(min: number, max: number): void {
+        _setNumberOfSeedsMinMax(min, max, this)
     }
 
     /**

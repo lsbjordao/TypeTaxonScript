@@ -186,8 +186,7 @@ Mimosa_porrecta.fruit.epicarp.trichomes.porrect.density = 'densely'
 Mimosa_porrecta.fruit.epicarp.trichomes.filiform = new Filiform()
 Mimosa_porrecta.fruit.epicarp.trichomes.filiform.are = 'present'
 Mimosa_porrecta.fruit.epicarp.trichomes.filiform.density = 'densely'
-Mimosa_porrecta.fruit.numberOfSeeds.min = 2
-Mimosa_porrecta.fruit.numberOfSeeds.max = 5
+Mimosa_porrecta.fruit.setNumberOfSeedsMinMax(2, 5)
 
 Mimosa_porrecta.seed = new Seed()
 Mimosa_porrecta.seed.setHeightMinMax(4, 4.5)

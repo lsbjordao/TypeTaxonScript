@@ -10,8 +10,7 @@ import {
     Leaf, 
     Inflorescence, 
     Flower,
-    Androecium, 
-    Pollen, 
+    Androecium,
     Ginoecium,
     Fruit
 } from '../../characters/v1'
@@ -178,8 +177,7 @@ Mimosa_osmarii.fruit.epicarp.type = 'monospermic'
 Mimosa_osmarii.fruit.epicarp.trichomes = new Trichomes()
 Mimosa_osmarii.fruit.epicarp.trichomes.granular = new Granular()
 Mimosa_osmarii.fruit.epicarp.trichomes.granular.are = 'present'
-Mimosa_osmarii.fruit.numberOfSeeds.min = 6
-Mimosa_osmarii.fruit.numberOfSeeds.max = 9
+Mimosa_osmarii.fruit.setNumberOfSeedsMinMax(6, 9)
 
 
 // Description authorship
