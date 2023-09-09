@@ -137,8 +137,6 @@ class Leaflet extends Sources {
      *
      * @param min - The minimum height value in milimeters (mm).
      * @param max - The maximum height value in milimeters (mm).
-     * @throws Error if `present` is `false` and either `min` or `max` is not `null`.
-     * @throws Error if `min` is greater than or equal to `max`.
      */
     setHeightMinMax(min: number, max: number): void {
         _setHeightMinMax(min, max, this)
@@ -149,8 +147,6 @@ class Leaflet extends Sources {
      *
      * @param min - The minimum width value in milimeters (mm).
      * @param max - The maximum width value in milimeters (mm).
-     * @throws Error if `present` is `false` and either `min` or `max` is not `null`.
-     * @throws Error if `min` is greater than or equal to `max`.
      */
     setWidthMinMax(min: number, max: number): void {
         _setWidthMinMax(min, max, this)
