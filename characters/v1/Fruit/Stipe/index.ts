@@ -1,24 +1,23 @@
-import { Trichomes } from '../Trichomes'
-import { Sources } from "../Sources"
+// Import methods
+import { _setLength, _setLengthMinMax } from "../../methods/sizes"
 
-import { _setLength, _setLengthMinMax } from '../methods/sizes'
+// Import annotation classes
+import { Sources } from "../../Sources"
 
-export class Calyx extends Sources {
+export class Stipe extends Sources {
     /**
-     * Calyx can be present or absent.
-     *
+     * Is stipe of fruits 'present', 'absent', or 'present or absent'?
+     * 
      * @remarks
-     * If `present` is `false`, the `length` should be `null`.
+     * Fruits can be:
+     * - **present**: fruit stipitate.
+     * - **absent**: fruit sessile.
+     * - **present or absent**: fruit stipitate or sessile.
      */
-    present: true | false
+    is: 'present' | 'absent' | 'present or absent'
 
     /**
-     * Number of sepals.
-     */
-    numSepals: number
-
-    /**
-     * Calyx length in milimeters (mm).
+     * Stipe length in milimeters (mm).
      *
      * @remarks
      * It should be `null` when `present` is `false`.
@@ -30,22 +29,7 @@ export class Calyx extends Sources {
     } | null
 
     /**
-     * Calyx shape.
-     */
-    shape: 'campanulate' | 'pappiform'
-
-    /**
-     * Calyx apex.
-     */
-    apex: 'denticulate' | 'shortly denticulate'
-
-    /**
-     * Trichomes.
-     */
-    trichomes: Trichomes
-
-    /**
-     * Creates an instance of Calyx.
+     * Creates an instance of stipe of fruit.
      */
     constructor() {
         super()

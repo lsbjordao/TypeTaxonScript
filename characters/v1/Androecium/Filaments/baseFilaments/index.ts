@@ -1,28 +1,29 @@
-import { Trichomes } from '../Trichomes'
-import { Sources } from "../Sources"
+// Import characters
+import { ConnationOfFilamentsAtBase } from './ConnationOfFilamentsAtBase'
 
-import { _setLength, _setLengthMinMax } from '../methods/sizes'
+// Import methods
+import { _setLength, _setLengthMinMax } from '../../../methods/sizes'
 
-export class Calyx extends Sources {
+// Import annotation classes
+import { Sources } from "../../../Sources"
+
+class baseFilaments extends Sources {
     /**
-     * Calyx can be present or absent.
-     *
-     * @remarks
-     * If `present` is `false`, the `length` should be `null`.
+     * Filaments free at base, not connated.
      */
-    present: true | false
-
-    /**
-     * Number of sepals.
-     */
-    numSepals: number
+    free: 'yes'
 
     /**
-     * Calyx length in milimeters (mm).
-     *
-     * @remarks
-     * It should be `null` when `present` is `false`.
+     * Connation of filaments at base.
      */
+    connation: ConnationOfFilamentsAtBase
+
+    /**
+    * Base connation length in milimeters (mm).
+    *
+    * @remarks
+    * It should be `null` when `present` is `false`.
+    */
     length: {
         value?: number | null
         min?: number | null
@@ -30,22 +31,7 @@ export class Calyx extends Sources {
     } | null
 
     /**
-     * Calyx shape.
-     */
-    shape: 'campanulate' | 'pappiform'
-
-    /**
-     * Calyx apex.
-     */
-    apex: 'denticulate' | 'shortly denticulate'
-
-    /**
-     * Trichomes.
-     */
-    trichomes: Trichomes
-
-    /**
-     * Creates an instance of Calyx.
+     * Creates an instance of base of filaments.
      */
     constructor() {
         super()
@@ -72,4 +58,9 @@ export class Calyx extends Sources {
     setLength(value: number | null): void {
         _setLength(value, this)
     }
+}
+
+export {
+    baseFilaments,
+    ConnationOfFilamentsAtBase
 }

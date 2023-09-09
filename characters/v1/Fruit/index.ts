@@ -1,6 +1,7 @@
 // Import characters
-import { Replum } from "./Replum"
-import { Epicarp } from "./Epicarp"
+import { Replum } from './Replum'
+import { Epicarp } from './Epicarp'
+import { Stipe } from './Stipe'
 
 // Import methods
 import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../methods/sizes'
@@ -10,9 +11,14 @@ import { Sources } from "../Sources"
 
 class Fruit extends Sources {
     /**
-     * Type.
+     * Type of fruit.
      */
     type: 'craspedium' | 'sacellum'
+
+    /**
+     * Type.
+     */
+    curvature: 'straight' | 'curved' | 'slightly curved'
 
     /**
      * Leaflet height in milimeters (mm).
@@ -46,12 +52,16 @@ class Fruit extends Sources {
     /**
      * Stipe of fruit.
      */
-    stipe: 'stipitate' | 'sessile'
+    stipe: Stipe
 
     /**
      * Number of seeds.
      */
-    numberOfSeeds: number | string
+    numberOfSeeds: {
+        value?: number,
+        min?: number,
+        max?: number
+    }
 
     /**
      * Replum.
@@ -98,5 +108,6 @@ class Fruit extends Sources {
 export{
     Fruit,
     Replum,
-    Epicarp
+    Epicarp,
+    Stipe
 }

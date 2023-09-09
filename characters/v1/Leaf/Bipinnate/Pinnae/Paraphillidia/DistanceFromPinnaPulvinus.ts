@@ -1,15 +1,12 @@
 // Import methods
-import { _setLength, _setLengthMinMax } from '../../methods/sizes';
+import { _setLength, _setLengthMinMax } from '../../../../methods/sizes';
 
 // Import annotation classes
-import { Sources } from '../../Sources'
+import { Sources } from "../../../../Sources";
 
-export class CapitateInflorescence extends Sources {
+export class DistanceFromPinnaPulvinus extends Sources {
     /**
-     * Inflorescence length in milimeters (mm).
-     *
-     * @remarks
-     * It should be `null` when `present` is `false`.
+     * Distance of paraphillidia pair from pinna-pulvinus, length in milimeters (mm).
      */
     length: {
         value?: number | null;
@@ -18,17 +15,7 @@ export class CapitateInflorescence extends Sources {
     } | null;
 
     /**
-     * Shape of capitate inflorescence.
-     */
-    numberPerNode: number | (number)[]
-
-    /**
-     * Shape of capitate inflorescence.
-     */
-    shape: 'globose' | 'elliptic'
-
-    /**
-     * Creates an instance of Leaflet.
+     * Creates an instance of distance of paraphillidia from pinna-pulvinus.
      */
     constructor() {
         super();

@@ -13,8 +13,7 @@ import {
     Androecium, 
     Pollen, 
     Ginoecium,
-    Fruit, 
-    Seed
+    Fruit
 } from '../../characters/v1'
 import { Granular, Filiform } from '../../characters/v1/Trichomes'
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
@@ -30,8 +29,10 @@ import { AbaxialStipule, MarginStipule } from '../../characters/v1/Stipule'
 import { CapitateInflorescence, Peduncle } from '../../characters/v1/Inflorescence'
 import { Calyx, Corolla, Bracteole } from '../../characters/v1/Flower'
 import { Lobes } from '../../characters/v1/Flower/Corolla'
-import { Epicarp, Replum } from '../../characters/v1/Fruit'
+import { Stipe, Epicarp, Replum } from '../../characters/v1/Fruit'
 import { Filaments } from '../../characters/v1/Androecium'
+import { baseFilaments } from '../../characters/v1/Androecium/Filaments'
+import { ConnationOfFilamentsAtBase } from '../../characters/v1/Androecium/Filaments/baseFilaments'
 import { Ovary } from '../../characters/v1/Ginoecium'
 
 // Import annotation classes
@@ -51,7 +52,7 @@ Mimosa_osmarii.stems.trichomes.granular = new Granular()
 Mimosa_osmarii.stems.trichomes.granular.are = 'present'
 Mimosa_osmarii.stems.prickles = new Prickles()
 Mimosa_osmarii.stems.prickles.orientation = 'decurved'
-Mimosa_osmarii.stems.prickles.length.max = 2
+Mimosa_osmarii.stems.prickles.setLength(2)
 
 
 Mimosa_osmarii.stipule = new Stipule()
@@ -89,21 +90,21 @@ Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.are = 'present'
 Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.setLengthMinMax(0.2, 3)
 Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.pairLength = 'equal'
 Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.shape = ['lanceolate', 'linear']
-// add 'developing 1–5.5 mm from the pinna-pulvinus and 1.1–3 mm from the first pair of leaflets, but always closer to the first pair than the pinna-pulvinus'
-
-// fix
-Mimosa_osmarii.leaf.bipinnate.pinnae.numberOfPairs.rarelyMin = 1
-Mimosa_osmarii.leaf.bipinnate.pinnae.numberOfPairs.min = 2
-Mimosa_osmarii.leaf.bipinnate.pinnae.numberOfPairs.max = 2
-Mimosa_osmarii.leaf.bipinnate.pinnae.numberOfPairs.rarelyMax = 4
+Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.position = [
+    'closer to the first pair of leaflets', 
+    'on the middle of the axis, between the pulvinus and the first pair of leaflets'
+]
+Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.distanceFromPinnaPulvinus.setLengthMinMax(1, 5.5)
+Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.distanceFromFirstPairOfLeaflets.setLengthMinMax(1.1, 3)
+Mimosa_osmarii.leaf.bipinnate.pinnae.setNumberOfPairsRarelyMin(1)
+Mimosa_osmarii.leaf.bipinnate.pinnae.setNumberOfPairsMinMax(2, 4)
 Mimosa_osmarii.leaf.bipinnate.pinnae.prickles = new Prickles()
 Mimosa_osmarii.leaf.bipinnate.pinnae.prickles.orientation = 'decurved'
 Mimosa_osmarii.leaf.bipinnate.pinnae.rachilla = new Rachilla()
 Mimosa_osmarii.leaf.bipinnate.pinnae.rachilla.prickles = new Prickles()
 Mimosa_osmarii.leaf.bipinnate.pinnae.rachilla.prickles.are = 'present'
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-// add number of pairs in leaflet
-// values: 2-3
+Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.setNumberOfPairsMinMax(2, 3)
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.innermostOfProximalPairReduced = 'yes'
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.setHeightMinMax(2, 7.5)
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.setWidthMinMax(1.3, 4.1)
@@ -126,9 +127,8 @@ Mimosa_osmarii.inflorescence = new Inflorescence()
 Mimosa_osmarii.inflorescence.shape = 'moriform'
 Mimosa_osmarii.inflorescence.capitate = new CapitateInflorescence()
 Mimosa_osmarii.inflorescence.capitate.shape = 'globose'
-// add diam? 
-// value: 2.5-6 mm diam.
-// 1–3-axillary
+Mimosa_osmarii.inflorescence.capitate.setLengthMinMax(2.5, 6)
+Mimosa_osmarii.inflorescence.capitate.numberPerNode = [1, 2, 3]
 Mimosa_osmarii.inflorescence.peduncle = new Peduncle()
 Mimosa_osmarii.inflorescence.peduncle.setLengthMinMax(18, 40)
 
@@ -140,11 +140,11 @@ Mimosa_osmarii.flower.bracteole.trichomes = new Trichomes()
 Mimosa_osmarii.flower.bracteole.trichomes.granular = new Granular()
 Mimosa_osmarii.flower.bracteole.trichomes.granular.are = 'present or absent'
 Mimosa_osmarii.flower.merism = '4-merous'
-// add merism 4(-5)
+Mimosa_osmarii.flower.merismRarely = '5-merous'
 Mimosa_osmarii.flower.calyx = new Calyx()
 Mimosa_osmarii.flower.calyx.setLengthMinMax(0.4, 0.6)
 Mimosa_osmarii.flower.calyx.shape = 'campanulate'
-// add shortly denticulate
+Mimosa_osmarii.flower.calyx.apex = 'shortly denticulate'
 Mimosa_osmarii.flower.corolla = new Corolla()
 Mimosa_osmarii.flower.corolla.setLengthMinMax(2, 2.5)
 Mimosa_osmarii.flower.corolla.shape = ['campanulate', 'turbinate']
@@ -152,24 +152,25 @@ Mimosa_osmarii.flower.corolla.lobes = new Lobes()
 Mimosa_osmarii.flower.corolla.lobes.nervation = '1-nerved'
 Mimosa_osmarii.androecium = new Androecium()
 Mimosa_osmarii.androecium.filaments = new Filaments()
-// add filaments 6–6.5 mm long
-// add fused at base 0.2–0.5 mm long
+Mimosa_osmarii.androecium.filaments.setLengthMinMax(6, 6.5)
+Mimosa_osmarii.androecium.filaments.base = new baseFilaments()
+Mimosa_osmarii.androecium.filaments.base.connation = new ConnationOfFilamentsAtBase()
+Mimosa_osmarii.androecium.filaments.base.connation.setLengthMinMax(0.2, 0.5)
 Mimosa_osmarii.androecium.filaments.colour = 'pinkish'
 Mimosa_osmarii.ginoecium = new Ginoecium()
 Mimosa_osmarii.ginoecium.ovary = new Ovary()
 Mimosa_osmarii.ginoecium.ovary.trichomes = new Trichomes()
 Mimosa_osmarii.ginoecium.ovary.trichomes.are = 'absent'
 
-Mimosa_osmarii.pollen = new Pollen()
-
 Mimosa_osmarii.fruit = new Fruit()
 Mimosa_osmarii.fruit.type = 'craspedium'
 Mimosa_osmarii.fruit.setHeightMinMax(34, 38)
 Mimosa_osmarii.fruit.setWidthMinMax(3.3, 3.5)
 Mimosa_osmarii.fruit.shape = 'oblong'
-// add slightly curved
-Mimosa_osmarii.fruit.stipe = 'sessile'
-// add stipe 3–5 mm long
+Mimosa_osmarii.fruit.curvature = 'slightly curved'
+Mimosa_osmarii.fruit.stipe = new Stipe()
+Mimosa_osmarii.fruit.stipe.is = 'present'
+Mimosa_osmarii.fruit.stipe.setLengthMinMax(3, 5)
 Mimosa_osmarii.fruit.replum = new Replum()
 Mimosa_osmarii.fruit.replum.shape = 'undulate'
 Mimosa_osmarii.fruit.epicarp = new Epicarp()
@@ -177,8 +178,8 @@ Mimosa_osmarii.fruit.epicarp.type = 'monospermic'
 Mimosa_osmarii.fruit.epicarp.trichomes = new Trichomes()
 Mimosa_osmarii.fruit.epicarp.trichomes.granular = new Granular()
 Mimosa_osmarii.fruit.epicarp.trichomes.granular.are = 'present'
-// fix number of seeds
-Mimosa_osmarii.fruit.numberOfSeeds = 6-9
+Mimosa_osmarii.fruit.numberOfSeeds.min = 6
+Mimosa_osmarii.fruit.numberOfSeeds.max = 9
 
 
 // Description authorship

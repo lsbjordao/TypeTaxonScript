@@ -31,7 +31,7 @@ import { Calyx, Corolla, Bracteole } from '../../characters/v1/Flower'
 import { ApexBracteole } from '../../characters/v1/Flower/Bracteole'
 import { Lobes } from '../../characters/v1/Flower/Corolla'
 import { ApexLobes } from '../../characters/v1/Flower/Corolla/Lobes'
-import { Epicarp, Replum } from '../../characters/v1/Fruit'
+import { Epicarp, Replum, Stipe } from '../../characters/v1/Fruit'
 import { Filaments } from '../../characters/v1/Androecium'
 import { Ovary } from '../../characters/v1/Ginoecium'
 
@@ -98,7 +98,7 @@ Mimosa_porrecta.leaf.bipinnate.pinnae.setNumberOfPairs(1)
 Mimosa_porrecta.leaf.bipinnate.pinnae.prickles = new Prickles()
 Mimosa_porrecta.leaf.bipinnate.pinnae.prickles.orientation = 'decurved'
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.numberOfPairs = 2
+Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.setNumberOfPairs(2)
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.innermostOfProximalPairReduced = 'yes'
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.setHeightMinMax(20, 70)
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet.setWidthMinMax(10, 39)
@@ -161,13 +161,17 @@ Mimosa_porrecta.ginoecium = new Ginoecium()
 Mimosa_porrecta.ginoecium.ovary = new Ovary()
 
 Mimosa_porrecta.pollen = new Pollen()
+Mimosa_porrecta.pollen.type = 'tetrad'
+Mimosa_porrecta.pollen.format = 'tetraedric'
+Mimosa_porrecta.pollen.exine = 'areolate'
 
 Mimosa_porrecta.fruit = new Fruit()
 Mimosa_porrecta.fruit.type = 'craspedium'
 Mimosa_porrecta.fruit.setHeightMinMax(13, 30)
 Mimosa_porrecta.fruit.setWidthMinMax(5, 7)
 Mimosa_porrecta.fruit.shape = 'oblong'
-Mimosa_porrecta.fruit.stipe = 'sessile'
+Mimosa_porrecta.fruit.stipe = new Stipe()
+Mimosa_porrecta.fruit.stipe.is = 'absent'
 Mimosa_porrecta.fruit.replum = new Replum()
 Mimosa_porrecta.fruit.replum.trichomes = new Trichomes()
 Mimosa_porrecta.fruit.replum.trichomes.dendritic = new Dendritic()
@@ -182,7 +186,8 @@ Mimosa_porrecta.fruit.epicarp.trichomes.porrect.density = 'densely'
 Mimosa_porrecta.fruit.epicarp.trichomes.filiform = new Filiform()
 Mimosa_porrecta.fruit.epicarp.trichomes.filiform.are = 'present'
 Mimosa_porrecta.fruit.epicarp.trichomes.filiform.density = 'densely'
-Mimosa_porrecta.fruit.numberOfSeeds = 2-5
+Mimosa_porrecta.fruit.numberOfSeeds.min = 2
+Mimosa_porrecta.fruit.numberOfSeeds.max = 5
 
 Mimosa_porrecta.seed = new Seed()
 Mimosa_porrecta.seed.setHeightMinMax(4, 4.5)

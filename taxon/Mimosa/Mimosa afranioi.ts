@@ -45,18 +45,19 @@ Mimosa_afranioi.leaf.petiole.prickles = new Prickles()
 Mimosa_afranioi.leaf.petiole.prickles.are = 'present'
 Mimosa_afranioi.leaf.bipinnate = new Bipinnate()
 Mimosa_afranioi.leaf.bipinnate.rachis = new Rachis()
-Mimosa_afranioi.leaf.bipinnate.rachis.present = true
 Mimosa_afranioi.leaf.bipinnate.rachis.setLengthRarelyMin(6)
 Mimosa_afranioi.leaf.bipinnate.rachis.setLengthMinMax(8, 14)
 Mimosa_afranioi.leaf.bipinnate.rachis.setLengthRarelyMax(16)
 Mimosa_afranioi.leaf.bipinnate.pinnae = new Pinnae()
-Mimosa_afranioi.leaf.bipinnate.pinnae.numberOfPairs = 3
+Mimosa_afranioi.leaf.bipinnate.pinnae.setNumberOfPairsRarelyMin(2)
+Mimosa_afranioi.leaf.bipinnate.pinnae.setNumberOfPairsMinMax(3, 4)
 Mimosa_afranioi.leaf.bipinnate.pinnae.rachilla = new Rachilla()
 Mimosa_afranioi.leaf.bipinnate.pinnae.rachilla.setLength(14)
 Mimosa_afranioi.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
 Mimosa_afranioi.leaf.bipinnate.pinnae.paraphillidia.setLengthMinMax(1, 2)
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet = new Leaflet()
-Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.numberOfPairs = 3
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.setNumberOfPairsRarelyMin(4)
+Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.setNumberOfPairsMinMax(5, 8)
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.setHeightMinMax(1, 2)
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.setWidthMinMax(1, 2)
 Mimosa_afranioi.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()

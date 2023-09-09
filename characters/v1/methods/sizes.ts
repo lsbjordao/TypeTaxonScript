@@ -122,6 +122,35 @@ function _setWidthMinMax(min: number, max: number, that: any): void {
     that.length = { ...that.length, min, max }
 }
 
+/**
+ * Sets the number of pairs values.
+ *
+ * @param min - The minimum number of pairs value (integer).
+ * @param max - The maximum number of pairs value (integer).
+ */
+function _setNumberOfPairsMinMax(min: number, max: number, that: any): void {
+    that.numberOfPairs = { ...that.numberOfPairs, min, max }
+}
+
+/**
+ * Sets a single value for rarely minimum.
+ *
+ * @param rarelyMin - The rarely minimum value (integer).
+ */
+function _setNumberOfPairsRarelyMin(rarelyMin: number, that: any): void {
+    that.numberOfPairs = { ...that.numberOfPairs, rarelyMin }
+}
+
+/**
+ * Sets a single value for rarely maximum.
+ *
+ * @param rarelyMax - The rarely maximum value (integer).
+ * @throws Error if `present` is `false` and `value` is not `null`.
+ */
+function _setNumberOfPairsRarelyMax(rarelyMax: number, that: any): void {
+    that.numberOfPairs = { ...that.numberOfPairs, rarelyMax }
+}
+
 export {
     _setLength,
     _setLengthMinMax,
@@ -131,5 +160,8 @@ export {
     _setHeightMinMax,
     _setWidth,
     _setWidthMinMax,
-    _setNumberOfPairs
+    _setNumberOfPairs,
+    _setNumberOfPairsRarelyMin,
+    _setNumberOfPairsMinMax,
+    _setNumberOfPairsRarelyMax
 }
