@@ -117,6 +117,8 @@ Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.margin.trichomes.are = 'absent'
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.adaxial = new AdaxialLeaflet()
+Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform = new Filiform()
+Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform.are = 'present'
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes = new Trichomes()
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.granular = new Granular()
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.granular.are = 'present or absent'
@@ -191,174 +193,17 @@ Mimosa_osmarii.descriptionAuthorship.addAuthor({
 })
 
 // Sources
-/// Trichomes
 const source1 = new Source()
+source1.obraPrinceps = 'yes'
 source1.sourceType = 'article'
-source1.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source1.year = 2014
-source1.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
+source1.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A. & Simon, M.F.'
+source1.year = 2017
+source1.title = 'A new species of *Mimosa* (Leguminosae) endemic to the Brazilian Cerrado'
 source1.journal = 'Phytotaxa'
-source1.volume = 183
-source1.number = 3
-source1.pages = 131-138
-
-const source2 = new Source()
-source2.sourceType = 'article'
-source2.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source2.year = 2014
-source2.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source2.journal = 'Phytotaxa'
-source2.volume = 183
-source2.number = 3
-source2.pages = 131-138
-source2.figure = '2A'
-source2.obtainingMethod = 'photo'
-Mimosa_osmarii.addSource(source2)
-
-const source3 = new Source()
-source3.sourceType = 'article'
-source3.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source3.year = 2014
-source3.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source3.journal = 'Phytotaxa'
-source3.volume = 183
-source3.number = 3
-source3.pages = 131-138
-source3.figure = '2B'
-source3.obtainingMethod = 'photo'
-Mimosa_osmarii.leaf.petiole.addSource(source3)
-
-const source4 = new Source()
-source4.sourceType = 'article'
-source4.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source4.year = 2014
-source4.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source4.journal = 'Phytotaxa'
-source4.volume = 183
-source4.number = 3
-source4.pages = 131-138
-source4.figure = '2C'
-source4.obtainingMethod = 'photo'
-Mimosa_osmarii.stems.addSource(source4)
-Mimosa_osmarii.inflorescence.addSource(source4)
-
-const source5 = new Source()
-source5.sourceType = 'article'
-source5.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source5.year = 2014
-source5.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source5.journal = 'Phytotaxa'
-source5.volume = 183
-source5.number = 3
-source5.pages = 131-138
-source5.figure = '2D'
-source5.obtainingMethod = 'photo'
-Mimosa_osmarii.fruit.addSource(source5)
-
-const source6 = new Source()
-source6.sourceType = 'article'
-source6.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source6.year = 2014
-source6.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source6.journal = 'Phytotaxa'
-source6.volume = 183
-source6.number = 3
-source6.pages = 131-138
-source6.figure = '3'
-source6.obtainingMethod = 'drawing'
-Mimosa_osmarii.addSource(source6)
-
-const source7 = new Source()
-source7.sourceType = 'article'
-source7.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source7.year = 2014
-source7.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source7.journal = 'Phytotaxa'
-source7.volume = 183
-source7.number = 3
-source7.pages = 131-138
-source7.figure = '4A'
-source7.obtainingMethod = 'scanningElectronMicroscope'
-Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform.addSource(source7)
-
-const source8 = new Source()
-source8.sourceType = 'article'
-source8.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source8.year = 2014
-source8.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source8.journal = 'Phytotaxa'
-source8.volume = 183
-source8.number = 3
-source8.pages = 131-138
-source8.figure = '4B'
-source8.obtainingMethod = 'scanningElectronMicroscope'
-Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular.addSource(source8)
-Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.addSource(source8)
-
-const source9 = new Source()
-source9.sourceType = 'article'
-source9.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source9.year = 2014
-source9.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source9.journal = 'Phytotaxa'
-source9.volume = 183
-source9.number = 3
-source9.pages = 131-138
-source9.figure = '4C'
-source9.obtainingMethod = 'scanningElectronMicroscope'
-Mimosa_osmarii.fruit.replum.trichomes.dendritic.addSource(source9)
-
-const source10 = new Source()
-source10.sourceType = 'article'
-source10.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source10.year = 2014
-source10.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source10.journal = 'Phytotaxa'
-source10.volume = 183
-source10.number = 3
-source10.pages = 131-138
-source10.figure = '4D'
-source10.obtainingMethod = 'scanningElectronMicroscope'
-Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.addSource(source10)
-
-const source11 = new Source()
-source11.sourceType = 'article'
-source11.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source11.year = 2014
-source11.title = 'A new species of *Mimosa* (Leguminosae) from Brazil'
-source11.journal = 'Phytotaxa'
-source11.volume = 183
-source11.number = 3
-source11.pages = 131-138
-source11.figure = '5A,B'
-source11.obtainingMethod = 'scanningElectronMicroscope'
-Mimosa_osmarii.pollen.addSource(source11)
-
-const source12 = new Source()
-source12.sourceType = 'article'
-source12.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source12.year = 2020
-source12.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
-source12.journal = 'Flora'
-source12.number = 272
-source12.pages = 151702
-source12.figure = '6H'
-source12.obtainingMethod = 'scanningElectronMicroscope'
-Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.addSource(source12)
-Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular.addSource(source12)
-
-const source13 = new Source()
-source13.sourceType = 'article'
-source13.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
-source13.year = 2020
-source13.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
-source13.journal = 'Flora'
-source13.number = 272
-source13.pages = 151702
-source13.figure = '6I'
-source13.obtainingMethod = 'opticalMicroscope'
-Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect.addSource(source13)
-Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.addSource(source13)
+source1.volume = 312
+source1.number = 2
+source1.pages = 237-246
+Mimosa_osmarii.addSource(source1)
 
 // Export Mimosa osmarii
 export { Mimosa_osmarii }
