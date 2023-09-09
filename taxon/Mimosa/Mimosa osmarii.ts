@@ -205,5 +205,31 @@ source1.number = 2
 source1.pages = 237-246
 Mimosa_osmarii.addSource(source1)
 
+const source2 = new Source()
+source2.sourceType = 'article'
+source2.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A. & Simon, M.F.'
+source2.year = 2017
+source2.title = 'A new species of *Mimosa* (Leguminosae) endemic to the Brazilian Cerrado'
+source2.journal = 'Phytotaxa'
+source2.volume = 312
+source2.number = 2
+source2.pages = 237-246
+source2.figure = '3A,B,C,D'
+source2.obtainingMethod = 'photo'
+Mimosa_osmarii.addSource(source2)
+
+const source3 = new Source()
+source3.sourceType = 'article'
+source3.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A. & Simon, M.F.'
+source3.year = 2017
+source3.title = 'A new species of *Mimosa* (Leguminosae) endemic to the Brazilian Cerrado'
+source3.journal = 'Phytotaxa'
+source3.volume = 312
+source3.number = 2
+source3.pages = 237-246
+source3.figure = '4'
+source3.obtainingMethod = 'drawing'
+Mimosa_osmarii.addSource(source3)
+
 // Export Mimosa osmarii
 export { Mimosa_osmarii }
