@@ -29,6 +29,7 @@ import { Mimosa_minarum } from '../taxon/Mimosa/Mimosa minarum'
 import { Mimosa_misera } from '../taxon/Mimosa/Mimosa misera'
 import { Mimosa_myuros } from '../taxon/Mimosa/Mimosa myuros'
 import { Mimosa_oblonga_var_oblonga } from '../taxon/Mimosa/Mimosa oblonga var oblonga'
+import { Mimosa_osmarii } from '../taxon/Mimosa/Mimosa osmarii'
 import { Mimosa_paludosa } from '../taxon/Mimosa/Mimosa paludosa'
 import { Mimosa_pigra_var_pigra } from '../taxon/Mimosa/Mimosa pigra var pigra'
 import { Mimosa_pilulifera_var_pseudincana } from '../taxon/Mimosa/Mimosa pilulifera var pseudincana'
@@ -68,6 +69,7 @@ const Mimosa_species: Mimosa[] = [
     Mimosa_misera,
     Mimosa_myuros,
     Mimosa_oblonga_var_oblonga,
+    Mimosa_osmarii,
     Mimosa_paludosa,
     Mimosa_pigra_var_pigra,
     Mimosa_pilulifera_var_pseudincana,
