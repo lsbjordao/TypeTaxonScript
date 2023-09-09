@@ -33,7 +33,13 @@ export class Paraphillidia extends Sources {
     /**
      * Shape of paraphillidia.
      */
-    shape: 'lanceolate' | 'linear'
+    shape:
+        'lanceolate' |
+        'linear' |
+        (
+            'lanceolate' |
+            'linear'
+        )[]
 
     /**
      * Creates an instance of Paraphillidia.

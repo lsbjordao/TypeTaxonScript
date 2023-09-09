@@ -6,14 +6,23 @@ import { Paraphillidia } from "../Pinnae/Paraphillidia";
 import { Leaflet } from "./Leaflet";
 import { Gall } from "../../../Gall";
 
+// Import methods
+import { _setNumberOfPairs } from '../../../methods/sizes'
+
 // Import annotation classes
 import { Sources } from "../../../Sources";
 
 class Pinnae extends Sources {
     /**
-     * Number of pinnae pair(s).
+     * Number of pinnae pairs
      */
-    numberOfPairs: number;
+    numberOfPairs: {
+        value?: number | null
+        rarelyMin?: number | null
+        rarelyMax?: number | null
+        min?: number | null
+        max?: number | null
+    } | null
 
     /**
      * Rachilla of a pinna.
@@ -57,6 +66,16 @@ class Pinnae extends Sources {
     constructor() {
         super();
     }
+
+    /**
+     * Sets a single value for number of pairs.
+     *
+     * @param value - The number of pairs value (integer).
+     */
+    setNumberOfPairs(value: number): void {
+        _setNumberOfPairs(value, this)
+    }
+  
 }
 
 export {

@@ -1,17 +1,17 @@
-import { Trichomes } from '../Trichomes';
-import { Prickles } from '../Prickles';
-import { Sources } from "../Sources";
+import { Trichomes } from '../../../Trichomes';
+import { Prickles } from '../../../Prickles';
+import { Sources } from "../../../Sources";
 
-import { _setLength, _setLengthMinMax } from '../methods/sizes';
+import { _setLength, _setLengthMinMax } from '../../../methods/sizes';
 
-export class Petiole extends Sources {
+export class Spicule extends Sources {
     /**
-     * Petiole can be present or absent.
-     *
+     * Are spicule 'present', 'absent', or 'present or absent'?
+     * 
      * @remarks
-     * If `present` is `false`, the `length` should be `null`.
+     * If are `absent`, the `length` should be `null`.
      */
-    present: true | false;
+    are: 'present' | 'absent' | 'present or absent'
 
     /**
      * Petiole length in milimeters (mm).
@@ -26,27 +26,14 @@ export class Petiole extends Sources {
     } | null;
 
     /**
-     * Transversal shape of petiole.
-     *
-     * @remarks
-     * The shape of petiole when viewed from a cross-sectional perspective.
+     * Shape of spicule.
      */
-    transversalShape: '4-ribbed'
+    shape: 'linear' | 'deltate' | 'spinniform'
 
     /**
-     * Prickles in petiole.
-    */
-    prickles: Prickles;
-
-    /**
-     * Trichomes in petiole.
+     * Trichomes in spicule.
      */
     trichomes: Trichomes;
-
-    /**
-     * Persistance of petiole.
-     */
-    persistance: 'persistent' | 'caducous';
 
     /**
      * Creates an instance of Petiole.

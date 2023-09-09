@@ -60,7 +60,8 @@ class Leaflet extends Sources {
         'lanceolate' |
         'elliptic' |
         'oval' |
-        ('linear' | 'lanceolate' | 'elliptic' | 'oval')[]
+        'obovate' |
+        ('linear' | 'lanceolate' | 'elliptic' | 'oval' | 'obovate')[]
 
     /**
      * Base of leaflet.
@@ -69,7 +70,10 @@ class Leaflet extends Sources {
         'obtuse' |
         'cordate' |
         'oblique-obtuse' |
-        ('obtuse' | 'cordate' | 'oblique-obtuse')[]
+        'oblique-acute' |
+        'oblique-rounded' |
+        'oblique-subcordate' |
+        ('obtuse' | 'cordate' | 'oblique-obtuse' | 'oblique-acute' | 'oblique-rounded' | 'oblique-subcordate')[]
 
     /**
      * Apex of leaflet.
@@ -77,7 +81,9 @@ class Leaflet extends Sources {
     apex:
     'acute' |
     'rounded' |
-    ('acute' | 'rounded')[]
+    'mucronulate-obtuse' |
+    'mucronulate-rounded' |
+    ('acute' | 'rounded' |'mucronulate-obtuse' | 'mucronulate-rounded')[]
 
     /**
      * Abaxial surface of leaflet.

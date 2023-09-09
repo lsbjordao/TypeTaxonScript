@@ -31,6 +31,21 @@ export class Mimosa extends Sources {
     habit: 'tree' | 'shrub' | 'subshrub' | 'herb'
 
     /**
+     * Light strategy of *Mimosa*
+     */
+    lightStrategy:
+        'sciophilous' |
+        'heliophilous' |
+        'semiheliophilous' |
+        'semisciophilous' |
+        (
+            'sciophilous' |
+            'heliophilous' |
+            'semiheliophilous' |
+            'semisciophilous'
+        )[]
+
+    /**
      * Stem of *Mimosa*.
      */
     stems: Stems

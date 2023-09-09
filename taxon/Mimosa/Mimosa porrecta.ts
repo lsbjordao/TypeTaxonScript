@@ -94,7 +94,7 @@ Mimosa_porrecta.leaf.bipinnate.pinnae.paraphillidia.are = 'present'
 Mimosa_porrecta.leaf.bipinnate.pinnae.paraphillidia.setLengthMinMax(1, 2.2)
 Mimosa_porrecta.leaf.bipinnate.pinnae.paraphillidia.pairLength = 'unequal'
 Mimosa_porrecta.leaf.bipinnate.pinnae.paraphillidia.shape = 'lanceolate'
-Mimosa_porrecta.leaf.bipinnate.pinnae.numberOfPairs = 1
+Mimosa_porrecta.leaf.bipinnate.pinnae.setNumberOfPairs(1)
 Mimosa_porrecta.leaf.bipinnate.pinnae.prickles = new Prickles()
 Mimosa_porrecta.leaf.bipinnate.pinnae.prickles.orientation = 'decurved'
 Mimosa_porrecta.leaf.bipinnate.pinnae.leaflet = new Leaflet()

@@ -41,6 +41,16 @@ function _setWidth(value: number | null, that: any): void {
 }
 
 /**
+ * Sets a single value for number of pairs.
+ *
+ * @param value - The number of pairs value (integer)
+ */
+function _setNumberOfPairs(value: number | null, that: any): void {
+    that.numberOfPairs = { ...that.numberOfPairs, value }
+}
+
+
+/**
  * Sets a single value for rarely minimum.
  *
  * @param rarelyMin - The rarely minimum value in milimeters (mm).
@@ -121,4 +131,5 @@ export {
     _setHeightMinMax,
     _setWidth,
     _setWidthMinMax,
+    _setNumberOfPairs
 }

@@ -1,18 +1,15 @@
-import { Trichomes } from '../../Trichomes'
-import { Prickles } from '../../Prickles'
-import { Sources } from "../../Sources"
+// Import characters
+import { Spicule } from './Spicule'
+import { Trichomes } from '../../../Trichomes'
+import { Prickles } from '../../../Prickles'
 
-import { _setLength, _setLengthRarelyMin, _setLengthRarelyMax, _setLengthMinMax } from '../../methods/sizes'
+// Import methods
+import { _setLength, _setLengthRarelyMin, _setLengthRarelyMax, _setLengthMinMax } from '../../../methods/sizes'
+
+// Import annotation classes
+import { Sources } from "../../../Sources"
 
 class Rachis extends Sources {
-    /**
-     * Rachis can be present or absent.
-     *
-     * @remarks
-     * If `present` is `false`, the `length` should be `null`.
-     */
-    present: true | false
-
     /**
      * Rachis length in milimeters (mm).
      *
@@ -26,6 +23,14 @@ class Rachis extends Sources {
         min?: number | null
         max?: number | null
     } | null
+
+    /**
+     * Spicule of rachis
+     *
+     * @remarks
+     * 
+     */
+    spicule: Spicule
 
     /**
      * Prickles in rachis.
