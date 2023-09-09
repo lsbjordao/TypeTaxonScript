@@ -26,8 +26,6 @@ export class DistanceFromPinnaPulvinus extends Sources {
      *
      * @param min - The minimum length value in milimeters (mm).
      * @param max - The maximum length value in milimeters (mm).
-     * @throws Error if `present` is `false` and either `min` or `max` is not `null`.
-     * @throws Error if `min` is greater than or equal to `max`.
      */
     setLengthMinMax(min: number, max: number): void {
         _setLengthMinMax(min, max, this);

@@ -36,6 +36,7 @@ import { Ovary } from '../../characters/v1/Ginoecium'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
+import { DistanceFromFirstPairOfLeaflets, DistanceFromPinnaPulvinus } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Paraphillidia'
 
 // Description of Mimosa osmarii
 const Mimosa_osmarii = new Mimosa()
@@ -93,7 +94,9 @@ Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.position = [
     'closer to the first pair of leaflets', 
     'on the middle of the axis, between the pulvinus and the first pair of leaflets'
 ]
+Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.distanceFromPinnaPulvinus = new DistanceFromPinnaPulvinus()
 Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.distanceFromPinnaPulvinus.setLengthMinMax(1, 5.5)
+Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.distanceFromFirstPairOfLeaflets = new DistanceFromFirstPairOfLeaflets()
 Mimosa_osmarii.leaf.bipinnate.pinnae.paraphillidia.distanceFromFirstPairOfLeaflets.setLengthMinMax(1.1, 3)
 Mimosa_osmarii.leaf.bipinnate.pinnae.setNumberOfPairsRarelyMin(1)
 Mimosa_osmarii.leaf.bipinnate.pinnae.setNumberOfPairsMinMax(2, 4)
