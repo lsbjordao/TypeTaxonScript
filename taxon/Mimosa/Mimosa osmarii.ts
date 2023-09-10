@@ -112,7 +112,7 @@ Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.setHeightMinMax(2, 7.5)
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.setWidthMinMax(1.3, 4.1)
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.shape = 'obovate'
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.base = ['oblique-acute', 'oblique-rounded', 'oblique-subcordate']
-Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.apex = ['mucronulate-obtuse', 'mucronulate-rounded']
+Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.apex = ['obtuse-mucronulate', 'rounded-mucronulate']
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichomes()
 Mimosa_osmarii.leaf.bipinnate.pinnae.leaflet.margin.trichomes.are = 'absent'

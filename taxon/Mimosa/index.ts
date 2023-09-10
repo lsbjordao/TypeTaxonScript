@@ -28,7 +28,17 @@ export class Mimosa extends Sources {
     /**
      * Habit of *Mimosa*
      */
-    habit: 'tree' | 'shrub' | 'subshrub' | 'herb'
+    habit:
+        'tree' |
+        'shrub' |
+        'subshrub' |
+        'herb' |
+        (
+            'tree' |
+            'shrub' |
+            'subshrub' |
+            'herb'
+        )[]
 
     /**
      * Light strategy of *Mimosa*

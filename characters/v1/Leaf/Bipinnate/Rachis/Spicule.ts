@@ -11,7 +11,7 @@ export class Spicule extends Sources {
      * @remarks
      * If are `absent`, the `length` should be `null`.
      */
-    are: 'present' | 'absent' | 'present or absent'
+    are: 'present' | 'absent' | 'present or absent' | 'often absent' | 'often present'
 
     /**
      * Petiole length in milimeters (mm).

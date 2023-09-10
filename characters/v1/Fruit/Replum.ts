@@ -6,7 +6,7 @@ export class Replum extends Sources {
     /**
      * Shape of replum.
      */
-    shape: 'straight' | 'undulate'
+    shape: 'straight' | 'undulate' | 'slightly undulate' | ('straight' | 'undulate' | 'slightly undulate')[]
 
     /**
      * Prickles in replum.

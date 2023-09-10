@@ -5,11 +5,11 @@ import { AdaxialLeaflet } from './AdaxialLeaflet'
 import { MarginLeaflet } from './MarginLeaflet'
 
 // Import methods
-import { 
-    _setHeight, 
-    _setHeightMinMax, 
-    _setWidth, 
-    _setWidthMinMax, 
+import {
+    _setHeight,
+    _setHeightMinMax,
+    _setWidth,
+    _setWidthMinMax,
     _setNumberOfPairs,
     _setNumberOfPairsRarelyMin,
     _setNumberOfPairsMinMax,
@@ -76,7 +76,9 @@ class Leaflet extends Sources {
         'elliptic' |
         'oval' |
         'obovate' |
-        ('linear' | 'lanceolate' | 'elliptic' | 'oval' | 'obovate')[]
+        'oblong' |
+        'oblanceolate' |
+        ('linear' | 'lanceolate' | 'elliptic' | 'oval' | 'obovate' | 'oblong' | 'oblanceolate')[]
 
     /**
      * Base of leaflet.
@@ -94,11 +96,11 @@ class Leaflet extends Sources {
      * Apex of leaflet.
      */
     apex:
-    'acute' |
-    'rounded' |
-    'mucronulate-obtuse' |
-    'mucronulate-rounded' |
-    ('acute' | 'rounded' |'mucronulate-obtuse' | 'mucronulate-rounded')[]
+        'acute' |
+        'rounded' |
+        'obtuse-mucronulate' |
+        'rounded-mucronulate' |
+        ('acute' | 'rounded' | 'obtuse-mucronulate' | 'rounded-mucronulate')[]
 
     /**
      * Abaxial surface of leaflet.

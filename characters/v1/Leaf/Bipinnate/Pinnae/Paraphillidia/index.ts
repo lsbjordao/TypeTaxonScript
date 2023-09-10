@@ -1,6 +1,7 @@
 // Import characters
 import { DistanceFromPinnaPulvinus } from './DistanceFromPinnaPulvinus'
 import { DistanceFromFirstPairOfLeaflets } from './DistanceFromFirstPairOfLeaflets'
+import { Trichomes } from '../../../../Trichomes'
 
 // Import methods
 import { _setLength, _setLengthMinMax } from '../../../../methods/sizes';
@@ -40,9 +41,13 @@ class Paraphillidia extends Sources {
     shape:
         'lanceolate' |
         'linear' |
+        'linear-subulate' |
+        'short-triangular' |
         (
             'lanceolate' |
-            'linear'
+            'linear' |
+            'linear-subulate' |
+            'short-triangular'
         )[]
 
     /**
@@ -66,6 +71,11 @@ class Paraphillidia extends Sources {
      * Distance from pinna-pulvinus.
      */
     distanceFromFirstPairOfLeaflets: DistanceFromFirstPairOfLeaflets
+
+    /**
+     * Trichomes on paraphillidia.
+     */
+    trichomes: Trichomes
 
     /**
      * Creates an instance of Paraphillidia.
