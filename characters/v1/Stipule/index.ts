@@ -6,7 +6,15 @@ import { AdaxialStipule } from './AdaxialStipule'
 import { MarginStipule } from './MarginStipule'
 
 // Import methods
-import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../methods/sizes'
+import { 
+    _setLength, 
+    _setLengthMinMax, 
+    _setLengthRarelyMin,
+    _setLengthRarelyMax,
+    _setHeight, 
+    _setHeightMinMax, 
+    _setWidth, 
+    _setWidthMinMax } from '../methods/sizes'
 
 // Import annotation classes
 import { Sources } from "../Sources"
@@ -137,6 +145,24 @@ class Stipule extends Sources {
         }
 
         this.length = { ...this.length, min, max }
+    }
+
+    /**
+     * Sets a single value for rarely minimum.
+     *
+     * @param rarelyMin - The rarely minimum value (integer).
+     */
+    setLengthRarelyMin(min: number): void {
+        _setLengthRarelyMin(min, this);
+    }
+
+    /**
+     * Sets a single value for rarely maximum.
+     *
+     * @param rarelyMax - The rarely maximum value (integer).
+     */
+    setLengthRarelyMax(max: number): void {
+        _setLengthRarelyMax(max, this);
     }
 
     /**

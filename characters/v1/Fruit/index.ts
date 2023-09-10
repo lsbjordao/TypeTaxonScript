@@ -4,7 +4,15 @@ import { Epicarp } from './Epicarp'
 import { Stipe } from './Stipe'
 
 // Import methods
-import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax, _setNumberOfSeedsMinMax } from '../methods/sizes'
+import { 
+    _setHeight, 
+    _setHeightMinMax, 
+    _setWidth, 
+    _setWidthMinMax, 
+    _setNumberOfSeedsMinMax, 
+    _setNumberOfSeedsRarelyMin, 
+    _setNumberOfSeedsRarelyMax
+} from '../methods/sizes'
 
 // Import annotation classes
 import { Sources } from "../Sources"
@@ -90,6 +98,24 @@ class Fruit extends Sources {
      */
     setNumberOfSeedsMinMax(min: number, max: number): void {
         _setNumberOfSeedsMinMax(min, max, this)
+    }
+    
+    /**
+     * Sets a single value for rarely minimum.
+     *
+     * @param rarelyMin - The rarely minimum value (integer).
+     */
+    setNumberOfSeedsRarelyMin(min: number): void {
+        _setNumberOfSeedsRarelyMin(min, this)
+    }
+
+    /**
+     * Sets a single value for rarely maximum.
+     *
+     * @param rarelyMax - The rarely maximum value (integer).
+     */
+    setNumberOfSeedsRarelyMax(max: number): void {
+        _setNumberOfSeedsRarelyMax(max, this)
     }
 
     /**
