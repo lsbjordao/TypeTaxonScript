@@ -33,6 +33,7 @@ export class Petiole extends Sources {
      */
     transversalShape:
         '4-ribbed' |
+        '5-ribbed' |
         'cylindric'
 
     /**

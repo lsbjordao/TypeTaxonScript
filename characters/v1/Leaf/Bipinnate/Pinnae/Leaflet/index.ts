@@ -98,9 +98,10 @@ class Leaflet extends Sources {
     apex:
         'acute' |
         'rounded' |
+        'obtuse' |
         'obtuse-mucronulate' |
         'rounded-mucronulate' |
-        ('acute' | 'rounded' | 'obtuse-mucronulate' | 'rounded-mucronulate')[]
+        ('acute' | 'rounded' | 'obtuse' | 'obtuse-mucronulate' | 'rounded-mucronulate')[]
 
     /**
      * Abaxial surface of leaflet.

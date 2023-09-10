@@ -59,16 +59,28 @@ class Stipule extends Sources {
     /**
      * Shape of Stipule.
      */
-    shape: 'linear-subulate' | 'lanceolate' | 'deltate' | 'ovate' | 'spinniform'
+    shape:
+        'linear-subulate' |
+        'lanceolate' |
+        'deltate' |
+        'ovate' |
+        'spinniform' |
+        (
+            'linear-subulate' |
+            'lanceolate' |
+            'deltate' |
+            'ovate' |
+            'spinniform'
+        )[]
 
     /**
      * Nervation of Stipule.
      */
-    nervation: 
-    '1-nerved' | 
-    '3-nerved' | 
-    'plurinerved' |
-    ('1-nerved' | '3-nerved' | 'plurinerved')[]
+    nervation:
+        '1-nerved' |
+        '3-nerved' |
+        'plurinerved' |
+        ('1-nerved' | '3-nerved' | 'plurinerved')[]
 
     /**
      * Persistance of Stipule.
@@ -99,7 +111,7 @@ class Stipule extends Sources {
      * Margin of stipule.
      */
     margin: MarginStipule
-    
+
     /**
      * Creates an instance of Stipule.
      */

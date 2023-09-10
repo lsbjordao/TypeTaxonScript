@@ -41,6 +41,12 @@ export class Mimosa extends Sources {
         )[]
 
     /**
+    * Plant maximum height
+    * @param value - Number (decimal or integer) in meters (m)
+    */
+    height: number
+
+    /**
      * Light strategy of *Mimosa*
      */
     lightStrategy:
