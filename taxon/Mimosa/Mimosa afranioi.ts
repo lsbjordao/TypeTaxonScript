@@ -194,5 +194,47 @@ Mimosa_afranioi.descriptionAuthorship.addAuthor({
     date: 1692107172
 })
 
+// Sources
+
+const source1 = new Source()
+source1.obraPrinceps = 'yes'
+source1.sourceType = 'article'
+source1.authorship = 'Jordão, L.S.B. and Morim, M.P. and Simon, M.F., Dutra, V.F. and Baumgratz, J.F.A.'
+source1.year = 2021
+source1.title = 'New Species of *Mimosa* (Leguminosae) from Brazil'
+source1.journal = 'Systematic Botany'
+source1.volume = 46
+source1.number = 2
+source1.pages = 339-351
+Mimosa_afranioi.addSource(source1)
+
+const source2 = new Source()
+source2.obraPrinceps = 'yes'
+source2.sourceType = 'article'
+source2.authorship = 'Jordão, L.S.B. and Morim, M.P. and Simon, M.F., Dutra, V.F. and Baumgratz, J.F.A.'
+source2.year = 2021
+source2.title = 'New Species of *Mimosa* (Leguminosae) from Brazil'
+source2.journal = 'Systematic Botany'
+source2.volume = 46
+source2.number = 2
+source2.pages = 339-351
+source2.figure = '2'
+source2.obtainingMethod = 'drawing'
+Mimosa_afranioi.addSource(source2)
+
+const source3 = new Source()
+source3.obraPrinceps = 'yes'
+source3.sourceType = 'article'
+source3.authorship = 'Jordão, L.S.B. and Morim, M.P. and Simon, M.F., Dutra, V.F. and Baumgratz, J.F.A.'
+source3.year = 2021
+source3.title = 'New Species of *Mimosa* (Leguminosae) from Brazil'
+source3.journal = 'Systematic Botany'
+source3.volume = 46
+source3.number = 2
+source3.pages = 339-351
+source3.figure = '3'
+source3.obtainingMethod = 'photo'
+Mimosa_afranioi.addSource(source3)
+
 // Export Mimosa afranioi
 export { Mimosa_afranioi }
