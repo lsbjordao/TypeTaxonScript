@@ -32,9 +32,16 @@ export class Petiole extends Sources {
      * The shape of petiole when viewed from a cross-sectional perspective.
      */
     transversalShape:
+    '4-ribbed' |
+    '5-ribbed' |
+    '4-gonal' |
+    'cylindric' |
+    (
         '4-ribbed' |
         '5-ribbed' |
+        '4-gonal' |
         'cylindric'
+    )[]
 
     /**
      * Flattening of petiole.
