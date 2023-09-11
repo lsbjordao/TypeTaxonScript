@@ -81,7 +81,7 @@ Mimosa_osmarii.leaf.bipinnate.rachis.setLengthMinMax(5, 35)
 Mimosa_osmarii.leaf.bipinnate.rachis.prickles = new Prickles()
 Mimosa_osmarii.leaf.bipinnate.rachis.prickles.are = 'present'
 Mimosa_osmarii.leaf.bipinnate.rachis.spicule = new Spicule()
-Mimosa_osmarii.leaf.bipinnate.rachis.spicule.are = 'present or absent'
+Mimosa_osmarii.leaf.bipinnate.rachis.spicule.is = 'present or absent'
 Mimosa_osmarii.leaf.bipinnate.rachis.spicule.setLengthMinMax(1, 1.5)
 Mimosa_osmarii.leaf.bipinnate.rachis.spicule.shape = 'deltate'
 Mimosa_osmarii.leaf.bipinnate.pinnae = new Pinnae()

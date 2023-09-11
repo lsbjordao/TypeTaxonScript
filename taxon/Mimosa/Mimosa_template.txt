@@ -1,0 +1,95 @@
+// Import genus Mimosa
+import { Mimosa } from '.'
+
+// Import characters
+import { 
+    Stems, 
+    Stipule, 
+    Leaf, 
+    Inflorescence, 
+    Flower,
+    Androecium,
+    Ginoecium,
+    Fruit
+} from '../../characters/v1'
+import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
+import { Rachis, Pinnae } from '../../characters/v1/Leaf/Bipinnate'
+import { Spicule } from '../../characters/v1/Leaf/Bipinnate/Rachis/Spicule'
+import { Rachilla, Leaflet, Paraphillidia } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
+import {
+    AdaxialLeaflet, 
+    AbaxialLeaflet, 
+    MarginLeaflet
+} from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AdaxialStipule, AbaxialStipule, MarginStipule } from '../../characters/v1/Stipule'
+import { Peduncle } from '../../characters/v1/Inflorescence'
+import { Calyx, Corolla, Bracteole } from '../../characters/v1/Flower'
+import { Stipe, Epicarp, Replum } from '../../characters/v1/Fruit'
+import { Filaments } from '../../characters/v1/Androecium'
+import { Ovary } from '../../characters/v1/Ginoecium'
+import { Seed } from '../../characters/v1/Seed'
+
+// Import annotation classes
+import { Source, DescriptionAuthorship } from '../../characters/v1'
+
+
+// Description of Mimosa {{specificEpithet}}
+const Mimosa_{{specificEpithet}} = new Mimosa()
+Mimosa_{{specificEpithet}}.specificEpithet = '{{specificEpithet}}'
+
+Mimosa_{{specificEpithet}}.stems = new Stems()
+
+Mimosa_{{specificEpithet}}.stipule = new Stipule()
+Mimosa_{{specificEpithet}}.stipule.margin = new MarginStipule()
+Mimosa_{{specificEpithet}}.stipule.adaxial = new AdaxialStipule()
+Mimosa_{{specificEpithet}}.stipule.abaxial = new AbaxialStipule()
+
+Mimosa_{{specificEpithet}}.leaf = new Leaf()
+Mimosa_{{specificEpithet}}.leaf.petiole = new Petiole()
+Mimosa_{{specificEpithet}}.leaf.bipinnate = new Bipinnate()
+Mimosa_{{specificEpithet}}.leaf.bipinnate.rachis = new Rachis()
+Mimosa_{{specificEpithet}}.leaf.bipinnate.rachis.spicule = new Spicule()
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.rachilla = new Rachilla()
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet = new Leaflet()
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.adaxial = new AdaxialLeaflet()
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
+
+Mimosa_{{specificEpithet}}.inflorescence = new Inflorescence()
+Mimosa_{{specificEpithet}}.inflorescence.peduncle = new Peduncle()
+
+Mimosa_{{specificEpithet}}.flower = new Flower()
+Mimosa_{{specificEpithet}}.flower.bracteole = new Bracteole()
+Mimosa_{{specificEpithet}}.flower.merism = '{{flower.merism}}'
+Mimosa_{{specificEpithet}}.flower.calyx = new Calyx()
+Mimosa_{{specificEpithet}}.flower.corolla = new Corolla()
+
+Mimosa_{{specificEpithet}}.androecium = new Androecium()
+Mimosa_{{specificEpithet}}.androecium.filaments = new Filaments()
+
+Mimosa_{{specificEpithet}}.ginoecium = new Ginoecium()
+Mimosa_{{specificEpithet}}.ginoecium.ovary = new Ovary()
+
+Mimosa_{{specificEpithet}}.fruit = new Fruit()
+Mimosa_{{specificEpithet}}.fruit.stipe = new Stipe()
+Mimosa_{{specificEpithet}}.fruit.replum = new Replum()
+Mimosa_{{specificEpithet}}.fruit.epicarp = new Epicarp()
+
+Mimosa_{{specificEpithet}}.seed = new Seed()
+
+
+// Description authorship
+Mimosa_{{specificEpithet}}.descriptionAuthorship = new DescriptionAuthorship()
+Mimosa_{{specificEpithet}}.descriptionAuthorship.addAuthor({
+    name: '{{descriptionAuthorship}}',
+    date: {{timestamp}}
+})
+
+
+// Sources
+
+
+// Export Mimosa {{specificEpithet}}
+export { Mimosa_{{specificEpithet}} }
