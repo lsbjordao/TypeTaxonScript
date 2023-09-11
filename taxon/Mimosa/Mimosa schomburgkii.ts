@@ -2,15 +2,23 @@
 import { Mimosa } from '.'
 
 // Import characters
-import { Flower, Fruit, Leaf, Prickles, Source, Trichomes, DescriptionAuthorship } from '../../characters/v1'
+import { Flower, Fruit, Leaf, Prickles, Trichomes, Stipule, Inflorescence, Androecium } from '../../characters/v1'
 import { Capitate, Filiform, Granular, Peltate, Stellate } from '../../characters/v1/Trichomes'
 import { StellateSubsessile, StellateStalked, StellateLepidote } from '../../characters/v1/Trichomes/Stellate'
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
 import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
 import { Rachilla, Paraphillidia, Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { Corolla, Calyx } from '../../characters/v1/Flower'
+import { Corolla, Calyx, Bracteole } from '../../characters/v1/Flower'
 import { Replum, Epicarp } from '../../characters/v1/Fruit'
-import { AbaxialLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AbaxialLeaflet, AdaxialLeaflet, MarginLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AbaxialStipule, AdaxialStipule, MarginStipule } from '../../characters/v1/Stipule'
+import { Spicule } from '../../characters/v1/Leaf/Bipinnate/Rachis/Spicule'
+import { Peduncle, Spicate } from '../../characters/v1/Inflorescence'
+import { Filaments } from '../../characters/v1/Androecium'
+
+// Import annotation classes
+import { Source, DescriptionAuthorship } from '../../characters/v1'
+
 
 // Description of Mimosa schomburgkii
 const Mimosa_schomburgkii = new Mimosa()
@@ -31,16 +39,28 @@ Mimosa_schomburgkii.trichomes.stellate.subsessile.are = 'present'
 Mimosa_schomburgkii.trichomes.granular = new Granular()
 Mimosa_schomburgkii.trichomes.granular.are = 'present'
 
+Mimosa_schomburgkii.stipule = new Stipule()
+Mimosa_schomburgkii.stipule.margin = new MarginStipule()
+Mimosa_schomburgkii.stipule.adaxial = new AdaxialStipule()
+Mimosa_schomburgkii.stipule.abaxial = new AbaxialStipule()
+
 Mimosa_schomburgkii.leaf = new Leaf()
 Mimosa_schomburgkii.leaf.petiole = new Petiole()
 Mimosa_schomburgkii.leaf.petiole.present = true
 Mimosa_schomburgkii.leaf.petiole.setLength(3)
 Mimosa_schomburgkii.leaf.bipinnate = new Bipinnate()
+Mimosa_schomburgkii.leaf.bipinnate.rachis = new Rachis()
+Mimosa_schomburgkii.leaf.bipinnate.rachis.spicule = new Spicule()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.setNumberOfPairsMinMax(7, 12)
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia.are = 'present'
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.paraphillidia.setLength(null)
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.rachilla = new Rachilla()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet = new Leaflet()
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.setNumberOfPairsMinMax(15, 29)
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
+Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.adaxial = new AdaxialLeaflet()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate = new Stellate()
@@ -51,7 +71,14 @@ Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.sta
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate = new Peltate()
 Mimosa_schomburgkii.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate.are = 'present'
 
+Mimosa_schomburgkii.inflorescence = new Inflorescence()
+Mimosa_schomburgkii.inflorescence.peduncle = new Peduncle()
+Mimosa_schomburgkii.inflorescence.spicate = new Spicate()
+
 Mimosa_schomburgkii.flower = new Flower()
+Mimosa_schomburgkii.flower.merism = '4-merous'
+Mimosa_schomburgkii.flower.numberWhorlsOfStamens = 'diplostemonous'
+Mimosa_schomburgkii.flower.bracteole = new Bracteole()
 Mimosa_schomburgkii.flower.calyx = new Calyx()
 Mimosa_schomburgkii.flower.calyx.numSepals = 3
 Mimosa_schomburgkii.flower.calyx.setLengthMinMax(1, 2)
@@ -64,6 +91,10 @@ Mimosa_schomburgkii.flower.corolla.trichomes = new Trichomes()
 Mimosa_schomburgkii.flower.corolla.trichomes.stellate = new Stellate()
 Mimosa_schomburgkii.flower.corolla.trichomes.stellate.lepidote = new StellateLepidote()
 Mimosa_schomburgkii.flower.corolla.trichomes.stellate.lepidote.are = 'present'
+
+Mimosa_schomburgkii.androecium = new Androecium()
+Mimosa_schomburgkii.androecium.filaments = new Filaments()
+Mimosa_schomburgkii.androecium.filaments.colour = 'whitenish'
 
 Mimosa_schomburgkii.fruit = new Fruit()
 Mimosa_schomburgkii.fruit.replum = new Replum()

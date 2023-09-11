@@ -2,6 +2,7 @@
   "dependencies": {
     "csv-parser": "^3.0.0",
     "fs": "^0.0.1-security",
+    "mustache": "^4.2.0",
     "typescript": "^5.1.5"
   },
   "devDependencies": {

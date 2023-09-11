@@ -4,6 +4,8 @@ import { Mimosa } from '.'
 // Import characters
 import { 
     Stems, 
+    Trichomes,
+    Prickles,
     Stipule, 
     Leaf, 
     Inflorescence, 
@@ -22,7 +24,17 @@ import {
     MarginLeaflet
 } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 import { AdaxialStipule, AbaxialStipule, MarginStipule } from '../../characters/v1/Stipule'
+{{^capitateInflorescence}}
+{{^spicate}}
 import { Peduncle } from '../../characters/v1/Inflorescence'
+{{/spicate}}
+{{/capitateInflorescence}}
+{{#capitateInflorescence}}
+import { Peduncle, CapitateInflorescence } from '../../characters/v1/Inflorescence'
+{{/capitateInflorescence}}
+{{#spicate}}
+import { Peduncle, Spicate } from '../../characters/v1/Inflorescence'
+{{/spicate}}
 import { Calyx, Corolla, Bracteole } from '../../characters/v1/Flower'
 import { Stipe, Epicarp, Replum } from '../../characters/v1/Fruit'
 import { Filaments } from '../../characters/v1/Androecium'
@@ -50,24 +62,78 @@ Mimosa_{{specificEpithet}}.leaf.bipinnate = new Bipinnate()
 Mimosa_{{specificEpithet}}.leaf.bipinnate.rachis = new Rachis()
 Mimosa_{{specificEpithet}}.leaf.bipinnate.rachis.spicule = new Spicule()
 Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae = new Pinnae()
+{{#leafBipinnatePinnaeNumberOfPairsRarelyMin}}
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.setNumberOfPairsRarelyMin({{leafBipinnatePinnaeNumberOfPairsRarelyMin}})
+{{/leafBipinnatePinnaeNumberOfPairsRarelyMin}}
+{{#leafBipinnatePinnaeNumberOfPairsValue}}
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.setNumberOfPairs({{leafBipinnatePinnaeNumberOfPairsValue}})
+{{/leafBipinnatePinnaeNumberOfPairsValue}}
+{{#leafBipinnatePinnaeNumberOfPairsMin}}
+{{#leafBipinnatePinnaeNumberOfPairsMax}}
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.setNumberOfPairsMinMax({{leafBipinnatePinnaeNumberOfPairsMin}}, {{leafBipinnatePinnaeNumberOfPairsMax}})
+{{/leafBipinnatePinnaeNumberOfPairsMax}}
+{{/leafBipinnatePinnaeNumberOfPairsMin}}
+{{#leafBipinnatePinnaeNumberOfPairsRarelyMax}}
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.setNumberOfPairsRarelyMin({{leafBipinnatePinnaeNumberOfPairsRarelyMax}})
+{{/leafBipinnatePinnaeNumberOfPairsRarelyMax}}
 Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
 Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.rachilla = new Rachilla()
 Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet = new Leaflet()
+{{#leafBipinnatePinnaeLeafletNumberOfPairsRarelyMin}}
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.setNumberOfPairsRarelyMin({{leafBipinnatePinnaeLeafletNumberOfPairsRarelyMin}})
+{{/leafBipinnatePinnaeLeafletNumberOfPairsRarelyMin}}
+{{#leafBipinnatePinnaeLeafletNumberOfPairsValue}}
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.setNumberOfPairs({{leafBipinnatePinnaeLeafletNumberOfPairsValue}})
+{{/leafBipinnatePinnaeLeafletNumberOfPairsValue}}
+{{#leafBipinnatePinnaeLeafletNumberOfPairsMin}}
+{{#leafBipinnatePinnaeLeafletNumberOfPairsMax}}
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.setNumberOfPairsMinMax({{leafBipinnatePinnaeLeafletNumberOfPairsMin}}, {{leafBipinnatePinnaeLeafletNumberOfPairsMax}})
+{{/leafBipinnatePinnaeLeafletNumberOfPairsMax}}
+{{/leafBipinnatePinnaeLeafletNumberOfPairsMin}}
+{{#leafBipinnatePinnaeLeafletNumberOfPairsRarelyMax}}
+Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.setNumberOfPairsRarelyMin({{leafBipinnatePinnaeLeafletNumberOfPairsRarelyMax}})
+{{/leafBipinnatePinnaeLeafletNumberOfPairsRarelyMax}}
 Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
 Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.adaxial = new AdaxialLeaflet()
 Mimosa_{{specificEpithet}}.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 
 Mimosa_{{specificEpithet}}.inflorescence = new Inflorescence()
+{{#inflorescenceType}}
+Mimosa_{{specificEpithet}}.inflorescence.type = '{{inflorescenceType}}'
+{{/inflorescenceType}}
+{{#inflorescenceShape}}
+Mimosa_{{specificEpithet}}.inflorescence.shape = '{{inflorescenceShape}}'
+{{/inflorescenceShape}}
 Mimosa_{{specificEpithet}}.inflorescence.peduncle = new Peduncle()
+{{#capitateInflorescence}}
+Mimosa_{{specificEpithet}}.inflorescence.capitate = new CapitateInflorescence()
+{{/capitateInflorescence}}
+{{#spicate}}
+Mimosa_{{specificEpithet}}.inflorescence.spicate = new Spicate()
+{{/spicate}}
 
 Mimosa_{{specificEpithet}}.flower = new Flower()
 Mimosa_{{specificEpithet}}.flower.bracteole = new Bracteole()
-Mimosa_{{specificEpithet}}.flower.merism = '{{flower.merism}}'
+{{#flowerMerism}}
+Mimosa_{{specificEpithet}}.flower.merism = '{{flowerMerism}}'
+{{/flowerMerism}}
+{{#numberWhorlsOfStamens}}
+Mimosa_{{specificEpithet}}.flower.numberWhorlsOfStamens = '{{numberWhorlsOfStamens}}'
+{{/numberWhorlsOfStamens}}
 Mimosa_{{specificEpithet}}.flower.calyx = new Calyx()
+{{#flowerCalyxShape}}
+Mimosa_{{specificEpithet}}.flower.calyx.shape = '{{flowerCalyxShape}}'
+{{/flowerCalyxShape}}
 Mimosa_{{specificEpithet}}.flower.corolla = new Corolla()
+{{#flowerCorollaShape}}
+Mimosa_{{specificEpithet}}.flower.corolla.shape = '{{flowerCorollaShape}}'
+{{/flowerCorollaShape}}
 
 Mimosa_{{specificEpithet}}.androecium = new Androecium()
 Mimosa_{{specificEpithet}}.androecium.filaments = new Filaments()
+{{#androeciumFilamentsColour}}
+Mimosa_{{specificEpithet}}.androecium.filaments.colour = '{{androeciumFilamentsColour}}'
+{{/androeciumFilamentsColour}}
 
 Mimosa_{{specificEpithet}}.ginoecium = new Ginoecium()
 Mimosa_{{specificEpithet}}.ginoecium.ovary = new Ovary()

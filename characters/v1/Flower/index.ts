@@ -35,6 +35,13 @@ class Flower extends Sources {
         )[]
 
     /**
+     * Number of whrols of stamnes.
+     */
+    numberWhorlsOfStamens:
+        'isostemonous' |
+        'diplostemonous'
+
+    /**
      * Bracteole.
      */
     bracteole: Bracteole;

@@ -2,12 +2,35 @@
 import { Mimosa } from '.'
 
 // Import characters
-import { Trichomes, Leaf } from '../../characters/v1'
+import { 
+    Stems,
+    Trichomes,
+    Stipule, 
+    Leaf, 
+    Inflorescence, 
+    Flower,
+    Androecium,
+    Ginoecium,
+    Fruit
+} from '../../characters/v1'
 import { Filiform, Lepidote } from '../../characters/v1/Trichomes'
-import { Bipinnate } from '../../characters/v1/Leaf'
-import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
-import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { AbaxialLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
+import { Rachis, Pinnae } from '../../characters/v1/Leaf/Bipinnate'
+import { Spicule } from '../../characters/v1/Leaf/Bipinnate/Rachis/Spicule'
+import { Rachilla, Leaflet, Paraphillidia } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
+import {
+    AdaxialLeaflet, 
+    AbaxialLeaflet, 
+    MarginLeaflet
+} from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AdaxialStipule, AbaxialStipule, MarginStipule } from '../../characters/v1/Stipule'
+import { Peduncle, CapitateInflorescence } from '../../characters/v1/Inflorescence'
+import { Calyx, Corolla, Bracteole } from '../../characters/v1/Flower'
+import { Stipe, Epicarp, Replum } from '../../characters/v1/Fruit'
+import { Filaments } from '../../characters/v1/Androecium'
+import { Ovary } from '../../characters/v1/Ginoecium'
+import { Seed } from '../../characters/v1/Seed'
+
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -16,10 +39,26 @@ import { Source, DescriptionAuthorship } from '../../characters/v1'
 const Mimosa_extensa = new Mimosa()
 Mimosa_extensa.specificEpithet = 'extensa'
 
+Mimosa_extensa.stems = new Stems()
+
+Mimosa_extensa.stipule = new Stipule()
+Mimosa_extensa.stipule.margin = new MarginStipule()
+Mimosa_extensa.stipule.adaxial = new AdaxialStipule()
+Mimosa_extensa.stipule.abaxial = new AbaxialStipule()
+
 Mimosa_extensa.leaf = new Leaf()
+Mimosa_extensa.leaf.petiole = new Petiole()
 Mimosa_extensa.leaf.bipinnate = new Bipinnate()
-Mimosa_extensa.leaf.bipinnate.pinnae = new Pinnae
+Mimosa_extensa.leaf.bipinnate.rachis = new Rachis()
+Mimosa_extensa.leaf.bipinnate.rachis.spicule = new Spicule()
+Mimosa_extensa.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_extensa.leaf.bipinnate.pinnae.setNumberOfPairsMinMax(2, 3)
+Mimosa_extensa.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
+Mimosa_extensa.leaf.bipinnate.pinnae.rachilla = new Rachilla()
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet = new Leaflet()
+Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.setNumberOfPairs(1)
+Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
+Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.adaxial = new AdaxialLeaflet()
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform = new Filiform()
@@ -28,6 +67,34 @@ Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.orientat
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform.numberOfCells = 'multicelullar'
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.lepidote = new Lepidote()
 Mimosa_extensa.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.lepidote.are = 'present'
+
+Mimosa_extensa.inflorescence = new Inflorescence()
+Mimosa_extensa.inflorescence.peduncle = new Peduncle()
+Mimosa_extensa.inflorescence.capitate = new CapitateInflorescence()
+
+Mimosa_extensa.flower = new Flower()
+Mimosa_extensa.flower.bracteole = new Bracteole()
+Mimosa_extensa.flower.merism = '5-merous'
+Mimosa_extensa.flower.numberWhorlsOfStamens = 'diplostemonous'
+Mimosa_extensa.flower.calyx = new Calyx()
+Mimosa_extensa.flower.calyx.shape = 'campanulate'
+Mimosa_extensa.flower.corolla = new Corolla()
+Mimosa_extensa.flower.corolla.shape = 'campanulate'
+
+Mimosa_extensa.androecium = new Androecium()
+Mimosa_extensa.androecium.filaments = new Filaments()
+Mimosa_extensa.androecium.filaments.colour = 'whitenish'
+
+Mimosa_extensa.ginoecium = new Ginoecium()
+Mimosa_extensa.ginoecium.ovary = new Ovary()
+
+Mimosa_extensa.fruit = new Fruit()
+Mimosa_extensa.fruit.stipe = new Stipe()
+Mimosa_extensa.fruit.replum = new Replum()
+Mimosa_extensa.fruit.epicarp = new Epicarp()
+
+Mimosa_extensa.seed = new Seed()
+
 
 // Description authorship
 Mimosa_extensa.descriptionAuthorship = new DescriptionAuthorship()

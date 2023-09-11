@@ -2,15 +2,23 @@
 import { Mimosa } from '.'
 
 // Import characters
-import { Trichomes, Leaf, Stems } from '../../characters/v1'
+import { Trichomes, Leaf, Stems, Stipule, Inflorescence, Flower, Androecium, Ginoecium, Fruit, Seed } from '../../characters/v1'
 import { Filiform, Granular } from '../../characters/v1/Trichomes'
 import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
-import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
+import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
 import { Leaflet, Rachilla } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
 import { AbaxialLeaflet, MarginLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { AbaxialStipule, AdaxialStipule, MarginStipule } from '../../characters/v1/Stipule'
+import { Spicule } from '../../characters/v1/Leaf/Bipinnate/Rachis/Spicule'
+import { CapitateInflorescence, Peduncle } from '../../characters/v1/Inflorescence'
+import { Bracteole, Calyx, Corolla } from '../../characters/v1/Flower'
+import { Filaments } from '../../characters/v1/Androecium'
+import { Ovary } from '../../characters/v1/Ginoecium'
+import { Epicarp, Replum, Stipe } from '../../characters/v1/Fruit'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
+
 
 // Description of Mimosa bimucronata
 const Mimosa_bimucronata = new Mimosa()
@@ -22,18 +30,27 @@ Mimosa_bimucronata.stems.trichomes.filiform = new Filiform()
 Mimosa_bimucronata.stems.trichomes.filiform.are = 'present'
 Mimosa_bimucronata.stems.trichomes.filiform.orientation = ['patent', 'antrorse']
 
+Mimosa_bimucronata.stipule = new Stipule()
+Mimosa_bimucronata.stipule.margin = new MarginStipule()
+Mimosa_bimucronata.stipule.adaxial = new AdaxialStipule()
+Mimosa_bimucronata.stipule.abaxial = new AbaxialStipule()
+
 Mimosa_bimucronata.leaf = new Leaf()
 Mimosa_bimucronata.leaf.petiole = new Petiole()
 Mimosa_bimucronata.leaf.petiole.trichomes = new Trichomes()
 Mimosa_bimucronata.leaf.petiole.trichomes.granular = new Granular()
 Mimosa_bimucronata.leaf.petiole.trichomes.granular.are = 'present'
 Mimosa_bimucronata.leaf.bipinnate = new Bipinnate()
+Mimosa_bimucronata.leaf.bipinnate.rachis = new Rachis()
+Mimosa_bimucronata.leaf.bipinnate.rachis.spicule = new Spicule()
 Mimosa_bimucronata.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.setNumberOfPairsMinMax(5, 9)
 Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla = new Rachilla()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes = new Trichomes()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes.filiform = new Filiform()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.rachilla.trichomes.filiform.are = 'present'
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet = new Leaflet()
+Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.setNumberOfPairsMinMax(18, 41)
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform = new Filiform()
@@ -43,6 +60,33 @@ Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes = new Trichome
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform = new Filiform()
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform.are = 'present'
 Mimosa_bimucronata.leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform.orientation = 'antrorse-appressed'
+
+Mimosa_bimucronata.inflorescence = new Inflorescence()
+Mimosa_bimucronata.inflorescence.peduncle = new Peduncle()
+Mimosa_bimucronata.inflorescence.capitate = new CapitateInflorescence()
+
+Mimosa_bimucronata.flower = new Flower()
+Mimosa_bimucronata.flower.bracteole = new Bracteole()
+Mimosa_bimucronata.flower.merism = '4-merous'
+Mimosa_bimucronata.flower.numberWhorlsOfStamens = 'diplostemonous'
+Mimosa_bimucronata.flower.calyx = new Calyx()
+Mimosa_bimucronata.flower.calyx.shape = 'campanulate'
+Mimosa_bimucronata.flower.corolla = new Corolla()
+Mimosa_bimucronata.flower.corolla.shape = 'campanulate'
+
+Mimosa_bimucronata.androecium = new Androecium()
+Mimosa_bimucronata.androecium.filaments = new Filaments()
+Mimosa_bimucronata.androecium.filaments.colour = 'whitenish'
+
+Mimosa_bimucronata.ginoecium = new Ginoecium()
+Mimosa_bimucronata.ginoecium.ovary = new Ovary()
+
+Mimosa_bimucronata.fruit = new Fruit()
+Mimosa_bimucronata.fruit.stipe = new Stipe()
+Mimosa_bimucronata.fruit.replum = new Replum()
+Mimosa_bimucronata.fruit.epicarp = new Epicarp()
+
+Mimosa_bimucronata.seed = new Seed()
 
 // Description authorship
 Mimosa_bimucronata.descriptionAuthorship = new DescriptionAuthorship()

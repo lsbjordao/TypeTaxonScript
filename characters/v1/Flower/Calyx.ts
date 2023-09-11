@@ -32,7 +32,7 @@ export class Calyx extends Sources {
     /**
      * Calyx shape.
      */
-    shape: 'campanulate' | 'pappiform'
+    shape: 'campanulate' | 'pappiform' | 'pateliform'
 
     /**
      * Calyx apex.

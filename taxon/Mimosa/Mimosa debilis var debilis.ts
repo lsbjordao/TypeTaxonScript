@@ -2,8 +2,19 @@
 import { Mimosa } from '.'
 
 // Import characters
-import { Trichomes, Stems } from '../../characters/v1'
+import { Trichomes, Stems, Stipule, Leaf, Inflorescence, Flower, Androecium, Ginoecium, Fruit, Seed } from '../../characters/v1'
 import { Filiform, Setiform } from '../../characters/v1/Trichomes'
+import { AbaxialStipule, AdaxialStipule, MarginStipule } from '../../characters/v1/Stipule'
+import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
+import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
+import { Spicule } from '../../characters/v1/Leaf/Bipinnate/Rachis/Spicule'
+import { Leaflet, Paraphillidia, Rachilla } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
+import { AbaxialLeaflet, AdaxialLeaflet, MarginLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { CapitateInflorescence, Peduncle } from '../../characters/v1/Inflorescence'
+import { Bracteole, Calyx, Corolla } from '../../characters/v1/Flower'
+import { Filaments } from '../../characters/v1/Androecium'
+import { Ovary } from '../../characters/v1/Ginoecium'
+import { Epicarp, Replum, Stipe } from '../../characters/v1/Fruit'
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
@@ -18,6 +29,54 @@ Mimosa_debilis_var_debilis.stems.trichomes.filiform = new Filiform()
 Mimosa_debilis_var_debilis.stems.trichomes.filiform.are = 'present'
 Mimosa_debilis_var_debilis.stems.trichomes.setiform = new Setiform()
 Mimosa_debilis_var_debilis.stems.trichomes.setiform.are = 'present'
+
+Mimosa_debilis_var_debilis.stipule = new Stipule()
+Mimosa_debilis_var_debilis.stipule.margin = new MarginStipule()
+Mimosa_debilis_var_debilis.stipule.adaxial = new AdaxialStipule()
+Mimosa_debilis_var_debilis.stipule.abaxial = new AbaxialStipule()
+
+Mimosa_debilis_var_debilis.leaf = new Leaf()
+Mimosa_debilis_var_debilis.leaf.petiole = new Petiole()
+Mimosa_debilis_var_debilis.leaf.bipinnate = new Bipinnate()
+Mimosa_debilis_var_debilis.leaf.bipinnate.rachis = new Rachis()
+Mimosa_debilis_var_debilis.leaf.bipinnate.rachis.spicule = new Spicule()
+Mimosa_debilis_var_debilis.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_debilis_var_debilis.leaf.bipinnate.pinnae.setNumberOfPairs(1)
+Mimosa_debilis_var_debilis.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
+Mimosa_debilis_var_debilis.leaf.bipinnate.pinnae.rachilla = new Rachilla()
+Mimosa_debilis_var_debilis.leaf.bipinnate.pinnae.leaflet = new Leaflet()
+Mimosa_debilis_var_debilis.leaf.bipinnate.pinnae.leaflet.setNumberOfPairs(2)
+Mimosa_debilis_var_debilis.leaf.bipinnate.pinnae.leaflet.margin = new MarginLeaflet()
+Mimosa_debilis_var_debilis.leaf.bipinnate.pinnae.leaflet.adaxial = new AdaxialLeaflet()
+Mimosa_debilis_var_debilis.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
+
+Mimosa_debilis_var_debilis.inflorescence = new Inflorescence()
+Mimosa_debilis_var_debilis.inflorescence.peduncle = new Peduncle()
+Mimosa_debilis_var_debilis.inflorescence.capitate = new CapitateInflorescence()
+
+Mimosa_debilis_var_debilis.flower = new Flower()
+Mimosa_debilis_var_debilis.flower.bracteole = new Bracteole()
+Mimosa_debilis_var_debilis.flower.merism = '4-merous'
+Mimosa_debilis_var_debilis.flower.numberWhorlsOfStamens = 'isostemonous'
+Mimosa_debilis_var_debilis.flower.calyx = new Calyx()
+Mimosa_debilis_var_debilis.flower.calyx.shape = 'campanulate'
+Mimosa_debilis_var_debilis.flower.corolla = new Corolla()
+Mimosa_debilis_var_debilis.flower.corolla.shape = 'campanulate'
+
+Mimosa_debilis_var_debilis.androecium = new Androecium()
+Mimosa_debilis_var_debilis.androecium.filaments = new Filaments()
+Mimosa_debilis_var_debilis.androecium.filaments.colour = 'pinkish'
+
+Mimosa_debilis_var_debilis.ginoecium = new Ginoecium()
+Mimosa_debilis_var_debilis.ginoecium.ovary = new Ovary()
+
+Mimosa_debilis_var_debilis.fruit = new Fruit()
+Mimosa_debilis_var_debilis.fruit.stipe = new Stipe()
+Mimosa_debilis_var_debilis.fruit.replum = new Replum()
+Mimosa_debilis_var_debilis.fruit.epicarp = new Epicarp()
+
+Mimosa_debilis_var_debilis.seed = new Seed()
+
 
 // Description authorship
 Mimosa_debilis_var_debilis.descriptionAuthorship = new DescriptionAuthorship()
