@@ -27,6 +27,7 @@ import { Replum, Epicarp, Stipe } from '../../characters/v1/Fruit'
 
 // Import anotations classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
+import { DistanceFromFirstPairOfLeaflets } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Paraphillidia'
 
 // Description of Mimosa emaensis
 const Mimosa_emaensis = new Mimosa()
@@ -72,6 +73,7 @@ Mimosa_emaensis.leaf.bipinnate.pinnae.rachilla.setLengthRarelyMax(0.5)
 Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
 Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.setLengthMinMax(0.3, 0.6)
 Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.shape = ['lanceolate', 'linear-subulate']
+Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.distanceFromFirstPairOfLeaflets = new DistanceFromFirstPairOfLeaflets()
 Mimosa_emaensis.leaf.bipinnate.pinnae.paraphillidia.distanceFromFirstPairOfLeaflets.setLengthMinMax(0.5, 1.8)
 Mimosa_emaensis.leaf.bipinnate.pinnae.leaflet = new Leaflet()
 Mimosa_emaensis.leaf.bipinnate.pinnae.leaflet.setNumberOfPairs(2)

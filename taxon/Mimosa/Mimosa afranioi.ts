@@ -77,7 +77,7 @@ Mimosa_afranioi.leaf.bipinnate.rachis.setLengthMinMax(7, 40)
 Mimosa_afranioi.leaf.bipinnate.rachis.trichomes = new Trichomes()
 Mimosa_afranioi.leaf.bipinnate.rachis.trichomes.are = 'present or absent'
 Mimosa_afranioi.leaf.bipinnate.rachis.spicule = new Spicule()
-Mimosa_afranioi.leaf.bipinnate.rachis.spicule.are = 'present or absent'
+Mimosa_afranioi.leaf.bipinnate.rachis.spicule.is = 'present or absent'
 Mimosa_afranioi.leaf.bipinnate.rachis.spicule.setLength(0.1)
 Mimosa_afranioi.leaf.bipinnate.rachis.spicule.shape = 'deltate'
 Mimosa_afranioi.leaf.bipinnate.rachis.trichomes = new Trichomes()
