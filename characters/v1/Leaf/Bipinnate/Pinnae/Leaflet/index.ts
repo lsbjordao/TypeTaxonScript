@@ -90,7 +90,8 @@ class Leaflet extends Sources {
         'oblique-acute' |
         'oblique-rounded' |
         'oblique-subcordate' |
-        ('obtuse' | 'cordate' | 'oblique-obtuse' | 'oblique-acute' | 'oblique-rounded' | 'oblique-subcordate')[]
+        'oblique-cordate' |
+        ('obtuse' | 'cordate' | 'oblique-obtuse' | 'oblique-acute' | 'oblique-rounded' | 'oblique-subcordate' | 'oblique-cordate')[]
 
     /**
      * Apex of leaflet.

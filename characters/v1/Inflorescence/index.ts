@@ -20,6 +20,11 @@ class Inflorescence extends Sources {
     spicate: Spicate;
 
     /**
+     * Type of inflorescence.
+     */
+    type: 'racemose' | 'paniculate'
+
+    /**
      * Shape of capitate inflorescence.
      */
     shape: 'moriform' | 'conelike'

@@ -1,3 +1,7 @@
+// Import characters
+import { Prickles } from "../../Prickles";
+import { Trichomes } from "../../Trichomes";
+
 // Import methods
 import { _setLength, _setLengthMinMax } from '../../methods/sizes';
 
@@ -16,6 +20,16 @@ export class Peduncle extends Sources {
         min?: number | null;
         max?: number | null;
     } | null;
+
+    /**
+     * Prickles in peduncle.
+     */
+    prickles: Prickles
+
+    /**
+     * Trichomes in peduncle.
+     */
+    trichomes: Trichomes
 
     /**
      * Creates an instance of Leaflet.

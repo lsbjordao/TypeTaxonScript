@@ -33,7 +33,7 @@ export class Prickles extends Sources {
     /**
      * Prickles frequency.
      */
-    frequency: 'sparsely armed' | 'serially armed'
+    frequency: 'sparsely armed' | 'serially armed' | 'densely armed'
 
     /**
      * Prickles persistance.

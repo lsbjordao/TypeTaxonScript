@@ -37,7 +37,7 @@ export class Calyx extends Sources {
     /**
      * Calyx apex.
      */
-    apex: 'denticulate' | 'shortly denticulate'
+    apex: 'denticulate' | 'shortly denticulate' | 'truncate' | ('denticulate' | 'shortly denticulate' | 'truncate')[]
 
     /**
      * Trichomes.

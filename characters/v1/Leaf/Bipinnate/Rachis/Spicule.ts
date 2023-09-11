@@ -11,7 +11,7 @@ export class Spicule extends Sources {
      * @remarks
      * If are `absent`, the `length` should be `null`.
      */
-    are: 'present' | 'absent' | 'present or absent' | 'often absent' | 'often present'
+    is: 'present' | 'absent' | 'present or absent' | 'often absent' | 'often present'
 
     /**
      * Petiole length in milimeters (mm).
@@ -28,7 +28,7 @@ export class Spicule extends Sources {
     /**
      * Shape of spicule.
      */
-    shape: 'linear' | 'deltate' | 'spinniform'
+    shape: 'linear' | 'linear-subulate' | 'deltate' | 'spinniform'
 
     /**
      * Trichomes in spicule.

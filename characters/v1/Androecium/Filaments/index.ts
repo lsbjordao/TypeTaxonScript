@@ -20,7 +20,7 @@ class Filaments extends Sources {
     /**
      * Colour of filaments.
      */
-    colour: 'pinkish' | 'yellowish' | 'whitenish'
+    colour: 'pinkish' | 'yellowish' | 'whitenish' | ('pinkish' | 'yellowish' | 'whitenish')[]
 
     /**
      * Base of filaments
