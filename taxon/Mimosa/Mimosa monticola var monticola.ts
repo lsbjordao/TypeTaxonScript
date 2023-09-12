@@ -96,7 +96,16 @@ Mimosa_monticola_var_monticola.descriptionAuthorship.addAuthor({
 
 
 // Sources
-
+const source0 = new Source()
+source0.sourceType = 'article'
+source0.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source0.year = 2018
+source0.title = 'Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil'
+source0.journal = 'Systematic Botany'
+source0.volume = 43
+source0.number = 1
+source0.pages = 162-197
+Mimosa_monticola_var_monticola.addSource(source0)
 
 // Export Mimosa monticola var monticola
 export { Mimosa_monticola_var_monticola }

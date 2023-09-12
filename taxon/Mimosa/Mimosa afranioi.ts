@@ -195,7 +195,6 @@ Mimosa_afranioi.descriptionAuthorship.addAuthor({
 })
 
 // Sources
-
 const source1 = new Source()
 source1.obraPrinceps = 'yes'
 source1.sourceType = 'article'
