@@ -1,23 +1,12 @@
 // Import methods
-import { _setLength, _setLengthMinMax } from '../../../methods/sizes';
+import { _setLength, _setLengthMinMax } from '../../../../methods/sizes';
 
 // Import annotation classes
-import { Sources } from "../../../Sources";
+import { Sources } from "../../../../Sources";
 
-export class Paraphillidia extends Sources {
+export class DistanceFromFirstPairOfLeaflets extends Sources {
     /**
-     * Is paraphillidia pair 'present', 'absent', or 'present or absent'?
-     * 
-     * @remarks
-     * If are `absent`, the `length` should be `null`.
-     */
-    are: 'present' | 'absent' | 'present or absent'
-
-    /**
-     * Paraphillidia length in milimeters (mm).
-     *
-     * @remarks
-     * It should be `null` when `present` is `false`.
+     * Distance of paraphillidia pair from first pair of leaflets, length in milimeters (mm).
      */
     length: {
         value?: number | null;
@@ -26,17 +15,7 @@ export class Paraphillidia extends Sources {
     } | null;
 
     /**
-     * Pair length.
-     */
-    pairLength: 'unequal' | 'equal'
-
-    /**
-     * Shape of paraphillidia.
-     */
-    shape: 'lanceolate' | 'linear'
-
-    /**
-     * Creates an instance of Paraphillidia.
+     * Creates an instance of distance of paraphillidia from first pair of leaflets.
      */
     constructor() {
         super();

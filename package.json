@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "csv-parser": "^3.0.0",
     "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "mustache": "^4.2.0",
     "typescript": "^5.1.5"
   },
   "devDependencies": {

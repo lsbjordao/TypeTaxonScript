@@ -2,7 +2,12 @@ import { Trichomes } from '../../../Trichomes';
 import { Prickles } from '../../../Prickles';
 import { Sources } from "../../../Sources";
 
-import { _setLength, _setLengthMinMax } from '../../../methods/sizes';
+import { 
+    _setLength, 
+    _setLengthMinMax, 
+    _setLengthRarelyMin, 
+    _setLengthRarelyMax 
+} from '../../../methods/sizes';
 
 export class Rachilla extends Sources {
     /**
@@ -52,6 +57,24 @@ export class Rachilla extends Sources {
      */
     setLengthMinMax(min: number, max: number): void {
         _setLengthMinMax(min, max, this);
+    }
+
+    /**
+     * Sets a single value for rarely minimum.
+     *
+     * @param rarelyMin - The rarely minimum value (integer).
+     */
+    setLengthRarelyMin(min: number): void {
+        _setLengthRarelyMin(min, this);
+    }
+
+    /**
+     * Sets a single value for rarely maximum.
+     *
+     * @param rarelyMax - The rarely maximum value (integer).
+     */
+    setLengthRarelyMax(max: number): void {
+        _setLengthRarelyMax(max, this);
     }
 
     /**

@@ -5,16 +5,31 @@ import { AdaxialLeaflet } from './AdaxialLeaflet'
 import { MarginLeaflet } from './MarginLeaflet'
 
 // Import methods
-import { _setHeight, _setHeightMinMax, _setWidth, _setWidthMinMax } from '../../../../methods/sizes'
+import {
+    _setHeight,
+    _setHeightMinMax,
+    _setWidth,
+    _setWidthMinMax,
+    _setNumberOfPairs,
+    _setNumberOfPairsRarelyMin,
+    _setNumberOfPairsMinMax,
+    _setNumberOfPairsRarelyMax
+} from '../../../../methods/sizes'
 
 // Import annotation classes
 import { Sources } from "../../../../Sources"
 
 class Leaflet extends Sources {
     /**
-     * Number of leaflet pair(s).
+     * Number of leaflet pairs
      */
-    numberOfPairs: number
+    numberOfPairs: {
+        value?: number | null
+        rarelyMin?: number | null
+        rarelyMax?: number | null
+        min?: number | null
+        max?: number | null
+    } | null
 
     /**
      * Leaflet length in milimeters (mm).
@@ -60,7 +75,10 @@ class Leaflet extends Sources {
         'lanceolate' |
         'elliptic' |
         'oval' |
-        ('linear' | 'lanceolate' | 'elliptic' | 'oval')[]
+        'obovate' |
+        'oblong' |
+        'oblanceolate' |
+        ('linear' | 'lanceolate' | 'elliptic' | 'oval' | 'obovate' | 'oblong' | 'oblanceolate')[]
 
     /**
      * Base of leaflet.
@@ -69,15 +87,23 @@ class Leaflet extends Sources {
         'obtuse' |
         'cordate' |
         'oblique-obtuse' |
-        ('obtuse' | 'cordate' | 'oblique-obtuse')[]
+        'oblique-acute' |
+        'oblique-rounded' |
+        'oblique-subcordate' |
+        'oblique-cordate' |
+        'oblique-truncate' |
+        ('obtuse' | 'cordate' | 'oblique-obtuse' | 'oblique-acute' | 'oblique-rounded' | 'oblique-subcordate' | 'oblique-cordate' | 'oblique-truncate')[]
 
     /**
      * Apex of leaflet.
      */
     apex:
-    'acute' |
-    'rounded' |
-    ('acute' | 'rounded')[]
+        'acute' |
+        'rounded' |
+        'obtuse' |
+        'obtuse-mucronulate' |
+        'rounded-mucronulate' |
+        ('acute' | 'rounded' | 'obtuse' | 'obtuse-mucronulate' | 'rounded-mucronulate')[]
 
     /**
      * Abaxial surface of leaflet.
@@ -116,8 +142,6 @@ class Leaflet extends Sources {
      *
      * @param min - The minimum height value in milimeters (mm).
      * @param max - The maximum height value in milimeters (mm).
-     * @throws Error if `present` is `false` and either `min` or `max` is not `null`.
-     * @throws Error if `min` is greater than or equal to `max`.
      */
     setHeightMinMax(min: number, max: number): void {
         _setHeightMinMax(min, max, this)
@@ -128,8 +152,6 @@ class Leaflet extends Sources {
      *
      * @param min - The minimum width value in milimeters (mm).
      * @param max - The maximum width value in milimeters (mm).
-     * @throws Error if `present` is `false` and either `min` or `max` is not `null`.
-     * @throws Error if `min` is greater than or equal to `max`.
      */
     setWidthMinMax(min: number, max: number): void {
         _setWidthMinMax(min, max, this)
@@ -154,6 +176,44 @@ class Leaflet extends Sources {
     setWidth(value: number | null): void {
         _setWidth(value, this)
     }
+
+    /**
+     * Sets a single value for number of pairs.
+     *
+     * @param value - The number of pairs value (integer).
+     */
+    setNumberOfPairs(value: number): void {
+        _setNumberOfPairs(value, this)
+    }
+
+    /**
+     * Sets the number of pairs values.
+     *
+     * @param min - The minimum number of pairs value (integer).
+     * @param max - The maximum number of pairs value (integer).
+     */
+    setNumberOfPairsMinMax(min: number, max: number): void {
+        _setNumberOfPairsMinMax(min, max, this)
+    }
+
+    /**
+     * Sets a single rarely value for number of pairs.
+     *
+     * @param min - The rarely minimum number of pairs value (integer).
+     */
+    setNumberOfPairsRarelyMin(min: number): void {
+        _setNumberOfPairsRarelyMin(min, this)
+    }
+
+    /**
+     * Sets a single rarely value for number of pairs.
+     *
+     * @param min - The rarely maximum number of pairs value (integer).
+     */
+    setNumberOfPairsRarelyMax(max: number): void {
+        _setNumberOfPairsRarelyMax(max, this)
+    }
+
 }
 
 export {

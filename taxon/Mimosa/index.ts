@@ -28,7 +28,38 @@ export class Mimosa extends Sources {
     /**
      * Habit of *Mimosa*
      */
-    habit: 'tree' | 'shrub' | 'subshrub' | 'herb'
+    habit:
+        'tree' |
+        'shrub' |
+        'subshrub' |
+        'herb' |
+        (
+            'tree' |
+            'shrub' |
+            'subshrub' |
+            'herb'
+        )[]
+
+    /**
+    * Plant maximum height
+    * @param value - Number (decimal or integer) in meters (m)
+    */
+    height: number
+
+    /**
+     * Light strategy of *Mimosa*
+     */
+    lightStrategy:
+        'sciophilous' |
+        'heliophilous' |
+        'semiheliophilous' |
+        'semisciophilous' |
+        (
+            'sciophilous' |
+            'heliophilous' |
+            'semiheliophilous' |
+            'semisciophilous'
+        )[]
 
     /**
      * Stem of *Mimosa*.

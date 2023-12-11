@@ -26,6 +26,37 @@ export class Petiole extends Sources {
     } | null;
 
     /**
+     * Transversal shape of petiole.
+     *
+     * @remarks
+     * The shape of petiole when viewed from a cross-sectional perspective.
+     */
+    transversalShape:
+    '4-ribbed' |
+    '5-ribbed' |
+    '4-gonal' |
+    'cylindric' |
+    (
+        '4-ribbed' |
+        '5-ribbed' |
+        '4-gonal' |
+        'cylindric'
+    )[]
+
+    /**
+     * Flattening of petiole.
+     */
+    flattening:
+        'not dorsiventrally flattened' |
+        'slightly dorsiventrally flattened' |
+        'dorsiventrally flattened' |
+        (
+            'not dorsiventrally flattened' |
+            'slightly dorsiventrally flattened' |
+            'dorsiventrally flattened'
+        )[]
+
+    /**
      * Prickles in petiole.
     */
     prickles: Prickles;

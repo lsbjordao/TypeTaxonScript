@@ -7,7 +7,39 @@ class Flower extends Sources {
     /**
      * Merism.
      */
-    merism: '3-merous' | '4-merous' | '5-merous'
+    merism:
+        '3-merous' |
+        '4-merous' |
+        '5-merous' |
+        '6-merous' |
+        (
+            '3-merous' |
+            '4-merous' |
+            '5-merous' |
+            '6-merous'
+        )[]
+
+    /**
+     * Merism rarely.
+     */
+    merismRarely:
+        '3-merous' |
+        '4-merous' |
+        '5-merous' |
+        '6-merous' |
+        (
+            '3-merous' |
+            '4-merous' |
+            '5-merous' |
+            '6-merous'
+        )[]
+
+    /**
+     * Number of whrols of stamnes.
+     */
+    numberWhorlsOfStamens:
+        'isostemonous' |
+        'diplostemonous'
 
     /**
      * Bracteole.

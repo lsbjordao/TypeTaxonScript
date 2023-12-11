@@ -26,7 +26,9 @@ class Bracteole extends Sources {
     shape: 
     'oblanceolate' | 
     'linear' |
-    ('oblanceolate' | 'linear')[]
+    'lanceolate' |
+    'spatulate' |
+    ('oblanceolate' | 'linear' | 'lanceolate' | 'spatulate')[]
 
     /**
      * Adaxial surface of bracteole.

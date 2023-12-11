@@ -32,7 +32,12 @@ export class Calyx extends Sources {
     /**
      * Calyx shape.
      */
-    shape: "campanulate" | "pappiform"
+    shape: 'campanulate' | 'pappiform' | 'pateliform'
+
+    /**
+     * Calyx apex.
+     */
+    apex: 'denticulate' | 'shortly denticulate' | 'truncate' | ('denticulate' | 'shortly denticulate' | 'truncate')[]
 
     /**
      * Trichomes.

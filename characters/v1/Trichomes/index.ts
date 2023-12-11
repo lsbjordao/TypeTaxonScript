@@ -13,6 +13,14 @@ import { Sources } from "../Sources"
 
 class Trichomes extends Sources {
     /**
+     * Are trichomes 'present', 'absent', or 'present or absent'?
+     * 
+     * @remarks
+     * If are `absent`, the `length` should be `null`.
+     */
+    are: 'present' | 'absent' | 'present or absent'
+
+    /**
      * Filiform trichomes.
      * 
      * @source [Jordão et al. (2020)](https://doi.org/10.1016/j.flora.2020.151702)

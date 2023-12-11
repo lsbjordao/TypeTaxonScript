@@ -1,5 +1,14 @@
 export class Source {
     /**
+     * Obra princeps?
+     * 
+     * @remarks
+     * This is an original publication (*obra princeps*)?
+     * - **yes**
+     */
+    obraPrinceps: 'yes'
+
+    /**
      * Method of obtaining the source.
      */
     obtainingMethod:

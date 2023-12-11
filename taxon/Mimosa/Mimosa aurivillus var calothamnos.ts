@@ -2,17 +2,24 @@
 import { Mimosa } from '.'
 
 // Import characters
-import { Stems, Trichomes, Leaf } from '../../characters/v1'
+import { Stems, Trichomes, Leaf, Stipule, Inflorescence, Flower, Androecium, Ginoecium, Fruit, Seed } from '../../characters/v1'
 import { Dendritic, Fasciculate, Capitate } from '../../characters/v1/Trichomes'
 import { CapitateFiliform } from '../../characters/v1/Trichomes/Capitate'
-import { Bipinnate } from '../../characters/v1/Leaf'
-import { Pinnae } from '../../characters/v1/Leaf/Bipinnate'
-import { Leaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
-import { AbaxialLeaflet, MarginLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
+import { Bipinnate, Petiole } from '../../characters/v1/Leaf'
+import { Pinnae, Rachis } from '../../characters/v1/Leaf/Bipinnate'
+import { Leaflet, Paraphillidia, Rachilla } from '../../characters/v1/Leaf/Bipinnate/Pinnae'
+import { AbaxialLeaflet, AdaxialLeaflet, MarginLeaflet } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 
 
 // Import annotation classes
 import { Source, DescriptionAuthorship } from '../../characters/v1'
+import { AbaxialStipule, AdaxialStipule, MarginStipule } from '../../characters/v1/Stipule'
+import { Spicule } from '../../characters/v1/Leaf/Bipinnate/Rachis/Spicule'
+import { CapitateInflorescence, Peduncle } from '../../characters/v1/Inflorescence'
+import { Bracteole, Calyx, Corolla } from '../../characters/v1/Flower'
+import { Filaments } from '../../characters/v1/Androecium'
+import { Ovary } from '../../characters/v1/Ginoecium'
+import { Epicarp, Replum, Stipe } from '../../characters/v1/Fruit'
 
 // Description of Mimosa aurivillus var. calothamnos
 const Mimosa_aurivillus_var_calothamnos = new Mimosa()
@@ -23,10 +30,24 @@ Mimosa_aurivillus_var_calothamnos.stems.trichomes = new Trichomes()
 Mimosa_aurivillus_var_calothamnos.stems.trichomes.dendritic = new Dendritic()
 Mimosa_aurivillus_var_calothamnos.stems.trichomes.dendritic.are = 'present'
 
+Mimosa_aurivillus_var_calothamnos.stipule = new Stipule()
+Mimosa_aurivillus_var_calothamnos.stipule.margin = new MarginStipule()
+Mimosa_aurivillus_var_calothamnos.stipule.adaxial = new AdaxialStipule()
+Mimosa_aurivillus_var_calothamnos.stipule.abaxial = new AbaxialStipule()
+
 Mimosa_aurivillus_var_calothamnos.leaf = new Leaf()
+Mimosa_aurivillus_var_calothamnos.leaf.petiole = new Petiole()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate = new Bipinnate()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.rachis = new Rachis()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.rachis.spicule = new Spicule()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae = new Pinnae()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.setNumberOfPairsRarelyMin(1)
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.setNumberOfPairsMinMax(2, 5)
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.paraphillidia = new Paraphillidia()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.rachilla = new Rachilla()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet = new Leaflet()
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.setNumberOfPairsMinMax(10, 21)
+Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.adaxial = new AdaxialLeaflet()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial = new AbaxialLeaflet()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes = new Trichomes()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate = new Fasciculate()
@@ -37,6 +58,33 @@ Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes.capitate.filiform = new CapitateFiliform()
 Mimosa_aurivillus_var_calothamnos.leaf.bipinnate.pinnae.leaflet.margin.trichomes.capitate.filiform.are = 'present'
 
+Mimosa_aurivillus_var_calothamnos.inflorescence = new Inflorescence()
+Mimosa_aurivillus_var_calothamnos.inflorescence.peduncle = new Peduncle()
+Mimosa_aurivillus_var_calothamnos.inflorescence.capitate = new CapitateInflorescence()
+
+Mimosa_aurivillus_var_calothamnos.flower = new Flower()
+Mimosa_aurivillus_var_calothamnos.flower.bracteole = new Bracteole()
+Mimosa_aurivillus_var_calothamnos.flower.merism = '4-merous'
+Mimosa_aurivillus_var_calothamnos.flower.numberWhorlsOfStamens = 'isostemonous'
+Mimosa_aurivillus_var_calothamnos.flower.calyx = new Calyx()
+Mimosa_aurivillus_var_calothamnos.flower.calyx.shape = 'campanulate'
+Mimosa_aurivillus_var_calothamnos.flower.corolla = new Corolla()
+Mimosa_aurivillus_var_calothamnos.flower.corolla.shape = 'campanulate'
+
+Mimosa_aurivillus_var_calothamnos.androecium = new Androecium()
+Mimosa_aurivillus_var_calothamnos.androecium.filaments = new Filaments()
+Mimosa_aurivillus_var_calothamnos.androecium.filaments.colour = 'yellowish'
+
+Mimosa_aurivillus_var_calothamnos.ginoecium = new Ginoecium()
+Mimosa_aurivillus_var_calothamnos.ginoecium.ovary = new Ovary()
+
+Mimosa_aurivillus_var_calothamnos.fruit = new Fruit()
+Mimosa_aurivillus_var_calothamnos.fruit.stipe = new Stipe()
+Mimosa_aurivillus_var_calothamnos.fruit.replum = new Replum()
+Mimosa_aurivillus_var_calothamnos.fruit.epicarp = new Epicarp()
+
+Mimosa_aurivillus_var_calothamnos.seed = new Seed()
+
 
 // Description authorship
 Mimosa_aurivillus_var_calothamnos.descriptionAuthorship = new DescriptionAuthorship()
@@ -46,6 +94,18 @@ Mimosa_aurivillus_var_calothamnos.descriptionAuthorship.addAuthor({
 })
 
 // Sources
+
+const source0 = new Source()
+source0.sourceType = 'article'
+source0.authorship = 'Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.'
+source0.year = 2018
+source0.title = 'Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil'
+source0.journal = 'Systematic Botany'
+source0.volume = 43
+source0.number = 1
+source0.pages = 162-197
+Mimosa_aurivillus_var_calothamnos.addSource(source0)
+
 /// Trichomes
 const source1 = new Source()
 source1.sourceType = 'article'
