@@ -25,16 +25,16 @@ import {
 } from '../../characters/v1/Leaf/Bipinnate/Pinnae/Leaflet'
 import { AdaxialStipule, AbaxialStipule, MarginStipule } from '../../characters/v1/Stipule'
 {{^capitateInflorescence}}
-{{^spicate}}
+{{^spicateInflorescence}}
 import { Peduncle } from '../../characters/v1/Inflorescence'
-{{/spicate}}
+{{/spicateInflorescence}}
 {{/capitateInflorescence}}
 {{#capitateInflorescence}}
 import { Peduncle, CapitateInflorescence } from '../../characters/v1/Inflorescence'
 {{/capitateInflorescence}}
-{{#spicate}}
+{{#spicateInflorescence}}
 import { Peduncle, Spicate } from '../../characters/v1/Inflorescence'
-{{/spicate}}
+{{/spicateInflorescence}}
 import { Calyx, Corolla, Bracteole } from '../../characters/v1/Flower'
 import { Stipe, Epicarp, Replum } from '../../characters/v1/Fruit'
 import { Filaments } from '../../characters/v1/Androecium'
@@ -108,9 +108,9 @@ Mimosa_{{specificEpithet}}.inflorescence.peduncle = new Peduncle()
 {{#capitateInflorescence}}
 Mimosa_{{specificEpithet}}.inflorescence.capitate = new CapitateInflorescence()
 {{/capitateInflorescence}}
-{{#spicate}}
+{{#spicateInflorescence}}
 Mimosa_{{specificEpithet}}.inflorescence.spicate = new Spicate()
-{{/spicate}}
+{{/spicateInflorescence}}
 
 Mimosa_{{specificEpithet}}.flower = new Flower()
 Mimosa_{{specificEpithet}}.flower.bracteole = new Bracteole()

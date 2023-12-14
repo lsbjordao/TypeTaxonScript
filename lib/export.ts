@@ -85,5 +85,6 @@ const Mimosa_species: Mimosa[] = [
 // Export MimosaDB.json
 import { writeFileSync } from 'fs'
 const jsonData = JSON.stringify(Mimosa_species)
-const filePath = 'MimosaDB.json'
+const filePath = '../output/MimosaDB.json'
 writeFileSync(filePath, jsonData, 'utf-8')
+console.log('\x1b[1m\x1b[32m✔ Process finished.\x1b[0m')
