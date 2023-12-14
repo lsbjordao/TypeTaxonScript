@@ -1,0 +1,2254 @@
+[
+  {
+    "index": "0",
+    "path": "",
+    "specificEpithet": "afranioi",
+    "source": {
+      "obraPrinceps": "yes",
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. and Morim, M.P. and Simon, M.F., Dutra, V.F. and Baumgratz, J.F.A.",
+      "year": 2021,
+      "title": "New Species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Systematic Botany",
+      "volume": 46,
+      "number": 2,
+      "pages": -12
+    }
+  },
+  {
+    "index": "0",
+    "path": "",
+    "specificEpithet": "afranioi",
+    "source": {
+      "obraPrinceps": "yes",
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. and Morim, M.P. and Simon, M.F., Dutra, V.F. and Baumgratz, J.F.A.",
+      "year": 2021,
+      "title": "New Species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Systematic Botany",
+      "volume": 46,
+      "number": 2,
+      "pages": -12,
+      "figure": "2",
+      "obtainingMethod": "drawing"
+    }
+  },
+  {
+    "index": "0",
+    "path": "",
+    "specificEpithet": "afranioi",
+    "source": {
+      "obraPrinceps": "yes",
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. and Morim, M.P. and Simon, M.F., Dutra, V.F. and Baumgratz, J.F.A.",
+      "year": 2021,
+      "title": "New Species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Systematic Botany",
+      "volume": 46,
+      "number": 2,
+      "pages": -12,
+      "figure": "3",
+      "obtainingMethod": "photo"
+    }
+  },
+  {
+    "index": "1",
+    "path": "",
+    "specificEpithet": "arenosa var. arenosa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "1",
+    "path": "leaf.petiole.trichomes.granular",
+    "specificEpithet": "arenosa var. arenosa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "8A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "2",
+    "path": "",
+    "specificEpithet": "aurivillus var. calothamnos",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "2",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "aurivillus var. calothamnos",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5E",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "2",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "aurivillus var. calothamnos",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5I",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "2",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate",
+    "specificEpithet": "aurivillus var. calothamnos",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6E",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "2",
+    "path": "leaf.bipinnate.pinnae.leaflet.margin.trichomes.capitate.filiform",
+    "specificEpithet": "aurivillus var. calothamnos",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "8D",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "3",
+    "path": "",
+    "specificEpithet": "bimucronata",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "3",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "bimucronata",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1D",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "3",
+    "path": "leaf.petiole.trichomes.granular",
+    "specificEpithet": "bimucronata",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "8B",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "3",
+    "path": "leaf.bipinnate.pinnae.rachilla.trichomes.filiform",
+    "specificEpithet": "bimucronata",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9O",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "3",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform",
+    "specificEpithet": "bimucronata",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1C",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "4",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate.filiform.variantCordistipulae",
+    "specificEpithet": "blanchetii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "8F,G,H",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "5",
+    "path": "",
+    "specificEpithet": "caesalpiniifolia",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "5",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "caesalpiniifolia",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "6",
+    "path": "fruit.epicarp.trichomes.setiform.glochidiate",
+    "specificEpithet": "campicola",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "4A,B",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "7",
+    "path": "stems.trichomes.capitate.filiform",
+    "specificEpithet": "cordistipula",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9F,G,H",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "8",
+    "path": "",
+    "specificEpithet": "cubatanensis",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "8",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform",
+    "specificEpithet": "cubatanensis",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "8",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform",
+    "specificEpithet": "cubatanensis",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1H",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "8",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform",
+    "specificEpithet": "cubatanensis",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9P",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "9",
+    "path": "",
+    "specificEpithet": "debilis var. debilis",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "9",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "debilis var. debilis",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "9",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "debilis var. debilis",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "10",
+    "path": "",
+    "specificEpithet": "diplotricha var. diplotricha",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "10",
+    "path": "fruit.epicarp.trichomes.setiform.barbellate",
+    "specificEpithet": "diplotricha var. diplotricha",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "3G",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "10",
+    "path": "fruit.epicarp.trichomes.setiform.barbellate",
+    "specificEpithet": "diplotricha var. diplotricha",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "3H",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "11",
+    "path": "",
+    "specificEpithet": "dolens var. dolens",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "11",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "dolens var. dolens",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "11",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "dolens var. dolens",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "11",
+    "path": "stems.trichomes.porrect",
+    "specificEpithet": "dolens var. dolens",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6G",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "11",
+    "path": "stems.trichomes.capitate.setiform",
+    "specificEpithet": "dolens var. dolens",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "11",
+    "path": "stems.trichomes.capitate.setiform",
+    "specificEpithet": "dolens var. dolens",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9B",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "12",
+    "path": "",
+    "specificEpithet": "dryandroides var. dryandroides",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "12",
+    "path": "stems.trichomes.setiform.barbellate",
+    "specificEpithet": "dryandroides var. dryandroides",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "3A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "12",
+    "path": "stems.trichomes.granular",
+    "specificEpithet": "dryandroides var. dryandroides",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "8C",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "13",
+    "path": "",
+    "specificEpithet": "elliptica",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "13",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "elliptica",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1E",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "13",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "elliptica",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2D",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "13",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "elliptica",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2J",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "13",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "elliptica",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2L",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "14",
+    "path": "",
+    "specificEpithet": "emaensis",
+    "source": {
+      "obraPrinceps": "yes",
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. and Morim, M.P. and Simon, M.F., Dutra, V.F. and Baumgratz, J.F.A.",
+      "year": 2021,
+      "title": "New Species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Systematic Botany",
+      "volume": 46,
+      "number": 2,
+      "pages": -12
+    }
+  },
+  {
+    "index": "14",
+    "path": "",
+    "specificEpithet": "emaensis",
+    "source": {
+      "obraPrinceps": "yes",
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. and Morim, M.P. and Simon, M.F., Dutra, V.F. and Baumgratz, J.F.A.",
+      "year": 2021,
+      "title": "New Species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Systematic Botany",
+      "volume": 46,
+      "number": 2,
+      "pages": -12,
+      "figure": "4",
+      "obtainingMethod": "drawing"
+    }
+  },
+  {
+    "index": "14",
+    "path": "",
+    "specificEpithet": "emaensis",
+    "source": {
+      "obraPrinceps": "yes",
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. and Morim, M.P. and Simon, M.F., Dutra, V.F. and Baumgratz, J.F.A.",
+      "year": 2021,
+      "title": "New Species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Systematic Botany",
+      "volume": 46,
+      "number": 2,
+      "pages": -12,
+      "figure": "5",
+      "obtainingMethod": "photo"
+    }
+  },
+  {
+    "index": "15",
+    "path": "",
+    "specificEpithet": "ernestii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "15",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "ernestii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2K",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "16",
+    "path": "",
+    "specificEpithet": "extensa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "16",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform",
+    "specificEpithet": "extensa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1F",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "16",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.lepidote",
+    "specificEpithet": "extensa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "7D,E",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "16",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.lepidote",
+    "specificEpithet": "extensa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "7F,G",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "17",
+    "path": "",
+    "specificEpithet": "furfuracea",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "17",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "furfuracea",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5A,B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "17",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "furfuracea",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5J",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "17",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "furfuracea",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6D",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "17",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate",
+    "specificEpithet": "furfuracea",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6F",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "17",
+    "path": "flower.corolla.trichomes.stellate.lepidote",
+    "specificEpithet": "furfuracea",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "4H",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "18",
+    "path": "leaf.bipinnate.pinnae.gall",
+    "specificEpithet": "gemmulata",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Vieira, L.G. & Nogueiro, R.M. & Costa, E.C. & Carvalho-Fernandes, S.P. & Santos-Silva, J.",
+      "year": 2018,
+      "title": "Insect galls in Rupestrian field and Cerrado stricto sensu vegetation in Caetité, Bahia, Brazil",
+      "journal": "Biota Neotrop.",
+      "number": 18,
+      "volume": 2,
+      "figure": "2P,Q",
+      "obtainingMethod": "photo",
+      "doi": "https://doi.org/10.1590/1676-0611-BN-2017-0402"
+    }
+  },
+  {
+    "index": "19",
+    "path": "",
+    "specificEpithet": "glazioui",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "19",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "glazioui",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2E",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "19",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "glazioui",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "8E",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "20",
+    "path": "",
+    "specificEpithet": "invisa var. macrostachya",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "20",
+    "path": "leaf.bipinnate.pinnae.leaflet.margin.trichomes.filiform",
+    "specificEpithet": "invisa var. macrostachya",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1E",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "21",
+    "path": "",
+    "specificEpithet": "itatiaiensis",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "21",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "itatiaiensis",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2C",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "22",
+    "path": "stems.trichomes.capitate.filiform",
+    "specificEpithet": "leptantha",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9I,J,K,L",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "23",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate.filiform.variantCordistipulae",
+    "specificEpithet": "minarum",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "8O,P,Q,R,S,T",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "24",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.capitate.filiform.variantCordistipulae",
+    "specificEpithet": "misera",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "8I,J,K,L,M,N",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "25",
+    "path": "",
+    "specificEpithet": "myuros",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "25",
+    "path": "stems.trichomes.stellate",
+    "specificEpithet": "myuros",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5D",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "25",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "myuros",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5H",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "25",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "myuros",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5C",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "25",
+    "path": "fruit.epicarp.trichomes.verruciform",
+    "specificEpithet": "myuros",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "7B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "26",
+    "path": "",
+    "specificEpithet": "oblonga var. oblonga",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "26",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "oblonga var. oblonga",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "26",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "oblonga var. oblonga",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2H",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "26",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "oblonga var. oblonga",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "26",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "oblonga var. oblonga",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2H",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "27",
+    "path": "",
+    "specificEpithet": "osmarii",
+    "source": {
+      "obraPrinceps": "yes",
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A. & Simon, M.F.",
+      "year": 2017,
+      "title": "A new species of *Mimosa* (Leguminosae) endemic to the Brazilian Cerrado",
+      "journal": "Phytotaxa",
+      "volume": 312,
+      "number": 2,
+      "pages": -9
+    }
+  },
+  {
+    "index": "27",
+    "path": "",
+    "specificEpithet": "osmarii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A. & Simon, M.F.",
+      "year": 2017,
+      "title": "A new species of *Mimosa* (Leguminosae) endemic to the Brazilian Cerrado",
+      "journal": "Phytotaxa",
+      "volume": 312,
+      "number": 2,
+      "pages": -9,
+      "figure": "3A,B,C,D",
+      "obtainingMethod": "photo"
+    }
+  },
+  {
+    "index": "27",
+    "path": "",
+    "specificEpithet": "osmarii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A. & Simon, M.F.",
+      "year": 2017,
+      "title": "A new species of *Mimosa* (Leguminosae) endemic to the Brazilian Cerrado",
+      "journal": "Phytotaxa",
+      "volume": 312,
+      "number": 2,
+      "pages": -9,
+      "figure": "4",
+      "obtainingMethod": "drawing"
+    }
+  },
+  {
+    "index": "28",
+    "path": "",
+    "specificEpithet": "paludosa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "28",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "paludosa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "1A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "28",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "paludosa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9C",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "28",
+    "path": "stems.trichomes.capitate.setiform",
+    "specificEpithet": "paludosa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9C",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "28",
+    "path": "stems.trichomes.capitate.setiform",
+    "specificEpithet": "paludosa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9D",
+      "obtainingMethod": "photo"
+    }
+  },
+  {
+    "index": "28",
+    "path": "stems.trichomes.capitate.setiform",
+    "specificEpithet": "paludosa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9E",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "29",
+    "path": "",
+    "specificEpithet": "pigra var. pigra",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "29",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "pigra var. pigra",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "3D",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "29",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "pigra var. pigra",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "3E",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "29",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "pigra var. pigra",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "3F",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "30",
+    "path": "",
+    "specificEpithet": "pilulifera var. pseudincana",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "30",
+    "path": "stems.trichomes.stellate",
+    "specificEpithet": "pilulifera var. pseudincana",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "4C",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "30",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "pilulifera var. pseudincana",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5C",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "30",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "pilulifera var. pseudincana",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5K",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "30",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate",
+    "specificEpithet": "pilulifera var. pseudincana",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "30",
+    "path": "fruit.epicarp.trichomes.verruciform",
+    "specificEpithet": "pilulifera var. pseudincana",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6C",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "2A",
+      "obtainingMethod": "photo"
+    }
+  },
+  {
+    "index": "31",
+    "path": "",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "3",
+      "obtainingMethod": "drawing"
+    }
+  },
+  {
+    "index": "31",
+    "path": "stems",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "2C",
+      "obtainingMethod": "photo"
+    }
+  },
+  {
+    "index": "31",
+    "path": "leaf.petiole",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "2B",
+      "obtainingMethod": "photo"
+    }
+  },
+  {
+    "index": "31",
+    "path": "leaf.bipinnate.pinnae.leaflet.adaxial.trichomes.filiform",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "4A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "4B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "4D",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6H",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.porrect",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6I",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "4B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.granular",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6H",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.filiform",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6I",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "inflorescence",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "2C",
+      "obtainingMethod": "photo"
+    }
+  },
+  {
+    "index": "31",
+    "path": "pollen",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "5A,B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "31",
+    "path": "fruit",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "2D",
+      "obtainingMethod": "photo"
+    }
+  },
+  {
+    "index": "31",
+    "path": "fruit.replum.trichomes.dendritic",
+    "specificEpithet": "porrecta",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2014,
+      "title": "A new species of *Mimosa* (Leguminosae) from Brazil",
+      "journal": "Phytotaxa",
+      "volume": 183,
+      "number": 3,
+      "pages": -7,
+      "figure": "4C",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "32",
+    "path": "",
+    "specificEpithet": "pudica var. hispida",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "32",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "pudica var. hispida",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2F",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "33",
+    "path": "",
+    "specificEpithet": "scabrella",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "33",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "scabrella",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5F",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "33",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "scabrella",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5G",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "33",
+    "path": "stems.trichomes.dendritic",
+    "specificEpithet": "scabrella",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "5L",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "33",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.fasciculate",
+    "specificEpithet": "scabrella",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "6A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "33",
+    "path": "fruit.epicarp.trichomes.verruciform",
+    "specificEpithet": "scabrella",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "7A",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "34",
+    "path": "",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "34",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "4D",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "34",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "4E",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "34",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.subsessile",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9N",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "34",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.stalked",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "4F",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "34",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.stellate.stalked",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "4G",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "34",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9M",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "34",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.peltate",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "9N",
+      "obtainingMethod": "stereoscope"
+    }
+  },
+  {
+    "index": "34",
+    "path": "flower.corolla.trichomes.stellate.lepidote",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "4H",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "34",
+    "path": "flower.corolla.trichomes.stellate.lepidote",
+    "specificEpithet": "schomburgkii",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "4I",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "35",
+    "path": "",
+    "specificEpithet": "sensitiva var. sensitiva",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "35",
+    "path": "leaf.bipinnate.pinnae.leaflet.abaxial.trichomes.setiform",
+    "specificEpithet": "sensitiva var. sensitiva",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2G",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "36",
+    "path": "",
+    "specificEpithet": "somnians var. lasiocarpa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "36",
+    "path": "stems.trichomes.filiform",
+    "specificEpithet": "somnians var. lasiocarpa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2I",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "36",
+    "path": "stems.trichomes.setiform",
+    "specificEpithet": "somnians var. lasiocarpa",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "2I",
+      "obtainingMethod": "opticalMicroscope"
+    }
+  },
+  {
+    "index": "37",
+    "path": "",
+    "specificEpithet": "xanthocentra var. xanthocentra",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2018,
+      "title": "Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domain, Southeastern Brazil",
+      "journal": "Systematic Botany",
+      "volume": 43,
+      "number": 1,
+      "pages": -35
+    }
+  },
+  {
+    "index": "37",
+    "path": "stems.trichomes.setiform.barbellate",
+    "specificEpithet": "xanthocentra var. xanthocentra",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "3B",
+      "obtainingMethod": "scanningElectronMicroscope"
+    }
+  },
+  {
+    "index": "37",
+    "path": "stems.trichomes.setiform.barbellate",
+    "specificEpithet": "xanthocentra var. xanthocentra",
+    "source": {
+      "sourceType": "article",
+      "authorship": "Jordão, L.S.B. & Morim, M.P. & Baumgratz, J.F.A.",
+      "year": 2020,
+      "title": "Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization",
+      "journal": "Flora",
+      "number": 272,
+      "pages": 151702,
+      "figure": "3C",
+      "obtainingMethod": "stereoscope"
+    }
+  }
+]

@@ -112,7 +112,7 @@ source0.title = 'Toward a Census of *Mimosa* (Leguminosae) in the Atlantic Domai
 source0.journal = 'Systematic Botany'
 source0.volume = 43
 source0.number = 1
-source0.pages = 162-197
+source0.pages = '162-197'
 Mimosa_pigra_var_pigra.addSource(source0)
 
 /// Trichomes
@@ -123,7 +123,7 @@ source1.year = 2020
 source1.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
 source1.journal = 'Flora'
 source1.number = 272
-source1.pages = 151702
+source1.pages = '151702'
 source1.figure = '3D'
 source1.obtainingMethod = 'scanningElectronMicroscope'
 Mimosa_pigra_var_pigra.stems.trichomes.setiform.addSource(source1)
@@ -135,7 +135,7 @@ source2.year = 2020
 source2.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
 source2.journal = 'Flora'
 source2.number = 272
-source2.pages = 151702
+source2.pages = '151702'
 source2.figure = '3E'
 source2.obtainingMethod = 'stereoscope'
 Mimosa_pigra_var_pigra.stems.trichomes.setiform.addSource(source2)
@@ -147,7 +147,7 @@ source3.year = 2020
 source3.title = 'Trichomes in *Mimosa* (Leguminosae): Towards a characterization and a terminology standardization'
 source3.journal = 'Flora'
 source3.number = 272
-source3.pages = 151702
+source3.pages = '151702'
 source3.figure = '3F'
 source3.obtainingMethod = 'opticalMicroscope'
 Mimosa_pigra_var_pigra.stems.trichomes.setiform.addSource(source3)
