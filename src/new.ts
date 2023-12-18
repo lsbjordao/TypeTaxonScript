@@ -4,16 +4,16 @@ import Mustache from 'mustache';
 
 const outputPath = path.resolve(__dirname, '../../output/');
 
-export default function newDesc(genus: string, specificEpithet: string): void {
+export default function ttsNewDesc(genus: string, species: string): void {
     try {
         const template = fs.readFileSync(path.resolve(__dirname, `../../taxon/${genus}/${genus}_template.txt`), 'utf-8');
 
         const context = {
-            specificEpithet: specificEpithet
+            species: species
         };
 
         const output = Mustache.render(template, context);
-        const fileName = path.join(outputPath, `${genus} ${specificEpithet}.ts`);
+        const fileName = path.join(outputPath, `${genus} ${species}.ts`);
 
         if (output.trim() !== "") {
             fs.writeFileSync(fileName, output);
