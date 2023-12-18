@@ -1,12 +1,11 @@
-const fs = require('fs');
-const path = require('path');
-const _ = require('lodash');
+import fs from 'fs';
+import _ from 'lodash';
 
 const filePath = '../output/MimosaDB.json';
 
-const args = process.argv.slice(2)
-property = args[0]
-const propertyPathToFind = property
+const args = process.argv.slice(2);
+const property = args[0];
+const propertyPathToFind = property;
 
 fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
@@ -17,10 +16,10 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     try {
         const jsonData = JSON.parse(data);
 
-        const findPropertyPath = (obj, propertyPath, currentPath = []) => {
-            const paths = [];
+        const findPropertyPath = (obj: any, propertyPath: string, currentPath: string[] = []) => {
+            const paths: string[] = [];
 
-            const findPathsRecursively = (currentObj, path) => {
+            const findPathsRecursively = (currentObj: any, path: string[]) => {
                 const lastKey = path[path.length - 1];
 
                 if (_.get(currentObj, propertyPath)) {
@@ -38,9 +37,9 @@ fs.readFile(filePath, 'utf8', (err, data) => {
 
             findPathsRecursively(obj, currentPath);
             return paths;
-        }
+        };
 
-        const resultIndicesAndPaths = jsonData.flatMap((item, index) => {
+        const resultIndicesAndPaths = jsonData.flatMap((item: any, index: number) => {
             const paths = findPropertyPath(item, propertyPathToFind);
             if (paths.length > 0) {
                 return { index, paths, specificEpithet: jsonData[index].specificEpithet };
@@ -48,7 +47,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
             return [];
         });
 
-        console.log(`\x1b[36mIndices and paths of objects with the property \x1b[33m${propertyPathToFind}\x1b[0m\x1b[36m:\n\n\x1b[0m`, resultIndicesAndPaths)
+        console.log(`\x1b[36mIndices and paths of objects with the property \x1b[33m${propertyPathToFind}\x1b[0m\x1b[36m:\n\n\x1b[0m`, resultIndicesAndPaths);
 
     } catch (jsonErr) {
         console.error('Error parsing JSON:', jsonErr);

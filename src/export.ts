@@ -1,36 +1,36 @@
-const fs = require('fs')
-const path = require('path')
-const csvParser = require('csv-parser')
-const { exec } = require('child_process')
+import fs from 'fs';
+import path from 'path';
+import { exec } from 'child_process';
+import csvParser from 'csv-parser';
 
-const taxa = []
+const taxa: string[] = [];
 
-const args = process.argv.slice(2)
-genus = args[0]
-load = args[1]
+const args = process.argv.slice(2);
+const genus = args[0];
+const load = args[1];
 
 if (load !== undefined && load !== '-loadListFromCsv') {
     console.error('\x1b[31m✖ Invalid command! Accepted inputs: Use no argument to export all taxa by default, or `-loadListFromCsv` to load taxa from `./input/importTaxa.csv`.\x1b[0m');
 }
 
 if (load === undefined) {
-    const directoryPath = `../taxon/${genus}/`
+    const directoryPath = `../taxon/${genus}/`;
     fs.readdir(directoryPath, (err, files) => {
         if (err) {
-            console.error('Error reading directory:', err)
+            console.error('Error reading directory:', err);
             return;
         }
 
         const taxa = files
             .filter(file => file.endsWith('.ts') && file !== 'index.ts')
-            .map(file => path.parse(file).name)
+            .map(file => path.parse(file).name);
 
         const importStatements = taxa.map((species) => {
-            return `import { ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())} } from '../taxon/${genus}/${species}'`
-        }).join('\n')
+            return `import { ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())} } from '../taxon/${genus}/${species}'`;
+        }).join('\n');
 
         const speciesCall = taxa.map((species) => {
-            return `    ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())},`
+            return `    ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())},`;
         }).join('\n');
 
         const fileContent = `
@@ -52,41 +52,41 @@ writeFileSync(inputFilePath, jsonData, 'utf-8')
 console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')
 `;
 
-        const tempFilePath = '../lib/exportTemp.ts'
-        fs.writeFileSync(tempFilePath, fileContent, 'utf-8')
+        const tempFilePath = '../lib/exportTemp.ts';
+        fs.writeFileSync(tempFilePath, fileContent, 'utf-8');
 
-        const fileToTranspile = 'exportTemp'
+        const fileToTranspile = 'exportTemp';
         exec(`tsc ${fileToTranspile}.ts`, (error, stdout, stderr) => {
             if (error) {
-                console.error(`Erro: ${error.message}`)
-                return
+                console.error(`Error: ${error.message}`);
+                return;
             }
             if (stderr) {
-                console.error(`stderr: ${stderr}`)
-                return
+                console.error(`stderr: ${stderr}`);
+                return;
             }
 
             try {
-                fs.unlinkSync(`${fileToTranspile}.ts`)
+                fs.unlinkSync(`${fileToTranspile}.ts`);
             } catch (err) {
-                console.error(`An error occurred while deleting the file: ${err}`)
+                console.error(`An error occurred while deleting the file: ${err}`);
             }
 
             exec(`node ${fileToTranspile}.js`, (error, stdout, stderr) => {
                 if (error) {
-                    console.error(`Erro: ${error.message}`)
-                    return
+                    console.error(`Error: ${error.message}`);
+                    return;
                 }
                 if (stderr) {
-                    console.error(`stderr: ${stderr}`)
-                    return
+                    console.error(`stderr: ${stderr}`);
+                    return;
                 }
-                console.log(`\x1b[1m\x1b[32m✔ Database exported: file ./output/${genus}DB.json created.\x1b[0m`)
+                console.log(`\x1b[1m\x1b[32m✔ Database exported: file ./output/${genus}DB.json created.\x1b[0m`);
 
                 try {
-                    fs.unlinkSync(`${fileToTranspile}.js`)
+                    fs.unlinkSync(`${fileToTranspile}.js`);
                 } catch (err) {
-                    console.error(`An error occurred while deleting the file: ${err}`)
+                    console.error(`An error occurred while deleting the file: ${err}`);
                 }
             });
         });
@@ -94,22 +94,21 @@ console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')
 }
 
 if (load === '-loadListFromCsv') {
-
-    const inputFilePath = '../input/taxaToExport.csv'
-    const tempFilePath = '../lib/exportTemp.ts'
+    const inputFilePath = '../input/taxaToExport.csv';
+    const tempFilePath = '../lib/exportTemp.ts';
 
     fs.createReadStream(inputFilePath)
         .pipe(csvParser({ headers: false }))
-        .on('data', (data) => {
-            taxa.push(data['0'])
+        .on('data', (data: any) => {
+            taxa.push(data['0']);
         })
         .on('end', async () => {
             const importStatements = taxa.map((species) => {
-                return `import { ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())} } from '../taxon/${genus}/${species}'`
-            }).join('\n')
+                return `import { ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())} } from '../taxon/${genus}/${species}'`;
+            }).join('\n');
 
             const speciesCall = taxa.map((species) => {
-                return `    ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())},`
+                return `    ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())},`;
             }).join('\n');
 
             const fileContent = `
@@ -131,40 +130,40 @@ writeFileSync(inputFilePath, jsonData, 'utf-8')
 console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')
 `;
 
-            fs.writeFileSync(tempFilePath, fileContent, 'utf-8')
+            fs.writeFileSync(tempFilePath, fileContent, 'utf-8');
 
-            const fileToTranspile = 'exportTemp'
+            const fileToTranspile = 'exportTemp';
             exec(`tsc ${fileToTranspile}.ts`, (error, stdout, stderr) => {
                 if (error) {
-                    console.error(`Erro: ${error.message}`)
-                    return
+                    console.error(`Error: ${error.message}`);
+                    return;
                 }
                 if (stderr) {
-                    console.error(`stderr: ${stderr}`)
-                    return
+                    console.error(`stderr: ${stderr}`);
+                    return;
                 }
 
                 try {
-                    fs.unlinkSync(`${fileToTranspile}.ts`)
+                    fs.unlinkSync(`${fileToTranspile}.ts`);
                 } catch (err) {
-                    console.error(`An error occurred while deleting the file: ${err}`)
+                    console.error(`An error occurred while deleting the file: ${err}`);
                 }
 
                 exec(`node ${fileToTranspile}.js`, (error, stdout, stderr) => {
                     if (error) {
-                        console.error(`Erro: ${error.message}`)
-                        return
+                        console.error(`Error: ${error.message}`);
+                        return;
                     }
                     if (stderr) {
-                        console.error(`stderr: ${stderr}`)
-                        return
+                        console.error(`stderr: ${stderr}`);
+                        return;
                     }
-                    console.log(`\x1b[1m\x1b[32m✔ Database exported: file ./output/${genus}DB.json created.\x1b[0m`)
+                    console.log(`\x1b[1m\x1b[32m✔ Database exported: file ./output/${genus}DB.json created.\x1b[0m`);
 
                     try {
-                        fs.unlinkSync(`${fileToTranspile}.js`)
+                        fs.unlinkSync(`${fileToTranspile}.js`);
                     } catch (err) {
-                        console.error(`An error occurred while deleting the file: ${err}`)
+                        console.error(`An error occurred while deleting the file: ${err}`);
                     }
                 });
             });

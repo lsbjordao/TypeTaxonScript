@@ -1,8 +1,8 @@
-const fs = require('fs');
-const _ = require('lodash');
+import fs from 'fs';
+import _ from 'lodash';
 
-const args = process.argv.slice(2)
-const genus = args[0]
+const args = process.argv.slice(2);
+const genus = args[0];
 
 const filePath = `../output/${genus}DB.json`;
 
@@ -15,14 +15,14 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     try {
         const jsonData = JSON.parse(data);
 
-        const findObjectsWithSources = (obj, currentPath = []) => {
-            let objectsWithSources = [];
+        const findObjectsWithSources = (obj: any, currentPath: string[] = []) => {
+            let objectsWithSources: any[] = [];
 
-            const findObjectsWithSourcesRecursively = (currentObj, path) => {
+            const findObjectsWithSourcesRecursively = (currentObj: any, path: string[]) => {
                 if (_.isObject(currentObj)) {
-                    _.forOwn(currentObj, (value, key) => {
+                    _.forOwn(currentObj, (value: string|number, key) => {
                         if (key === 'sources' && Array.isArray(value) && value.length > 0) {
-                            value.forEach(source => {
+                            value.forEach((source: any) => {
                                 objectsWithSources.push({
                                     index: path[0],
                                     path: path.join('.'),
@@ -47,12 +47,12 @@ fs.readFile(filePath, 'utf8', (err, data) => {
             return objectsWithSources;
         };
 
-        const objectsWithSources = findObjectsWithSources(jsonData.map((item, index) => ({ ...item, index })));
+        const objectsWithSources = findObjectsWithSources(jsonData.map((item: any, index: number) => ({ ...item, index })));
 
-        const filePathOutput = `../output/${genus}DBsources.json`
+        const filePathOutput = `../output/${genus}DBsources.json`;
         const jsonContent = JSON.stringify(objectsWithSources, null, 2);
-        fs.writeFileSync(filePathOutput, jsonContent, 'utf-8')
-        console.log(`\x1b[1m\x1b[32m✔ Database exported: file ./output/${genus}DBsources.json created.\x1b[0m`)
+        fs.writeFileSync(filePathOutput, jsonContent, 'utf-8');
+        console.log(`\x1b[1m\x1b[32m✔ Database exported: file ./output/${genus}DBsources.json created.\x1b[0m`);
     } catch (jsonErr) {
         console.error('Error parsing JSON:', jsonErr);
     }

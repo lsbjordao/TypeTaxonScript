@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "commander": "^11.1.0",
     "csv-parser": "^3.0.0",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21",
@@ -7,6 +8,14 @@
     "typescript": "^5.1.5"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "@types/mustache": "^4.2.5",
     "@types/node": "^20.4.10"
+  },
+  "scripts": {
+    "tts": "tsc ./src/tts.ts"
+  },
+  "bin": {
+    "tts": "./bin/tts.js"
   }
 }

@@ -1,11 +1,10 @@
-const fs = require('fs')
-const csvParser = require('csv-parser')
-const Mustache = require('mustache')
+import fs from 'fs';
+import csvParser from 'csv-parser';
+import Mustache from 'mustache';
 
-const mapColumns = {
+const mapColumns: Record<string, string> = {
   'specificEpithet': 'specificEpithet',
   'descriptionAuthorship': 'descriptionAuthorship',
-  'leaf.bipinnate.pinnae.numberOfPairs.value': 'leafBipinnatePinnaeNumberOfPairsValue',
   'leaf.bipinnate.pinnae.numberOfPairs.rarelyMin': 'leafBipinnatePinnaeNumberOfPairsRarelyMin',
   'leaf.bipinnate.pinnae.numberOfPairs.min': 'leafBipinnatePinnaeNumberOfPairsMin',
   'leaf.bipinnate.pinnae.numberOfPairs.max': 'leafBipinnatePinnaeNumberOfPairsMax',
@@ -15,7 +14,7 @@ const mapColumns = {
   'leaf.bipinnate.pinnae.leaflet.numberOfPairs.min': 'leafBipinnatePinnaeLeafletNumberOfPairsMin',
   'leaf.bipinnate.pinnae.leaflet.numberOfPairs.max': 'leafBipinnatePinnaeLeafletNumberOfPairsMax',
   'leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMax': 'leafBipinnatePinnaeLeafletNumberOfPairsRarelyMax',
-  'leaf.bipinnate.pinnae.numberOfPairs.value': 'leafBipinnatePinnaeLeafletNumberOfPairsValue',
+  'leaf.bipinnate.pinnae.leaflet.numberOfPairs.value': 'leafBipinnatePinnaeLeafletNumberOfPairsValue',
   'inflorescence.type': 'inflorescenceType',
   'inflorescence.shape': 'inflorescenceShape',
   'flower.merism': 'flowerMerism',
@@ -26,44 +25,44 @@ const mapColumns = {
   'timestamp': 'timestamp'
 };
 
-const template = fs.readFileSync('../taxon/Mimosa/Mimosa_template.txt', 'utf-8')
-const outputPath = '../output/'
+const template = fs.readFileSync('../taxon/Mimosa/Mimosa_template.txt', 'utf-8');
+const outputPath = '../output/';
 
-console.log('\x1b[1m\x1b[36mProcess started.\x1b[0m')
+console.log('\x1b[1m\x1b[36mProcess started.\x1b[0m');
 
 fs.createReadStream('../input/importTaxa.csv')
   .pipe(csvParser())
-  .on('data', (taxon) => {
-    generateDescription(taxon)
+  .on('data', (taxon: Record<string, string>) => {
+    generateDescription(taxon);
   })
   .on('end', () => {
-    console.log('\x1b[1m\x1b[32m✔ Process finished.\x1b[0m')
+    console.log('\x1b[1m\x1b[32m✔ Process finished.\x1b[0m');
   });
 
-function generateDescription(taxon) {
-  const context = {};
+function generateDescription(taxon: Record<string, string>) {
+  const context: Record<string, string | boolean> = {};
 
   for (const column in mapColumns) {
-    const templateColumn = mapColumns[column]
+    const templateColumn = mapColumns[column];
     if (taxon[column]) {
-      context[templateColumn] = taxon[column]
+      context[templateColumn] = taxon[column];
     }
   }
 
   // Special conditions
   if (taxon['inflorescence.capitate'] === 'yes') {
-    context['capitateInflorescence'] = true
+    context['capitateInflorescence'] = true;
   }
   if (taxon['inflorescence.spicate'] === 'yes') {
-    context['spicateInflorescence'] = true
+    context['spicateInflorescence'] = true;
   }
 
-  const output = Mustache.render(template, context, 'utf-8')
-  const speciesName = taxon['specificEpithet']
-  const fileName = `${outputPath}Mimosa ${speciesName}.ts`
+  const output = Mustache.render(template, context);
+  const speciesName = taxon['specificEpithet'];
+  const fileName = `${outputPath}Mimosa ${speciesName}.ts`;
 
   if (output.trim() !== "") {
-    fs.writeFileSync(fileName, output)
+    fs.writeFileSync(fileName, output);
     console.log(`\x1b[1m\x1b[33m${fileName}\x1b[0m`);
   }
 }
