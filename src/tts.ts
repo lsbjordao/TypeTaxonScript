@@ -1,6 +1,10 @@
 //@ts-ignore
 import { Command, OptionValues } from 'commander'
-import newDesc from './newDesc'
+import ttsNewDesc from './newDesc'
+// import ttsImportFromCsv from './importFromCsv'
+// import ttsExport from './export'
+// import ttsExportSources from './exportSources'
+// import ttsFindProperty from './findProperty'
 
 const program = new Command()
 
@@ -10,7 +14,7 @@ program
   .option('-s, --specificEpithet <char>')
   .action((arg, command)=>{
     const {genus, specificEpithet} = command.opts()
-    newDesc(genus, specificEpithet)
+    ttsNewDesc(genus, specificEpithet)
   })
 program.parse()
 
