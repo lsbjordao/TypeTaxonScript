@@ -55,6 +55,7 @@ yargs.command({
       describe: 'Load a list of taxa to export from the csv file: "./input/taxaToExport.csv".',
       demandOption: false,
       type: 'string',
+      choices: ['all', 'csv'],
       default: 'all'
     }
   },
