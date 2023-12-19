@@ -1,6 +1,6 @@
 {
   "name": "typetaxonscript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Lucas Jordão <tucarj@gmail.com> ; Vicente Calfo <vicentecalfo@gmail.com>",
   "description": "TypeTaxonScript",
   "dependencies": {
