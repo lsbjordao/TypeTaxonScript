@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-const tts = require('../dist/tts.js');
+import '../dist/tts.js'
