@@ -22,7 +22,7 @@
     "tts": "tsc ./src/tts.ts"
   },
   "bin": {
-    "tts": "./bin/tts.js"
+    "tts": "./bin/tts"
   },
   "repository": {
     "type": "git",
