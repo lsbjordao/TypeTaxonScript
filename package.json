@@ -1,10 +1,10 @@
 {
   "name": "typetaxonscript",
-  "version": "1.0.3",
+  "version": "1.0.3s",
   "author": "Lucas Jordão <tucarj@gmail.com> ; Vicente Calfo <vicentecalfo@gmail.com>",
   "description": "TypeTaxonScript",
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "dependencies": {
     "@types/cli-spinner": "^0.2.3",
