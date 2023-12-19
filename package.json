@@ -1,5 +1,5 @@
 {
-  "name": "tts",
+  "name": "typetaxonscript",
   "version": "1.0.0",
   "description": "TypeTaxonScript",
   "dependencies": {
@@ -23,5 +23,9 @@
   },
   "bin": {
     "tts": "./bin/tts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsbjordao/TypeTaxonScript.git"
   }
 }
