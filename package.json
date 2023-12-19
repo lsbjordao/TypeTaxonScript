@@ -1,6 +1,6 @@
 {
   "name": "typetaxonscript",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "Lucas Jordão <tucarj@gmail.com> ; Vicente Calfo <vicentecalfo@gmail.com>",
   "license": "ISC",
   "description": "TypeTaxonScript",
@@ -20,6 +20,7 @@
     "@types/lodash": "^4.14.202",
     "@types/cli-spinner": "^0.2.3"
   },
+  "main": "dist/tts.js",
   "files": [
     "dist"
   ],
