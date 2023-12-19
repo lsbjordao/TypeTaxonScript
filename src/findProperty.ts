@@ -2,6 +2,15 @@ import fs from 'fs';
 import _ from 'lodash';
 
 export default function ttsfindProperty(property: string, genus: string): void {
+    if (property === '') {
+        console.error('\x1b[31m✖ Argument `--property` cannot be empty.\x1b[0m');
+        return;
+    }
+    if (genus === '') {
+        console.error('\x1b[31m✖ Argument `--genus` cannot be empty.\x1b[0m');
+        return;
+    }
+
     const filePath = `../../output/${genus}DB.json`;
 
     const propertyPathToFind = property;
@@ -46,7 +55,7 @@ export default function ttsfindProperty(property: string, genus: string): void {
                 return [];
             });
 
-            console.log(`\x1b[36mIndices and paths of objects with the property \x1b[33m${propertyPathToFind}\x1b[0m\x1b[36m:\n\n\x1b[0m`, resultIndicesAndPaths);
+            console.log(`\x1b[36mℹ️ Indices and paths of objects with the property \x1b[33m${propertyPathToFind}\x1b[0m\x1b[36m:\n\n\x1b[0m`, resultIndicesAndPaths);
 
         } catch (jsonErr) {
             console.error('Error parsing JSON:', jsonErr);

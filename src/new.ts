@@ -2,29 +2,44 @@ import fs from 'fs';
 import path from 'path';
 import Mustache from 'mustache';
 
-const outputPath = path.resolve(__dirname, '../../output/');
-
 export default function ttsNewDesc(genus: string, species: string): void {
     try {
-        const template = fs.readFileSync(path.resolve(__dirname, `../../taxon/${genus}/${genus}_template.txt`), 'utf-8');
+        if (species === '') {
+            console.error('\x1b[31m✖ Argument `--species` cannot be empty.\x1b[0m');
+            return;
+        }
+        if (genus === '') {
+            console.error('\x1b[31m✖ Argument `--genus` cannot be empty.\x1b[0m');
+            return;
+        }
+
+        const outputPath = path.resolve(__dirname, '../../output/');
+        const templatePath = path.resolve(__dirname, `../../taxon/${genus}/${genus}_template.txt`);
+
+        if (!fs.existsSync(templatePath)) {
+            console.error(`\x1b[31m✖ The template for genus \x1b[33m\x1b[3m${genus}\x1b[0m\x1b[31m has not been implemented yet.\x1b[0m`);
+            return;
+        }
+
+        const template = fs.readFileSync(templatePath, 'utf-8');
+
+        let sanitizeSpecificEpithet = species.replace(/\s/g, '_')
+        sanitizeSpecificEpithet = sanitizeSpecificEpithet.replace(/-(\w)/, function (match, p1) {
+            return p1.toUpperCase()
+        });
 
         const context = {
-            species: species
+            specificEpithet: sanitizeSpecificEpithet
         };
 
         const output = Mustache.render(template, context);
         const fileName = path.join(outputPath, `${genus} ${species}.ts`);
 
-        if (output.trim() !== "") {
+        if (output.trim() !== '') {
             fs.writeFileSync(fileName, output);
-            console.log(`\x1b[1m\x1b[33m${fileName}\x1b[0m`);
-            console.log('\x1b[1m\x1b[32m✔ Finished\x1b[0m');
+            console.log(`\x1b[1m\x1b[32m✔ New script file: \x1b[0m\x1b[1m\x1b[33m${fileName}\x1b[0m`);
         }
     } catch (error) {
-        if (error.code === 'ENOENT') {
-            console.error('\x1b[31mTemplate of the genus not implemented yet.\x1b[0m');
-        } else {
-            console.error('An error occurred while reading the file:', error);
-        }
+        console.error('An error occurred:', error);
     }
 }

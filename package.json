@@ -1,5 +1,10 @@
 {
+  "name": "tts",
+  "version": "1.0.0",
+  "description": "TypeTaxonScript",
   "dependencies": {
+    "@types/cli-spinner": "^0.2.3",
+    "cli-spinner": "^0.2.10",
     "csv-parser": "^3.0.0",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21",

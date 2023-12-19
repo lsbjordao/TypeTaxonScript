@@ -1,6 +1,6 @@
 import yargs from 'yargs'
 import ttsNew from './new'
-import ttsImportFromCsv from './importFromCsv'
+import ttsImport from './import'
 import ttsExport from './export'
 import ttsExportSources from './exportSources'
 import ttsfindProperty from './findProperty'
@@ -28,8 +28,8 @@ yargs.command({
 })
 
 yargs.command({
-  command: 'importFromCsv',
-  describe: 'Import data from CSV file',
+  command: 'import',
+  describe: 'Import taxa and characters from CSV file',
   builder: {
     genus: {
       describe: 'Genus name',
@@ -38,7 +38,7 @@ yargs.command({
     },
   },
   handler: (argv) => {
-    ttsImportFromCsv(argv.genus as string)
+    ttsImport(argv.genus as string)
   },
 })
 

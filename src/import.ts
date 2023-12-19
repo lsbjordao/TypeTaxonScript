@@ -1,5 +1,6 @@
 import fs from 'fs'
 import csvParser from 'csv-parser'
+import path from 'path'
 import Mustache from 'mustache'
 
 const mapColumns: Record<string, string> = {
@@ -25,43 +26,69 @@ const mapColumns: Record<string, string> = {
   'timestamp': 'timestamp'
 }
 
+let genusErrorShown: Record<string, boolean> = {}
+
 function generateDescription(taxon: Record<string, string>, genus: string) {
-  const template = fs.readFileSync(`../../taxon/${genus}/${genus}_template.txt`, 'utf-8')
-  const outputPath = '../../output/'
-  const context: Record<string, string | boolean> = {}
+  try {
+    const template = fs.readFileSync(`../../taxon/${genus}/${genus}_template.txt`, 'utf-8')
+    const outputPath = path.resolve(__dirname, '../../output/')
 
-  for (const column in mapColumns) {
-    const templateColumn = mapColumns[column]
-    if (taxon[column]) {
-      context[templateColumn] = taxon[column]
+    const context: Record<string, string | boolean> = {}
+
+    for (const column in mapColumns) {
+      const templateColumn = mapColumns[column]
+      if (taxon[column]) {
+        context[templateColumn] = taxon[column]
+      }
     }
-  }
 
-  if (taxon['inflorescence.capitate'] === 'yes') {
-    context['capitateInflorescence'] = true
-  }
-  if (taxon['inflorescence.spicate'] === 'yes') {
-    context['spicateInflorescence'] = true
-  }
+    if (taxon['inflorescence.capitate'] === 'yes') {
+      context['capitateInflorescence'] = true
+    }
+    if (taxon['inflorescence.spicate'] === 'yes') {
+      context['spicateInflorescence'] = true
+    }
 
-  const output = Mustache.render(template, context)
-  const speciesName = taxon['specificEpithet']
-  const fileName = `${outputPath}Mimosa ${speciesName}.ts`
+    let sanitizeSpecificEpithet = taxon['specificEpithet'].replace(/\s/g, '_')
+    sanitizeSpecificEpithet = sanitizeSpecificEpithet.replace(/-(\w)/, function (match, p1) {
+      return p1.toUpperCase()
+    });
 
-  if (output.trim() !== '') {
-    fs.writeFileSync(fileName, output)
-    console.log(`\x1b[1m\x1b[33m${fileName}\x1b[0m`)
+    context['specificEpithet'] = sanitizeSpecificEpithet;
+
+    const output = Mustache.render(template, context)
+    const specificEpithet = taxon['specificEpithet']
+    const fileName = `${outputPath}\\${genus} ${specificEpithet}.ts`
+
+    if (output.trim() !== '') {
+      fs.writeFileSync(fileName, output)
+      console.log(`\x1b[1m\x1b[32m✔ New script file: \x1b[0m\x1b[1m\x1b[33m${fileName}\x1b[0m`);
+    }
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      if (genus !== '' && !genusErrorShown[genus]) {
+        console.error(`\x1b[31m✖ The template for genus \x1b[33m\x1b[3m${genus}\x1b[0m\x1b[31m has not been implemented yet.\x1b[0m`)
+        genusErrorShown[genus] = true
+      }
+    } else {
+      console.error('An error occurred while reading the file:', error)
+    }
   }
 }
 
 export default function ttsImportFromCsv(genus: string): void {
-  console.log('\x1b[1m\x1b[36mProcess started.\x1b[0m')
+  if (genus === '') {
+    console.error('\x1b[31m✖ Argument `--genus` cannot be empty.\x1b[0m');
+    return;
+  }
   fs.createReadStream('../../input/importTaxa.csv')
     .pipe(csvParser())
     .on('data', (taxon: Record<string, string>) => {
       generateDescription(taxon, genus)
     })
     .on('end', () => {
-      console.log('\x1b[1m\x1b[32m✔ Process finished.\x1b[0m')
+      if (!genusErrorShown[genus]) {
+        //console.log('\x1b[1m\x1b[32m✔ Process finished.\x1b[0m')
+      }
     })
 }
