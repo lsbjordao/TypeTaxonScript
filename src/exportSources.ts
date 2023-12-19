@@ -57,7 +57,7 @@ export default function ttsExportSources(genus: string): void {
             const jsonContent = JSON.stringify(objectsWithSources, null, 2)
             fs.writeFileSync(filePathOutput, jsonContent, 'utf-8')
             const filePath = path.resolve(__dirname, '../../output/')
-            console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePath}\\${genus}DB.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
+            console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePath}\\${genus}DBsources.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
         } catch (jsonErr) {
             console.error('Error parsing JSON:', jsonErr)
         }
