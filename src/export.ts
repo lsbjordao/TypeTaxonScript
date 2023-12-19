@@ -4,7 +4,7 @@ import { exec } from 'child_process'
 import csvParser from 'csv-parser'
 import { Spinner } from "cli-spinner"
 
-export default function ttsExport(genus: string, loadFromCsv?: boolean): void {
+export default function ttsExport(genus: string, load?: 'all'|'csv'): void {
     if (genus === '') {
         console.error('\x1b[31m✖ Argument `--genus` cannot be empty.\x1b[0m');
         return;
@@ -17,7 +17,7 @@ export default function ttsExport(genus: string, loadFromCsv?: boolean): void {
 
     const taxa: string[] = []
 
-    if (loadFromCsv === false) {
+    if (load === 'all') {
         const directoryPath = `../../taxon/${genus}/`
         fs.readdir(directoryPath, (err, files) => {
             if (err) {
@@ -100,7 +100,7 @@ export default function ttsExport(genus: string, loadFromCsv?: boolean): void {
         })
     }
 
-    if (loadFromCsv === true) {
+    if (load === 'csv') {
         const inputFilePath = '../../input/taxaToExport.csv'
         const tempFilePath = '../../src/exportTemp.ts'
 

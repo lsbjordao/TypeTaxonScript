@@ -51,15 +51,15 @@ yargs.command({
       demandOption: true,
       type: 'string',
     },
-    loadFromCsv: {
+    load: {
       describe: 'Load a list of taxa to export from the csv file: "./input/taxaToExport.csv".',
       demandOption: false,
-      type: 'boolean',
-      default: false
+      type: 'string',
+      default: 'all'
     }
   },
   handler: (argv) => {
-    ttsExport(argv.genus as string, argv.loadFromCsv as boolean)
+    ttsExport(argv.genus as string, argv.load as 'all'|'csv')
   },
 })
 
