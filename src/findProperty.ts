@@ -11,7 +11,7 @@ export default function ttsfindProperty(property: string, genus: string): void {
         return;
     }
 
-    const filePath = `../../output/${genus}DB.json`;
+    const filePath = `./output/${genus}DB.json`;
 
     const propertyPathToFind = property;
 

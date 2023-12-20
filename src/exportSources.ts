@@ -8,7 +8,7 @@ export default function ttsExportSources(genus: string): void {
         return;
     }
     
-    const filePath = `../../output/${genus}DB.json`
+    const filePath = `./output/${genus}DB.json`
 
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
@@ -53,11 +53,10 @@ export default function ttsExportSources(genus: string): void {
 
             const objectsWithSources = findObjectsWithSources(jsonData.map((item: any, index: number) => ({ ...item, index })))
 
-            const filePathOutput = `../../output/${genus}DBsources.json`
+            const filePathOutput = `./output/${genus}DBsources.json`
             const jsonContent = JSON.stringify(objectsWithSources, null, 2)
             fs.writeFileSync(filePathOutput, jsonContent, 'utf-8')
-            const filePath = path.resolve(__dirname, '../../output/')
-            console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePath}\\${genus}DBsources.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
+            console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePathOutput}\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
         } catch (jsonErr) {
             console.error('Error parsing JSON:', jsonErr)
         }

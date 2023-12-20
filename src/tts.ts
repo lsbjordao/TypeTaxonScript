@@ -6,13 +6,13 @@ import ttsExport from './export'
 import ttsExportSources from './exportSources'
 import ttsfindProperty from './findProperty'
 
-yargs.version('1.0.0')
+yargs.version()
 
 yargs.command({
   command: 'init',
   describe: 'Initiate a TTS project',
   builder: { },
-  handler: ttsInit(),
+  handler: () => ttsInit(),
 })
 
 yargs.command({

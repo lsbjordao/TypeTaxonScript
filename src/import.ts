@@ -1,6 +1,5 @@
 import fs from 'fs'
 import csvParser from 'csv-parser'
-import path from 'path'
 import Mustache from 'mustache'
 
 const mapColumns: Record<string, string> = {
@@ -30,8 +29,8 @@ let genusErrorShown: Record<string, boolean> = {}
 
 function generateDescription(taxon: Record<string, string>, genus: string) {
   try {
-    const template = fs.readFileSync(`../../taxon/${genus}/${genus}_template.txt`, 'utf-8')
-    const outputPath = path.resolve(__dirname, '../../output/')
+    const template = fs.readFileSync(`./taxon/${genus}/${genus}_template.txt`, 'utf-8')
+    const outputDir = 'output/'
 
     const context: Record<string, string | boolean> = {}
 
@@ -52,17 +51,17 @@ function generateDescription(taxon: Record<string, string>, genus: string) {
     let sanitizeSpecificEpithet = taxon['specificEpithet'].replace(/\s/g, '_')
     sanitizeSpecificEpithet = sanitizeSpecificEpithet.replace(/-(\w)/, function (match, p1) {
       return p1.toUpperCase()
-    });
+    })
 
-    context['specificEpithet'] = sanitizeSpecificEpithet;
+    context['specificEpithet'] = sanitizeSpecificEpithet
 
     const output = Mustache.render(template, context)
     const specificEpithet = taxon['specificEpithet']
-    const fileName = `${outputPath}\\${genus} ${specificEpithet}.ts`
+    const fileName = `${outputDir}${genus} ${specificEpithet}.ts`
 
     if (output.trim() !== '') {
       fs.writeFileSync(fileName, output)
-      console.log(`\x1b[1m\x1b[32m✔ New script file: \x1b[0m\x1b[1m\x1b[33m${fileName}\x1b[0m`);
+      console.log(`\x1b[1m\x1b[32m✔ New script file: \x1b[0m\x1b[1m\x1b[33m.${fileName}\x1b[0m`)
     }
   } catch (error) {
     if (error.code === 'ENOENT') {
@@ -78,10 +77,10 @@ function generateDescription(taxon: Record<string, string>, genus: string) {
 
 export default function ttsImportFromCsv(genus: string): void {
   if (genus === '') {
-    console.error('\x1b[31m✖ Argument `--genus` cannot be empty.\x1b[0m');
-    return;
+    console.error('\x1b[31m✖ Argument `--genus` cannot be empty.\x1b[0m')
+    return
   }
-  fs.createReadStream('../../input/importTaxa.csv')
+  fs.createReadStream('./input/importTaxa.csv')
     .pipe(csvParser())
     .on('data', (taxon: Record<string, string>) => {
       generateDescription(taxon, genus)
