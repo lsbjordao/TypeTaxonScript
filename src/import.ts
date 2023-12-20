@@ -66,7 +66,9 @@ function generateDescription(taxon: Record<string, string>, genus: string) {
   } catch (error) {
     if (error.code === 'ENOENT') {
       if (genus !== '' && !genusErrorShown[genus]) {
-        console.error(`\x1b[31m✖ The template for genus \x1b[33m\x1b[3m${genus}\x1b[0m\x1b[31m has not been implemented yet.\x1b[0m`)
+        console.error(`\x1b[31m✖ A TTS project for genus \x1b[33m\x1b[3m${genus}\x1b[0m\x1b[31m has not been implemented yet.\x1b[0m`)
+        console.log('\x1b[36m   + ℹ️ To create a new TTS project, visit:\x1b[0m')
+        console.log('\x1b[33m     https://www.npmjs.com/package/typetaxonscript?activeTab=readme#creating-and-editing-a-genus-template.\x1b[0m')
         genusErrorShown[genus] = true
       }
     } else {
