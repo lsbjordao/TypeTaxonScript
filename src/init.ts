@@ -58,6 +58,14 @@ export default function ttsInit(): any {
             return;
         }
 
+        if (dirs.includes('taxon') && dirs.includes('character')) {
+            console.error('\x1b[36mℹ️ The directory is not empty and does not contain a TTS project.\x1b[0m')
+            console.log('\x1b[36mℹ️ Please, visit:\x1b[0m')
+            console.log('\x1b[36m  TypeTaxonScript package: https://github.com/lsbjordao/TypeTaxonScript. \x1b[0m')
+            console.log('\x1b[36m  TTS project (Mimosa): https://github.com/lsbjordao/TTS-Mimosa. \x1b[0m')
+            return;
+        }
+
         const requiredDirs = ['input', 'output', 'characters', 'taxon'];
 
         const allRequiredDirsPresent = requiredDirs.every(dir => dirs.includes(dir));

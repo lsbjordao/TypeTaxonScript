@@ -57,11 +57,11 @@ function generateDescription(taxon: Record<string, string>, genus: string) {
 
     const output = Mustache.render(template, context)
     const specificEpithet = taxon['specificEpithet']
-    const fileName = `${outputDir}${genus} ${specificEpithet}.ts`
+    const fileName = `${outputDir}${genus}_${specificEpithet.replace(/\s/g, '_')}.ts`
 
     if (output.trim() !== '') {
       fs.writeFileSync(fileName, output)
-      console.log(`\x1b[1m\x1b[32m✔ New script file: \x1b[0m\x1b[1m\x1b[33m.${fileName}\x1b[0m`)
+      console.log(`\x1b[1m\x1b[32m✔ New script file: \x1b[0m\x1b[1m\x1b[33m./${fileName}\x1b[0m`)
     }
   } catch (error) {
     if (error.code === 'ENOENT') {

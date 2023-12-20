@@ -3,4 +3,3 @@ node_modules
 !src/*.js
 output/*
 dist
-README.md

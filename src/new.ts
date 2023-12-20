@@ -30,11 +30,11 @@ export default function ttsNewDesc(genus: string, species: string): void {
         }
 
         const output = Mustache.render(template, context)
-        const fileName = `${outputDir}${genus} ${species}.ts`
+        const fileName = `${outputDir}${genus}_${species.replace(/\s/g, '_')}.ts`
 
         if (output.trim() !== '') {
             fs.writeFileSync(fileName, output)
-            console.log(`\x1b[1m\x1b[32m✔ New script file: \x1b[0m\x1b[1m\x1b[33m.${fileName}\x1b[0m`)
+            console.log(`\x1b[1m\x1b[32m✔ New script file: \x1b[0m\x1b[1m\x1b[33m./${fileName}\x1b[0m`)
         }
     } catch (error) {
         console.error('An error occurred:', error)
