@@ -6,7 +6,7 @@ function createInputCSVFiles(): void {
 
     if (!fs.existsSync(inputDir)) {
         fs.mkdirSync(inputDir);
-        console.log('\x1b[36mℹ️ The ./input directory has been created.\x1b[0m');
+        console.log('\x1b[36mℹ️ The', '\x1b[33m./input', '\x1b[36mdirectory has been created.\x1b[0m')
 
         const taxaToExportContent = `Mimosa afranioi
 Mimosa arenosa var arenosa
@@ -25,7 +25,8 @@ Mimosa elliptica`;
 
     const importTaxaContent = `"specificEpithet","leaf.bipinnate.pinnae.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.numberOfPairs.min","leaf.bipinnate.pinnae.numberOfPairs.max","leaf.bipinnate.pinnae.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.numberOfPairs.value","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.leaflet.numberOfPairs.min","leaf.bipinnate.pinnae.leaflet.numberOfPairs.max","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.leaflet.numberOfPairs.value","inflorescence.spicate","inflorescence.capitate","flower.merism","flower.calyx.shape","flower.corolla.shape","flower.numberWhorlsOfStamens","androecium.filaments.colour","descriptionAuthorship","timestamp"
 "arenosa var arenosa","","4","12","","","","12","30","","","yes","","4-merous","campanulate","turbinate","diplostemonous","withish","John Doe","12312"
-"artemisiana","","7","12","","","","15","29","","","yes","","4-merous","campanulate","campanulate","diplostemonous","withish","John Doe","12312"`;
+"artemisiana","","7","12","","","","15","29","","","yes","","4-merous","campanulate","campanulate","diplostemonous","withish","John Doe","12312"
+"ceratonia var pseudo-obovata","","2","4","5","","","2","4","5","","","yes","3-merous","campanulate","turbinate","diplostemonous","withish","John Doe","12312"`
 
     const taxaToExportPath = path.join(inputDir, 'taxaToExport.csv');
     const importTaxaPath = path.join(inputDir, 'importTaxa.csv');
@@ -33,10 +34,10 @@ Mimosa elliptica`;
     fs.writeFileSync(taxaToExportPath, taxaToExportContent);
     fs.writeFileSync(importTaxaPath, importTaxaContent);
 
-    console.log('\x1b[36mℹ️ The ./input/importTaxa.csv file has been created.\x1b[0m')
+    console.log('\x1b[36mℹ️ The', '\x1b[33m./input/importTaxa.csv', '\x1b[36mfile has been created.\x1b[0m');
     console.log('\x1b[90m  + This file is needed to execute the `import` command.\x1b[0m');
     console.log('\x1b[90m  + It is a simple headerless CSV with each taxon on a separate line/row.\x1b[0m')
-    console.log('\x1b[36mℹ️ The ./input/taxaToExport.csv file has been created.\x1b[0m')
+    console.log('\x1b[36mℹ️ The', '\x1b[33m./input/taxaToExport.csv', '\x1b[36mfile has been created.\x1b[0m');
     console.log('\x1b[90m  + This file is needed to execute argument `--load csv` of `export` command.\x1b[0m')
     console.log('\x1b[90m  + It is used to export a specific list of taxa instead of exporting all, which is the default setting.\x1b[0m')
     }
@@ -53,16 +54,16 @@ export default function ttsInit(): any {
         if (dirs.length === 0) {
             console.error('\x1b[36mℹ️ The directory is empty. Please clone a TTS project first.\x1b[0m')
             console.log('\x1b[36mℹ️ Please, visit:\x1b[0m')
-            console.log('\x1b[36m  TypeTaxonScript package: https://github.com/lsbjordao/TypeTaxonScript. \x1b[0m')
-            console.log('\x1b[36m  TTS project (Mimosa): https://github.com/lsbjordao/TTS-Mimosa. \x1b[0m')
+            console.log('\x1b[36m  TypeTaxonScript package:', '\x1b[33mhttps://www.npmjs.com/package/typetaxonscript.\x1b[0m');
+            console.log('\x1b[36m  TTS project (Mimosa):', '\x1b[33mhttps://github.com/lsbjordao/TTS-Mimosa.\x1b[0m');
             return;
         }
 
-        if (dirs.includes('taxon') && dirs.includes('character')) {
-            console.error('\x1b[36mℹ️ The directory is not empty and does not contain a TTS project.\x1b[0m')
+        if (!dirs.includes('taxon') && !dirs.includes('character')) {
+            console.error('\x1b[36mℹ️ The directory does not contain a TTS project.\x1b[0m')
             console.log('\x1b[36mℹ️ Please, visit:\x1b[0m')
-            console.log('\x1b[36m  TypeTaxonScript package: https://github.com/lsbjordao/TypeTaxonScript. \x1b[0m')
-            console.log('\x1b[36m  TTS project (Mimosa): https://github.com/lsbjordao/TTS-Mimosa. \x1b[0m')
+            console.log('\x1b[36m  TypeTaxonScript package:', '\x1b[33mhttps://www.npmjs.com/package/typetaxonscript.\x1b[0m');
+            console.log('\x1b[36m  TTS project (Mimosa):', '\x1b[33mhttps://github.com/lsbjordao/TTS-Mimosa.\x1b[0m');
             return;
         }
 
@@ -118,7 +119,7 @@ export default function ttsInit(): any {
                 fs.mkdirSync(outputDir);
                 const gitKeepFile = `${outputDir}/.gitkeep`;
                 fs.writeFileSync(gitKeepFile, '');
-                console.log('\x1b[36mℹ️ The ./output directory has been created.\x1b[0m');
+                console.log('\x1b[36mℹ️ The', '\x1b[33m./output', '\x1b[36mdirectory has been created.\x1b[0m')
             }
 
         }
