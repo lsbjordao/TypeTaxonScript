@@ -1,8 +1,9 @@
 import fs from 'fs'
 import path from 'path'
-import { exec } from 'child_process'
+import { exec, execFile  } from 'child_process'
 import csvParser from 'csv-parser'
 import { Spinner } from "cli-spinner"
+import { exit } from 'process'
 
 export default function ttsExport(genus: string, load?: 'all' | 'csv'): void {
     if (genus === '') {
@@ -33,7 +34,7 @@ export default function ttsExport(genus: string, load?: 'all' | 'csv'): void {
                 .map(file => path.parse(file).name)
 
             const importStatements = taxa.map((species) => {
-                return `import { ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())} } from '../taxon/${genus}/${species}'`
+                return `import { ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())} } from '../taxon/${genus}/${species.replace(/\s/g, '_')}'`
             }).join('\n')
 
             const speciesCall = taxa.map((species) => {
@@ -51,21 +52,25 @@ const ${genus}_species: ${genus}[] = [
 ]
             
 // Export ${genus}DB.json
-import { writeFileSync } from 'fs'
-const jsonData = JSON.stringify(${genus}_species)
-const inputFilePath = '../output/${genus}DB.json'
-writeFileSync(inputFilePath, jsonData, 'utf-8')
-console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
+//import { writeFileSync } from 'fs'
+const jsonData = JSON.stringify(${genus}_species);
+console.log(jsonData)
+//const inputFilePath = '../output/${genus}DB.json'
+//writeFileSync(inputFilePath, jsonData, 'utf-8')
+//console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
+
 
             const tempFilePath = './temp/exportTemp.ts'
             fs.writeFileSync(tempFilePath, fileContent, 'utf-8')
 
             const fileToTranspile = 'exportTemp'
-            exec(`tsc ./temp/${fileToTranspile}.ts`, (error, stdout, stderr) => {
-                if (error) {
-                    console.error(`Error: ${error.message}`)
-                    return
-                }
+            exec (`tsc ./temp/${fileToTranspile}.ts`, (error, stdout, stderr) => {
+                // if (error) {
+                //     console.error(`Error: ${error.message}`)
+                //     spinner.stop()
+                //     process.exit()
+                //     return
+                // }
                 if (stderr) {
                     console.error(`stderr: ${stderr}`)
                     return
@@ -77,7 +82,7 @@ console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
                     console.error(`An error occurred while deleting the file: ${err}`)
                 }
 
-                exec(`node ./temp/${fileToTranspile}.js`, (error, stdout, stderr) => {
+                exec(`node ./temp/${fileToTranspile}.js > ./output/${genus}DB.json`, (error, stdout, stderr) => {
                     if (error) {
                         console.error(`Error: ${error.message}`)
                         return
@@ -87,22 +92,23 @@ console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
                         return
                     }
 
-                    const filePath = '.output/'
+
+                    const filePath = './output/'
                     console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePath}${genus}DB.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
                     spinner.stop()
                     try {
                         fs.unlinkSync(`./temp/${fileToTranspile}.js`)
+                        fs.rm('./temp', { recursive: true }, (err) => {
+                            if (err) {
+                                console.error('Error deleting directory:', err);
+                            }
+                        })
                     } catch (err) {
                         console.error(`An error occurred while deleting the file: ${err}`)
                     }
                 })
             })
 
-            // fs.rm('./temp', { recursive: true }, (err) => {
-            //     if (err) {
-            //         console.error('Error deleting directory:', err);
-            //     }
-            // })
         })
     }
 
@@ -117,7 +123,8 @@ console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
             })
             .on('end', async () => {
                 const importStatements = taxa.map((species) => {
-                    return `import { ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())} } from './taxon/${genus}/${species}'`
+
+                    return `import { ${species.replace(/\s/g, '_').replace(/\-([a-z])/, (_, match) => match.toUpperCase())} } from '../taxon/${genus}/${species.replace(/\s/g, '_')}'`
                 }).join('\n')
 
                 const speciesCall = taxa.map((species) => {
@@ -125,7 +132,7 @@ console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
                 }).join('\n')
 
                 const fileContent = `// Import genus ${genus}
-import { ${genus} } from './taxon/${genus}'
+import { ${genus} } from '../taxon/${genus}'
                 
 // Import species of ${genus}
 ${importStatements}
@@ -135,20 +142,22 @@ const ${genus}_species: ${genus}[] = [
 ]
                 
 // Export ${genus}DB.json
-import { writeFileSync } from 'fs'
-const jsonData = JSON.stringify(${genus}_species)
-const inputFilePath = '../output/${genus}DB.json'
-writeFileSync(inputFilePath, jsonData, 'utf-8')
-console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
+const jsonData = JSON.stringify(${genus}_species);
+console.log(jsonData)
+// import { writeFileSync } from 'fs'
+// const jsonData = JSON.stringify(${genus}_species)
+// const inputFilePath = '../output/${genus}DB.json'
+// writeFileSync(inputFilePath, jsonData, 'utf-8')
+// console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
 
                 fs.writeFileSync(tempFilePath, fileContent, 'utf-8')
 
                 const fileToTranspile = 'exportTemp'
                 exec(`tsc ./temp/${fileToTranspile}.ts`, (error, stdout, stderr) => {
-                    if (error) {
-                        console.error(`Error: ${error.message}`)
-                        return
-                    }
+                    // if (error) {
+                    //     console.error(`Error: ${error.message}`)
+                    //     return
+                    // }
                     if (stderr) {
                         console.error(`stderr: ${stderr}`)
                         return
@@ -160,7 +169,7 @@ console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
                         console.error(`An error occurred while deleting the file: ${err}`)
                     }
 
-                    exec(`node ./temp/${fileToTranspile}.js`, (error, stdout, stderr) => {
+                    exec(`node ./temp/${fileToTranspile}.js > ./output/${genus}DB.json`, (error, stdout, stderr) => {
                         if (error) {
                             console.error(`Error: ${error.message}`)
                             return
@@ -170,22 +179,22 @@ console.log('\\x1b[1m\\x1b[32m✔ Process finished.\\x1b[0m')`
                             return
                         }
 
-                        const filePath = '.output/'
+                        const filePath = './output/'
                         console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePath}${genus}DB.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
                         spinner.stop()
                         try {
                             fs.unlinkSync(`./temp/${fileToTranspile}.js`)
+                            fs.rm('./temp', { recursive: true }, (err) => {
+                                if (err) {
+                                    console.error('Error deleting directory:', err);
+                                }
+                            })
                         } catch (err) {
                             console.error(`An error occurred while deleting the file: ${err}`)
                         }
                     })
                 })
 
-                // fs.rm('./temp', { recursive: true }, (err) => {
-                //     if (err) {
-                //         console.error('Error deleting directory:', err);
-                //     }
-                // })
             })
     }
 }
