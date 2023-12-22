@@ -1,5 +1,7 @@
 # TypeTaxonScript (TTS)
 
+Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. An era where methodological tools construct a taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and enhances the process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to improve levels of collaboration, precision, and effectiveness by employing solid methods of software engineering.
+
 ## Install Node.js
 
 Before you begin, ensure that Node.js is installed on your system. Node.js is essential for running JS applications on your machine. You can download and install it from the official Node.js website (https://nodejs.org/).
@@ -25,7 +27,7 @@ To open the TTS project directory in VS Code:
 2. Select `Open Folder` from the dropdown menu.
 3. Navigate to the location where your TTS project (e.g., TTS-Mimosa) directory is stored.
 4. Click on the TTS project directory to select it.
-5. Click the "Open" button.
+5. Click the `Open` button.
 
 ## Installing TTS package
 
@@ -58,7 +60,7 @@ To generate a new `.ts` file containing a comprehensive script outlining the ent
 tts new --genus Mimosa --species epithet
 ```
 
-After that, a new file `./output/Mimosa_epithet.ts` will be created.
+After that, a new file `./output/Mimosa_epithet.ts` will be generated. You can edit this script file by holding down the `Ctrl` key and clicking on the file path.
 
 ## Importing from `.csv` file
 
@@ -82,7 +84,7 @@ Every element within the code is accompanied by metadata. Simply hover your curs
 
 To edit a species `.ts` file, open it and utilize the `'` key after the `=` sign to access attribute options. After that, press `Enter`. The autocompletion feature will assist in completing the entry:
 
-![](./images/characterOptions.png)
+![](https://i.imgur.com/H3nuAGR.png)
 
 ## Cross-referecing 
 
@@ -90,13 +92,13 @@ Every class is interconnected through cross-referencing. By holding down `Ctrl` 
 
 Furthermore, we have the capability to track down instances where a class is employed. For example, when we seek to identify occurrences of a character class being used, we can easily inspect the class name. As illustrated in the given example, a `Gall` is mentioned in the description of *Mimosa gemmulata*, and by clicking on it, we can promptly open its respective file.
 
-![](./images/whereClass.png)
+![](https://i.imgur.com/ZqPEBNZ.png)
 
 ## Multi line edition
 
 Use the shortcut `Ctrl + Shift + L` for efficient multi-line editing. Press `Esc` to end the multi line edition.
 
-![](./images/multiline.png)
+![](https://i.imgur.com/nU7Cfyw.png)
 
 ## Automatic code formatting
 
@@ -106,7 +108,7 @@ When you right-click on any content in a file and select `Format Document` in VS
 
 In VS Code, by simply clicking on a file listed in the Git panel, you can instantly view code modifications. A split-screen appears, highlighting changes in green (additions) and red (deletions) compared to the previous version of the code. This feature simplifies reviewing changes and makes it easy to track modifications in an intuitive and efficient development environment.
 
-![](./images/githubComparison.png)
+![](https://i.imgur.com/aIiOs4e.png)
 
 VS Code offers a range of features and extensions to streamline conflict resolution. These include interactive merge tools, side-by-side file comparison, and even built-in three-way merge support. We can manage the Git versioning process using simple clicks of a button.
 
@@ -158,7 +160,7 @@ This dataset includes an index that relates to the main database and provides th
 
 Utilizing the JSON Grid Viewer extension (https://github.com/dutchigor/json-grid-viewer), which is readily accessible on the Visual Studio Marketplace (https://marketplace.visualstudio.com/), we can effortlessly delve into the intricate structure of JSON configurations:
 
-![](./images/jsonView.png)
+![](https://i.imgur.com/uBer42J.png)
 
 ## Query methods
 
