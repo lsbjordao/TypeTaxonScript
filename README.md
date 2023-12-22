@@ -39,7 +39,7 @@ Open your terminal and execute the command at the root, where is the `package.js
 In the terminal, type and execute the following command:
 
 ```ts
-npm install -g typetaxonscript
+npm install -g type-taxonscript
 ```
 
 ## Initializing a TTS project
