@@ -1,7 +1,7 @@
 {
-  "name": "type-taxonscript",
+  "name": "type-taxon-script",
   "version": "1.0.22",
-  "author": "Lucas Jordão <tucarj@gmail.com>, André Eppinghaus <andreeppinghaus@gmail.com>, Vicente Calfo <vicentecalfo@gmail.com>",
+  "author": "Lucas Jordão <tucarj@gmail.com> & André Eppinghaus <andreeppinghaus@gmail.com> & Vicente Calfo <vicentecalfo@gmail.com>",
   "license": "ISC",
   "description": "TypeTaxonScript",
   "dependencies": {

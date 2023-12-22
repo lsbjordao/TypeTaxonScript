@@ -23,23 +23,23 @@ Mimosa dolens var dolens
 Mimosa dryandroides var dryandroides
 Mimosa elliptica`;
 
-    const importTaxaContent = `"specificEpithet","leaf.bipinnate.pinnae.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.numberOfPairs.min","leaf.bipinnate.pinnae.numberOfPairs.max","leaf.bipinnate.pinnae.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.numberOfPairs.value","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.leaflet.numberOfPairs.min","leaf.bipinnate.pinnae.leaflet.numberOfPairs.max","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.leaflet.numberOfPairs.value","inflorescence.spicate","inflorescence.capitate","flower.merism","flower.calyx.shape","flower.corolla.shape","flower.numberWhorlsOfStamens","androecium.filaments.colour","descriptionAuthorship","timestamp"
-"arenosa var arenosa","","4","12","","","","12","30","","","yes","","4-merous","campanulate","turbinate","diplostemonous","withish","John Doe","12312"
-"artemisiana","","7","12","","","","15","29","","","yes","","4-merous","campanulate","campanulate","diplostemonous","withish","John Doe","12312"
-"ceratonia var pseudo-obovata","","2","4","5","","","2","4","5","","","yes","3-merous","campanulate","turbinate","diplostemonous","withish","John Doe","12312"`
+        const importTaxaContent = `"specificEpithet","leaf.bipinnate.pinnae.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.numberOfPairs.min","leaf.bipinnate.pinnae.numberOfPairs.max","leaf.bipinnate.pinnae.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.numberOfPairs.value","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.leaflet.numberOfPairs.min","leaf.bipinnate.pinnae.leaflet.numberOfPairs.max","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.leaflet.numberOfPairs.value","inflorescence.spicate","inflorescence.capitate","flower.merism","flower.calyx.shape","flower.corolla.shape","flower.numberWhorlsOfStamens","androecium.filaments.colour","descriptionAuthorship","timestamp"
+"arenosa var arenosa","","4","12","","","","12","30","","","yes","","4-merous","campanulate","turbinate","diplostemonous","withish","June Doe","12312"
+"artemisiana","","7","12","","","","15","29","","","yes","","4-merous","campanulate","campanulate","diplostemonous","withish","June Doe","12312"
+"ceratonia var pseudo-obovata","","2","4","5","","","2","4","5","","","yes","3-merous","campanulate","turbinate","diplostemonous","withish","June Doe","12312"`
 
-    const taxaToExportPath = path.join(inputDir, 'taxaToExport.csv');
-    const importTaxaPath = path.join(inputDir, 'importTaxa.csv');
+        const taxaToExportPath = path.join(inputDir, 'taxaToExport.csv');
+        const importTaxaPath = path.join(inputDir, 'importTaxa.csv');
 
-    fs.writeFileSync(taxaToExportPath, taxaToExportContent);
-    fs.writeFileSync(importTaxaPath, importTaxaContent);
+        fs.writeFileSync(taxaToExportPath, taxaToExportContent);
+        fs.writeFileSync(importTaxaPath, importTaxaContent);
 
-    console.log('\x1b[36mℹ️ The', '\x1b[33m./input/importTaxa.csv', '\x1b[36mfile has been created.\x1b[0m');
-    console.log('\x1b[90m  + This file is needed to execute the `import` command.\x1b[0m');
-    console.log('\x1b[90m  + It is a simple headerless CSV with each taxon on a separate line/row.\x1b[0m')
-    console.log('\x1b[36mℹ️ The', '\x1b[33m./input/taxaToExport.csv', '\x1b[36mfile has been created.\x1b[0m');
-    console.log('\x1b[90m  + This file is needed to execute argument `--load csv` of `export` command.\x1b[0m')
-    console.log('\x1b[90m  + It is used to export a specific list of taxa instead of exporting all, which is the default setting.\x1b[0m')
+        console.log('\x1b[36mℹ️ The', '\x1b[33m./input/importTaxa.csv', '\x1b[36mfile has been created.\x1b[0m');
+        console.log('\x1b[90m  + This file is needed to execute the `import` command.\x1b[0m');
+        console.log('\x1b[90m  + It is a simple headerless CSV with each taxon on a separate line/row.\x1b[0m')
+        console.log('\x1b[36mℹ️ The', '\x1b[33m./input/taxaToExport.csv', '\x1b[36mfile has been created.\x1b[0m');
+        console.log('\x1b[90m  + This file is needed to execute argument `--load csv` of `export` command.\x1b[0m')
+        console.log('\x1b[90m  + It is used to export a specific list of taxa instead of exporting all, which is the default setting.\x1b[0m')
     }
 }
 
