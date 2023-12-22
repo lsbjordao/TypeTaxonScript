@@ -76,7 +76,7 @@ All `.ts` files will be created in the directory `./output/`.
 
 Every element within the code is accompanied by metadata. Simply hover your cursor over an element, and its metadata will promptly appear:
 
-![](https://imgur.com/Ql9JWaB)
+![](https://i.imgur.com/Ql9JWaB.png)
 
 ## Taxon edition
 
