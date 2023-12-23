@@ -1,10 +1,10 @@
 # TypeTaxonScript (TTS)
 
-Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. In this era, robust software engineering methods are employed to build a robust data structure, fostering enduring, non-redundant collaborative efforts through the application of a kind of taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and optimizes this process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to elevate levels of collaboration, precision, and effectiveness.
+Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. In this era, software engineering methods using TypeScript (TS) are employed to build a robust data structure, fostering enduring, non-redundant collaborative efforts through the application of a kind of taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and optimizes this process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to elevate levels of collaboration, precision, and effectiveness.
 
 ## Install Node.js
 
-Before you begin, ensure that Node.js is installed on your system. Node.js is essential for running JS applications on your machine. You can download and install it from the official Node.js website (https://nodejs.org/).
+Before you begin, ensure that Node.js is installed on your system. Node.js is essential for running JavaScript (JS) applications on your machine. You can download and install it from the official Node.js website (https://nodejs.org/).
 
 ## Install Visual Studio Code
 
@@ -25,7 +25,7 @@ To open the TTS project directory in VS Code:
 
 1. Click on `File` in the top menu.
 2. Select `Open Folder` from the dropdown menu.
-3. Navigate to the location where your TTS project (e.g., TTS-Mimosa) directory is stored.
+3. Navigate to the location where your TTS project (e.g., [TTS-Mimosa](https://github.com/lsbjordao/TTS-Mimosa)) directory is stored.
 4. Click on the TTS project directory to select it.
 5. Click the `Open` button.
 
