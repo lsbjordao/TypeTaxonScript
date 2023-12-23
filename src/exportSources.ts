@@ -52,7 +52,7 @@ export default function ttsExportSources(genus: string): void {
 
             const objectsWithSources = findObjectsWithSources(jsonData.map((item: any, index: number) => ({ ...item, index })))
 
-            const filePathOutput = `./output/${genus}DBsources.json`
+            const filePathOutput = `./output/${genus}SourcesDB.json`
             const jsonContent = JSON.stringify(objectsWithSources, null, 2)
             fs.writeFileSync(filePathOutput, jsonContent, 'utf-8')
             console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePathOutput}\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
