@@ -1,6 +1,6 @@
 # TypeTaxonScript (TTS)
 
-Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. In this era, software engineering methods using TypeScript (TS) are employed to build a robust data structure, fostering enduring, non-redundant collaborative efforts through the application of a kind of taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and optimizes this process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to elevate levels of collaboration, precision, and effectiveness.
+Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. In this approach, software engineering methods using TypeScript (TS) are employed to build a robust data structure, fostering enduring, non-redundant collaborative efforts through the application of a kind of taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and optimizes this process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to elevate levels of collaboration, precision, and effectiveness.
 
 ## Install Node.js
 
@@ -134,11 +134,11 @@ Errors may occur twice during the export process: during compilation (TS) and ex
 
 Regarding compilation errors, for instance, two issues were encountered in files `Mimosa_test.ts` and `Mimosa_test2`.ts while attempting to export the *Mimosa* database. In the `Mimosa_test.ts` script, the class `ractole` was listed as a property of flower, but the error message suggests the correction to `bracteole`. In the `Mimosa_test2.ts` script, an undeclared property for the adaxial surface of the leaflet was caught. See bellow:
 
-![](https://i.imgur.com/LxARTPr.png)
+![](https://i.imgur.com/5zoSBMS.png)
 
 Errors can be caught during the execution phase. In the case below, a stipule length was set with its minimum value as `5` and its maximum as `3` using the `.setHeightMinMax()` method. Such an error won't be caught during compilation as the type is correct (`number`), but during execution, a message in the terminal indicates that the "minimum height must be less than the maximum height." See below:
 
-![](https://i.imgur.com/H2coIlQ.png)
+![](https://i.imgur.com/34VTlxX.png)
 
 ### Sources dataset
 
