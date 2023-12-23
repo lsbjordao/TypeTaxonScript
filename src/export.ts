@@ -1,9 +1,8 @@
 import fs from 'fs'
 import path from 'path'
-import { exec, execFile  } from 'child_process'
+import { exec  } from 'child_process'
 import csvParser from 'csv-parser'
 import { Spinner } from "cli-spinner"
-import { exit } from 'process'
 
 export default function ttsExport(genus: string, load?: 'all' | 'csv'): void {
     if (genus === '') {
@@ -26,7 +25,7 @@ export default function ttsExport(genus: string, load?: 'all' | 'csv'): void {
             if (err) {
                 spinner.stop()
                 console.error('Error reading directory:', err)
-                return
+                process.exit()
             }
 
             const taxa = files
@@ -65,31 +64,40 @@ console.log(jsonData)
 
             const fileToTranspile = 'exportTemp'
             exec (`tsc ./temp/${fileToTranspile}.ts`, (error, stdout, stderr) => {
-                // if (error) {
-                //     console.error(`Error: ${error.message}`)
-                //     spinner.stop()
-                //     process.exit()
-                //     return
-                // }
+                if (stdout) {
+                    spinner.stop()
+                    console.error('\x1b[31m✖ TS Error:\x1b[0m\n\n' + `${stdout}`)
+                    process.exit()
+                }
                 if (stderr) {
-                    console.error(`stderr: ${stderr}`)
-                    return
+                    spinner.stop()
+                    console.error('\x1b[31m✖ TS Error:\x1b[0m\n\n' + `${stderr}`)
+                    process.exit()
                 }
 
                 try {
                     fs.unlinkSync(`./temp/${fileToTranspile}.ts`)
                 } catch (err) {
+                    spinner.stop()
                     console.error(`An error occurred while deleting the file: ${err}`)
+                    process.exit()
                 }
 
                 exec(`node ./temp/${fileToTranspile}.js > ./output/${genus}DB.json`, (error, stdout, stderr) => {
-                    if (error) {
-                        console.error(`Error: ${error.message}`)
-                        return
+                    // if (error) {
+                    //     spinner.stop()
+                    //     console.error('\x1b[31m✖ JS execution time error:\x1b[0m\n\n' + `${error.message}`)
+                    //     process.exit()
+                    // }
+                    if (stdout) {
+                        spinner.stop()
+                        console.error('\x1b[31m✖ JS execution time error:\x1b[0m\n\n' + `${stdout}`)
+                        process.exit()
                     }
                     if (stderr) {
-                        console.error(`stderr: ${stderr}`)
-                        return
+                        spinner.stop()
+                        console.error('\x1b[31m✖ JS execution time error:\x1b[0m\n\n' + `${stderr}`)
+                        process.exit()
                     }
 
 
@@ -100,11 +108,13 @@ console.log(jsonData)
                         fs.unlinkSync(`./temp/${fileToTranspile}.js`)
                         fs.rm('./temp', { recursive: true }, (err) => {
                             if (err) {
-                                console.error('Error deleting directory:', err);
+                                console.error('Error deleting directory:', err)
+                                process.exit()
                             }
                         })
                     } catch (err) {
                         console.error(`An error occurred while deleting the file: ${err}`)
+                        process.exit()
                     }
                 })
             })
@@ -154,29 +164,41 @@ console.log(jsonData)
 
                 const fileToTranspile = 'exportTemp'
                 exec(`tsc ./temp/${fileToTranspile}.ts`, (error, stdout, stderr) => {
-                    // if (error) {
-                    //     console.error(`Error: ${error.message}`)
-                    //     return
-                    // }
+                    if (stdout) {
+                        spinner.stop()
+                        console.error('\x1b[31m✖ TS Error:\x1b[0m\n\n' + `${stdout}`)
+                        process.exit()
+                    }
+
                     if (stderr) {
-                        console.error(`stderr: ${stderr}`)
-                        return
+                        spinner.stop()
+                        console.error('\x1b[31m✖ TS Error:\x1b[0m\n\n' + `${stdout}`)
+                        process.exit()
                     }
 
                     try {
                         fs.unlinkSync(`./temp/${fileToTranspile}.ts`)
                     } catch (err) {
+                        spinner.stop()
                         console.error(`An error occurred while deleting the file: ${err}`)
+                        process.exit()
                     }
 
                     exec(`node ./temp/${fileToTranspile}.js > ./output/${genus}DB.json`, (error, stdout, stderr) => {
-                        if (error) {
-                            console.error(`Error: ${error.message}`)
-                            return
+                        // if (error) {
+                        //     spinner.stop()
+                        //     console.error('\x1b[31m✖ JS execution time error:\x1b[0m\n\n' + `${error.message}`)
+                        //     process.exit()
+                        // }
+                        if (stdout) {
+                            spinner.stop()
+                            console.error('\x1b[31m✖ JS execution time error:\x1b[0m\n\n' + `${stdout}`)
+                            process.exit()
                         }
                         if (stderr) {
-                            console.error(`stderr: ${stderr}`)
-                            return
+                            spinner.stop()
+                            console.error('\x1b[31m✖ JS execution time error:\x1b[0m\n\n' + `${stderr}`)
+                            process.exit()
                         }
 
                         const filePath = './output/'
@@ -186,11 +208,13 @@ console.log(jsonData)
                             fs.unlinkSync(`./temp/${fileToTranspile}.js`)
                             fs.rm('./temp', { recursive: true }, (err) => {
                                 if (err) {
-                                    console.error('Error deleting directory:', err);
+                                    console.error('Error deleting directory:', err)
+                                    process.exit()
                                 }
                             })
                         } catch (err) {
                             console.error(`An error occurred while deleting the file: ${err}`)
+                            process.exit()
                         }
                     })
                 })

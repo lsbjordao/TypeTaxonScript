@@ -1,6 +1,6 @@
 # TypeTaxonScript (TTS)
 
-Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. An era where methodological tools construct a taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and enhances the process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to improve levels of collaboration, precision, and effectiveness by employing solid methods of software engineering.
+Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. In this era, robust software engineering methods are employed to build a robust data structure, fostering enduring, non-redundant collaborative efforts through the application of a kind of taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and optimizes this process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to elevate levels of collaboration, precision, and effectiveness.
 
 ## Install Node.js
 
@@ -50,7 +50,7 @@ To initiate the use of a TTS project, execute the following command:
 tts init
 ```
 
-This command will verify the presence of an existing TTS project within the directory. Additionally, it will generate two mandatory directories, `./input` and `./output`, but only if the characters and taxon directories already exist. These newly created directories are essential for the functioning of the project.
+This command will verify the presence of an existing TTS project within the directory. Additionally, it will generate two mandatory directories, `./input` and `./output`, but only if the `characters` and `taxon` directories already exist. These newly created directories are essential for the functioning of the project.
 
 ## Describing a new taxon
 
@@ -60,7 +60,7 @@ To generate a new `.ts` file containing a comprehensive script outlining the ent
 tts new --genus Mimosa --species epithet
 ```
 
-After that, a new file `./output/Mimosa_epithet.ts` will be generated. You can edit this script file by holding down the `Ctrl` key and clicking on the file path.
+After the process, a new file named `Mimosa_epithet.ts` will be created in the `./output` directory. To access this script file, simply hold down the `Ctrl` key and click on the file path displayed in the console. However, before you begin editing the script, it is important to relocate this file to the `./taxon` directory, as the script specifically functions within that directory.
 
 ## Importing from `.csv` file
 
@@ -72,7 +72,7 @@ All values are imported automatically. However, if we want to describe a specifi
 tts import --genus Mimosa
 ```
 
-All `.ts` files will be created in the directory `./output/`.
+The generated `.ts` files will be located in the `./output` directory. Since the script operates exclusively within the `./taxon` directory, it is necessary to relocate all these files to that specific directory for the script to function properly.
 
 ## Documentation
 

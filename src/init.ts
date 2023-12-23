@@ -23,10 +23,10 @@ Mimosa dolens var dolens
 Mimosa dryandroides var dryandroides
 Mimosa elliptica`;
 
-        const importTaxaContent = `"specificEpithet","leaf.bipinnate.pinnae.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.numberOfPairs.min","leaf.bipinnate.pinnae.numberOfPairs.max","leaf.bipinnate.pinnae.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.numberOfPairs.value","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.leaflet.numberOfPairs.min","leaf.bipinnate.pinnae.leaflet.numberOfPairs.max","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.leaflet.numberOfPairs.value","inflorescence.spicate","inflorescence.capitate","flower.merism","flower.calyx.shape","flower.corolla.shape","flower.numberWhorlsOfStamens","androecium.filaments.colour","descriptionAuthorship","timestamp"
-"arenosa var arenosa","","4","12","","","","12","30","","","yes","","4-merous","campanulate","turbinate","diplostemonous","withish","June Doe","12312"
-"artemisiana","","7","12","","","","15","29","","","yes","","4-merous","campanulate","campanulate","diplostemonous","withish","June Doe","12312"
-"ceratonia var pseudo-obovata","","2","4","5","","","2","4","5","","","yes","3-merous","campanulate","turbinate","diplostemonous","withish","June Doe","12312"`
+        const importTaxaContent = `"specificEpithet","leaf.bipinnate.pinnae.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.numberOfPairs.min","leaf.bipinnate.pinnae.numberOfPairs.max","leaf.bipinnate.pinnae.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.numberOfPairs.value","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMin","leaf.bipinnate.pinnae.leaflet.numberOfPairs.min","leaf.bipinnate.pinnae.leaflet.numberOfPairs.max","leaf.bipinnate.pinnae.leaflet.numberOfPairs.rarelyMax","leaf.bipinnate.pinnae.leaflet.numberOfPairs.value","inflorescence.spicate","inflorescence.capitate","flower.merism","flower.calyx.shape","flower.corolla.shape","flower.numberWhorlsOfStamens","androecium.filaments.colour","descriptionAuthorship"
+"arenosa var arenosa","","4","12","","","","12","30","","","yes","","4-merous","campanulate","turbinate","diplostemonous","withish","June Doe"
+"artemisiana","","7","12","","","","15","29","","","yes","","4-merous","campanulate","campanulate","diplostemonous","withish","June Doe"
+"ceratonia var pseudo-obovata","","2","4","5","","","2","4","5","","","yes","3-merous","campanulate","turbinate","diplostemonous","withish","June Doe"`
 
         const taxaToExportPath = path.join(inputDir, 'taxaToExport.csv');
         const importTaxaPath = path.join(inputDir, 'importTaxa.csv');

@@ -55,9 +55,12 @@ function generateDescription(taxon: Record<string, string>, genus: string) {
 
     context['specificEpithet'] = sanitizeSpecificEpithet
 
-    const output = Mustache.render(template, context)
+    let output = Mustache.render(template, context)
     const specificEpithet = taxon['specificEpithet']
     const fileName = `${outputDir}${genus}_${specificEpithet.replace(/\s/g, '_')}.ts`
+
+    // timestamp
+    output = output.replace('date:', `date: ` + Math.floor(Date.now() / 1000))
 
     if (output.trim() !== '') {
       fs.writeFileSync(fileName, output)

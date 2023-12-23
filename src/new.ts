@@ -31,8 +31,11 @@ export default function ttsNewDesc(genus: string, species: string): void {
             specificEpithet: sanitizeSpecificEpithet
         }
 
-        const output = Mustache.render(template, context)
+        let output = Mustache.render(template, context)
         const fileName = `${outputDir}${genus}_${species.replace(/\s/g, '_')}.ts`
+
+        // timestamp
+        output = output.replace('date:', `date: ` + Math.floor(Date.now() / 1000))
 
         if (output.trim() !== '') {
             fs.writeFileSync(fileName, output)

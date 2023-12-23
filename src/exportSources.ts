@@ -1,5 +1,4 @@
 import fs from 'fs'
-import path from 'path'
 import _ from 'lodash'
 
 export default function ttsExportSources(genus: string): void {
