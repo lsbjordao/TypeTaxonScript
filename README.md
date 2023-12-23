@@ -42,6 +42,8 @@ In the terminal, type and execute the following command:
 npm install -g type-taxonscript
 ```
 
+Install it globally using `-g` to prevent unnecessary dependencies from being installed within the TTS project directory.
+
 ## Initializing a TTS project
 
 To initiate the use of a TTS project, execute the following command:
@@ -134,7 +136,7 @@ Regarding compilation errors, for instance, two issues were encountered in files
 
 ![](https://i.imgur.com/LxARTPr.png)
 
-Errors can be caught during the execution phase. In the case below, a stipe length was set with its minimum value as `5` and its maximum as `3` using the `.setHeightMinMax()` method. Such an error won't be caught during compilation as the type is correct (`number`), but during execution, a message in the terminal indicates that the "minimum height must be less than the maximum height." See below:
+Errors can be caught during the execution phase. In the case below, a stipule length was set with its minimum value as `5` and its maximum as `3` using the `.setHeightMinMax()` method. Such an error won't be caught during compilation as the type is correct (`number`), but during execution, a message in the terminal indicates that the "minimum height must be less than the maximum height." See below:
 
 ![](https://i.imgur.com/H2coIlQ.png)
 
