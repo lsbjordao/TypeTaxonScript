@@ -128,6 +128,16 @@ tts export --genus Mimosa --load csv
 
 The resulting `.ts` files will be generated and stored in the directory `./output/`.
 
+Errors may occur twice during the export process: during compilation (TS) and execution (JS) stages.
+
+Regarding compilation errors, for instance, two issues were encountered in files `Mimosa_test.ts` and `Mimosa_test2`.ts while attempting to export the *Mimosa* database. In the `Mimosa_test.ts` script, the class `ractole` was listed as a property of flower, but the error message suggests the correction to `bracteole`. In the `Mimosa_test2.ts` script, an undeclared property for the adaxial surface of the leaflet was caught. See bellow:
+
+![](https://i.imgur.com/LxARTPr.png)
+
+Errors can be caught during the execution phase. In the case below, a stipe length was set with its minimum value as `5` and its maximum as `3` using the `.setHeightMinMax()` method. Such an error won't be caught during compilation as the type is correct (`number`), but during execution, a message in the terminal indicates that the "minimum height must be less than the maximum height." See below:
+
+![](https://i.imgur.com/H2coIlQ.png)
+
 ### Sources dataset
 
 We can create a consolidated dataset that compiles all sources into a flatter JSON structure, enabling simpler query access. To generate a database solely containing sources related to the taxa, execute the following command:
