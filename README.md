@@ -80,13 +80,13 @@ The generated `.ts` files will be located in the `./output` directory. Since the
 
 Every element within the code is accompanied by metadata. Simply hover your cursor over an element, and its metadata will promptly appear:
 
-![](https://i.imgur.com/Ql9JWaB.png)
+![](https://i.imgur.com/3WBtpJz.png)
 
 ## Taxon edition
 
 To edit a species `.ts` file, open it and utilize the `'` key after the `=` sign to access attribute options. After that, press `Enter`. The autocompletion feature will assist in completing the entry:
 
-![](https://i.imgur.com/H3nuAGR.png)
+![](https://i.imgur.com/PVWgayi.png)
 
 ## Cross-referecing 
 
@@ -94,7 +94,7 @@ Every class is interconnected through cross-referencing. By holding down `Ctrl` 
 
 Furthermore, we have the capability to track down instances where a class is employed. For example, when we seek to identify occurrences of a character class being used, we can easily inspect the class name. As illustrated in the given example, a `Gall` is mentioned in the description of *Mimosa gemmulata*, and by clicking on it, we can promptly open its respective file.
 
-![](https://i.imgur.com/ZqPEBNZ.png)
+![](https://i.imgur.com/KyQ8Jlb.png)
 
 ## Multi line edition
 
@@ -110,7 +110,7 @@ When you right-click on any content in a file and select `Format Document` in VS
 
 In VS Code, by simply clicking on a file listed in the Git panel, you can instantly view code modifications. A split-screen appears, highlighting changes in green (additions) and red (deletions) compared to the previous version of the code. This feature simplifies reviewing changes and makes it easy to track modifications in an intuitive and efficient development environment.
 
-![](https://i.imgur.com/aIiOs4e.png)
+![](https://i.imgur.com/pFWNziR.png)
 
 VS Code offers a range of features and extensions to streamline conflict resolution. These include interactive merge tools, side-by-side file comparison, and even built-in three-way merge support. We can manage the Git versioning process using simple clicks of a button.
 
@@ -345,3 +345,9 @@ Results:
 ```
 
 The complete information for each source is readily accessible, such as the `sourceType`, `journal`, `figure`, `authorship`.
+
+### Other query applications
+
+MongoDB and its companion tool, MongoDB Compass, offer advanced querying capabilities. MongoDB's query language, empowered by methods like `find()` and a rich set of comparison operators such as `$lt` (less than), `$gt` (greater than), and `$eq` (equal to), allows precise document filtration based on specific criteria. MongoDB Compass, a graphical interface for MongoDB, provides an intuitive platform to visually construct and execute queries. It simplifies query creation, data visualization, and optimization by offering a user-friendly graphical representation of data structures. Leveraging MongoDB's querying prowess along with Compass's interactive interface enables users to proficiently explore, retrieve, and manipulate data within MongoDB databases.
+
+![](https://i.imgur.com/dq5UGBg.png)
