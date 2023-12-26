@@ -1,6 +1,6 @@
 # TypeTaxonScript (TTS)
 
-Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. In this approach, software engineering methods using TypeScript (TS) are employed to build a robust data structure, fostering enduring, non-redundant collaborative efforts through the application of a kind of taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and optimizes this process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to elevate levels of collaboration, precision, and effectiveness.
+Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. In this methodology, software engineering methods using TypeScript (TS) are employed to build a robust data structure, fostering enduring, non-redundant collaborative efforts through the application of a kind of taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and optimizes this process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to elevate levels of collaboration, precision, and effectiveness.
 
 ## Install Node.js
 
@@ -346,7 +346,7 @@ Results:
 
 The complete information for each source is readily accessible, such as the `sourceType`, `journal`, `figure`, `authorship`.
 
-### Other query applications
+### Other querying applications
 
 MongoDB and its companion tool, MongoDB Compass, offer advanced querying capabilities. MongoDB's query language, empowered by methods like `find()` and a rich set of comparison operators such as `$lt` (less than), `$gt` (greater than), and `$eq` (equal to), allows precise document filtration based on specific criteria. MongoDB Compass, a graphical interface for MongoDB, provides an intuitive platform to visually construct and execute queries. It simplifies query creation, data visualization, and optimization by offering a user-friendly graphical representation of data structures. Leveraging MongoDB's querying prowess along with Compass's interactive interface enables users to proficiently explore, retrieve, and manipulate data within MongoDB databases.
 
