@@ -61,7 +61,10 @@ function generateDescription(taxon: Record<string, string>, genus: string) {
 
     // timestamp
     output = output.replace('date:', `date: ` + Math.floor(Date.now() / 1000))
-
+    output = output
+      .replace(/'\[/g, '[')
+      .replace(/\]'/g, ']')
+      .replace(/&#39;/g, '\'')
     if (output.trim() !== '') {
       fs.writeFileSync(fileName, output)
       console.log(`\x1b[1m\x1b[32m✔ New script file: \x1b[0m\x1b[1m\x1b[33m./${fileName}\x1b[0m`)
@@ -86,7 +89,7 @@ export default function ttsImportFromCsv(genus: string): void {
     return
   }
   fs.createReadStream('./input/importTaxa.csv')
-    .pipe(csvParser())
+    .pipe(csvParser({ separator: ';' }))
     .on('data', (taxon: Record<string, string>) => {
       generateDescription(taxon, genus)
     })
