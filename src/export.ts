@@ -1,10 +1,24 @@
 import fs from 'fs'
 import path from 'path'
-import { exec  } from 'child_process'
+import { exec } from 'child_process'
 import csvParser from 'csv-parser'
 import { Spinner } from "cli-spinner"
 
-export default function ttsExport(genus: string, load?: 'all' | 'csv'): void {
+async function deleteJSFiles(folderPath: string): Promise<void> {
+    try {
+        const files = await fs.promises.readdir(folderPath);
+
+        for (const file of files) {
+            if (file.endsWith('.js')) {
+                await fs.promises.unlink(`${folderPath}/${file}`);
+            }
+        }
+    } catch (err) {
+        console.error('Error deleting files:', err);
+    }
+}
+
+export default async function ttsExport(genus: string, load?: 'all' | 'csv'): Promise<void> {
     if (genus === '') {
         console.error('\x1b[31m✖ Argument `--genus` cannot be empty.\x1b[0m')
         return
@@ -63,7 +77,7 @@ console.log(jsonData)
             fs.writeFileSync(tempFilePath, fileContent, 'utf-8')
 
             const fileToTranspile = 'exportTemp'
-            exec (`tsc ./temp/${fileToTranspile}.ts`, (error, stdout, stderr) => {
+            exec(`tsc ./temp/${fileToTranspile}.ts`, (error, stdout, stderr) => {
                 if (stdout) {
                     spinner.stop()
                     console.error('\x1b[31m✖ TS Error:\x1b[0m\n\n' + `${stdout}`)
@@ -100,22 +114,23 @@ console.log(jsonData)
                         process.exit()
                     }
 
-
-                    const filePath = './output/'
-                    console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePath}${genus}DB.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
-                    spinner.stop()
-                    try {
-                        fs.unlinkSync(`./temp/${fileToTranspile}.js`)
-                        fs.rm('./temp', { recursive: true }, (err) => {
-                            if (err) {
-                                console.error('Error deleting directory:', err)
-                                process.exit()
-                            }
-                        })
-                    } catch (err) {
-                        console.error(`An error occurred while deleting the file: ${err}`)
-                        process.exit()
-                    }
+                    deleteJSFiles(`./taxon/${genus}`).then(() => {
+                        const filePath = './output/'
+                        console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePath}${genus}DB.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
+                        spinner.stop()
+                        try {
+                            fs.unlinkSync(`./temp/${fileToTranspile}.js`)
+                            fs.rm('./temp', { recursive: true }, (err) => {
+                                if (err) {
+                                    console.error('Error deleting directory:', err)
+                                    process.exit()
+                                }
+                            })
+                        } catch (err) {
+                            console.error(`An error occurred while deleting the file: ${err}`)
+                            process.exit()
+                        }
+                    })
                 })
             })
 
@@ -201,21 +216,23 @@ console.log(jsonData)
                             process.exit()
                         }
 
-                        const filePath = './output/'
-                        console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePath}${genus}DB.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
-                        spinner.stop()
-                        try {
-                            fs.unlinkSync(`./temp/${fileToTranspile}.js`)
-                            fs.rm('./temp', { recursive: true }, (err) => {
-                                if (err) {
-                                    console.error('Error deleting directory:', err)
-                                    process.exit()
-                                }
-                            })
-                        } catch (err) {
-                            console.error(`An error occurred while deleting the file: ${err}`)
-                            process.exit()
-                        }
+                        deleteJSFiles(`./taxon/${genus}`).then(() => {
+                            const filePath = './output/'
+                            console.log(`\x1b[1m\x1b[32m✔ Database exported: \x1b[33m${filePath}${genus}DB.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
+                            spinner.stop()
+                            try {
+                                fs.unlinkSync(`./temp/${fileToTranspile}.js`)
+                                fs.rm('./temp', { recursive: true }, (err) => {
+                                    if (err) {
+                                        console.error('Error deleting directory:', err)
+                                        process.exit()
+                                    }
+                                })
+                            } catch (err) {
+                                console.error(`An error occurred while deleting the file: ${err}`)
+                                process.exit()
+                            }
+                        })
                     })
                 })
 
