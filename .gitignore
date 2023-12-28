@@ -3,3 +3,4 @@ node_modules
 !src/*.js
 output/*
 dist
+hideREADME.md
