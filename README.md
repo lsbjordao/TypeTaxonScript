@@ -40,7 +40,7 @@ Within VS Code, open your terminal and execute the command at the root, where is
 3. In the terminal, type and execute the following command:
 s
 ```bash
-npm install -g type-taxon-script
+npm install -g @lsbjordao/type-taxon-script
 ```
 
 Install it globally using `-g` to prevent unnecessary dependencies from being installed within the TTS project directory. If one do not include `-g` argument, the `./node_modules` directory and `package.json` file will be inconveniently created in the TTS project directory.
