@@ -7,6 +7,11 @@ export default function ttsExportSources(genus: string): void {
         return;
     }
     
+    if (!fs.existsSync('./input') && !fs.existsSync('./output')) {
+        console.error("\x1b[31m✖ The ./input and ./output directories are not present within the project.\x1b[0m\n\x1b[33mℹ️ Please run `tts init` before attempting to export a database.\x1b[0m")
+        return
+    }
+
     const filePath = `./output/${genus}DB.json`
 
     fs.readFile(filePath, 'utf8', (err, data) => {
