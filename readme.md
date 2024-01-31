@@ -6,7 +6,7 @@ Before you begin, ensure that Node.js is installed on your system. Node.js is es
 
 ## Install Git
 
-Ensure that Git (https://git-scm.com/) is installed on your system.
+Make sure you have Git installed or visit its official website at https://git-scm.com/ and install Git for your system. Git facilitates efficient version control for your projects, enabling seamless change tracking, collaboration, and codebase management.
 
 ## Install Visual Studio Code
 
