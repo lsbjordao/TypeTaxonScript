@@ -58,3 +58,23 @@ For comprehensive guidance on available commands and functionalities, access the
 ```bash
 tts --help
 ```
+
+## Initializing a TTS project
+
+To initiate the use of a TTS project, execute the following command:
+
+```bash
+tts init
+```
+
+This command will verify the presence of an existing TTS project within the directory. Additionally, it will generate two mandatory directories, `./input` and `./output`, but only if the `characters` and `taxon` directories already exist. These newly created directories are essential for the project functioning.
+
+## Describing a new taxon
+
+To generate a new `.ts` file containing a comprehensive script outlining the entire hierarchy of characters, serving as the foundational template to initiate the description of a species from scratch, utilize the command `tts` followed by the `-new` argument, specifying the genus name and the specific epithet as shown below:
+
+```bash
+tts new --genus Mimosa --species epithet
+```
+
+After the process, a new file named `Mimosa_epithet.ts` will be created in the `./output` directory. To access this script file, simply hold down the `Ctrl` key and click on the file path displayed in the console. However, before you begin editing the script, it is important to relocate this file to the `./taxon` directory, as the script specifically functions within that directory. Outside this directory, the script will not works properly. Opening the script outside of this directory will trigger multiple dependency errors.
