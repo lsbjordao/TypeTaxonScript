@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import { exec } from 'child_process'
 import csvParser from 'csv-parser'
+import { Parser } from '@json2csv/plainjs'
+import { flatten } from '@json2csv/transforms';
 import { Spinner } from "cli-spinner"
 
 async function deleteJSFiles(folderPath: string): Promise<void> {
@@ -18,7 +20,7 @@ async function deleteJSFiles(folderPath: string): Promise<void> {
     }
 }
 
-export default async function ttsExport(genus: string, load?: 'all' | 'csv'): Promise<void> {
+export default async function ttsExportToCsv(genus: string, load?: 'all' | 'csv'): Promise<void> {
     if (genus === '') {
         console.error('\x1b[31m✖ Argument `--genus` cannot be empty.\x1b[0m')
         return
@@ -121,7 +123,24 @@ console.log(jsonData)
 
                     deleteJSFiles(`./taxon/${genus}`).then(() => {
                         const filePath = './output/'
-                        console.log(`\x1b[1m\x1b[32m✔ JSON database exported: \x1b[33m${filePath}${genus}DB.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
+
+                        try {
+                            const data: string = fs.readFileSync(`./output/${genus}DB.json`, 'utf8')
+
+                            const opts: any = {
+                                transforms: [
+                                    flatten({ separator: '.' })
+                                ]
+                            };
+
+                            const parser = new Parser(opts)
+                            const csv = parser.parse(JSON.parse(data))
+                            fs.writeFileSync(`./output/${genus}DB.csv`, csv)
+                        } catch (err) {
+                            console.error('Error reading the file:', err)
+                        }
+
+                        console.log(`\x1b[1m\x1b[32m✔ CSV database exported: \x1b[33m${filePath}${genus}DB.csv\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
                         spinner.stop()
                         try {
                             fs.unlinkSync(`./temp/${fileToTranspile}.js`)
@@ -223,7 +242,24 @@ console.log(jsonData)
 
                         deleteJSFiles(`./taxon/${genus}`).then(() => {
                             const filePath = './output/'
-                            console.log(`\x1b[1m\x1b[32m✔ JSON database exported: \x1b[33m${filePath}${genus}DB.json\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
+
+                            try {
+                                const data: string = fs.readFileSync(`./output/${genus}DB.json`, 'utf8')
+    
+                                const opts: any = {
+                                    transforms: [
+                                        flatten({ separator: '.' })
+                                    ]
+                                };
+    
+                                const parser = new Parser(opts)
+                                const csv = parser.parse(JSON.parse(data))
+                                fs.writeFileSync(`./output/${genus}DB.csv`, csv)
+                            } catch (err) {
+                                console.error('Error reading the file:', err)
+                            }
+                            
+                            console.log(`\x1b[1m\x1b[32m✔ CSV database exported: \x1b[33m${filePath}${genus}DB.csv\x1b[0m\x1b[1m\x1b[32m\x1b[0m`)
                             spinner.stop()
                             try {
                                 fs.unlinkSync(`./temp/${fileToTranspile}.js`)

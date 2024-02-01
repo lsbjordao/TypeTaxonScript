@@ -4,6 +4,7 @@ import ttsNew from './new'
 import ttsImport from './import'
 import ttsExport from './export'
 import ttsExportSources from './exportSources'
+import ttsExportToCsv from './exportToCsv'
 import ttsfindProperty from './findProperty'
 
 yargs.version()
@@ -52,7 +53,7 @@ yargs.command({
 
 yargs.command({
   command: 'export',
-  describe: 'Export database',
+  describe: 'Export a JSON database',
   builder: {
     genus: {
       describe: 'Genus name',
@@ -84,6 +85,28 @@ yargs.command({
   },
   handler: (argv) => {
     ttsExportSources(argv.genus as string)
+  },
+})
+
+yargs.command({
+  command: 'exportToCsv',
+  describe: 'Export a CSV database',
+  builder: {
+    genus: {
+      describe: 'Genus name',
+      demandOption: true,
+      type: 'string',
+    },
+    load: {
+      describe: 'Load a list of taxa to export from the csv file: "./input/taxaToExport.csv".',
+      demandOption: false,
+      type: 'string',
+      choices: ['all', 'csv'],
+      default: 'all'
+    }
+  },
+  handler: (argv) => {
+    ttsExportToCsv(argv.genus as string, argv.load as 'all'|'csv')
   },
 })
 
