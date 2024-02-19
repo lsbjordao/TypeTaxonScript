@@ -85,4 +85,4 @@ After the process, a new file named `Mimosa_epithet.ts` will be created in the `
 tts export --genus Mimosa
 ```
 
-![](https://imgur.com/2Gg83RC)
+![](https://i.imgur.com/i0eMGu1.gifv)
