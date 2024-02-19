@@ -54,7 +54,7 @@ export default function ttsInit(): any {
         if (dirs.length === 0) {
             console.error('\x1b[36mℹ️ The directory is empty. Please clone a TTS project first.\x1b[0m')
             console.log('\x1b[36mℹ️ Please, visit:\x1b[0m')
-            console.log('\x1b[36m  TypeTaxonScript package:', '\x1b[33mhttps://www.npmjs.com/package/typetaxonscript.\x1b[0m');
+            console.log('\x1b[36m  TypeTaxonScript package:', '\x1b[33mhttps://www.npmjs.com/package/@lsbjordao/type-taxon-script.\x1b[0m');
             console.log('\x1b[36m  TTS project (Mimosa):', '\x1b[33mhttps://github.com/lsbjordao/TTS-Mimosa.\x1b[0m');
             return;
         }
@@ -62,7 +62,7 @@ export default function ttsInit(): any {
         if (!dirs.includes('taxon') && !dirs.includes('character')) {
             console.error('\x1b[36mℹ️ The directory does not contain a TTS project.\x1b[0m')
             console.log('\x1b[36mℹ️ Please, visit:\x1b[0m')
-            console.log('\x1b[36m  TypeTaxonScript package:', '\x1b[33mhttps://www.npmjs.com/package/typetaxonscript.\x1b[0m');
+            console.log('\x1b[36m  TypeTaxonScript package:', '\x1b[33mhttps://www.npmjs.com/package/@lsbjordao/type-taxon-script.\x1b[0m');
             console.log('\x1b[36m  TTS project (Mimosa):', '\x1b[33mhttps://github.com/lsbjordao/TTS-Mimosa.\x1b[0m');
             return;
         }

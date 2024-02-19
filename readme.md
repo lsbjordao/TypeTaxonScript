@@ -78,3 +78,11 @@ tts new --genus Mimosa --species epithet
 ```
 
 After the process, a new file named `Mimosa_epithet.ts` will be created in the `./output` directory. To access this script file, simply hold down the `Ctrl` key and click on the file path displayed in the console. However, before you begin editing the script, it is important to relocate this file to the `./taxon` directory, as the script specifically functions within that directory. Outside this directory, the script will not works properly. Opening the script outside of this directory will trigger multiple dependency errors.
+
+## Exporting JSON database
+
+```bash
+tts export --genus Mimosa
+```
+
+![](https://imgur.com/2Gg83RC)
