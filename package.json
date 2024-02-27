@@ -1,24 +1,26 @@
 {
   "name": "@lsbjordao/type-taxon-script",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "author": "Lucas Jordão <tucarj@gmail.com> & André Eppinghaus <andreeppinghaus@gmail.com> & Vicente Calfo <vicentecalfo@gmail.com>",
   "license": "ISC",
   "description": "TypeTaxonScript",
   "dependencies": {
-    "fs": "^0.0.1-security",
-    "mustache": "^4.2.0",
-    "lodash": "^4.17.21",
-    "yargs": "^17.7.2",
+    "@json2csv/plainjs": "^7.0.5",
+    "@json2csv/transforms": "^7.0.5",
+    "cli-spinner": "^0.2.10",
     "csv-parser": "^3.0.0",
-    "cli-spinner": "^0.2.10"
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "mustache": "^4.2.0",
+    "yargs": "^17.7.2",
+    "typescript": "^5.1.5"
   },
   "devDependencies": {
-    "typescript": "^5.1.5",
-    "@types/node": "^20.4.10",
-    "@types/yargs": "^17.0.32",
-    "@types/mustache": "^4.2.5",
+    "@types/cli-spinner": "^0.2.3",
     "@types/lodash": "^4.14.202",
-    "@types/cli-spinner": "^0.2.3"
+    "@types/mustache": "^4.2.5",
+    "@types/node": "^20.4.10",
+    "@types/yargs": "^17.0.32"
   },
   "main": "dist/tts.js",
   "files": [
