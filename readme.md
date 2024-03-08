@@ -35,9 +35,21 @@ To open the TTS project directory in VS Code:
 4. Click on the TTS project directory to select it.
 5. Click the `Open` button.
 
-## Installing TTS package
+## Installing TypeScript (TS) globally
 
-Within VS Code, open your terminal and execute the command to install TTS globally:
+Within VS Code, open your terminal and execute the command bellow, following these steps:
+
+1. Navigate to the top menu and select Terminal.
+2. From the dropdown menu, choose New Terminal.
+3. In the terminal, type and execute the following command:
+
+```bash
+npm install -g type-taxon-script
+```
+
+## Installing TTS package globally
+
+Within a terminal in VS Code, type and execute the following command:
 
 1. Navigate to the top menu and select `Terminal`.
 2. From the dropdown menu, choose `New Terminal`.
