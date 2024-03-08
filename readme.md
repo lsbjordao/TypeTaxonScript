@@ -16,7 +16,7 @@ Visual Studio Code (VS Code) is a versatile code editor that provides a user-fri
 
 ## Clone the repository from GitHub in VS Code
 
-To clone the *Mimosa* project repository for TTS from GitHub, follow these steps:
+To clone the *Mimosa* project repository for TTS from GitHub (https://github.com/lsbjordao/TTS-Mimosa), follow these steps:
 
 1. In VS Code, access the Command Palette by pressing `Ctrl + Shift + P` (Windows/Linux) or `Cmd + Shift + P` (macOS).
 2. Type `Git: Clone` and select the option that appears.
