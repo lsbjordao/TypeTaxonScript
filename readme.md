@@ -93,14 +93,6 @@ tts new --genus Mimosa --species epithet
 
 After the process, a new file named `Mimosa_epithet.ts` will be created in the `./output` directory. To access this script file, simply hold down the `Ctrl` key and click on the file path displayed in the console. However, before you begin editing the script, it is important to relocate this file to the `./taxon` directory, as the script specifically functions within that directory. Outside this directory, the script will not works properly. Opening the script outside of this directory will trigger multiple dependency errors.
 
-## Exporting JSON database
-
-```bash
-tts export --genus Mimosa
-```
-
-![text](https://media.giphy.com/media/GKCQ1NTHrsGHaGCu07/giphy.gif)
-
 ## Importing from `.csv` file
 
 It is also possible to import data of multiple taxa from a `.csv` file with a header in the following manner:
@@ -162,6 +154,8 @@ To export all taxa inside `./taxon/Mimosa`, type:
 ```bash
 tts export --genus Mimosa
 ```
+
+![text](https://media.giphy.com/media/GKCQ1NTHrsGHaGCu07/giphy.gif)
 
 If you intend to generate a database containing a specific list of taxa from the directory `./taxon/Mimosa`, edit the `./input/taxonToImport.csv` file accordingly. After making the necessary edits, execute the following command:
 
