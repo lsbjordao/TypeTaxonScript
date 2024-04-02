@@ -44,7 +44,7 @@ Within VS Code, open your terminal and execute the command bellow, following the
 3. In the terminal, type and execute the following command:
 
 ```bash
-npm install -g type-taxon-script
+npm install -g typescript
 ```
 
 ## Installing TTS package globally
