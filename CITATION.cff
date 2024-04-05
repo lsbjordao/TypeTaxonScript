@@ -4,21 +4,11 @@ authors:
   - family-names: Jordão
     given-names: Lucas Sá Barreto
     orcid: https://orcid.org/0000-0002-9501-0548
-  - family-names: Morim
-    given-names: Marli Pires
-  - family-names: Baumgratz
-    given-names: José Fernando A
-  - family-names: Simon
-    given-names: Marcelo Fragomeni
   - family-names: Eppinghaus
     given-names: André L C
   - family-names: Calfo
     given-names: Vicente A
-title: "TypeTaxonScript: sugarifying and enhancing data structures in biological systematics and biodiversity research"
-publication: 
-  title: "Biology Methods and Protocols"
-  volume: 9
-  issue: 1
+title: "TypeTaxonScript"
 version: 1.1.4
 doi: 10.1093/biomethods/bpae017
 date-released: 2024-03-14
