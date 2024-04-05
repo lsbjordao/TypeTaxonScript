@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Jordão
+    given-names: Lucas Sá Barreto
+    orcid: https://orcid.org/0000-0002-9501-0548
+  - family-names: Eppinghaus
+    given-names: André L C
+  - family-names: Calfo
+    given-names: Vicente A
+title: "TypeTaxonScript"
+version: 1.1.4
+doi: 10.1093/biomethods/bpae017
+date-released: 2024-03-14
+url: "https://doi.org/10.1093/biomethods/bpae017"
