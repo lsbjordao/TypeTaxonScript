@@ -1,6 +1,6 @@
 # TypeTaxonScript (TTS)
 
-[![DOI](https://img.shields.io/badge/10.1093/biomethods/bpae017-blue)](https://doi.org/10.1093/biomethods/bpae017)
+[![](https://img.shields.io/badge/DOI-10.1093/biomethods/bpae017)](https://doi.org/10.1093/biomethods/bpae017)
 
 Not Word or Excel, but TypeTaxonScript. We stand at the threshold of a new era in biological taxonomy descriptions. In this methodology, software engineering methods using TypeScript (TS) are employed to build a robust data structure, fostering enduring, non-redundant collaborative efforts through the application of a kind of taxonomic engineering of biological bodies. This innovative program introduces a new approach for precise and resilient documentation of taxa and characters, transcending the limitations of traditional text and spreadsheet editors. TypeTaxonScript streamlines and optimizes this process, enabling meticulous and efficient descriptions of diverse organisms, propelling the science of taxonomy and systematics to elevate levels of collaboration, precision, and effectiveness.
 
