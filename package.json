@@ -1,6 +1,6 @@
 {
   "name": "@lsbjordao/type-taxon-script",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": "Lucas Jordão <tucarj@gmail.com> & André Eppinghaus <andreeppinghaus@gmail.com> & Vicente Calfo <vicentecalfo@gmail.com>",
   "license": "ISC",
   "description": "TypeTaxonScript",
@@ -24,10 +24,10 @@
   },
   "main": "dist/tts.js",
   "files": [
-    "dist"
+    "dist", "bin"
   ],
   "scripts": {
-    "tts": "tsc ./src/tts.ts"
+    "build": "tsc"
   },
   "bin": {
     "tts": "./bin/tts"
